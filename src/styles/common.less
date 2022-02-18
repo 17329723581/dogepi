@@ -1,0 +1,387 @@
+.fle {
+  display: flex;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.align_middle {
+  align-items: center;
+}
+.justify_center {
+  justify-content: center;
+}
+.justify_around {
+  justify-content: space-around;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.justify_end {
+  justify-content: flex-end;
+}
+.direction_column{
+  flex-direction: column;
+}
+.text_center {
+  text-align: center;
+}
+.text_right {
+  text-align: right;
+}
+.poRela{
+  position: relative;
+}
+.poAbso{
+  position: absolute;
+}
+.ab_center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fle1 {
+  flex: 1;
+}
+.fle4 {
+  flex: 4;
+}
+// ============================================
+
+
+
+/* pc width > 1100px */
+/* ipad pro */
+html,
+body {
+	font-family: DIN;
+	width: 100%;
+	height: 100%;
+}
+html {
+	font-family: DIN;
+	font-size: 16px;
+}
+body {
+  background: url("../assets/bgimg.png") no-repeat no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+/* ipad */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+/* iphone6 7 8 plus */
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 13px;
+  }
+}
+/* iphoneX */
+@media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 3) {
+  html {
+    font-size: 12px;
+  }
+}
+/* iphone6 7 8 */
+@media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 2) {
+  html {
+    font-size: 12px;
+  }
+}
+/* iphone5 */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+#app {
+  font-family: Microsoft YaHei, PingFang SC, Hiragino Sans GB, Heiti SC,
+    WenQuanYi Micro Hei, Helvetica, Arial, monospace, serif;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+// ============================================
+/* 谷歌 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+/* 火狐 */
+input {
+  -moz-appearance: textfield;
+}
+.fle {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.align_middle {
+  align-items: center;
+}
+.justify_center {
+  justify-content: center;
+}
+.justify_around {
+  justify-content: space-around;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.justify_end {
+  justify-content: flex-end;
+}
+.direction_column {
+  flex-direction: column;
+}
+.text_center {
+  text-align: center;
+}
+.text_right {
+  text-align: right;
+}
+.poRela {
+  position: relative;
+}
+.poAbso {
+  position: absolute;
+}
+.ab_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// ============================================
+
+div {
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+dl,
+ol,
+ul {
+  margin-bottom: 0 !important;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+}
+
+button {
+  background-color: #fff;
+  font-weight: 700;
+  border: 2px solid #fff;
+  color: #0ab5db;
+  border-radius: 18px;
+  padding: 11px 43px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0 !important;
+}
+.header-nav
+{
+	a {
+	  color: #FFFFFF !important;
+	  font-family: DIN;
+
+	  font-size: 16px;
+	  outline: none;
+	  text-decoration: none;
+	  opacity: 1;
+	}
+	.ant-dropdown-link{
+		a-icon{
+			
+		}
+	}
+}
+.m-header-nav
+{
+	a {
+	  color: #FFFFFF !important;
+	  
+	  font-size: 1rem;
+	  outline: none;
+	  text-decoration: none;
+	}
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    // padding: 0 15px;
+    padding: 0px  100px 0 100px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+    // padding: 0 0;
+    padding: 0px  100px 0 100px;
+  }
+}
+
+.d_n {
+  display: none;
+}
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.5s;
+}
+
+.btn:active:after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+.rainbow:before {
+  content: "";
+  // background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(180deg, #ff6400, rgba(17, 139, 128, 0.36));
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(0px);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  // animation: rainbow_an 20s linear infinite;
+  // transition: opacity .3s ease-in-out;
+  border-radius: 24px;
+}
+.rainbow:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+}
+
+@keyframes rainbow_an {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 350% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+// 大小屏显示
+.mb-block{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mb-block {
+    display: block;
+  }
+}
+
+.pc-block {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .pc-block {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+@font-face {  
+    font-family: 'Bebas-Regular';
+    src: url('./Bebas-Regular.ttf');
+    font-weight: normal;  
+    font-style: normal;  
+}
+@font-face {  
+    font-family: 'DeVinne Txt BT';
+    src: url('./DeVinne Txt BT.ttf');
+    font-weight: normal;  
+    font-style: normal;  
+}
+@font-face {  
+    font-family: 'Alibaba PuHuiTi';
+    src: url('./Alibaba-PuHuiTi-Heavy.ttf');
+    font-weight: normal;  
+    font-style: normal;  
+}
