@@ -12,7 +12,7 @@
               <span style="float: left;" class="li-left">{{
                 a_titcom_li_left
               }}</span>
-              <span style="float: right;display: flex;right: 0;">{{
+              <span style="float: right;display: flex;right: 0;color: #ffffff;">{{
                 a_titcom_li_right
               }}</span>
             </div>
@@ -514,8 +514,8 @@ export default {
       width: 180px;
       height: 38px;
       border-radius: 19px;
-      background-color: #fdd333;
-      color: #333333;
+      background-color:#fa0000;
+      color: #ffffff;
       font-weight: bold;
       line-height: 38px;
       text-align: center;
@@ -527,20 +527,20 @@ export default {
       line-height: 46px;
       padding: 0 20px;
       display: flex;
-      background-color: #fff;
+      background-color: #18171f;
       border-radius: 10px;
-      color: #333333;
+      color: #ffffff;
 
       .li-left {
         width: 40%;
-        color: #5a51a8;
+        color: #ffffff;
       }
     }
   }
 
   .timecom {
     margin-top: 16px;
-    background-color: #fff;
+    background-color: #18171f;
     border-radius: 20px;
     padding: 20px 0;
     text-align: center;
@@ -548,12 +548,12 @@ export default {
     .tit {
       line-height: 36rpx;
       font-weight: bold;
-      color: #000;
+      color: #ffffff;
     }
 
     /deep/ .ant-statistic-content {
       span {
-        color: #000;
+        color: #ffffff;
         font-size: 3.25rem;
         font-weight: bold;
       }
@@ -561,15 +561,14 @@ export default {
 
     .time {
       font-weight: 900;
-      color: #000;
+      color: #ffffff;
       font-size: 36px;
     }
 
     .ul {
-      color: #333333;
+      color: #ffffff;
       padding: 0px 10px;
       margin: 10px auto;
-      color: #333333;
 
       .li {
         font-size: 1rem;
@@ -588,11 +587,11 @@ export default {
     .btn {
       padding: 10px 60px;
       border-radius: 10px;
-      color: #333333;
+      color: #ffffff;
       line-height: 26px;
       font-weight: 600;
       margin: 20px auto;
-      background-color: #fdd333;
+      background-color: rgb(128, 128, 128);
       display: inline-block;
       font-size: 14px;
     }
@@ -610,7 +609,7 @@ export default {
     }
 
     .des {
-      color: #333333;
+      color: #ffffff;
       padding: 0 20px;
     }
   }
@@ -630,17 +629,17 @@ export default {
     .des {
       font-size: 1rem;
       font-weight: bold;
-      color: #fdd333;
+      color: #bbbbbe;
       line-height: 32px;
     }
   }
 
   .invite {
-    background-color: #fff;
+    background-color: #18171f;;
     border-radius: 20px;
     padding: 20px;
     position: relative;
-    color: #333333;
+    color: #ffffff;
     font-weight: bold;
     min-height: 260px;
 
@@ -719,7 +718,7 @@ export default {
       height: 46px;
       left: 50%;
       margin-left: -180px;
-      background-color: #fff;
+      background-color: #18171f;
       position: absolute;
       border-radius: 4px;
       top: 0px;
@@ -732,8 +731,8 @@ export default {
         top: -23px;
         height: 38px;
         border-radius: 19px;
-        background-color: #fdd333;
-        color: #333333;
+        background-color: #fa0000;
+        color: #ffffff;
         font-weight: bold;
         line-height: 38px;
         text-align: center;
@@ -747,14 +746,14 @@ export default {
 
         .li-left {
           width: 40%;
-          color: #5a51a8;
+          color: #ffffff;
         }
       }
     }
 
     .timecom {
       margin-top: 60px;
-      background-color: #fff;
+      background-color: #18171f;
       border-radius: 20px;
       padding: 20px 0;
       text-align: center;
@@ -762,12 +761,12 @@ export default {
       .tit {
         line-height: 36rpx;
         font-weight: bold;
-        color: #000;
+        color: #ffffff;
       }
 
       /deep/ .ant-statistic-content {
         span {
-          color: #000;
+          color: #ffffff;
           font-size: 36px;
           font-weight: 900;
         }
@@ -775,12 +774,12 @@ export default {
 
       .time {
         font-weight: 900;
-        color: #000;
+        color: #ffffff;
         font-size: 36px;
       }
 
       .ul {
-        color: #333333;
+        color: #ffffff;
         border-top: 1px solid #70707029;
         border-bottom: 1px solid #70707029;
         width: 80%;
@@ -795,7 +794,7 @@ export default {
           span {
             display: block;
             font-size: 26px;
-            color: #5a51a8;
+            color: #ffffff;
             font-weight: bold;
           }
         }
@@ -804,15 +803,16 @@ export default {
       .btn {
         padding: 10px 60px;
         border-radius: 10px;
-        color: #333333;
+        color: #ffffff;
         line-height: 26px;
         margin: 20px auto;
-        background-color: #fdd333;
+        background-color: #fa0000;
         display: inline-block;
         font-size: 14px;
       }
 
       .des {
+        color:#ffffff;
       }
     }
 
@@ -828,16 +828,16 @@ export default {
       }
 
       .des {
-        color: #fdd333;
+        color: #bbbbbe;
       }
     }
 
     .invite {
-      background-color: #fff;
+      background-color: #18171f;
       border-radius: 20px;
       padding: 20px;
       position: relative;
-      color: #333333;
+      color: #ffffff;
       font-weight: bold;
       min-height: 260px;
 
