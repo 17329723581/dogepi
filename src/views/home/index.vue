@@ -10,6 +10,7 @@
 		<wrap></wrap>
 	</div>
 </template>
+
 <script>
 	import headerCmp from "./components/headerCmp.vue";
 	import wrap from "./Harry/wrap.vue";
@@ -49,7 +50,7 @@
 		created() {
 		},
 		mounted() {
-			init("home_canvas");
+			//init("home_canvas");
 		},
 		methods: {},
 	};

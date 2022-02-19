@@ -1,6 +1,6 @@
 <template>
   <div class="presale bg">
-    <canvas id="presale_canvas"></canvas>
+    <!--<canvas id="presale_canvas"></canvas>-->
     <div class="bg-moon"></div>
     <div class="header-background">
       <!-- 导航 -->
@@ -12,31 +12,10 @@
       <!-- 如果未结束 -->
       <presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>
       <!-- 否则 -->
-
       <presaleTwo v-if="time_end_state == 1"></presaleTwo>
     </div>
-    <!-- 购买代币 -->
-    <!--div class="buyToken container">
-      <buy-token :userLock="userLock"></buy-token>
-      <rules :ruleList="ruleList"></rules>
-      <get-pi></get-pi>
-	  
-      <mydata @handleUserLock="handleUserLock"></mydata>
-	  <locked-mining></locked-mining>
-    </div-->
-    <locked-mining></locked-mining>
-    <presale-com></presale-com>
-    <!-- 对比 -->
-    <!-- <vs-other></vs-other> -->
-    <div class="container">
-      <roadmap></roadmap>
-      <tokenomics></tokenomics>
-    </div>
-    <answers></answers>
-    <div class="footer">
-      <!-- <links></links> -->
-      <footer-cmp></footer-cmp>
-    </div>
+    <bdoge></bdoge>
+    <footer-cmp></footer-cmp>
   </div>
 </template>
 
@@ -44,22 +23,8 @@
 import presaleOne from "@/views/presale/components/presaleOne.vue";
 import presaleTwo from "@/views/presale/components/presaleTwo.vue";
 import headerCmp from "../home/components/headerCmp.vue";
-import presale from "./components/presale.vue";
-import presaleEnd from "./components/presaleEnd.vue";
-
-import buyToken from "./components/buyToken.vue";
-import rules from "@/components/rules.vue";
-import getPi from "./components/getPi.vue";
-
-import mydata from "./components/mydata.vue";
-import vsOther from "../home/components/vsOther.vue";
-import roadmap from "../home/roadmap/roadmap.vue";
-import links from "./components/links.vue";
 import footerCmp from "../home/footer/footerCmp.vue";
-import lockedMining from "../home/components/lockedMining.vue";
-import answers from "../home/answers/answers.vue";
-import tokenomics from "../home/tokenomics/tokenomics.vue";
-import banner from "../airdrop/components/banner.vue";
+import bdoge from "../home/Harry/bdoge.vue";
 import { mapState } from "vuex";
 export default {
   data() {
@@ -87,22 +52,10 @@ export default {
   watch: {},
   components: {
     headerCmp,
-    presale,
-    presaleEnd,
-    buyToken,
-    rules,
-    getPi,
-    mydata,
-    tokenomics,
-    answers,
-    vsOther,
-    roadmap,
     footerCmp,
-    links,
-    lockedMining,
-    banner,
     presaleOne,
     presaleTwo,
+    bdoge,
   },
   created() {
     let _that = this;
@@ -148,7 +101,7 @@ export default {
 }
 @media screen and (min-width: 768px) {
   .header-background {
-    background: rgba(33, 21, 59, 0.8);
+    //background: rgba(33, 21, 59, 0.8);
   }
 
   .bg {

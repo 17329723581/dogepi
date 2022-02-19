@@ -547,7 +547,7 @@
 				margin-bottom: 20px !important;
 
 				span {
-					color: #FDD333;
+					color:  #fa0000;
 				}
 			}
 

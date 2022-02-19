@@ -74,7 +74,7 @@ const locale = {
 		title:'硬顶',
 		num:'1000 BNB',
 	}],
-	p_r_o_text:'SpacePi 将是区块链领域唯一一个打破技术壁垒，跨界融合综合服务商类型多重跨链协议通证，未来是属于所有区块链数字资产玩家的，让我们共同努力，见证这伟大的时刻！',
+	p_r_o_text:'BDOGE会召集所有数字货币探索者，共同打造属于BDOGE去中心化生态。BDOGE生态核心包含 NFT 去游戏 元宇宙 BDOGESwap等系列应用，尽情期待吧！',
 	p_r_o_title_s:'最新参与预售',
 	p_r_o_totalarray:[{
 		title:'类型:',
@@ -131,85 +131,77 @@ const locale = {
 
 
 	// 首页
-	doge: "什么是SpacePi?",
-	only:"全世界唯一一款综合服务商类型多重跨链协议通证",
-	introduce:"SpacePi 将是区块链领域唯一一个打破技术壁垒，跨界融合综合服务商类型多重跨链协议通证，未来是属于所有区块链数字资产玩家的，让我们共同努力，见证这伟大的时刻！",
-	text: [
-		"SpacePi将打造前所未有的顶级数字生态，提供简单高效的元宇宙数字沉浸体验为核心。赋予代币流通价值，让更多人参与到SpacePi的生态建设，创造无边界的娱乐世界，链接世界每一个角落的用户，为全球用户建立无需信任以及高度去中心化的元宇宙生态。",
-		"SpacePi包含NFT和元宇宙这两大区块链范畴，SpacePi正在打造一个去中心化的在线虚拟现实类游戏平台，将角色、道具以及人生的故事情节节融入到虚拟社交中，玩家可在虚拟世界中购 买武器、战甲、道具宝石。参与不同的收集养成虚拟、生活、动作等游戏。",
-		"SpacePi 所有带来的利益会以原生代币 SpacePi 的形式呈现。SpacePi元宇宙的虚拟与现实的高度互通，闭环经济体附着开源平台成为互联网的最终形态。"
-	],
-	tetxbu: '阅读白皮书',
-	tetxbu_url:'https://drive.google.com/file/d/1Yzi80Vnh_ZDlil2s-Da1_oiYmUf9c5BV/view?usp=sharing',
-	contractAddress: "",
-	buypi: "购买SpacePi",
-	down: ['购买SpacePi'],
-	bun: '预售',
-	bun1: '空投',
-	bunArr: ['币安链', '火币链', '波场链'],
-	car: [{
-		title: '什么是SpacePi?',
-		content: 'SpacePi将打造前所未有的顶级数字生态，提供简单高效的元宇宙数字沉浸体验为核心。'
-	}, {
-		title: '太空派世界',
-		content: '赋予代币流通价值，让更多人参与到SpacePi的生态建设，创造无边界的娱乐世界，链接世界每一个角落的用户，为全球用户建立无需信任以及高度去中心化的元宇宙生态。'
-	}],
-	station: {
-		enter: '强大无比的SpacePi生态系统',
-		title: '实际上我们正在建造一个前所未有的数字世界。',
-		text: [
-			'数字经济已经成为了一种合法的资产类型，值得投资者考虑，该类资产在短期内呈指数级增长爆发。',
-			'基于这个观点下，SpacePi成了在其生态系统内购买虚拟资产或服务的投资工具，它会随着SpacePi的落地应用迸发出新的生命力与前所未有的价值。以下是SpacePi生态系统的一些关键点。'
-		],
-		c: [{
-			title: 'SpacePi 通证',
-			text: '由多公链支持支撑的新型实用通证，在 SpacePi 生态系统中作为基础，服务各种应用，具有强大的应用场景'
-		}, {
-			title: 'SpacePi 简介',
-			text: 'SpacePi生态系统基于WEB3.0 全息互联网 NFT 等技术构成打造而来，成为太空用户位于元宇宙虚拟空间内最强大的技术支持方。'
-		}, {
-			title: 'SpacePi NFTs',
-			text: '非同质化且可转让的数字资产，独一无二的特性可成为SpacePi生态中的一件艺术收藏品或是一个游戏道具。'
-		}, {
-			title: 'SpacePi DAO',
-			text: 'SpacePi 通证在SpacePi生态系统中会被应用于在 DAO 的投票，以确保这个项目能够自我维持以及没有掌控者。'
-		}, {
-			title: 'SpacePi 元宇宙',
-			text: 'SpacePi生态系中一个游戏化的3D元宇宙虚拟空间'
-		}, {
-			title: 'NFT 市场',
-			text: 'SpacePi市场使参与者能管理和交易 SpacePi NFTs, 这些NFT以SpacePi作为流通货币定价'
-		}]
-	},
-	car1: [{
-		text: 'Pi Network',
-		title: 'SpacePi',
-		trx: '10 BNB',
-		usd: '3750 USD',
-	}, {
-		text: 'Metauniverse',
-		title: 'SpacePi Game',
-		trx: '6.6 BNB',
-		usd: '2390 USD',
-	}, {
-		text: 'Elon Musk',
-		title: 'Astronaut',
-		trx: '19 BNB',
-		usd: '7030 USD',
-	}],
-	bsc_token:'0x259a5f830f71e22717d02c529ec62ffa248087b9',
-	hoce_token:'0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
-	tron_token:'TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX',
-	url_array:[{
-		title:'SpacePi (bsc)',
-		url:'https://PancakeSwap.finance/swap?inputCurrency=BNB&outputCurrency=0x259a5f830f71e22717d02c529ec62ffa248087b9',
+	index_introduce_title1:'社区驱动的DOA生态系统',
+	index_introduce_title2:'由BDOGE  TOKEN提供支持',
+	//index_introduce_text:'SHIB, LEASH, BONE — ShibaSwap — Innovative Reward System — The Shiba Incubator — And more. 585k+ Community Members and Growing Fast!',
+	index_introduce_btn1:'How to Buy',
+	//index_introduce_btn2:'Read WoofPaper v2',
+
+	index_ecosystem_title:'关于BDOGE和生态系统',
+	//index_ecosystem_text1_start:'From its inception, Shiba Inu has done things differently. Starting with a supply of 1 quadrillion, our founder, Ryoshi, locked 50% in Uniswap, then “burned” the other half to Ethereum co-founder',
+	//index_ecosystem_text1_middle:'Vitalik Buterin',
+	//index_ecosystem_text1_end:'for safekeeping.',
+	index_ecosystem_text:'开发团队开发了BDOGE，BDOGE给用户提供更加完善的区块链体验，并且为全球去中性化用户提供帮助与服务！同时也诞生了BDOGE Token作为BDOGE生态的代币 BDOGE会召集所有数字货币探索者，共同打造属于BDOGE去中心化生态。BDOGE生态核心包含 NFT 去游戏 元宇宙 BDOGESwap等系列应用，尽情期待吧！',
+
+	//index_ecosystem_text2_start:'To help reverse the devastating spread of Covid-19 in India, VB has since utilized SHIB in the largest crypto donation in history, and then',
+	//index_ecosystem_text2_middle:'actually',
+	//index_ecosystem_text2_end:'burned 40% of its total supply to a dead wallet, ensuring our long-term success and stability. In the words of Ryoshi, “Thank you to the woofmeister for enabling true decentralization. Now we truly begin.”',
+
+	index_eco:['Liquidity Locked to Uniswap',"India's Covid Relief Fund",'Vitalik Buterin Burn'],
+
+	index_coin:[{
+		title:'BDOGE Token',
+		label:'See Live Charts',
+		text:'BDOGE Token是BDOGE生态中唯一的基础货币，它将服务BDOGE生态中的各种应用，随着生态系统的不断完善，BDOGE Token的价值将无限放大  BDOGE Token将会在币安首次登陆',
 	},{
-		title:'SpacePi (heco)',
-		url:'https://ht.mdex.co/#/swap?inputCurrency=HT&outputCurrency=0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
+		title:'BDOGE',
+		label:'See Live Charts',
+		text:'团队目前开发的应用的BDOGE，BDOGE依据智能算法为用户提供数字货币网址导航，项目推广，合约检测，营销服务于一体的综合CMC平台。BDOGE将会为用户打造简单高效的数字化体验，实现去中心化与现实的高度融合，使加密世界变得简单直观！',
 	},{
-		title:'SpacePi (tron)',
-		url:'https://sunswap.com/#/home?tokenAddress=TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX&type=swap',
+		title:'BDOGE DAO',
+		label:'See Live Charts',
+		text:'由BDOGE Token提供支持，BDOGE将要建立一个由社区驱动的DAO生态系统，社区的主要议程将由所有成员投票表决 社区成员有权利投票表决自己的想法，并且根据票数来决定BDOGE的发展路线！',
 	}],
+
+	index_cta_title:'如何购买BDOGE',
+	index_cta_text:'BDOGE将登陆币安的去中心化交易所PancakeSwap，您可在经常使用的钱包中使用区块链浏览器打开Pancake交易所进行兑换，兑换完成后您可能还需要添加合约地址才能显示余额。至此，您将成为BDOGE社区中重要的一员，可以参与BDOGE生态的分红以及服务！',
+	index_cta_btn1:'Buy SHIB',
+	index_cta_btn2:'Buy LEASH',
+
+	index_qsg_title:'Quick Start Guide',
+	index_qsg:[{
+		title:'Create MetaMask wallet',
+		text:'Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send, and receive SHIB or LEASH.',
+	},{
+		title:'Send ETH to your wallet',
+		text:'You can buy Ethereum (ETH) directly on MetaMask or transfer it to your MetaMask Wallet from exchanges like Coinbase, Binance, etc. Make sure to use the ERC-20 network when transfering ETH.',
+	},{
+		title:'Connect your wallet to ShibaSwap',
+		text:'Access your wallet to ShibaSwap by clicking ‘Connect to a wallet’ and selecting MetaMask.',
+	},{
+		title:'Swap ETH for SHIB, LEASH or BONE',
+		text:'You can start swapping as soon as you have ETH available! Press ‘Select a token’ and enter the token address or search for it on the tokens list.',
+	}],
+
+	index_cta_btn3:'Use ShibaSwap',
+	index_certik_title:'ShibaSwap',
+	index_certik_On:'On board',
+	index_cta_btn4:'Audit Report',
+
+	index_art_title:'Art',
+
+	index_res_title:'Rescue',
+	index_res_text:'',
+
+	index_com_title:'Community',
+
+	index_adress:'0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375',
+	index_cta_btn5:'Copy to Clipboard',
+
+	index_footer_text1:'Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate SHIB information.',
+	index_footer_text2:'Using the links below, you can join our various groups alongside the 1M+ other members of the ShibArmy.',
+	index_footer_link:'Click here to search for your preferred country!',
+
 
 
 	// 路线图
@@ -252,6 +244,10 @@ const locale = {
 	footer_medium_url:'https://t.me/SpacePi_com',
 	footer_copy_url:'https://t.me/SpacePi_com',
 
+	footer_link1:'Medium',
+	footer_link2:'Etherscan',
+	footer_link3:'CoinMarketCap',
+	footer_link4:'CoinGecko',
 
 
 	// 预售

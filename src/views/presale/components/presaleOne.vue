@@ -27,7 +27,7 @@
           </div>
           <div class="left_des">{{ this.$t("p_r_o_text") }}</div>
         </a-col>
-        <logo class="logo"></logo>
+        <!--<logo class="logo"></logo>-->
       </a-row>
       <a-row type="flex" justify="space-between">
         <a-col :md="24" :xs="24" class="presale-left">
@@ -621,7 +621,7 @@ export default {
 
   .b_air {
     text-align: center;
-    color: #fdd333;
+    color: #bbbbbe;
     font-weight: bold;
     line-height: 36px;
     font-size: 16px;
@@ -632,7 +632,7 @@ export default {
 
     div {
       width: 25%;
-      color: #fdd333;
+      color: #fff;
       text-align: center;
     }
   }
@@ -664,7 +664,7 @@ export default {
     .li {
       width: 50%;
       text-align: left;
-      color: #fdd333;
+      color: #dd0000;
       font-size: 16px;
       line-height: 32px;
       font-family: DIN;
@@ -687,7 +687,7 @@ export default {
     overflow: hidden;
 
     .Progress {
-      background-color: #fdd333;
+      background-color: #dd0000;
       height: 10px;
       float: left;
       border-radius: 5px;
@@ -705,8 +705,8 @@ export default {
       width: 65%;
       //height: 38px;
       border-radius: 19px;
-      background-color: #fdd333;
-      color: #333333;
+      background-color: #dd0000;
+      color: #ffffff;
       font-weight: bold;
       line-height: 38px;
       text-align: center;
@@ -719,13 +719,13 @@ export default {
       margin: 0 20px;
       padding: 0 20px;
       display: flex;
-      background-color: #fff;
+      background-color: #18171f;
       border-radius: 10px;
-      color: #333333;
+      color: #ffffff;
 
       .li-left {
         width: 40%;
-        color: #5a51a8;
+        color: #ffffff;
       }
     }
   }
@@ -743,7 +743,7 @@ export default {
 
     .des {
       font-size: 14px;
-      color: #fdd333;
+      color: #bbbbbe;
       line-height: 32px;
     }
   }
@@ -751,7 +751,7 @@ export default {
   .total_com {
     margin: 20px;
     padding: 20px 0;
-    background-color: #fff;
+    background-color: #18171f;
     border-radius: 20px;
 
     .li_tit {
@@ -760,7 +760,7 @@ export default {
       padding: 0 20px;
 
       .tb {
-        color: #333333;
+        color: #dd0000;
         font-size: 16px;
         display: inline-block;
         font-weight: bold;
@@ -768,7 +768,7 @@ export default {
         .num {
           font-size: 18px;
           font-weight: bold;
-          color: #333333;
+          color: #ffffff;
         }
       }
     }
@@ -779,7 +779,7 @@ export default {
       padding: 0 20px;
 
       .tb {
-        color: #5a51a8;
+        color: #dd0000;
         font-size: 16px;
         display: inline-block;
         font-weight: Regular;
@@ -787,7 +787,7 @@ export default {
         .num {
           font-size: 18px;
           font-weight: bold;
-          color: #333333;
+          color: #ffffff;
         }
       }
     }
@@ -801,7 +801,7 @@ export default {
 
       .tb {
         width: 50%;
-        color: #5a51a8;
+        color:  #dd0000;
         font-size: 16px;
         display: inline-block;
         font-weight: Regular;
@@ -810,13 +810,13 @@ export default {
         .num {
           font-size: 18px;
           font-weight: bold;
-          color: #333333;
+          color: #ffffff;
         }
       }
 
       .tb_right {
         width: 50%;
-        color: #5a51a8;
+        color:  #dd0000;
         font-size: 16px;
         display: inline-block;
         font-weight: Regular;
@@ -825,7 +825,7 @@ export default {
         .num {
           font-size: 18px;
           font-weight: bold;
-          color: #333333;
+          color: #ffffff;
         }
       }
     }
@@ -860,7 +860,7 @@ export default {
 
     .tis {
       line-height: 26px;
-      color: #333333;
+      color: #ffffff;
       text-align: right;
       margin: 10px 20px;
     }
@@ -871,8 +871,8 @@ export default {
       font-size: 18px;
       font-weight: bold;
       text-align: center;
-      color: #333333;
-      background-color: #fdd333;
+      color: #ffffff;
+      background-color:  #dd0000;
       border-radius: 8px;
       margin-top: 20px;
       cursor: pointer;
@@ -910,13 +910,13 @@ export default {
   .my_pre {
     margin: 20px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #18171f;
     border-radius: 20px;
     display: flex;
 
     .li {
       width: 50%;
-      color: #333333;
+      color: #ffffff;
       font-size: 16px;
       text-align: center;
       line-height: 20px;
@@ -977,7 +977,7 @@ export default {
       position: relative;
 
       .left_tit {
-        color: #fdd333;
+        color: #ffffff;
         font-size: 52px;
         font-weight: bold;
         line-height: 80px;
@@ -985,14 +985,14 @@ export default {
       }
 
       .left_des {
-        color: #fff;
+        color: #bbbbbe;
         line-height: 26px;
         font-family: DIN;
       }
 
       /deep/ .ant-statistic-content {
         span {
-          color: #fdd333;
+          color: #ffffff;
           font-size: 58px;
           font-weight: 900;
           line-height: 100px;
@@ -1014,7 +1014,7 @@ export default {
         .li {
           width: 50%;
           text-align: left;
-          color: #fdd333;
+          color: #dd0000;
           font-size: 16px;
           line-height: 42px;
           font-family: DIN;
@@ -1036,7 +1036,7 @@ export default {
         overflow: hidden;
 
         .Progress {
-          background-color: #fdd333;
+          background-color: #dd0000;
           height: 10px;
           float: left;
           border-radius: 5px;
@@ -1048,7 +1048,7 @@ export default {
         height: 46px;
         left: 50%;
         margin-left: -180px;
-        background-color: #fff;
+        background-color: #18171f;
         position: absolute;
         border-radius: 4px;
         top: 80px;
@@ -1061,8 +1061,8 @@ export default {
           top: -23px;
           height: 38px;
           border-radius: 19px;
-          background-color: #fdd333;
-          color: #333333;
+          background-color: #dd0000;
+          color: #ffffff;
           font-weight: bold;
           line-height: 38px;
           text-align: center;
@@ -1076,12 +1076,13 @@ export default {
           text-align: center;
 
           span {
+            color: #ffffff;
             width: 50%;
           }
 
           .li-left {
             width: 40%;
-            color: #5a51a8;
+            color: #ffffff;
           }
         }
       }
@@ -1089,7 +1090,7 @@ export default {
       .totalcom {
         margin-top: 140px;
         padding: 20px;
-        background-color: #fff;
+        background-color: #18171f;
         border-radius: 20px;
         display: flex;
 
@@ -1100,7 +1101,7 @@ export default {
             margin-bottom: 10px;
 
             .tb {
-              color: #5a51a8;
+              color: #dd0000;
               font-size: 16px;
               display: inline-block;
               margin-left: 60px;
@@ -1109,7 +1110,7 @@ export default {
               .num {
                 font-size: 18px;
                 font-weight: bold;
-                color: #333333;
+                color: #ffffff;
               }
             }
           }
@@ -1119,7 +1120,7 @@ export default {
           width: 50%;
 
           .tit {
-            color: #333333;
+            color: #ffffff;
             font-weight: bold;
             font-size: 18px;
           }
@@ -1155,7 +1156,7 @@ export default {
 
           .tis {
             line-height: 26px;
-            color: #333333;
+            color: #ffffff;
             text-align: right;
             width: 320px;
           }
@@ -1166,8 +1167,8 @@ export default {
             font-size: 18px;
             font-weight: bold;
             text-align: center;
-            color: #333333;
-            background-color: #fdd333;
+            color: #ffffff;
+            background-color: #dd0000;
             border-radius: 8px;
             margin-top: 20px;
             cursor: pointer;
@@ -1215,20 +1216,20 @@ export default {
         }
 
         .des {
-          color: #fdd333;
+          color: #bbbbbe;
         }
       }
 
       .my_pre {
         margin-bottom: 20px;
         padding: 20px;
-        background-color: #fff;
+        background-color: #18171f;
         border-radius: 20px;
         display: flex;
 
         .li {
           width: 50%;
-          color: #333333;
+          color: #ffffff;
           font-size: 16px;
           text-align: center;
           line-height: 20px;

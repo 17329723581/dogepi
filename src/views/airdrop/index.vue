@@ -1,6 +1,6 @@
 <template>
 	<div class="airdrop bg">
-		<canvas id="airdrop"></canvas>
+		<!--<canvas id="airdrop"></canvas>-->
 		<div class="bg-moon"></div>
 		<div class="header-background">
 			<!-- 导航 -->
@@ -22,15 +22,8 @@
 		<div class="rules container" v-if="rate_state == 1">
 			<airdrop></airdrop>
 		</div>
-		<locked-mining class="top10"></locked-mining>
-		<div class="rules container">
-			<roadmap></roadmap>
-			<tokenomics style="margin-top: -2.5%;"></tokenomics>
-		</div>
-		<answers></answers>
-		<div class="footer">
-			<footer-cmp></footer-cmp>
-		</div>
+		<bdoge></bdoge>
+		<footer-cmp></footer-cmp>
 	</div>
 </template>
 
@@ -40,16 +33,13 @@
 		mapActions,
 		mapMutations
 	} from "vuex";
-
+	import bdoge from "../home/Harry/bdoge.vue";
 	import headerCmp from "../home/components/headerCmp.vue";
 	import airdroptop from "./components/airdroptop.vue";
 	import airdrop from "./components/airdrop.vue";
 	import amount from "./components/amount.vue";
 	import linkc from "./components/linkc.vue";
 	import footerCmp from "../home/footer/footerCmp.vue";
-	import lockedMining from "../home/components/lockedMining.vue";
-	import roadmap from "../home/roadmap/roadmap.vue";
-	import tokenomics from "../home/tokenomics/tokenomics.vue";
 	import answers from "../home/answers/answers.vue";
 	import banner from "./components/banner.vue";
 	import airdrops from "../promo/components/airdrops.vue";
@@ -103,12 +93,10 @@
 			amount,
 			linkc,
 			footerCmp,
-			lockedMining,
-			roadmap,
-			tokenomics,
 			answers,
 			airdrop,
-			airdrops
+			airdrops,
+			bdoge
 		},
 		created() {},
 		mounted() {
@@ -169,7 +157,7 @@
 
 	@media screen and (min-width: 768px) {
 		.header-background {
-			background: rgba(33, 21, 59, 0.8);
+			//background: rgba(33, 21, 59, 0.8);
 		}
 		.barnner{
 			margin-top: 12.5%;

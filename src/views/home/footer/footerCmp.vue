@@ -1,32 +1,30 @@
 <template>
-	<div class="warp" style="display: flex;">
-		<div class="container" style="position: relative;">
-			<div class="container-1">
-				<div class="title"> {{this.$t('Community')['title']}}</div>
-				<div class="content">{{this.$t('Community')['text']}}</div>
-				<div class="bunt" @click="Jump(buttext)">
-					{{this.$t('Community')['buttext']}}
-				</div>
-			</div>
-			<div style="width: 100%;height: 0px;border: 1px solid #707070;opacity: 1;float: left;margin-top: 10%;">
-			</div>
-			<div style="width: 100%;float: left;margin-top: 5%;">
-				<div class="c">
-					<p style="font-size: 1rem;color: #FFFFFF;"><!-- If you have any question, please contact usCopyright ©
-						2021 SpacePi. All Rights Reserved -->{{this.$t('footer1')}} {{this.$t('footer2')}}</p>
-				</div>
-				<div class="b-c-img">
-					<img @click="Jump(url[0])" src="../../../assets/twitter-fill.png" class="c-img" />
-					<img @click="Jump(url[1])" src="../../../assets/telegram.png" class="c-img" />
-					<img @click="Jump(url[2])" src="../../../assets/discord.png" class="c-img" />
-					<img @click="Jump(url[3])" src="../../../assets/reddit.png" class="c-img" />
-					<img @click="Jump(url[4])" src="../../../assets/github.png" class="c-img" />
-					<img @click="Jump(url[5])" src="../../../assets/medium.png" class="c-img" />
-					<img @click="Jump(url[6])" src="../../../assets/copy.png" class="c-img" />
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="section__footer wf-section">
+            <div class="container-1440">
+                <div class="footer-wrap">
+                    <p class="p footer">{{this.$t('index_footer_text1')}}<br><br>{{this.$t('index_footer_text2')}}</p>
+                    <div class="footer-country-link">{{this.$t('index_footer_link')}}</div>
+                    <div class="footer-soc-wrap">
+                        <a data-w-id="a5635a4e-89b7-9198-04ba-a93660281b0e" href="https://t.me/ShibaInu_Dogecoinkiller" target="_blank" class="soc-link w-inline-block"><img src="@/assets/ico-tel.svg" loading="lazy" alt="" class="soc-link--img">
+                            <div>Telegram<br></div>
+                        </a>
+                        <a href="https://twitter.com/shibtoken" target="_blank" class="soc-link w-inline-block"><img src="@/assets/ico-tw.svg" loading="lazy" alt="" class="soc-link--img">
+                            <div>Twitter</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container-1440">
+                    <div class="footer-bottom-wrap">
+                        <a href="https://blog.shibaswap.com/" target="_blank" class="footer--link">{{this.$t('footer_link1')}}</a>
+                        <a href="https://etherscan.io/token/0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE" target="_blank" class="footer--link">{{this.$t('footer_link2')}}</a>
+                        <a href="https://coinmarketcap.com/en/currencies/shiba-inu/" target="_blank" class="footer--link">{{this.$t('footer_link3')}}</a>
+                        <a href="https://www.coingecko.com/en/coins/shiba-inu" target="_blank" class="footer--link">{{this.$t('footer_link4')}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 </template>
 
 <script>
@@ -60,179 +58,20 @@
 </script>
 
 <style scoped lang="less">
-	.warp {
-		width: 100%;
-		
-		// height: 32.375rem;
-
-		background: #131A21;
-		opacity: 1;
-		border-radius: 0px;
-		padding-top: 2.5rem;
-		padding-bottom: 2.5rem;
-
-		.c {
-			width: 70%;
-			float: left;
-		}
-
-		.b-c-img {
-			width: 30%;
-			float: right;
-
-			.c-img {
-				margin-left: 0.9375rem;
-				width: 5%;
-			}
-		}
-
-		.container-1 {
-			float: left;
-			width: 30%;
-
-			.title {
-				font-size: 1.5rem;
-				font-family: DIN;
-				font-weight: bold;
-				color: #FFFFFF;
-				opacity: 1;
-			}
-
-			.content {
-				margin-top: 0.9375rem;
-				font-size: 15px;
-				font-family: DIN;
-				font-weight: 400;
-				color: #FDD333;
-				opacity: 1;
-			}
-
-			.bunt {
-				margin-top: 0.9375rem;
-				width: 109px;
-				height: 46px;
-				background: #FDD333;
-				opacity: 1;
-				border-radius: 12px;
-				font-size: 18px;
-				font-family: DIN;
-				font-weight: bold;
-				line-height: 2.5rem;
-				color: #333333;
-				opacity: 1;
-				text-align: center;
-			}
-		}
-
-		.container-2 {
-			float: right;
-			width: 30%;
-
-			.title {
-				font-family: DIN;
-				font-weight: bold;
-				color: #FFFFFF;
-				opacity: 1;
-				padding-bottom: 0.9375rem;
-				opacity: 0.5;
-				font-size: 1.125rem;
-			}
-
-			.text {
-				line-height: 1.5rem;
-				font-size: 1rem;
-				font-family: DIN;
-				font-weight: 400;
-				color: #FFFFFF;
-				opacity: 1;
-			}
-		}
-
-	}
-
-	@media screen and (max-width: 768px) {
-		.warp {
-			//height: 35rem;
-			
-			.c {
-				width: 100%;
-				float: left;
-			}
-
-			.b-c-img {
-				width: 100%;
-				text-align: center;
-				margin-top: 5%;
-
-				.c-img {
-					margin: 4%;
-					width: 5%;
-				}
-			}
-
-			.container-1 {
-				float: left;
-				width: 100%;
-
-				.title {
-					font-size: 1.5rem;
-					font-family: DIN;
-					font-weight: bold;
-					color: #FFFFFF;
-					opacity: 1;
-				}
-
-				.content {
-					margin-top: 0.9375rem;
-					font-size: 15px;
-					font-family: DIN;
-					font-weight: 400;
-					color: #FDD333;
-					opacity: 1;
-				}
-
-				.bunt {
-					margin-top: 5rem;
-					width: 109px;
-					height: 46px;
-					background: #FDD333;
-					opacity: 1;
-					border-radius: 12px;
-					font-size: 18px;
-					font-family: DIN;
-					font-weight: bold;
-					line-height: 3.5rem;
-					color: #333333;
-					opacity: 1;
-					text-align: center;
-				}
-			}
-
-			.container-2 {
-				float: right;
-				width: 100%;
-
-				.title {
-					padding-top: 3.125rem;
-					font-family: DIN;
-					font-weight: bold;
-					color: #FFFFFF;
-					opacity: 1;
-					padding-bottom: 15px;
-					opacity: 0.5;
-					font-size: 1.125rem;
-				}
-
-				.text {
-					line-height: 1.5rem;
-					font-size: 1rem;
-					font-family: DIN;
-					font-weight: 400;
-					color: #FFFFFF;
-					opacity: 1;
-				}
-			}
-		}
-
-	}
+	@import "../../../styles/shiba-ui";
+	p{
+       max-width: 550px;
+       font-family: Khula, sans-serif;
+       color: #bbbbbe;
+       font-size: 18px;
+       line-height: 32px;
+   }
+   .art_p{
+       max-width: 1440px;
+       font-family: Khula, sans-serif;
+       color: #bbbbbe;
+       font-size: 18px;
+       line-height: 32px;
+   }
+	
 </style>
