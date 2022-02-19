@@ -106,7 +106,7 @@
                   alt=""
                   class="coin-box--coin"
                 /><img
-                  src="images/coin-shad-1.png"
+                  src="@/assets/coin-shad-1.png"
                   loading="lazy"
                   data-w-id="ed2e5c3e-6418-f76d-e3e5-0b4ed0021441"
                   alt=""
@@ -114,13 +114,13 @@
                 />
               </div>
               <img
-                src="images/coin-elip.png"
+                src="@/assets/coin-elip.png"
                 loading="lazy"
                 sizes="(max-width: 991px) 100vw, 1000px"
                 srcset="
-                  images/coin-elip-p-500.png  500w,
-                  images/coin-elip-p-800.png  800w,
-                  images/coin-elip.png       1050w
+                  @/assets/coin-elip-p-500.png  500w,
+                  @/assets/coin-elip-p-800.png  800w,
+                  @/assets/coin-elip.png       1050w
                 "
                 alt=""
                 class="coin-box-elip-bg"
@@ -134,7 +134,7 @@
                   target="_blank"
                   class="coin-box-graph w-inline-block"
                   ><img
-                    src="images/ico-graph-ora.svg"
+                    src="@/assets/ico-graph-ora.svg"
                     loading="lazy"
                     alt=""
                     class="coin-box-graph--ico"
@@ -158,7 +158,7 @@
                   alt=""
                   class="coin-box--coin"
                 /><img
-                  src="images/coin-shad-2.png"
+                  src="@/assets/coin-shad-2.png"
                   loading="lazy"
                   data-w-id="843ffd8a-d36c-f041-fb50-a761f94669bd"
                   alt=""
@@ -166,13 +166,13 @@
                 />
               </div>
               <img
-                src="images/coin-elip.png"
+                src="@/assets/coin-elip.png"
                 loading="lazy"
                 sizes="(max-width: 991px) 100vw, 1000px"
                 srcset="
-                  images/coin-elip-p-500.png  500w,
-                  images/coin-elip-p-800.png  800w,
-                  images/coin-elip.png       1050w
+                  @/assets/coin-elip-p-500.png  500w,
+                  @/assets/coin-elip-p-800.png  800w,
+                  @/assets/coin-elip.png       1050w
                 "
                 alt=""
                 class="coin-box-elip-bg"
@@ -210,7 +210,7 @@
                   alt=""
                   class="coin-box--coin"
                 /><img
-                  src="images/coin-shad-2.png"
+                  src="@/assets/coin-shad-2.png"
                   loading="lazy"
                   data-w-id="92350250-cbd3-7ab4-8c35-1b31729fc82a"
                   alt=""
@@ -218,13 +218,13 @@
                 />
               </div>
               <img
-                src="images/coin-elip.png"
+                src="@/assets/coin-elip.png"
                 loading="lazy"
                 sizes="(max-width: 991px) 100vw, 1000px"
                 srcset="
-                  images/coin-elip-p-500.png  500w,
-                  images/coin-elip-p-800.png  800w,
-                  images/coin-elip.png       1050w
+                  @/assets/coin-elip-p-500.png  500w,
+                  @/assets/coin-elip-p-800.png  800w,
+                  @/assets/coin-elip.png       1050w
                 "
                 alt=""
                 class="coin-box-elip-bg"
@@ -238,7 +238,7 @@
                   target="_blank"
                   class="coin-box-graph w-inline-block"
                   ><img
-                    src="images/ico-graph-ora.svg"
+                    src="@/assets/ico-graph-ora.svg"
                     loading="lazy"
                     alt=""
                     class="coin-box-graph--ico"
@@ -474,101 +474,99 @@
       </div>
       <div id="particles-js3" class="particle-class"></div>
     </div>
-    <div id="art" class="section__art wf-section">
+
+    <div id="roadmap" class="section__htb wf-section">
       <div class="container-1440">
-        <div class="art-wrap">
-            <div class="box box2 box5">
-                <p class="p1 animate__animated animate__zoomIn">ROADMAP</p>
-                <div class="localImg animate__animated animate__zoomIn">
-                        <div>
-                            <img class="local box5-local-init local1 animate__animated animate__fadeIn" src="img/local.png">
-                        </div>
-                        <div>
-                            <img class="local local2 animate__animated animate__fadeIn" src="img/local.png">
-                        </div>
-                        <div>
-                            <img class="local local3 animate__animated animate__fadeIn" src="img/local.png">
-                        </div>
-                        <div>
-                            <img class="local local4 animate__animated animate__fadeIn" src="img/local.png">
-                        </div>
-                    </div>
+        <div class="htb-wrap">
+    
+          <div class="htb-sg-wrap">
+            <h2 class="h1">ROADMAP</h2>
+            <div class="qsg-wrap">
+              <div class="qsg-line">
+                <div class="qsg-line-left">
+                  <div class="harrypronumberwrap">
+                    <div>2022 Q1</div>
+                  </div>
+                  <div class="qsg-kingpro-line"></div>
+                </div>
+                <div class="qsg-line-right">
+                  <h3 class="h3 qsg harryh3pro">
+                    <ul class="text-ul">
+                      <li><p class="p">SKP is online.</p></li>
+                      <li><p class="p">code audit.</p></li>
+                      <li><p class="p">Official website online (partial functions) open.</p></li>
+                      <li><p class="p">The Ministry of Finance's regular repurchase SKP function is open.</p></li>
+                    </ul>
+                  </h3>
+                  <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
+                </div>
+              </div>
+              <div class="qsg--divider"></div>
+              <div class="qsg-line">
+                <div class="qsg-line-left">
+                  <div class="harrypronumberwrap">
+                    <div>2022 Q2</div>
+                  </div>
+                  <div class="qsg-kingpro-line"></div>
+                </div>
+                <div class="qsg-line-right">
+                  <h3 class="h3 qsg harryh3pro">
+                    <ul class="text-ul">
+                      <li><p class="p">SKP is online.</p></li>
+                      <li><p class="p">code audit.</p></li>
+                      <li><p class="p">Official website online (partial functions) open.</p></li>
+                      <li><p class="p">The Ministry of Finance's regular repurchase SKP function is open.</p></li>
+                    </ul>
+                  </h3>
+                  <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
+                </div>
+              </div>
+              <div class="qsg--divider"></div>
+              <div class="qsg-line">
+                <div class="qsg-line-left">
+                  <div class="harrypronumberwrap">
+                    <div>2022 Q3</div>
+                  </div>
+                  <div class="qsg-kingpro-line"></div>
+                </div>
+                <div class="qsg-line-right">
+                  <h3 class="h3 qsg harryh3pro">
+                    <ul class="text-ul">
+                      <li><p class="p">SKP is online.</p></li>
+                      <li><p class="p">code audit.</p></li>
+                      <li><p class="p">Official website online (partial functions) open.</p></li>
+                      <li><p class="p">The Ministry of Finance's regular repurchase SKP function is open.</p></li>
+                    </ul>
+                  </h3>
+                  <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
+                </div>
+              </div>
+              <div class="qsg--divider"></div>
+              <div class="qsg-line">
+                <div class="qsg-line-left">
+                  <div class="harrypronumberwrap">
+                    <div>2022 Q4</div>
+                  </div>
+                  <div class="qsg-kingpro-line"></div>
+                </div>
+                <div class="qsg-line-right">
+                  <h3 class="h3 qsg harryh3pro">
+                    <ul class="text-ul">
+                      <li><p class="p">SKP is online.</p></li>
+                      <li><p class="p">code audit.</p></li>
+                      <li><p class="p">Official website online (partial functions) open.</p></li>
+                      <li><p class="p">The Ministry of Finance's regular repurchase SKP function is open.</p></li>
+                    </ul>
+                  </h3>
+                  <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
+                </div>
+              </div>
             </div>
-        </div>
-      </div>
-    </div>
-    <div id="rescue" class="section__res wf-section">
-      <div class="container-1440">
-        <div class="res-wrap">
-          <div class="res-left">
-            <h2 class="h1">{{ this.$t("index_res_title") }}</h2>
-            <p class="p">
-              From the tips of their noses to the ends of their tails, Shiba Inu
-              are intelligent, brave, and independent, with an equal propensity
-              for loyalty and mischief. Sadly, the characteristics which make
-              them extraordinary are the same ones which make them a challenging
-              pet. Inexperienced owners can find themselves unprepared for a dog
-              that’s known for its bold (i.e. stubborn) personality.<br /><br />Luckily,
-              we are helping these dogs in real life! We use
-              <span class="p--orange">Amazon Smile</span> to collect and donate
-              a percentage of your Amazon purchases to the
-              <span class="p--white">Shiba Inu Rescue Association</span>.
-              Joining is easy and free! Just use
-              <a
-                href="https://smile.amazon.com/"
-                target="_blank"
-                class="p--orange link"
-                >smile.amazon.com</a
-              >
-              when placing orders and select Shiba Inu Rescue Association (a
-              501(c)3, preferred non-profit organization). You’re seconds away
-              from helping Shibs in need. Start funding shelters today.<br />
-            </p>
-          </div>
-          <div
-            data-w-id="04298f40-69ca-3e97-8fee-d4180b757b0d"
-            class="res-right"
-          >
-            <a
-              href="https://smile.amazon.com/"
-              target="_blank"
-              class="cta-btn rescue w-inline-block"
-            >
-              <div class="cta-btn__txt rescue">Rescue Me</div>
-              <div class="cta-btn__bg rescue"></div>
-              <img
-                src="@/assets/meat-1.svg"
-                loading="lazy"
-                style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                data-w-id="c4e48c19-491e-822a-2e2f-c507530816ba"
-                alt=""
-                class="meat"
-              /><img
-                src="images/meat-3.svg"
-                loading="lazy"
-                style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                data-w-id="0e3bf491-2f5d-7b48-b67a-fc1b114afdc2"
-                alt=""
-                class="meat _3"
-              /><img
-                src="images/meat-2.svg"
-                loading="lazy"
-                style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                data-w-id="2bc470fd-6d73-195c-ea57-a463e440188a"
-                alt=""
-                class="meat _2"
-              /> </a
-            ><img
-              src="@/assets/logo-amazon.svg"
-              loading="lazy"
-              alt=""
-              class="res-amazon"
-            />
           </div>
         </div>
       </div>
-      <div id="particles-js4" class="particle-class"></div>
     </div>
+
     <div id="community" class="section__com wf-section">
       <div class="container-1440">
         <div class="com-wrap">
@@ -682,6 +680,18 @@ p {
   font-size: 18px;
   line-height: 32px;
 }
+ .harrypronumberwrap {
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+        color: #fff;
+    }
+  .harryh3pro{
+        margin-left: 1vw;
+        font-size: 20px;
+        text-align: center;
+        color: #bbbbbe;
+  }
 //TOKENOMICS
 .box4 .pink{
     font-size:2vw;
@@ -719,6 +729,8 @@ p {
     .box4 .t3-l{
         margin-bottom:10vw
     }
+
+
 }
 </style>
 <style>
@@ -839,4 +851,6 @@ html {
 html.wf-loading * {
   opacity: 0;
 }
+
+
 </style>

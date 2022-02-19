@@ -2,7 +2,7 @@
   <div>
     <div class="section__hero wf-section">
       <div class="hover-div"  style="position: absolute;z-index:9" onmousemove="color_hover(event)"></div>
-      <canvas  class="banner_canvas" id="canvas_banner" style="position: absolute;z-index:9"></canvas>
+      <canvas class="banner_canvas" id="canvas_banner" style="position: absolute;z-index:9"></canvas>
       <div class="box box1">
         <img class="bg-loading" src="@/assets/loading.png" />
         <img class="bg-skp" src="@/assets/skp.png" />

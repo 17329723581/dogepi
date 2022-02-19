@@ -5,10 +5,10 @@
                     <p class="p footer">{{this.$t('index_footer_text1')}}<br><br>{{this.$t('index_footer_text2')}}</p>
                     <div class="footer-country-link">{{this.$t('index_footer_link')}}</div>
                     <div class="footer-soc-wrap">
-                        <a data-w-id="a5635a4e-89b7-9198-04ba-a93660281b0e" href="https://t.me/ShibaInu_Dogecoinkiller" target="_blank" class="soc-link w-inline-block"><img src="@/assets/ico-tel.svg" loading="lazy" alt="" class="soc-link--img">
+                        <a data-w-id="a5635a4e-89b7-9198-04ba-a93660281b0e" href="https://t.me/BSC_BDOGE" target="_blank" class="soc-link w-inline-block"><img src="@/assets/ico-tel.svg" loading="lazy" alt="" class="soc-link--img">
                             <div>Telegram<br></div>
                         </a>
-                        <a href="https://twitter.com/shibtoken" target="_blank" class="soc-link w-inline-block"><img src="@/assets/ico-tw.svg" loading="lazy" alt="" class="soc-link--img">
+                        <a href="https://twitter.com/BDOGE_Coins" target="_blank" class="soc-link w-inline-block"><img src="@/assets/ico-tw.svg" loading="lazy" alt="" class="soc-link--img">
                             <div>Twitter</div>
                         </a>
                     </div>
