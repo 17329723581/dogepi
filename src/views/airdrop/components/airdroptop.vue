@@ -31,11 +31,11 @@
 							<img class="but-img" src="@/assets/telegram-y.png" alt="" />
 						</div>
 						<div class="but-b" v-if="!address" @click="connect"
-							style="width: 14.375rem;background: #FDD333;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
+							style="width: 14.375rem;background: #fa0000;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
 							{{this.$t("a_top_but")}}
 						</div>
 						<div class="but-b" v-if="address" @click="logout"
-							style="width: 14.375rem;background: #FDD333;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
+							style="width: 14.375rem;background:#fa0000;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
 							{{this.$t("a_top_but1")}}
 						</div>
 					</div>
@@ -79,11 +79,11 @@
 							<img class="but-img" src="@/assets/telegram-y.png" alt="" />
 						</div>
 						<div class="but-b" v-if="!address" @click="connect"
-							style="width: 14.375rem;background: #FDD333;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
+							style="width: 14.375rem;background: #fa0000;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
 							{{this.$t("a_top_but")}}
 						</div>
 						<div class="but-b" v-if="address" @click="logout"
-							style="width: 14.375rem;background: #FDD333;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
+							style="width: 14.375rem;background: #fa0000;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
 							{{this.$t("a_top_but1")}}
 						</div>
 					</div>
@@ -502,7 +502,7 @@
 			ul {
 				display: flex;
 				// justify-content:center;
-				color: #FDD333;
+				color: #ffffff;
 				font-family: DIN;
 				margin-top: -10px;
 				font-size: 20px;
@@ -568,12 +568,13 @@
 					display: flex;
 					width: 3rem;
 					height: 3rem;
-					background: #FFFFFF;
+					background: #18171f;
 					float: left;
 					margin-right: 2.4375rem;
 					align-items: center;
 					text-align: center;
 					justify-content: center;
+					color:#ffffff;
 
 					.but-img {
 						width: 1.25rem;
@@ -588,7 +589,7 @@
 				font-size: 1.25rem;
 				font-family: DIN;
 				font-weight: 400;
-				color: #FDD333;
+				color: #ffffff;
 			}
 
 
@@ -760,7 +761,7 @@
 				ul {
 					display: flex;
 					// justify-content:center;
-					color: #FDD333;
+					color: #ffffff;
 					font-family: DIN;
 					margin-top: 5px;
 					font-size: 1rem;

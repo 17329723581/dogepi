@@ -33,10 +33,10 @@
 					</div>
 					<div class="car-c" style="margin-top: 25px;">
 						<div
-							style="width: 81%;height: 44px;background: #FDD333;opacity: 1;border-radius: 8px;display: flex;align-items: center;text-align: center;justify-content:center;">
+							style="width: 81%;height: 44px;background: #fa0000;opacity: 1;border-radius: 8px;display: flex;align-items: center;text-align: center;justify-content:center;">
 							<img style="width: 1rem;height: 1rem;background-size: cover;object-fit: cover;"
 								src="@/assets/i.png" alt="" />&nbsp;&nbsp;<span
-								style="font-size: 1rem;font-family: DIN;font-weight: bold;color: #333333;">{{this.$t("a_top_amount_c")}}</span>
+								style="font-size: 1rem;font-family: DIN;font-weight: bold;color: #ffffff;">{{this.$t("a_top_amount_c")}}</span>
 						</div>
 					</div>
 				</div>
@@ -70,9 +70,9 @@
 				</div>
 				<div style="width: 100%;padding-top: 15px;display: flex;">
 					<div
-						style="width: 100%;height: 40px;background: #ffffff;opacity: 1;border-radius: 6px;display: flex;align-items: center;text-align: center;justify-content:center;">
+						style="width: 100%;height: 40px;background:  #fa0000;opacity: 1;border-radius: 6px;display: flex;align-items: center;text-align: center;justify-content:center;">
 						<span
-							style="font-size:1rem;font-family: DIN;font-weight: bold;color: #333333;">
+							style="font-size:1rem;font-family: DIN;font-weight: bold;color: #ffffff;">
 							<img style="width: 0.9rem;height: 0.9rem;background-size: cover;object-fit: cover;" src="@/assets/i.png"
 							alt="" /> {{this.$t("a_top_amount_c")}}</span>
 					</div>
@@ -271,8 +271,8 @@ export default {
 			width: 100%;
 			float: left;
 			height: 14.8125rem;
-			background: #FFFFFF;
-			border: 1px solid #707070;
+			background: #18171f;
+			border: 1px solid #18171f;
 			opacity: 1;
 			border-radius: 20px;
 			padding-left: 50px;
@@ -297,14 +297,14 @@ export default {
 					font-size: 1.125rem;
 					font-family: DIN;
 					font-weight: 400;
-					color: #333333;
+					color: #ffffff;
 				}
 
 				.car-text {
 					font-size: 2rem;
 					font-family: DIN;
 					font-weight: bold;
-					color: #5A51A8;
+					color: #ffffff;
 
 				}
 			}
