@@ -130,8 +130,8 @@ const locale = {
 	p_t_desc1_btn:'Available',
 
 // 首页
-index_text1:'COMMUNITY-DRIVEN DAO ECOSYSTEM',
-index_text2:"POWERED BY SHIBKING PRO'S SKP TOKEN",
+index_text1:'Community driven DOA ecosystem',
+index_text2:"Supported by bdoge token",
 // index_introduce_title1:'社区驱动的DOA生态系统',
 // index_introduce_title2:'由BDOGE  TOKEN提供支持',
 //index_introduce_text:'SHIB, LEASH, BONE — ShibaSwap — Innovative Reward System — The Shiba Incubator — And more. 585k+ Community Members and Growing Fast!',
