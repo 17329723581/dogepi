@@ -129,8 +129,147 @@ const locale = {
 	p_t_desc1_num:'20,000,000,000,000 SpacePi',
 	p_t_desc1_btn:'Available',
 
+// 首页
+index_text1:'COMMUNITY-DRIVEN DAO ECOSYSTEM',
+index_text2:"POWERED BY SHIBKING PRO'S SKP TOKEN",
+// index_introduce_title1:'社区驱动的DOA生态系统',
+// index_introduce_title2:'由BDOGE  TOKEN提供支持',
+//index_introduce_text:'SHIB, LEASH, BONE — ShibaSwap — Innovative Reward System — The Shiba Incubator — And more. 585k+ Community Members and Growing Fast!',
+// index_introduce_btn1:'How to Buy',
+//index_introduce_btn2:'Read WoofPaper v2',
 
-	// 首页
+index_ecosystem_title:'About bdoge and ecosystem',
+//index_ecosystem_text1_start:'From its inception, Shiba Inu has done things differently. Starting with a supply of 1 quadrillion, our founder, Ryoshi, locked 50% in Uniswap, then “burned” the other half to Ethereum co-founder',
+//index_ecosystem_text1_middle:'Vitalik Buterin',
+//index_ecosystem_text1_end:'for safekeeping.',
+index_ecosystem_text:'The development team has developed bdoge, which provides users with a more perfect blockchain experience and provides help and services for global de neutral users! At the same time, bdoge token was born as the token of bdoge ecology. Bdoge will convene all digital currency explorers to jointly create a decentralized ecology of bdoge. Bdoge ecological core includes a series of applications such as NFT to game metauniverse bdogeswap. Look forward to it!',
+
+//index_ecosystem_text2_start:'To help reverse the devastating spread of Covid-19 in India, VB has since utilized SHIB in the largest crypto donation in history, and then',
+//index_ecosystem_text2_middle:'actually',
+//index_ecosystem_text2_end:'burned 40% of its total supply to a dead wallet, ensuring our long-term success and stability. In the words of Ryoshi, “Thank you to the woofmeister for enabling true decentralization. Now we truly begin.”',
+
+index_eco:['Liquidity Locked to Uniswap',"India's Covid Relief Fund",'Vitalik Buterin Burn'],
+
+index_coin:[{
+	title:'BDOGE Token',
+	label:'See Live Charts',
+	text:"Bdoge token is the only basic currency in the bdoge ecosystem. It will serve various applications in the bdoge ecosystem. With the continuous improvement of the ecosystem, the value of bdoge token will be infinitely magnified. Bdoge token will log in at Qian'an for the first time",
+},{
+	title:'BDOGE',
+	label:'See Live Charts',
+	text:'The application currently developed by the team is bdoge, which provides users with a comprehensive CMC platform integrating digital currency website navigation, project promotion, contract detection and marketing services according to intelligent algorithms. Bdoge will create a simple and efficient digital experience for users, realize the high integration of decentralization and reality, and make the encrypted world simple and intuitive!',
+},{
+	title:'BDOGE DAO',
+	label:'See Live Charts',
+	text:'With the support of bdoge token, bdoge will establish a community driven Dao ecosystem. The main agenda of the community will be voted by all members. Community members have the right to vote on their own ideas and decide the development route of bdoge according to the number of votes!',
+}],
+
+index_cta_title:'How to purchase bdoge',
+index_cta_text:"Bdoge will log in to the decentralized exchange pancakeswap of Qian'an. You can use the blockchain browser to open the pancake exchange in your frequently used wallet for exchange. After the exchange is completed, you may need to add a contract address to display the balance. At this point, you will become an important member of the bdoge community and can participate in the dividends and services of bdoge ecology!",
+index_cta_btn1:'Buy SHIB',
+index_cta_btn2:'Buy LEASH',
+
+index_qsg_title:'Quick Start Guide',
+index_qsg:[{
+	title:'Create MetaMask wallet',
+	text:'Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send, and receive SHIB or LEASH.',
+},{
+	title:'Send ETH to your wallet',
+	text:'You can buy Ethereum (ETH) directly on MetaMask or transfer it to your MetaMask Wallet from exchanges like Coinbase, Binance, etc. Make sure to use the ERC-20 network when transfering ETH.',
+},{
+	title:'Connect your wallet to ShibaSwap',
+	text:'Access your wallet to ShibaSwap by clicking ‘Connect to a wallet’ and selecting MetaMask.',
+},{
+	title:'Swap ETH for SHIB, LEASH or BONE',
+	text:'You can start swapping as soon as you have ETH available! Press ‘Select a token’ and enter the token address or search for it on the tokens list.',
+}],
+
+index_cta_btn3:'Use ShibaSwap',
+index_certik_title:'ShibaSwap',
+index_certik_On:'On board',
+index_cta_btn4:'Audit Report',
+
+index_tokenomics_title:'TOKENOMICS',
+index_tokenomics_text:'SKP infuses traditional venture capital with community spirit through open governance, support and inclusion backed by a pioneering financial mechanism. SKP ecosystem will implement the DAO structure over time to achieve decentralization.',
+index_tokenomics1:[{
+	title1:'1000',
+	title2:'trillion',
+	text:'Total supply',
+},{
+	title1:'',
+	title2:'60%',
+	text:'Into DeadAddress',
+},{
+	title1:'1',
+	title2:'billion',
+	text:'The deflation limit',
+},{
+	title1:'262',
+	title2:'trillion',
+	text:'Initail circulation',
+}],
+index_tokenomics2:[{
+	title1:'',
+	title2:'',
+	text:'Mapping for the Shibking holders',
+},{
+	title1:'',
+	title2:'1%',
+	text:'Liquidity',
+},
+{
+	title1:'',
+	title2:'1%',
+	text:'Liquidity',
+},{
+	title1:'',
+	title2:'1%',
+	text:'Treasury',
+},{
+	title1:'',
+	title2:'9%',
+	text:'Reward(Shib and USDT)',
+},{
+	title1:'',
+	title2:'12%',
+	text:'Slippage',
+}],
+
+index_roadmap_title:'ROADMAP',
+index_roadmap:[{
+	title:'2022 Q1',
+	text1:'SKP is online.',
+	text2:'code audit.',
+	text3:'Official website online (partial functions) open.',
+	text4:"The Ministry of Finance's regular repurchase SKP function is open.",
+},{
+	title:'2022 Q2',
+	text1:'SKP is online.',
+	text2:'code audit.',
+	text3:'Official website online (partial functions) open.',
+	text4:"The Ministry of Finance's regular repurchase SKP function is open.",
+},{
+	title:'2022 Q3',
+	text1:'SKP is online.',
+	text2:'code audit.',
+	text3:'Official website online (partial functions) open.',
+	text4:"The Ministry of Finance's regular repurchase SKP function is open.",
+},{
+	title:'2022 Q4',
+	text1:'SKP is online.',
+	text2:'code audit.',
+	text3:'Official website online (partial functions) open.',
+	text4:"The Ministry of Finance's regular repurchase SKP function is open.",
+}],
+
+index_com_title:'Community',
+
+index_adress:'0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375',
+index_cta_btn5:'Copy to Clipboard',
+
+index_footer_text1:'Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate SHIB information.',
+index_footer_text2:'Using the links below, you can join our various groups alongside the 1M+ other members of the ShibArmy.',
+index_footer_link:'Click here to search for your preferred country!',
 	
 
 
@@ -174,7 +313,10 @@ const locale = {
 	footer_medium_url:'https://t.me/SpacePi_com',
 	footer_copy_url:'https://t.me/SpacePi_com',
 
-
+	footer_link1:'Medium',
+	footer_link2:'Etherscan',
+	footer_link3:'CoinMarketCap',
+	footer_link4:'CoinGecko',
 
 	// 预售
 	presell: "Presaling",

@@ -31,7 +31,7 @@
               {{ langName }}
               <a-icon type="caret-down" style="color: #5A51A8;" />
             </a>
-            <a-menu slot="overlay" class="dow" @click="changeLang">
+            <a-menu slot="overlay" class="dow" @click="changeLang" style="z-index:99999">
               <a-menu-item v-for="item of langList" :key="item.key">
                 <a href="javascript:;">{{ item.name }}</a>
               </a-menu-item>

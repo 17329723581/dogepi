@@ -3,15 +3,15 @@
     <div class="section__hero wf-section">
       <div class="hover-div"  style="position: absolute;z-index:9" onmousemove="color_hover(event)"></div>
       <canvas class="banner_canvas" id="canvas_banner" style="position: absolute;z-index:9"></canvas>
-      <div class="box box1">
+      <div class="box box1" style="position: absolute;">
         <img class="bg-loading" src="@/assets/loading.png" />
         <img class="bg-skp" src="@/assets/skp.png" />
         <div style="text-align:center;color: aliceblue;">
             <div class="p1 nodely animate__animated animate__backInUp">
-                COMMUNITY-DRIVEN DAO ECOSYSTEM
+                {{this.$t("index_text1")}}
             </div>
             <div class="p2 dely_1 animate__animated animate__backInUp">
-                POWERED BY SHIBKING PRO'S SKP TOKEN
+                {{this.$t("index_text2")}}
             </div>
         </div>
       </div>

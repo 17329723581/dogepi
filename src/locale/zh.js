@@ -131,10 +131,12 @@ const locale = {
 
 
 	// 首页
-	index_introduce_title1:'社区驱动的DOA生态系统',
-	index_introduce_title2:'由BDOGE  TOKEN提供支持',
+	index_text1:'社区驱动的DAO生态系统',
+	index_text2:"由BDOGE  TOKEN提供支持",
+	// index_introduce_title1:'社区驱动的DOA生态系统',
+	// index_introduce_title2:'由BDOGE  TOKEN提供支持',
 	//index_introduce_text:'SHIB, LEASH, BONE — ShibaSwap — Innovative Reward System — The Shiba Incubator — And more. 585k+ Community Members and Growing Fast!',
-	index_introduce_btn1:'How to Buy',
+	// index_introduce_btn1:'How to Buy',
 	//index_introduce_btn2:'Read WoofPaper v2',
 
 	index_ecosystem_title:'关于BDOGE和生态系统',
@@ -147,7 +149,7 @@ const locale = {
 	//index_ecosystem_text2_middle:'actually',
 	//index_ecosystem_text2_end:'burned 40% of its total supply to a dead wallet, ensuring our long-term success and stability. In the words of Ryoshi, “Thank you to the woofmeister for enabling true decentralization. Now we truly begin.”',
 
-	index_eco:['Liquidity Locked to Uniswap',"India's Covid Relief Fund",'Vitalik Buterin Burn'],
+	index_eco:['流动资金锁定Uniswap',"India's Covid Relief Fund",'Vitalik Buterin Burn'],
 
 	index_coin:[{
 		title:'BDOGE Token',
@@ -168,16 +170,16 @@ const locale = {
 	index_cta_btn1:'Buy SHIB',
 	index_cta_btn2:'Buy LEASH',
 
-	index_qsg_title:'Quick Start Guide',
+	index_qsg_title:'快速入门指南',
 	index_qsg:[{
-		title:'Create MetaMask wallet',
-		text:'Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send, and receive SHIB or LEASH.',
+		title:'创建MetaMask钱包',
+		text:'使用台式计算机或iOS/Android移动设备创建MetaMask钱包。这将允许你购买、出售、发送和接收SHIB或皮带。',
 	},{
 		title:'Send ETH to your wallet',
 		text:'You can buy Ethereum (ETH) directly on MetaMask or transfer it to your MetaMask Wallet from exchanges like Coinbase, Binance, etc. Make sure to use the ERC-20 network when transfering ETH.',
 	},{
-		title:'Connect your wallet to ShibaSwap',
-		text:'Access your wallet to ShibaSwap by clicking ‘Connect to a wallet’ and selecting MetaMask.',
+		title:'将您的钱包连接到ShibaSwap',
+		text:'点击“连接到钱包”并选择MetaMask，即可访问ShibaSwap的钱包。',
 	},{
 		title:'Swap ETH for SHIB, LEASH or BONE',
 		text:'You can start swapping as soon as you have ETH available! Press ‘Select a token’ and enter the token address or search for it on the tokens list.',
@@ -188,18 +190,86 @@ const locale = {
 	index_certik_On:'On board',
 	index_cta_btn4:'Audit Report',
 
-	index_art_title:'Art',
+	index_tokenomics_title:'TOKENOMICS',
+	index_tokenomics_text:'SKP通过开放的治理、支持和包容，以开创性的金融机制为后盾，为传统风险投资注入社区精神。SKP生态系统将逐步实施DAO结构，以实现权力下放。',
+	index_tokenomics1:[{
+		title1:'1000',
+		title2:'万亿',
+		text:'Total supply',
+	},{
+		title1:'',
+		title2:'60%',
+		text:'Into DeadAddress',
+	},{
+		title1:'1',
+		title2:'billion',
+		text:'The deflation limit',
+	},{
+		title1:'262',
+		title2:'万亿',
+		text:'Initail circulation',
+	}],
+	index_tokenomics2:[{
+		title1:'',
+		title2:'',
+		text:'Mapping for the Shibking holders',
+	},{
+		title1:'',
+		title2:'1%',
+		text:'Liquidity',
+	},
+	{
+		title1:'',
+		title2:'1%',
+		text:'Liquidity',
+	},{
+		title1:'',
+		title2:'1%',
+		text:'Treasury',
+	},{
+		title1:'',
+		title2:'9%',
+		text:'Reward(Shib and USDT)',
+	},{
+		title1:'',
+		title2:'12%',
+		text:'Slippage',
+	}],
 
-	index_res_title:'Rescue',
-	index_res_text:'',
+	index_roadmap_title:'路线图',
+	index_roadmap:[{
+		title:'2022年 第一季度',
+		text1:'SKP 上线.',
+		text2:'code audit.',
+		text3:'Official website online (partial functions) open.',
+		text4:"The Ministry of Finance's regular repurchase SKP function is open.",
+	},{
+		title:'2022年 第二季度',
+		text1:'SKP is online.',
+		text2:'code audit.',
+		text3:'Official website online (partial functions) open.',
+		text4:"The Ministry of Finance's regular repurchase SKP function is open.",
+	},{
+		title:'2022年 第三季度',
+		text1:'SKP is online.',
+		text2:'code audit.',
+		text3:'Official website online (partial functions) open.',
+		text4:"The Ministry of Finance's regular repurchase SKP function is open.",
+	},{
+		title:'2022年 第四季度',
+		text1:'SKP is online.',
+		text2:'code audit.',
+		text3:'Official website online (partial functions) open.',
+		text4:"The Ministry of Finance's regular repurchase SKP function is open.",
+	}],
 
-	index_com_title:'Community',
+	index_com_title:'社区',
 
 	index_adress:'0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375',
-	index_cta_btn5:'Copy to Clipboard',
+	index_cta_btn5:'复制到剪贴板',
 
-	index_footer_text1:'Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate SHIB information.',
-	index_footer_text2:'Using the links below, you can join our various groups alongside the 1M+ other members of the ShibArmy.',
+	index_footer_text1:'我们的社区一天比一天强大。请关注我们的社交平台，获取最新、准确的SHIB信息。',
+	index_footer_text2:'通过下面的链接，你可以加入我们的各种团体，与100多万名什巴米族的其他成员一起。',
 	index_footer_link:'Click here to search for your preferred country!',
 
 

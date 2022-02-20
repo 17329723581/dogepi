@@ -186,7 +186,7 @@
                   target="_blank"
                   class="coin-box-graph w-inline-block"
                   ><img
-                    src="images/ico-graph-ora.svg"
+                    src="@/assets/ico-graph-ora.svg"
                     loading="lazy"
                     alt=""
                     class="coin-box-graph--ico"
@@ -405,58 +405,65 @@
           <div class="ss-left">
             <div class="box box4">
               <div class="l animate__animated animate__fadeInDown">
-                <div class="t1">TOKENOMICS</div>
+                <div class="t1">{{ this.$t("index_tokenomics_title") }}</div>
                 <div class="t2">
-                  SKP infuses traditional venture capital with community spirit
-                  through open governance, support and inclusion backed by a
-                  pioneering financial mechanism. SKP ecosystem will implement
-                  the DAO structure over time to achieve decentralization.
+                  {{ this.$t("index_tokenomics_text") }}
                 </div>
                 <div class="t3">
                   <div class="t3-l animate__animated animate__fadeInBottomLeft">
                     <div>
-                      <span class="pink">1000</span>
-                      <span class="pink">trillion</span>
-                      <span class="pinks">&nbsp;Total supply</span>
+                      <span class="pink">{{ this.$t("index_tokenomics1")[0]['title1'] }}</span>
+                      <span class="pink">{{ this.$t("index_tokenomics1")[0]['title2'] }}</span>
+                      <span class="pinks">&nbsp;{{ this.$t("index_tokenomics1")[0]['text'] }}</span>
                     </div>
                     <div>
-                      <span class="pink">60%</span>
-                      <span class="pinks">&nbsp;Into DeadAddress</span>
+                      <span class="pink">{{ this.$t("index_tokenomics1")[1]['title1'] }}</span>
+                      <span class="pink">{{ this.$t("index_tokenomics1")[1]['title2'] }}</span>
+                      <span class="pinks">&nbsp;{{ this.$t("index_tokenomics1")[1]['text'] }}</span>
                     </div>
                     <div>
-                      <span class="pink">1</span>
-                      <span class="pink">billion</span>
-                      <span class="pinks">&nbsp;The deflation limit</span>
+                      <span class="pink">{{ this.$t("index_tokenomics1")[2]['title1'] }}</span>
+                      <span class="pink">{{ this.$t("index_tokenomics1")[2]['title2'] }}</span>
+                      <span class="pinks">&nbsp;{{ this.$t("index_tokenomics1")[2]['text'] }}</span>
                     </div>
                     <div>
-                      <span class="pink">262</span>
-                      <span class="pink">trillion</span>
-                      <span class="pinks">&nbsp;Initail circulation</span>
+                      <span class="pink">{{ this.$t("index_tokenomics1")[3]['title1'] }}</span>
+                      <span class="pink">{{ this.$t("index_tokenomics1")[3]['title2'] }}</span>
+                      <span class="pinks">&nbsp;{{ this.$t("index_tokenomics1")[3]['text'] }}</span>
                     </div>
                   </div>
                   <div
                     class="t3-r animate__animated animate__fadeInBottomRight"
                   >
-                    <div class="t3-r-1 pinks">Mapping for the Shibking holders</div>
-                    <div class="t3-r-2 pinks">
-                      <span>1%</span>
-                      <span>Destroy</span>
+                    <div class="t3-r-1 pinks">
+                      {{ this.$t("index_tokenomics2")[0]['title1'] }}
+                      {{ this.$t("index_tokenomics2")[0]['title2'] }}
+                      {{ this.$t("index_tokenomics2")[0]['text'] }}
                     </div>
                     <div class="t3-r-2 pinks">
-                      <span>1%</span>
-                      <span>Liquidity</span>
+                      <span>{{ this.$t("index_tokenomics2")[1]['title1'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[1]['title2'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[1]['text'] }}</span>
+                    </div>
+                    <div class="t3-r-2 pinks">
+                      <span>{{ this.$t("index_tokenomics2")[2]['title1'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[2]['title2'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[2]['text'] }}</span>
                     </div>
                     <div class="t3-r-3 pinks">
-                      <span>1%</span>
-                      <span>Treasury</span>
+                      <span>{{ this.$t("index_tokenomics2")[3]['title1'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[3]['title2'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[3]['text'] }}</span>
                     </div>
                     <div class="t3-r-4 pinks">
-                      <span>9%</span>
-                      <span>Reward(Shib and USDT)</span>
+                      <span>{{ this.$t("index_tokenomics2")[4]['title1'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[4]['title2'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[4]['text'] }}</span>
                     </div>
                     <div class="t3-r-5 pinks">
-                      <span>12%</span>
-                      <span>Slippage</span>
+                      <span>{{ this.$t("index_tokenomics2")[5]['title1'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[5]['title2'] }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[5]['text'] }}</span>
                     </div>
                   </div>
                 </div>
@@ -480,22 +487,22 @@
         <div class="htb-wrap">
     
           <div class="htb-sg-wrap">
-            <h2 class="h1">ROADMAP</h2>
+            <h2 class="h1">{{this.$t("index_roadmap_title")}}</h2>
             <div class="qsg-wrap">
               <div class="qsg-line">
                 <div class="qsg-line-left">
                   <div class="harrypronumberwrap">
-                    <div>2022 Q1</div>
+                    <div>{{this.$t("index_roadmap")[0].title}}</div>
                   </div>
                   <div class="qsg-kingpro-line"></div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
-                      <li><p class="p">SKP is online.</p></li>
-                      <li><p class="p">code audit.</p></li>
-                      <li><p class="p">Official website online (partial functions) open.</p></li>
-                      <li><p class="p">The Ministry of Finance's regular repurchase SKP function is open.</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[0].text1}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[0].text2}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[0].text3}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[0].text4}}</p></li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -505,17 +512,17 @@
               <div class="qsg-line">
                 <div class="qsg-line-left">
                   <div class="harrypronumberwrap">
-                    <div>2022 Q2</div>
+                    <div>{{this.$t("index_roadmap")[1].title}}</div>
                   </div>
                   <div class="qsg-kingpro-line"></div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
-                      <li><p class="p">SKP is online.</p></li>
-                      <li><p class="p">code audit.</p></li>
-                      <li><p class="p">Official website online (partial functions) open.</p></li>
-                      <li><p class="p">The Ministry of Finance's regular repurchase SKP function is open.</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[1].text1}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[1].text2}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[1].text3}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[1].text4}}</p></li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -525,17 +532,17 @@
               <div class="qsg-line">
                 <div class="qsg-line-left">
                   <div class="harrypronumberwrap">
-                    <div>2022 Q3</div>
+                    <div>{{this.$t("index_roadmap")[2].title}}</div>
                   </div>
                   <div class="qsg-kingpro-line"></div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
-                      <li><p class="p">SKP is online.</p></li>
-                      <li><p class="p">code audit.</p></li>
-                      <li><p class="p">Official website online (partial functions) open.</p></li>
-                      <li><p class="p">The Ministry of Finance's regular repurchase SKP function is open.</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[2].text1}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[2].text2}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[2].text3}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[2].text4}}</p></li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -545,17 +552,17 @@
               <div class="qsg-line">
                 <div class="qsg-line-left">
                   <div class="harrypronumberwrap">
-                    <div>2022 Q4</div>
+                    <div>{{this.$t("index_roadmap")[3].title}}</div>
                   </div>
                   <div class="qsg-kingpro-line"></div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
-                      <li><p class="p">SKP is online.</p></li>
-                      <li><p class="p">code audit.</p></li>
-                      <li><p class="p">Official website online (partial functions) open.</p></li>
-                      <li><p class="p">The Ministry of Finance's regular repurchase SKP function is open.</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[3].text1}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[3].text2}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[3].text3}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[3].text4}}</p></li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -591,7 +598,7 @@
             </div>
             <div class="adress-right">
               <a
-                data-clipboard-text="0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375"
+                :data-clipboard-text="index_adress"
                 href="#"
                 class="cta-copy w-inline-block"
               >
