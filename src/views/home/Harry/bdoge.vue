@@ -6,17 +6,10 @@
           <div class="eco-left">
             <h2 class="h1">{{ this.$t("index_ecosystem_title") }}</h2>
             <p class="p">
-              {{ this.$t("index_ecosystem_text") }}
-              <!--<span class="p--white">
-                                {{this.$t('index_ecosystem_text1_middle')}}
-                            </span>
-                            {{this.$t('index_ecosystem_text1_end')}}
-                            <br><br>
-                            {{this.$t('index_ecosystem_text2_start')}}
-                            <span class="p--white">
-                                {{this.$t('index_ecosystem_text2_middle')}}
-                            </span>
-                            {{this.$t('index_ecosystem_text2_end')}}-->
+              {{ this.$t("index_ecosystem_text1") }}
+            </p><br>
+            <p class="p">
+              {{ this.$t("index_ecosystem_text2") }}
             </p>
           </div>
           <div class="eco-right">
@@ -500,6 +493,7 @@
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
                       <li><p class="p">{{this.$t("index_roadmap")[0].text1}}</p></li>
+                      <li><p class="p">{{this.$t("index_roadmap")[0].text0}}</p></li>
                       <li><p class="p">{{this.$t("index_roadmap")[0].text2}}</p></li>
                       <li><p class="p">{{this.$t("index_roadmap")[0].text3}}</p></li>
                       <li><p class="p">{{this.$t("index_roadmap")[0].text4}}</p></li>
