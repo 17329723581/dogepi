@@ -833,7 +833,7 @@ export default {
     .input_com {
       margin: 20px 20px 0px 20px;
       height: 42px;
-      border: 1px solid #fdd333;
+      //border: 1px solid #fdd333;
       border-radius: 8px;
       position: relative;
       overflow: hidden;
@@ -883,7 +883,7 @@ export default {
       margin-top: 10px;
       text-align: left;
       display: flex;
-
+      color: #ffffff;
       img {
         display: inline;
         width: 12px;
@@ -897,6 +897,7 @@ export default {
       text-align: right;
       cursor: pointer;
       position: relative;
+      color: #ffffff;
 
       img {
         display: inline;
@@ -1179,7 +1180,7 @@ export default {
             width: 320px;
             text-align: left;
             display: flex;
-
+            color: #ffffff;
             img {
               display: inline;
               width: 12px;
@@ -1193,7 +1194,7 @@ export default {
             margin-top: 10px;
             text-align: right;
             cursor: pointer;
-
+            color: #ffffff;
             img {
               display: inline;
               width: 16px;
