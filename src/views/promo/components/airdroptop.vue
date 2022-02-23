@@ -34,11 +34,9 @@
 						</div>
 					</div>
 				</a-col>
-				<logo class="logo"></logo>
 			</a-row>
 		</div>
 		<div class="mobile">
-			<mLogo class="logo"></mLogo>
 			<a-col :md="12" :xs="24" class="presale-left">
 				<h1
 					style="text-align: center;font-size: 2.5rem;font-family: DIN;font-weight: bold;line-height: 3.5rem;">
@@ -90,8 +88,6 @@
 		abiObject,
 		getAbi
 	} from "utils/common";
-	import logo from "./logo.vue";
-	import mLogo from "./m-logo.vue";
 	const {
 		contractObject: PerSaleObj
 	} = getAbi(abiObject.PerSaleAbi);
@@ -127,8 +123,6 @@
 		},
 
 		components: {
-			logo,
-			mLogo
 		},
 		created() {
 			this.getOwner();

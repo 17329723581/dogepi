@@ -1,21 +1,92 @@
 <template>
   <div>
+    <div class="section__hero section__hero-s wf-section">
+      <div class="container-1440">
+        <div class="hero-wrap">
+          <div class="hero-left-wrap">
+            <h1 class="h1">
+              A Decentralized Meme Token that Evolved into a Vibrant Ecosystem
+            </h1>
+            <p class="p hero">
+              SHIB, LEASH, BONE — ShibaSwap — Innovative Reward System — The
+              Shiba Incubator — And more. 585k+ Community Members and Growing
+              Fast!
+            </p>
+            <div class="hero-btn-wrap">
+              <a href="#how-to-buy" class="cta-btn r-pad hero-m w-inline-block">
+                <div class="cta-btn__txt">How to Buy</div>
+                <div class="cta-btn__bg"></div>
+              </a>
+              <a
+                href="https://github.com/shytoshikusama/woofwoofpaper/raw/main/SHIBA_INU_WOOF_WOOF.pdf"
+                target="_blank"
+                class="cta-btn-transparent hero w-inline-block"
+              >
+                <div class="cta-btn__txt">Read WoofPaper v2</div>
+                <div class="cta-btn-transparent__gradhide"></div>
+                <div class="cta-btn-transparent__gradhide-red"></div>
+                <div class="cta-btn-transparent__animbox"></div>
+              </a>
+            </div>
+          </div>
+          <div class="hero-right-wrap">
+            <img
+              src="@/assets/hero-shib.png"
+              loading="eager"
+              alt=""
+              class="hero--art"
+            /><img
+              src="@/assets/moon.svg"
+              loading="eager"
+              alt=""
+              class="hero--moon"
+            />
+          </div>
+          <a href="#ecosystem" class="hero__scrollbtn w-inline-block"
+            ><img
+              src="@/assets/hero-scroll-shape.svg"
+              loading="eager"
+              alt=""
+              class="hero__scrollbtn--img"/><img
+              src="@/assets/hero-scroll-arr.svg"
+              loading="eager"
+              alt=""
+              class="hero__scrollbtn--arrow"/></a
+          ><img
+            src="@/assets/bg-glow.svg"
+            loading="eager"
+            style="opacity:0"
+            alt=""
+            class="hero-bg-glow"
+          />
+        </div>
+      </div>
+      <div id="particles-js" class="particle-class"></div>
+    </div>
     <div class="section__hero wf-section">
-      <div class="hover-div"  style="position: absolute;z-index:9" onmousemove="color_hover(event)"></div>
-      <canvas class="banner_canvas" id="canvas_banner" style="position: absolute;z-index:9"></canvas>
+      <div
+        class="hover-div"
+        style="position: absolute;z-index:9"
+        onmousemove="color_hover(event)"
+      ></div>
+      <canvas
+        class="banner_canvas"
+        id="canvas_banner"
+        style="position: absolute;z-index:9"
+      ></canvas>
       <div class="box box1" style="position: absolute;">
         <img class="bg-loading" src="@/assets/loading.png" />
         <img class="bg-skp" src="@/assets/skp.png" />
         <div style="text-align:center;color: aliceblue;">
-            <div class="p1 nodely animate__animated animate__backInUp">
-                {{this.$t("index_text1")}}
-            </div>
-            <div class="p2 dely_1 animate__animated animate__backInUp">
-                {{this.$t("index_text2")}}
-            </div>
+          <div class="p1 nodely animate__animated animate__backInUp">
+            {{ this.$t("index_text1") }}
+          </div>
+          <div class="p2 dely_1 animate__animated animate__backInUp">
+            {{ this.$t("index_text2") }}
+          </div>
         </div>
       </div>
-      
+
       <div class="container-1440">
         <div class="hero-wrap">
           <div class="hero-left-wrap"></div>
@@ -75,9 +146,7 @@ export default {
   mounted() {
     let i = inst("canvas_banner");
   },
-  methods: {
-    
-  },
+  methods: {},
 };
 </script>
 
@@ -100,37 +169,40 @@ p {
   font-size: 18px;
   line-height: 32px;
 }
-.section__hero{
-    height:50vw;
+.section__hero {
+  height: 50vw;
 }
-.bg-loading{
-    width:50vw
+.bg-loading {
+  width: 50vw;
 }
-.bg-skp{
-    width:50vw
+.bg-skp {
+  width: 50vw;
 }
 .box1 .p1 {
-    font-size:3.5vw;
+  font-size: 3.5vw;
 }
 .box1 .p2 {
-    font-size: 2vw;
+  font-size: 2vw;
 }
-@media (max-width: 768px){
-    .section__hero{
-        height:80vw;
-    }
-    .bg-loading{
-        width:100vw
-    }
-    .bg-skp{
-        width:80vw
-    }
-    .box1 .p1 {
-        font-size:4.5vw;
-    }
-    .box1 .p2 {
-        font-size: 3.5vw;
-    }
+.section__hero-s{
+  height: auto;
+}
+@media (max-width: 768px) {
+  .section__hero {
+    height: auto;
+  }
+  .bg-loading {
+    width: 100vw;
+  }
+  .bg-skp {
+    width: 80vw;
+  }
+  .box1 .p1 {
+    font-size: 4.5vw;
+  }
+  .box1 .p2 {
+    font-size: 3.5vw;
+  }
 }
 </style>
 <style>

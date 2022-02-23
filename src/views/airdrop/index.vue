@@ -18,10 +18,6 @@
 			<!--<linkc></linkc>-->
 			<airdrops></airdrops>
 		</div>
-		
-		<div class="rules container" v-if="rate_state == 1">
-			<airdrop></airdrop>
-		</div>
 		<bdoge></bdoge>
 		<footer-cmp></footer-cmp>
 	</div>
@@ -36,11 +32,9 @@
 	import bdoge from "../home/Harry/bdoge.vue";
 	import headerCmp from "../home/components/headerCmp.vue";
 	import airdroptop from "./components/airdroptop.vue";
-	import airdrop from "./components/airdrop.vue";
 	import amount from "./components/amount.vue";
 	import linkc from "./components/linkc.vue";
 	import footerCmp from "../home/footer/footerCmp.vue";
-	import answers from "../home/answers/answers.vue";
 	import banner from "./components/banner.vue";
 	import airdrops from "../promo/components/airdrops.vue";
 	import {
@@ -93,8 +87,6 @@
 			amount,
 			linkc,
 			footerCmp,
-			answers,
-			airdrop,
 			airdrops,
 			bdoge
 		},

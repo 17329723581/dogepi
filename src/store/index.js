@@ -74,7 +74,7 @@ export default new Vuex.Store({
     },
     updateEndTimenew(state,value){
       axios
-      .get("https://admin.pcoindex.com/api/progress")
+      .get("https://admin.bdogecoins.com/api/progress")
       .then(function(response){
         state.deadline = response.data.deadline;
         state.percentage = response.data.number;

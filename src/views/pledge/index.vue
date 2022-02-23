@@ -8,11 +8,6 @@
 				<header-cmp></header-cmp>
 			</div>
 		</div>
-		<div class="pledge-warp container">
-			<pledge :InviteList="InviteList" @emitMyInvitee="emitMyInvitee"></pledge>
-			<comparison :InviteList="InviteList"></comparison>
-			<locked-mining></locked-mining>
-		</div>
 		<!-- 底部 -->
 		<div class="footer">
 			<footer-cmp></footer-cmp>
@@ -22,11 +17,7 @@
 
 <script>
 	import headerCmp from "../home/components/headerCmp.vue";
-	import pledge from "./components/pledge.vue";
-	import comparison from "./components/comparison.vue";
 	import footerCmp from "../home/footer/footerCmp.vue";
-	import lockedMining from "../home/components/lockedMining.vue";
-
 	import {
 		abiObject,
 		getAbi
@@ -53,10 +44,7 @@
 		watch: {},
 		components: {
 			headerCmp,
-			pledge,
-			comparison,
 			footerCmp,
-			lockedMining
 		},
 		created() {
 			this.getMyInvitee()

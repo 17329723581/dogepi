@@ -262,8 +262,6 @@
 <script>
 import { mapState, mapMutations } from "vuex";
 import { abiObject, getAbi, web3 } from "utils/common";
-import logo from "./logo.vue";
-import mLogo from "./m-logo.vue";
 const { contractObject: PerSaleObj } = getAbi(abiObject.PerSaleAbi);
 export default {
   data() {
@@ -331,8 +329,6 @@ export default {
   },
 
   components: {
-    logo,
-    mLogo,
   },
   created() {
     this.titcom();

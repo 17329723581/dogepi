@@ -15,14 +15,14 @@ const locale = {
 		title:'Hard Top',
 		num:'1000 BNB',
 	}],
-	p_r_o_text:'SpacePi will be the only one in the blockchain field that breaks technical barriers and integrates multiple cross-chain protocol tokens of integrated service provider types. The future belongs to all blockchain digital asset players. Let us work together to witness this great moment!',
+	p_r_o_text:'Bdoge will be the only one in the blockchain field that breaks technical barriers and integrates multiple cross-chain protocol tokens of integrated service provider types. The future belongs to all blockchain digital asset players. Let us work together to witness this great moment!',
 	p_r_o_title_s:'The latest',
 	p_r_o_totalarray:[{
 		title:'Type:',
 		num:'Public',
 	},{
 		title:'Exchange ratio',
-		num:'1 BNB= 500,000,000,000 SpacePi',
+		num:'1 BNB= 500,000,000,000 Bdoge',
 	},{
 		title:'Min',
 		num:'0.1 BNB',
@@ -42,32 +42,32 @@ const locale = {
 	p_r_o_out_bnt:'Sign out',
 	p_r_o_rules_title:'Presale rules',
 	p_r_o_rules_array:[
-		"1. The presale SpacePi has a maximum purchase limit of 10 BNB per address, and the BNB after the presale will be added to the PancakeSwap liquidity pool.",
-		"2. After the presale is over, you can manually collect the presale SpacePi.",
-		"3. The presale SpacePi will be unlocked manually 48 hours after the launch of PancakeSwap."
+		"1. The presale Bdoge has a maximum purchase limit of 10 BNB per address, and the BNB after the presale will be added to the PancakeSwap liquidity pool.",
+		"2. After the presale is over, you can manually collect the presale Bdoge.",
+		"3. The presale Bdoge will be unlocked manually 48 hours after the launch of PancakeSwap."
 	],
 	p_r_o_pre_array:[{
 		title:'My presale',
 	},{
-		title:'SpacePi',
+		title:'Bdoge',
 	}],
-	p_r_o_des:'SpacePi will be distributed after the presale ends',
+	p_r_o_des:'Bdoge will be distributed after the presale ends',
 	p_r_o_record:'My purchase history',
 
 	//presaleTwo
-	p_t_title:'SpacePi Presale',
+	p_t_title:'Bdoge Presale',
 	p_t_booking_title:'Latest progress:',
 	p_t_orange:'Perfect end!',
 	p_t_des1:'Total presale quantity',
 	p_t_num:'20,000,000,000,000',
-	p_t_des2:"The presale has ended, you can now claim your SpacePi for the presale",
+	p_t_des2:"The presale has ended, you can now claim your Bdoge for the presale",
 	p_t_des3:"Current block height",
-	p_t_input:["100%",'SpacePi'],
+	p_t_input:["100%",'Bdoge'],
 	p_t_btn:'Receive',
 	p_t_des4:'12,931,100 Block (About08-31,2021)',
 
 	p_t_desc1_S:'Total presale quantity:',
-	p_t_desc1_num:'20,000,000,000,000 SpacePi',
+	p_t_desc1_num:'20,000,000,000,000 Bdoge',
 	p_t_desc1_btn:'Available',
 
 	// 首页
@@ -79,7 +79,7 @@ const locale = {
 	index_ecosystem_text2:'Bdoge will convene all digital currency explorers to jointly create a decentralized ecosystem belonging to bdoge. Bdoge ecological core includes a series of applications such as NFT to game metauniverse bdogeswap. Look forward to it!',
 
 
-	index_eco:['Liquidity Locked to Uniswap',"India's Covid Relief Fund",'Vitalik Buterin Burn'],
+	index_eco:['Liquidity locked in by pancakeswap',"Strong application ecology",'Efficient Dao community'],
 
 	index_coin:[{
 		title:'BDOGE Token',
@@ -97,7 +97,7 @@ const locale = {
 
 	index_cta_title:'How to purchase bdoge',
 	index_cta_text:"Bdoge will log in to the decentralized exchange pancakeswap of Qian'an. You can use the blockchain browser to open the pancake exchange in your frequently used wallet for exchange. After the exchange is completed, you may need to add a contract address to display the balance. At this point, you will become an important member of the bdoge community and can participate in the dividends and services of bdoge ecology!",
-	index_cta_btn1:'Buy SHIB',
+	index_cta_btn1:'Buy BDOGE',
 	index_cta_btn2:'Buy LEASH',
 
 	index_qsg_title:'Quick Start Guide',
@@ -208,7 +208,7 @@ const locale = {
 
 	// 底部
 	footer1: "If you have any question, please contact us",
-	footer2: "Copyright © 2021 SpacePi. All Rights Reserved",
+	footer2: "Copyright © 2021 Bdoge. All Rights Reserved",
 	footer_twitter_url:'https://twitter.com/BDOGE_Coins',
 	footer_telegram_url:'https://t.me/BSC_BDOGE',
 	footer_discord_url:'https://t.me/BSC_BDOGE',
@@ -233,7 +233,7 @@ const locale = {
 	p_text2: "200 BNB",
 	p_text3: "Hard Top",
 	p_text4: "1,000 BNB",
-	p_text5: "You can claim your SpacePi for the presale after the presale ends.",
+	p_text5: "You can claim your Bdoge for the presale after the presale ends.",
 
 	LatestRaised: "Latest participation",
 	LatestRaised1: "Purchase",
@@ -251,15 +251,15 @@ const locale = {
 	logout: "Sign out",
 
 	// 预售结束
-	ye_text1: "SpacePi Presale",
+	ye_text1: "Bdoge Presale",
 	ye_text2: "Finished perfectly",
 	ye_text3: "Total sold:",
-	ye_text4: "You can claim your SpacePi for the presale after the presale ends.",
+	ye_text4: "You can claim your Bdoge for the presale after the presale ends.",
 	ye_title: "Current block",
 
 	// 我的预售
 	mypresale_text1: "My presale",
-	mypresale_text2: "SpacePi",
+	mypresale_text2: "Bdoge",
   	myrecord: "My record",
 
 	// 交互提示
@@ -292,7 +292,7 @@ const locale = {
 	a_titcom_li_right:"Purchase",
 
 	a_time_tit:"Presale:",
-	a_time_tb1:"SpacePi Airdrop",
+	a_time_tb1:"Bdoge Airdrop",
 	a_time_tb2:"Presale friends number",
 	a_time_tb3:"Total Invitation amount (BNB)",
 	a_time_tb4:"Reward amount (BNB)",
@@ -313,23 +313,23 @@ const locale = {
 
 	a_rules_two_tit:"Invitation Rules",
 	a_rules_two1:"1. The presale and airdrop invitations for this event can take effect at the same time",
-	a_rules_two2:"2. Invitation allows more people to participate in the construction of the SpacePi ecosystem, while expanding the marketing team",
+	a_rules_two2:"2. Invitation allows more people to participate in the construction of the Bdoge ecosystem, while expanding the marketing team",
 	a_rules_two3:"3. Each address can invite up to 99 users",
 
 
-	a_top_text1: "SpacePi Airdrop",
+	a_top_text1: "Bdoge Airdrop",
 	a_top_text1_m: "",
-	a_top_text2: "Don't miss SpacePi",
+	a_top_text2: "Don't miss Bdoge",
 	a_top_text2_m:"",
 	a_top_text3: "Airdrop countdown:",
 	a_top_text3_m: "Airdrop:",
-	a_top_text4: "SpacePi is an open source blockchain project initiated by the core developers of the original Pi Network decentralized community. This is the world's first token that automatically farms, automatically adds liquidity pools, and automatically destroys. To motivate early community supporters, we have officially launched a new round of airdrops!",
+	a_top_text4: "Bdoge is an open source blockchain project initiated by the core developers of the original Pi Network decentralized community. This is the world's first token that automatically farms, automatically adds liquidity pools, and automatically destroys. To motivate early community supporters, we have officially launched a new round of airdrops!",
 	a_top_amount: "Airdrop quantity",
 	a_top_amount_text: "10,000,000,000,000",
 	a_top_but:"Connect",
 	a_top_but1:"Disconnect",
 	a_top_amount_array:[{
-		title:'SpacePi Airdrop',
+		title:'Bdoge Airdrop',
 		text:'100,000,000'
 	},{
 		title:'My Invitation',
@@ -338,24 +338,24 @@ const locale = {
 		title:'Invitation reward',
 		text:'0'
 	}],
-	a_top_amount_c:'Airdropped SpacePi will be collected manually after the event ends.',
+	a_top_amount_c:'Airdropped Bdoge will be collected manually after the event ends.',
 	a_top_amount_link_title:'Invitation link',
 	a_top_amount_link_url:'',
-	a_top_amount_link_text:"Invite a friend to get 100,000,000 SpacePi, and you can also share links on Twitter, Facebook and other communities. The airdropped SpacePi will be collected manually after the event ends.",
+	a_top_amount_link_text:"Invite a friend to get 100,000,000 Bdoge, and you can also share links on Twitter, Facebook and other communities. The airdropped Bdoge will be collected manually after the event ends.",
 
 
 	// 数据
-	mySpacePi: "SpacePi Airdrop",
+	myBdoge: "Bdoge Airdrop",
 	myinvite: "My invitation",
 	invite: "Invitation reward",
-	tip: "Airdropped SpacePi will be collected manually after the event ends.",
+	tip: "Airdropped Bdoge will be collected manually after the event ends.",
 
 
 	// 邀请连接
 	Invitation_link: "Invitation link",
 	copy: "Copy",
-	i_text1: "Invite a friend to get 100,000,000 SpacePi, and you can also share links on Twitter, Facebook and other communities. The airdropped SpacePi will be collected manually after the event ends.",
-	i_text2: "SpacePi",
+	i_text1: "Invite a friend to get 100,000,000 Bdoge, and you can also share links on Twitter, Facebook and other communities. The airdropped Bdoge will be collected manually after the event ends.",
+	i_text2: "Bdoge",
 	// i_text3:"预售",
 
 

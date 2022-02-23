@@ -38,8 +38,6 @@
 		abiObject,
 		getAbi
 	} from "utils/common";
-	import logo from "./logo.vue";
-	import mLogo from "./m-logo.vue";
 	const {
 		contractObject: PerSaleObj
 	} = getAbi(abiObject.PerSaleAbi);
@@ -75,8 +73,6 @@
 		},
 
 		components: {
-			logo,
-			mLogo
 		},
 		created() {
 			this.getOwner();

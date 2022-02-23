@@ -3,14 +3,12 @@
     <div class="header-logo" id="top">
       <div class="header-logo-pc">
         <a href="">
-          <img src="@/assets/logo.png" alt="" style="width: 4.375rem;" />
-           <test class="header-title">布道狗</test>  
+          <img src="@/assets/logo.png" alt="" style="width:100%;" />
         </a>
       </div>
       <div class="header-logo-m" v-if="">
         <a href="">
-          <img src="@/assets/logo.png" alt="" style="width: 4rem" />
-           <test class="header-title">布道狗</test>  
+          <img src="@/assets/logo.png" alt="" style="width: 80%" />
         </a>
         
       </div>

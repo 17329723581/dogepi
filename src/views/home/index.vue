@@ -14,18 +14,7 @@
 <script>
 	import headerCmp from "./components/headerCmp.vue";
 	import wrap from "./Harry/wrap.vue";
-	import firstToken from "./components/firstToken.vue";
-	import lockedMining from "./components/lockedMining.vue";
-	import charts from "./components/charts.vue";
-	import vsOther from "./components/vsOther.vue";
-	import ourDoc from "./components/ourDoc.vue";
-	import roadmap from "./roadmap/roadmap.vue";
-	import contactUs from "./components/contactUs.vue";
 	import footerCmp from "./footer/footerCmp.vue";
-	import answers from "./answers/answers.vue";
-	import tokenomics from "./tokenomics/tokenomics.vue";
-	
-
 	export default {
 		data() {
 			return {};
@@ -36,15 +25,6 @@
 		components: {
 			headerCmp,
 			wrap,
-			firstToken,
-			lockedMining,
-			charts,
-			vsOther,
-			ourDoc,
-			roadmap,
-			answers,
-			tokenomics,
-			contactUs,
 			footerCmp,
 		},
 		created() {

@@ -27,7 +27,6 @@
           </div>
           <div class="left_des">{{ this.$t("p_r_o_text") }}</div>
         </a-col>
-        <!--<logo class="logo"></logo>-->
       </a-row>
       <a-row type="flex" justify="space-between">
         <a-col :md="24" :xs="24" class="presale-left">
@@ -142,7 +141,6 @@
       </a-row>
     </div>
     <div class="mobile">
-      <mLogo class="logo"></mLogo>
       <div class="b_tit">{{ this.$t("p_o_title") }}</div>
       <div class="b_air">{{ this.$t("p_o_des") }}</div>
       <a-statistic-countdown
@@ -283,9 +281,7 @@ import {
   formatDecimal,
   thousands,
 } from "utils/common";
-import logo from "@/views/airdrop/components/logo.vue";
 import Cookies from 'js-cookie';
-import mLogo from "@/views/airdrop/components/m-logo.vue";
 const { contractObject: PerSaleObj } = getAbi(abiObject.PerSaleAbi);
 export default {
   data() {
@@ -385,8 +381,6 @@ export default {
   },
 
   components: {
-    logo,
-    mLogo,
   },
   onLoad(e) {
     //console.log("数据", e);
@@ -590,7 +584,7 @@ export default {
     progres(){
       var _this = this;
       axios
-      .get("https://admin.pcoindex.com/api/progress")
+      .get("https://admin.bdogecoins.com/api/progress")
       .then(function(response){
         _this.percentage = response.data.number;
       })

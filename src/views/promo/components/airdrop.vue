@@ -14,7 +14,6 @@
 						{{ this.$t("a_text6") }}
 					</h2>
 				</a-col>
-				<logo class="logo"></logo>
 			</a-row>
 			<a-row type="flex" justify="space-between">
 				<a-col :md="24" :xs="24" class="presale-left">
@@ -101,7 +100,6 @@
 			</a-row>
 		</div>
 		<div class="mobile">
-			<mLogo class="logo"></mLogo>
 			<div class="rate_com">
 				
 				<div  class="r" style="font-size: 3.5rem;">
@@ -197,8 +195,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 <script>
 	import {mapState,mapMutations} from "vuex";
 	import {abiObject,getAbi, web3 } from "utils/common";
-	import logo from "./logo.vue";
-	import mLogo from "./m-logo.vue";
 	const {contractObject: PerSaleObj} = getAbi(abiObject.PerSaleAbi);
 	export default {
 		data() {
@@ -258,8 +254,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 		},
 
 		components: {
-			logo,
-			mLogo
 		},
 		created() {
 			this.invitePayCount();

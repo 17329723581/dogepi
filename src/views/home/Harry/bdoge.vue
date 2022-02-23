@@ -21,7 +21,7 @@
               <div class="eco-cta-holder uni">
                 <div class="eco-cta-ico-wrap">
                   <img
-                    src="@/assets/ico-uni.svg"
+                    src="@/assets/ico-uni.png"
                     loading="lazy"
                     alt=""
                     class="eco-cta--ico"
@@ -67,7 +67,7 @@
               <div class="eco-cta-holder burn">
                 <div class="eco-cta-ico-wrap">
                   <img
-                    src="@/assets/ico-vb-burn.svg"
+                    src="@/assets/ico-vb-burn.png"
                     loading="lazy"
                     alt=""
                     class="eco-cta--ico wallet"
@@ -122,7 +122,7 @@
             <div class="coin-box-content">
               <div class="coin-box-title-wrap">
                 <h3 class="h3">{{ this.$t("index_coin")[0]["title"] }}</h3>
-                <a
+                <!--<a
                   href="https://www.dextools.io/app/uniswap/pair-explorer/0x811beed0119b4afce20d2583eb608c6f7af1954f"
                   target="_blank"
                   class="coin-box-graph w-inline-block"
@@ -133,12 +133,12 @@
                     class="coin-box-graph--ico"
                   />
                   <div class="text-block">See Live Charts</div>
-                </a>
+                </a>-->
               </div>
               <p class="p">{{ this.$t("index_coin")[0]["text"] }}</p>
-              <a href="https://shibaswap.com/#/swap" target="_blank">
+              <!--<a href="https://shibaswap.com/#/swap" target="_blank">
                 <div class="cta-btn__txt">Buy SHIB</div>
-              </a>
+              </a>-->
             </div>
           </div>
           <div class="coin-box">
@@ -174,7 +174,7 @@
             <div class="coin-box-content">
               <div class="coin-box-title-wrap">
                 <h3 class="h3">{{ this.$t("index_coin")[1]["title"] }}</h3>
-                <a
+                <!--<a
                   href="https://dex.guru/token/0x27c70cd1946795b66be9d954418546998b546634-eth"
                   target="_blank"
                   class="coin-box-graph w-inline-block"
@@ -185,12 +185,12 @@
                     class="coin-box-graph--ico"
                   />
                   <div class="text-block">See Live Charts</div>
-                </a>
+                </a>-->
               </div>
               <p class="p">{{ this.$t("index_coin")[1]["text"] }}</p>
-              <a href="https://shibaswap.com/#/swap" target="_blank">
+              <!--<a href="https://shibaswap.com/#/swap" target="_blank">
                 <div class="cta-btn__txt">Buy LEASH</div>
-              </a>
+              </a>-->
             </div>
           </div>
           <div class="coin-box">
@@ -226,7 +226,7 @@
             <div class="coin-box-content">
               <div class="coin-box-title-wrap">
                 <h3 class="h3">{{ this.$t("index_coin")[2]["title"] }}</h3>
-                <a
+                <!--<a
                   href="https://dex.guru/token/0x9813037ee2218799597d83d4a5b6f3b6778218d9-eth"
                   target="_blank"
                   class="coin-box-graph w-inline-block"
@@ -237,12 +237,12 @@
                     class="coin-box-graph--ico"
                   />
                   <div class="text-block">See Live Charts</div>
-                </a>
+                </a>-->
               </div>
               <p class="p">{{ this.$t("index_coin")[2]["text"] }}</p>
-              <a href="https://shibaswap.com/#/swap" target="_blank">
+              <!--<a href="https://shibaswap.com/#/swap" target="_blank">
                 <div class="cta-btn__txt">Buy BONE</div>
-              </a>
+              </a>-->
             </div>
           </div>
         </div>
@@ -258,7 +258,6 @@
               <p class="p">{{ this.$t("index_cta_text") }}</p>
               <div class="htb-btn-wrap">
                 <a
-                  href="https://shibaswap.com/#/swap"
                   target="_blank"
                   class="cta-btn r-pad buy w-inline-block"
                 >
@@ -267,7 +266,7 @@
                   </div>
                   <div class="cta-btn__bg"></div>
                 </a>
-                <a
+                <!--<a
                   href="https://shibaswap.com/#/swap"
                   target="_blank"
                   class="cta-btn r-pad buy w-inline-block"
@@ -276,7 +275,7 @@
                     {{ this.$t("index_cta_btn2") }}
                   </div>
                   <div class="cta-btn__bg"></div>
-                </a>
+                </a>-->
               </div>
             </div>
             <div class="htb-right">
@@ -285,49 +284,8 @@
                   src="@/assets/c1.png"
                   loading="lazy"
                   alt=""
-                  class="htb-circle-1"
-                /><img
-                  src="@/assets/circle-dashes.svg"
-                  loading="lazy"
-                  alt=""
-                  class="htb-circle-dashes"
+                  class="htb-circle-1 htb-circle-dashes"
                 />
-                <div class="circle-glued-coins">
-                  <img
-                    src="@/assets/gc1.png"
-                    loading="lazy"
-                    alt=""
-                    class="gc-1"
-                  /><img
-                    src="@/assets/gc2.png"
-                    loading="lazy"
-                    alt=""
-                    class="gc-2"
-                  /><img
-                    src="images/gc4.png"
-                    loading="lazy"
-                    alt=""
-                    class="gc-3"
-                  />
-                </div>
-                <div class="front-coins-holder">
-                  <img
-                    src="@/assets/bc1.png"
-                    loading="lazy"
-                    alt=""
-                    class="bc-1"
-                  /><img
-                    src="@/assets/bc2.png"
-                    loading="lazy"
-                    alt=""
-                    class="bc-2"
-                  /><img
-                    src="images/bc4.png"
-                    loading="lazy"
-                    alt=""
-                    class="bc-3"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -466,7 +424,7 @@
           <div class="ss-right">
             <div class="box box4">
               <div class="r animate__animated animate__fadeInRight">
-                <img class="box4-img" src="@/assets/logo.png">
+                <img class="box4-img" src="@/assets/TOKENOMICS.png">
               </div>
             </div>
           </div>
@@ -487,7 +445,6 @@
                   <div class="harrypronumberwrap">
                     <div>{{this.$t("index_roadmap")[0].title}}</div>
                   </div>
-                  <div class="qsg-kingpro-line"></div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
@@ -508,7 +465,6 @@
                   <div class="harrypronumberwrap">
                     <div>{{this.$t("index_roadmap")[1].title}}</div>
                   </div>
-                  <div class="qsg-kingpro-line"></div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
@@ -516,7 +472,6 @@
                       <li><p class="p">{{this.$t("index_roadmap")[1].text1}}</p></li>
                       <li><p class="p">{{this.$t("index_roadmap")[1].text2}}</p></li>
                       <li><p class="p">{{this.$t("index_roadmap")[1].text3}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[1].text4}}</p></li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -528,7 +483,6 @@
                   <div class="harrypronumberwrap">
                     <div>{{this.$t("index_roadmap")[2].title}}</div>
                   </div>
-                  <div class="qsg-kingpro-line"></div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
@@ -548,7 +502,6 @@
                   <div class="harrypronumberwrap">
                     <div>{{this.$t("index_roadmap")[3].title}}</div>
                   </div>
-                  <div class="qsg-kingpro-line"></div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
@@ -730,7 +683,9 @@ p {
     .box4 .t3-l{
         margin-bottom:10vw
     }
-
+    .qsg-line-right{
+      margin-left: 0;
+    }
 
 }
 </style>

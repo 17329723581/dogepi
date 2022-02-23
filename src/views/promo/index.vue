@@ -12,7 +12,6 @@
 		<!-- <div class="rules container" v-if="rate_state == 0">
 			<airdroptop></airdroptop>
 			<banner @get_state="get_state" style="margin-top: -10%;"></banner>
-			<amount style="margin-top: -5%;"></amount>
 			<linkc></linkc>
 		</div> -->
 		
@@ -21,10 +20,9 @@
 		</div>
 		<locked-mining class="top10"></locked-mining>
 		<div class="rules container">
-			<roadmap></roadmap>
 			<tokenomics style="margin-top: -2.5%;"></tokenomics>
 		</div>
-		<answers></answers>
+
 		<div class="footer">
 			<footer-cmp></footer-cmp>
 		</div>
@@ -41,13 +39,8 @@
 	import headerCmp from "../home/components/headerCmp.vue";
 	import airdroptop from "./components/airdroptop.vue";
 	import airdrop from "./components/airdrop.vue";
-	import amount from "./components/amount.vue";
 	import linkc from "./components/linkc.vue";
 	import footerCmp from "../home/footer/footerCmp.vue";
-	import lockedMining from "../home/components/lockedMining.vue";
-	import roadmap from "../home/roadmap/roadmap.vue";
-	import tokenomics from "../home/tokenomics/tokenomics.vue";
-	import answers from "../home/answers/answers.vue";
 	import banner from "./components/banner.vue";
 	import {
 		abiObject,
@@ -96,13 +89,8 @@
 			headerCmp,
 			banner,
 			airdroptop,
-			amount,
 			linkc,
 			footerCmp,
-			lockedMining,
-			roadmap,
-			tokenomics,
-			answers,
 			airdrop
 		},
 		created() {},

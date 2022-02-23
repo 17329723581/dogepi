@@ -1694,7 +1694,7 @@ a {
     align-items: center;
     border-radius: 100%;
     background-color: #2e2c39;
-    background-image: url('../images/slider-l-arr.svg');
+    /* background-image: url('../images/slider-l-arr.svg'); */
     background-position: 50% 50%;
     background-size: 13px;
     background-repeat: no-repeat;
@@ -2345,7 +2345,7 @@ a {
     align-items: center;
     border-radius: 100%;
     background-color: #2e2c39;
-    background-image: url('../images/slider-l-arr.svg');
+    /* background-image: url('../images/slider-l-arr.svg'); */
     background-position: 50% 50%;
     background-size: 13px;
     background-repeat: no-repeat;
@@ -2400,7 +2400,7 @@ a {
     align-items: center;
     border-radius: 100%;
     background-color: #2e2c39;
-    background-image: url('../images/slider-r-arr.svg');
+    /* background-image: url('../images/slider-r-arr.svg'); */
     background-position: 50% 50%;
     background-size: 13px;
     background-repeat: no-repeat;

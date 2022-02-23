@@ -15,17 +15,16 @@
 					<div class="current_des">{{ this.$t("p_t_des3") }} {{ thousands(currentBlock)}}</div>
 					<div class="left_input"><span>{{ this.$t("p_t_input")[0] }}</span>{{getspacepi}} {{ this.$t("p_t_input")[1] }}
 					</div>
-					<div class="left_btn" v-if="!isLogin" @click="connect()" style="background-color: #FDD333;margin-left:1rem;">{{ this.$t("a_top_but") }}</div>
+					<div class="left_btn" v-if="!isLogin" @click="connect()" style="background-color:rgb(229 0 1);margin-left:1rem;color: #ffff;">{{ this.$t("a_top_but") }}</div>
 					<!-- <div class="left_btn"  v-if="isLogin"  @click="$router.push('/airdrop')">{{ this.$t("p_t_btn") }}</div> -->
 					<div>
-						<div class="left_btn"  v-if="isLogin"  @click="receive_status==false?getStageToken():''" :style="receive_status==false? 'background-color: #FDD333;':'background-color: #ccc;'">
+						<div class="left_btn"  v-if="isLogin"  @click="receive_status==false?getStageToken():''" :style="receive_status==false? 'background-color: rgb(229 0 1);color: #ffff;':'background-color: #ccc;'">
 							{{ blockReceive(stages[0][1],stages[0][0]) }}
 						</div>
 					<div class="left_btn_out"  v-if="isLogin"  @click="logout()">{{ this.$t("a_top_but1") }}</div>
 					</div>
 					<!-- <div class="left_des1">{{ thousands(stages[0]) }}BK({{ $t("estimate") }},{{ getStageUnlockTime(stages[1]) }})</div> -->
 				</a-col>
-				<logo class="logo"></logo>
 			</a-row>
 			<a-row type="flex" justify="space-between">
 				<a-col :md="24" :xs="24" class="presale-left">
@@ -54,7 +53,6 @@
 			</a-row>
 		</div>
 		<div class="mobile">
-			<mLogo class="logo"></mLogo>
 			<div class="left_com">
 				<div class="left_tit">{{ this.$t("p_t_title") }}</div>
 				<!-- <div class="left_tit">{{ this.$t("p_t_booking_title") }} </div> -->
@@ -68,9 +66,9 @@
 				<div class="current_des">{{ this.$t("p_t_des3") }} {{ thousands(currentBlock)}}</div>
 				<div class="left_input"><span>{{ this.$t("p_t_input")[0] }}</span>{{getspacepi}} {{ this.$t("p_t_input")[1] }}
 				</div>
-				<div class="left_btn" v-if="!isLogin" @click="connect()" style="background-color: #FDD333">{{ this.$t("a_top_but") }}</div>
+				<div class="left_btn" v-if="!isLogin" @click="connect()" style="background-color:rgb(255 0 0);color: #ffff;">{{ this.$t("a_top_but") }}</div>
 				<!-- <div class="left_btn"  v-if="isLogin"  @click="$router.push('/airdrop')">{{ this.$t("p_t_btn") }}</div> -->
-				<div class="left_btn"  v-if="isLogin"  @click="receive_status==false?getStageToken():''" :style="receive_status==false? 'background-color: #FDD333;':'background-color: #ccc;'">
+				<div class="left_btn"  v-if="isLogin"  @click="receive_status==false?getStageToken():''" :style="receive_status==false? 'background-color: rgb(255 0 0);color: #ffff;':'background-color: #ccc;'">
 						{{ blockReceive(stages[0][1],stages[0][0]) }}
 				</div>
 				<div class="left_btn_out"  v-if="isLogin"  @click="logout()">{{ this.$t("a_top_but1") }}</div>
@@ -101,8 +99,6 @@
 
 <script>
 	import {abiObject,getAbi, web3,thousands} from "utils/common";
-	import logo from "@/views/airdrop/components/logo.vue";
-	import mLogo from "@/views/airdrop/components/m-logo.vue";
 	import { mapState, mapActions, mapMutations } from "vuex";
 	const {contractObject: PerSaleObj} = getAbi(abiObject.PerSaleAbi)
 
@@ -151,8 +147,6 @@
 			},
 		},
 		components: {
-			logo,
-			mLogo
 		},
 		created() {
 			this.getStage()
@@ -341,7 +335,7 @@
 			}
 
 			.left_tit_orange {
-				color: #FDD333;
+				color: #e50001;
 				font-size: 40px;
 				font-weight: bold;
 				line-height: 60px;
@@ -351,7 +345,7 @@
 			}
 
 			.left_tit_orange_des {
-				color: #FDD333;
+				color: #ffffff;
 				font-size: 20px;
 				font-weight: bold;
 				line-height: 50px;
@@ -373,7 +367,7 @@
 			}
 
 			.current_des {
-				color: #FDD333;
+				color:#e50001;
 				font-size: 20px;
 				font-weight: bold;
 				line-height: 80px;
@@ -381,7 +375,7 @@
 			}
 
 			.left_input {
-				border: 1px solid #FDD333;
+				border: 1px solid #e50001;
 				border-radius: 8px;
 				padding: 10px 16px 10px 16px;
 				color: #fff;
@@ -395,7 +389,7 @@
 					position: absolute;
 					left: 16px;
 					line-height: 32px;
-					color: #FDD333;
+					color: #e50001;
 				}
 			}
 
@@ -441,7 +435,7 @@
 				overflow: hidden;
 
 				.Progress {
-					background-color: #FDD333;
+					background-color:#e50001;
 					height: 10px;
 					float: left;
 					border-radius: 5px;
@@ -462,7 +456,7 @@
 
 			.des {
 				font-size: 14px;
-				color: #FDD333;
+				color: #bbbbbe;
 				line-height: 32px;
 			}
 		}
@@ -627,13 +621,13 @@
 		.my_pre {
 			margin: 20px;
 			padding: 20px;
-			background-color: #fff;
+			background-color: #18171f;
 			border-radius: 20px;
 			display: flex;
 
 			.li {
 				width: 50%;
-				color: #333333;
+				color: #ffffff;
 				font-size: 16px;
 				text-align: center;
 				line-height: 20px;
@@ -702,7 +696,7 @@
 				}
 
 				.left_tit_orange {
-					color: #FDD333;
+					color: #e50001;
 					font-size: 52px;
 					font-weight: bold;
 					line-height: 80px;
@@ -722,7 +716,7 @@
 				}
 
 				.current_des {
-					color: #FDD333;
+					color: #e50001;
 					font-size: 24px;
 					font-weight: bold;
 					line-height: 80px;
@@ -731,7 +725,7 @@
 
 				.left_input {
 					display: inline-block;
-					border: 1px solid #FDD333;
+					border: 1px solid #e50001;
 					border-radius: 8px;
 					padding: 10px 16px 10px 100px;
 					color: #fff;
@@ -745,7 +739,7 @@
 						position: absolute;
 						left: 16px;
 						line-height: 32px;
-						color: #FDD333;
+						color: #e50001;
 					}
 				}
 
@@ -763,10 +757,10 @@
 				}
 				.left_btn_out{
 					margin: 20px 0;
-					background-color: #FDD333;
+					background-color: rgb(229, 0, 1);
 					line-height: 2.5rem;
 					font-size: 16px;
-					color: #241A41;
+					color: rgb(255, 255, 255);
 					width: 120px;
 					height: 2.5rem;
 					text-align: center;
@@ -789,7 +783,7 @@
 					overflow: hidden;
 
 					.Progress {
-						background-color: #FDD333;
+						background-color: #e50001;
 						height: 10px;
 						float: left;
 						border-radius: 5px;
@@ -962,7 +956,7 @@
 				}
 
 				.des {
-					color: #FDD333;
+					color: #bbbbbe;
 					font-size: 1.25rem;
 				}
 			}
@@ -970,13 +964,13 @@
 			.my_pre {
 				margin-bottom: 20px;
 				padding: 20px;
-				background-color: #fff;
+				background-color: #18171f;
 				border-radius: 20px;
 				display: flex;
 
 				.li {
 					width: 50%;
-					color: #333333;
+					color: #ffffff;
 					font-size: 1.5rem;
 					text-align: center;
 					line-height: 3.25rem;
