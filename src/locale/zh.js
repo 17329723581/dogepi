@@ -74,7 +74,8 @@ const locale = {
 	// 首页
 	index_text1:'社区驱动的DAO生态系统',
 	index_text2:"由BDOGE  TOKEN提供支持",
-
+	index_cta_btn0:'How to Buy',
+	
 	index_ecosystem_title:'关于BDOGE和生态系统',
 	index_ecosystem_text1:'开发团队开发了BDOGE，BDOGE给用户提供更加完善的区块链体验，并且为全球去中性化用户提供帮助与服务！同时也诞生了BDOGE Token作为BDOGE生态的代币',
 	index_ecosystem_text2:'BDOGE会召集所有数字货币探索者，共同打造属于BDOGE去中心化生态。BDOGE生态核心包含 NFT 去游戏 元宇宙 BDOGESwap等系列应用，尽情期待吧！',

@@ -5,27 +5,15 @@
         <div class="hero-wrap">
           <div class="hero-left-wrap">
             <h1 class="h1">
-              A Decentralized Meme Token that Evolved into a Vibrant Ecosystem
+              {{ this.$t("index_text1") }}
             </h1>
             <p class="p hero">
-              SHIB, LEASH, BONE — ShibaSwap — Innovative Reward System — The
-              Shiba Incubator — And more. 585k+ Community Members and Growing
-              Fast!
+              {{ this.$t("index_text2") }}
             </p>
             <div class="hero-btn-wrap">
               <a href="#how-to-buy" class="cta-btn r-pad hero-m w-inline-block">
-                <div class="cta-btn__txt">How to Buy</div>
+                <div class="cta-btn__txt">{{ this.$t("index_cta_btn0") }}</div>
                 <div class="cta-btn__bg"></div>
-              </a>
-              <a
-                href="https://github.com/shytoshikusama/woofwoofpaper/raw/main/SHIBA_INU_WOOF_WOOF.pdf"
-                target="_blank"
-                class="cta-btn-transparent hero w-inline-block"
-              >
-                <div class="cta-btn__txt">Read WoofPaper v2</div>
-                <div class="cta-btn-transparent__gradhide"></div>
-                <div class="cta-btn-transparent__gradhide-red"></div>
-                <div class="cta-btn-transparent__animbox"></div>
               </a>
             </div>
           </div>
@@ -63,7 +51,7 @@
       </div>
       <div id="particles-js" class="particle-class"></div>
     </div>
-    <div class="section__hero wf-section">
+    <!--<div class="section__hero wf-section">
       <div
         class="hover-div"
         style="position: absolute;z-index:9"
@@ -93,7 +81,7 @@
         </div>
       </div>
       <div id="particles-js" class="particle-class"></div>
-    </div>
+    </div>-->
     <bdoge></bdoge>
     <footer-cmp></footer-cmp>
   </div>

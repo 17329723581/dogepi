@@ -279,13 +279,17 @@
               </div>
             </div>
             <div class="htb-right">
-              <div class="base-circle-wrap">
-                <img
-                  src="@/assets/c1.png"
-                  loading="lazy"
-                  alt=""
-                  class="htb-circle-1 htb-circle-dashes"
-                />
+              <div class="base-circle-wrap"><img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"><img src="@/assets/c2.png" loading="lazy" alt="" class="htb-circle-dashes">
+                <div class="circle-glued-coins">
+                  <img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1">
+                  <img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2">
+                  <img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3">
+                </div>
+                <div class="front-coins-holder">
+                  <img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1">
+                  <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2">
+                  <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3">
+                </div>
               </div>
             </div>
           </div>
@@ -659,6 +663,9 @@ p {
     font-size:1vw;
 
 }
+.htb-circle-1{
+  position: absolute;
+}
 @media (max-width: 768px){
     .ss-right{
         width:100%
@@ -685,6 +692,32 @@ p {
     }
     .qsg-line-right{
       margin-left: 0;
+    }
+    .circle-glued-coins{
+      .gc-1{
+        width: 17vw;
+      }
+      .gc-2{
+        width: 17vw;
+        bottom: -10vw;
+        left: 17vw;
+      }
+      .gc-3{
+        width: 17vw;
+      }
+    }
+    .front-coins-holder{
+      .bc-1{
+            width: 22vw;
+      }
+      .bc-2{
+            width: 22vw;
+      }
+      .bc-3{
+            width: 22vw;
+            bottom: 20vw;
+            left: -5vw;
+      }
     }
 
 }

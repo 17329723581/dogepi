@@ -73,7 +73,8 @@ const locale = {
 	// 首页
 	index_text1:'Community driven DOA ecosystem',
 	index_text2:"Supported by bdoge token",
-
+	index_cta_btn0:'How to Buy',
+	
 	index_ecosystem_title:'About bdoge and ecosystem',
 	index_ecosystem_text1:'The development team has developed bdoge, which provides users with a more perfect blockchain experience and provides help and services for global de neutral users! At the same time, bdoge token was born as a token of bdoge ecology',
 	index_ecosystem_text2:'Bdoge will convene all digital currency explorers to jointly create a decentralized ecosystem belonging to bdoge. Bdoge ecological core includes a series of applications such as NFT to game metauniverse bdogeswap. Look forward to it!',
