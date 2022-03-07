@@ -93,18 +93,18 @@
             <div class="coin-box-top">
               <div class="coin-img-wrap">
                 <img
-                  src="@/assets/shiba_coin-1.png"
+                  src="@/assets/gc1.png"
                   loading="lazy"
                   data-w-id="5f864c4a-d4ce-4416-9e35-17cec00f6e38"
                   alt=""
                   class="coin-box--coin"
-                /><img
+                /><!--<img
                   src="@/assets/coin-shad-1.png"
                   loading="lazy"
                   data-w-id="ed2e5c3e-6418-f76d-e3e5-0b4ed0021441"
                   alt=""
                   class="coin1-shad"
-                />
+                />-->
               </div>
               <img
                 src="@/assets/coin-elip.png"
@@ -145,18 +145,18 @@
             <div class="coin-box-top">
               <div class="coin-img-wrap">
                 <img
-                  src="@/assets/leash_coin-1.png"
+                  src="@/assets/gc2.png"
                   loading="lazy"
                   data-w-id="843ffd8a-d36c-f041-fb50-a761f94669bc"
                   alt=""
                   class="coin-box--coin"
-                /><img
+                /><!--<img
                   src="@/assets/coin-shad-2.png"
                   loading="lazy"
                   data-w-id="843ffd8a-d36c-f041-fb50-a761f94669bd"
                   alt=""
                   class="coin1-shad _2"
-                />
+                />-->
               </div>
               <img
                 src="@/assets/coin-elip.png"
@@ -197,18 +197,18 @@
             <div class="coin-box-top">
               <div class="coin-img-wrap">
                 <img
-                  src="@/assets/bone_coin-2.png"
+                  src="@/assets/gc4.png"
                   loading="lazy"
                   data-w-id="92350250-cbd3-7ab4-8c35-1b31729fc829"
                   alt=""
                   class="coin-box--coin"
-                /><img
+                /><!--<img
                   src="@/assets/coin-shad-2.png"
                   loading="lazy"
                   data-w-id="92350250-cbd3-7ab4-8c35-1b31729fc82a"
                   alt=""
                   class="coin1-shad _2"
-                />
+                />-->
               </div>
               <img
                 src="@/assets/coin-elip.png"
@@ -525,7 +525,7 @@
       </div>
     </div>
 
-    <div id="community" class="section__com wf-section">
+    <!--<div id="community" class="section__com wf-section">
       <div class="container-1440">
         <div class="com-wrap">
           <h2 class="h1">{{ this.$t("index_com_title") }}</h2>
@@ -571,7 +571,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 
@@ -666,6 +666,9 @@ p {
 .htb-circle-1{
   position: absolute;
 }
+.ss-right{
+  padding-top: 150px;
+}
 @media (max-width: 768px){
     .ss-right{
         width:100%
@@ -718,6 +721,10 @@ p {
             bottom: 20vw;
             left: -5vw;
       }
+    }
+    .ss-right{
+      padding-top: 0px;
+      padding-bottom: 50px;
     }
 
 }

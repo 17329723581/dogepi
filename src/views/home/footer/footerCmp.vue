@@ -2,8 +2,9 @@
 	<div class="section__footer wf-section">
             <div class="container-1440">
                 <div class="footer-wrap">
-                    <p class="p footer">{{this.$t('index_footer_text1')}}<br><br>{{this.$t('index_footer_text2')}}</p>
-                    <div class="footer-country-link">{{this.$t('index_footer_link')}}</div>
+                    <!--<p class="p footer">{{this.$t('index_footer_text1')}}<br><br>{{this.$t('index_footer_text2')}}</p>
+                    <div class="footer-country-link">{{this.$t('index_footer_link')}}</div>-->
+                    <h2 class="h1">{{ this.$t("index_com_title") }}</h2>
                     <div class="footer-soc-wrap">
                         <a data-w-id="a5635a4e-89b7-9198-04ba-a93660281b0e" :href="url[1]" target="_blank" class="soc-link w-inline-block"><img src="@/assets/ico-tel.svg" loading="lazy" alt="" class="soc-link--img">
                             <div>Telegram<br></div>
@@ -14,7 +15,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <!--<div class="footer-bottom">
                 <div class="container-1440">
                     <div class="footer-bottom-wrap">
                         <a href="https://blog.shibaswap.com/" target="_blank" class="footer--link">{{this.$t('footer_link1')}}</a>
@@ -23,7 +24,7 @@
                         <a href="https://www.coingecko.com/en/coins/shiba-inu" target="_blank" class="footer--link">{{this.$t('footer_link4')}}</a>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
 </template>
 

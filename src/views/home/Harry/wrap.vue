@@ -7,6 +7,9 @@
             <h1 class="h1">
               {{ this.$t("index_text1") }}
             </h1>
+             <h1 class="h1">
+              {{ this.$t("index_text1s") }}
+            </h1>
             <p class="p hero">
               {{ this.$t("index_text2") }}
             </p>
@@ -24,10 +27,16 @@
               alt=""
               class="hero--art"
             /><img
-              src="@/assets/moon.svg"
+              src="@/assets/star.png"
               loading="eager"
               alt=""
               class="hero--moon"
+            />
+            <img
+              src="@/assets/rocket.png"
+              loading="eager"
+              alt=""
+              class="hero--rocket"
             />
           </div>
           <a href="#ecosystem" class="hero__scrollbtn w-inline-block"
@@ -175,6 +184,27 @@ p {
 .section__hero-s{
   height: auto;
 }
+.hero--moon{
+  width:300px;
+  right:-120px;
+  top:90px;
+  @media screen and (max-width: 991px){
+    width: 200px;
+    right:-90px;
+    top:50px;
+  }
+}
+.hero--rocket{
+  position: absolute;
+  width: 80px;
+  bottom: 20px;
+  left: -100px;
+  @media screen and (max-width: 991px){
+    width: 50px;
+    bottom: 20px;
+    left: -70px;
+  }
+}
 @media (max-width: 768px) {
   .section__hero {
     height: auto;
@@ -190,6 +220,9 @@ p {
   }
   .box1 .p2 {
     font-size: 3.5vw;
+  }
+  .h1{
+    font-size:7vw;
   }
 }
 </style>

@@ -71,16 +71,17 @@ const locale = {
 	p_t_desc1_btn:'Available',
 
 	// 首页
-	index_text1:'Community driven DOA ecosystem',
+	index_text1:'Information fusion technology based on blockchain',
+	index_text1s:'Blockchain Encyclopedia for creating global users',
 	index_text2:"Supported by bdoge token",
 	index_cta_btn0:'How to Buy',
 	
 	index_ecosystem_title:'About bdoge and ecosystem',
-	index_ecosystem_text1:'The development team has developed bdoge, which provides users with a more perfect blockchain experience and provides help and services for global de neutral users! At the same time, bdoge token was born as a token of bdoge ecology',
-	index_ecosystem_text2:'Bdoge will convene all digital currency explorers to jointly create a decentralized ecosystem belonging to bdoge. Bdoge ecological core includes a series of applications such as NFT to game metauniverse bdogeswap. Look forward to it!',
+	index_ecosystem_text1:'Bdoge provides users with a more perfect blockchain experience. Its goal is to establish a complete and accurate decentralized encyclopedia, help people around the world quickly enter the decentralized world, and present all-round comprehensive information channels including blockchain, digital currency, mainstream media and so on. Bdoge allows players to participate in projects more conveniently and quickly. Bdoge will become an important reference tool in a decentralized world! At the same time, bdoge token was born as the governance token of bdoge ecology',
+	index_ecosystem_text2:'Bdoge convenes all digital currency explorers to jointly create a decentralized ecosystem of bdoge, including a series of applications such as NFT game metauniverse bdogeswap. Look forward to it!',
 
 
-	index_eco:['Liquidity locked in by pancakeswap',"Strong application ecology",'Efficient Dao community'],
+	index_eco:['Pancakeswap deployment',"Strong application ecology",'Efficient Dao community'],
 
 	index_coin:[{
 		title:'BDOGE Token',
@@ -195,7 +196,7 @@ const locale = {
 		text4:"Bdoge community annual feedback program.",
 	}],
 
-	index_com_title:'Community',
+	index_com_title:'contact us',
 
 	index_adress:'0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375',
 	index_cta_btn5:'Copy to Clipboard',

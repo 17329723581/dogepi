@@ -496,10 +496,10 @@ canvas {
 .box4 .t3-l {
     width: 100%;
     border-radius: 16px;
-    border: 1px solid;
-    border-image: linear-gradient(90deg,
+    border: 1px solid #ffffff;
+    /*border-image: linear-gradient(90deg,
             rgba(255, 147, 176, 1),
-            rgba(109, 163, 255, 1)) 1 1;
+            rgba(109, 163, 255, 1)) 1 1;*/
     padding: 18px 25px;
     margin-right: 20px;
 }
@@ -511,10 +511,10 @@ canvas {
 .box4 .t3-r {
     width:100%;
     border-radius: 16px;
-    border: 1px solid;
-    border-image: linear-gradient(90deg,
+    border: 1px solid #ffffff;
+    /*border-image: linear-gradient(90deg,
             rgba(255, 147, 176, 1),
-            rgba(109, 163, 255, 1)) 1 1;
+            rgba(109, 163, 255, 1)) 1 1;*/
     padding: 18px 20px;
 }
 
@@ -528,7 +528,7 @@ canvas {
 }
 
 .box4 .pink {
-    color: #ff7dde;
+    color: #ffffff;
     font-size: 36px;
     font-weight: bold;
 }

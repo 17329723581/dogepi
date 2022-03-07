@@ -72,15 +72,16 @@ const locale = {
 
 
 	// 首页
-	index_text1:'社区驱动的DAO生态系统',
+	index_text1:'基于区块链信息融合技术',
+	index_text1s:'创造全球用户的区块链百科全书',
 	index_text2:"由BDOGE  TOKEN提供支持",
 	index_cta_btn0:'How to Buy',
 	
 	index_ecosystem_title:'关于BDOGE和生态系统',
-	index_ecosystem_text1:'开发团队开发了BDOGE，BDOGE给用户提供更加完善的区块链体验，并且为全球去中性化用户提供帮助与服务！同时也诞生了BDOGE Token作为BDOGE生态的代币',
-	index_ecosystem_text2:'BDOGE会召集所有数字货币探索者，共同打造属于BDOGE去中心化生态。BDOGE生态核心包含 NFT 去游戏 元宇宙 BDOGESwap等系列应用，尽情期待吧！',
+	index_ecosystem_text1:'BDOGE为用户提供更加完善的区块链体验，目标是建立一个完整、准确的去中心化百科全书，帮助世界各地的人们快速的进入去中心化世界，为所有人呈现包括区块链、数字货币、主流媒体等全维度的综合信息通道。BDOGE让玩家们更加方便、快捷的参与项目，BDOGE将成为去中心化世界重要的参考工具！同时也诞生了BDOGE Token作为BDOGE生态的治理代币',
+	index_ecosystem_text2:'BDOGE召集所有数字货币探索者，共同打造BDOGE去中心化生态，包含 NFT游戏 元宇宙 BDOGESwap等系列应用，尽情期待吧！',
 
-	index_eco:['PancakeSwap锁定的流动性',"强大的应用生态",'高效的的DAO社区'],
+	index_eco:['PancakeSwap部署',"强大的应用生态",'高效的DAO社区'],
 
 	index_coin:[{
 		title:'BDOGE Token',
@@ -195,7 +196,7 @@ const locale = {
 		text4:"BDOGE社区周年回馈计划。",
 	}],
 
-	index_com_title:'社区',
+	index_com_title:'联系我们',
 
 	index_adress:'0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375',
 	index_cta_btn5:'复制到剪贴板',
