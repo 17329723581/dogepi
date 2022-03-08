@@ -279,7 +279,9 @@
               </div>
             </div>
             <div class="htb-right">
-              <div class="base-circle-wrap"><img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"><img src="@/assets/c2.png" loading="lazy" alt="" class="htb-circle-dashes">
+              <div class="base-circle-wrap">
+                <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1">
+                <img src="@/assets/c2.png" loading="lazy" alt="" class="htb-circle-dashes">
                 <div class="circle-glued-coins">
                   <img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1">
                   <img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2">
@@ -665,9 +667,31 @@ p {
 }
 .htb-circle-1{
   position: absolute;
+  
 }
 .ss-right{
   padding-top: 150px;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+   }
+}
+.htb-circle-dashes{
+  animation: rotation 60s linear infinite;
+}
+.circle-glued-coins{
+  //-webkit-transform: rotate(900deg);
+  animation: rotation 30s linear infinite;
+  /*-moz-animation: rotation 60s linear infinite;
+  -webkit-animation: rotation 60s linear infinite;
+  -o-animation: rotation 60s linear infinite;*/
+}
+.front-coins-holder{
+  animation: rotation 60s linear infinite;
 }
 @media (max-width: 768px){
     .ss-right{
