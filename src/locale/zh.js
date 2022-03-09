@@ -72,25 +72,25 @@ const locale = {
 
 
 	// 首页
-	index_text1:'基于区块链信息融合技术',
-	index_text1s:'创造全球用户的区块链百科全书',
-	index_text2:"由BDOGE  TOKEN提供支持",
+	index_text1:'一款新型MEME实验代币，通过社交来赚取您的收益',
+	index_text1s:'',
+	index_text2:"",
 	index_cta_btn0:'How to Buy',
 	
-	index_ecosystem_title:'关于BDOGE和生态系统',
-	index_ecosystem_text1:'BDOGE为用户提供更加完善的区块链体验，目标是建立一个完整、准确的去中心化百科全书，帮助世界各地的人们快速的进入去中心化世界，为所有人呈现包括区块链、数字货币、主流媒体等全维度的综合信息通道。BDOGE让玩家们更加方便、快捷的参与项目，BDOGE将成为去中心化世界重要的参考工具！同时也诞生了BDOGE Token作为BDOGE生态的治理代币',
-	index_ecosystem_text2:'BDOGE召集所有数字货币探索者，共同打造BDOGE去中心化生态，包含 NFT游戏 元宇宙 BDOGESwap等系列应用，尽情期待吧！',
+	index_ecosystem_title:'BDOGE和生态系统',
+	index_ecosystem_text1:'BDOGE是一只会传播信仰的狗狗,他的意图是将把去中心化的理念传播给每一个人， 所以BDOGE Token的代币模型基于这个理念设计。如果您持有一定量的BDOGE并分享身边的伙伴购买BDOGE，智能合约就会被触发并发送奖励代币到您的账户，并且持有BDOGE也可以享受额外分红。',
+	index_ecosystem_text2:'BDOGE已经建立起了一个完整、准确的去中心化导航应用软件，帮助世界各地的人们快速的进入去中心化世界，在BDOGE的规划中，这只是很小的一部分，未来属于BDOGE生态中的还有NFT游戏 元宇宙 BDOGESwap等系列应用，尽情期待吧！',
 
 	index_eco:['PancakeSwap部署',"强大的应用生态",'高效的DAO社区'],
 
 	index_coin:[{
 		title:'BDOGE Token',
 		label:'See Live Charts',
-		text:'BDOGE Token是BDOGE生态中唯一的基础货币，它将服务BDOGE生态中的各种应用，随着生态系统的不断完善，BDOGE Token的价值将无限放大  BDOGE Token将会在币安首次登陆',
+		text:'BDOGE Token是BDOGE基于社交场景设计的新型MEME代币，如果您擅长社交并持有BDOGE，那么您可以从中赚取您的收益，并且随着BDOGE的社区不断增大与新型应用推出，BDOGE的价值将会上涨至千倍甚至万倍，BDOGE Token将在pancaka登录！',
 	},{
 		title:'BDOGE',
 		label:'See Live Charts',
-		text:'团队目前开发的应用的BDOGE，BDOGE依据智能算法为用户提供数字货币网址导航，项目推广，合约检测，营销服务于一体的综合CMC平台。BDOGE将会为用户打造简单高效的数字化体验，实现去中心化与现实的高度融合，使加密世界变得简单直观！',
+		text:'BDOGE生态拥有一个依据智能算法为用户提供数字货币网址导航的综合CMC平台。这会使加密世界变得更加简单直观。BDOGE将会持续推出简单高效的数字化应用，实现去中心化与现实的高度融合。',
 	},{
 		title:'BDOGE DAO',
 		label:'See Live Charts',
@@ -170,26 +170,26 @@ const locale = {
 
 	index_roadmap_title:'路线图',
 	index_roadmap:[{
-		title:'2022年第一季度 ',
+		title:'第一阶段',
 		text0:'更新BDOGE应用(开发全新的官网主题和预售功能)',
 		text1:'官网上线',
-		text2:'开启BDOGE Token预售 ',
+		text2:'开启BDOGE Token预售',
 		text3:'上线BDOGE Token',
 		text4:"财政部定期回购BDOGE功能开放",
 	},{
-		title:'2022年 第二季度',
+		title:'第二阶段',
 		text1:'官网开通质押池',
 		text2:'社区投票功能完成',
 		text3:'官网开通USDT兑换BDOGE Token快捷通道',
 		text4:"",
 	},{
-		title:'2022年第三季度',
+		title:'第三阶段',
 		text1:'链游正式立项。',
 		text2:'连锁游戏协会成立。',
 		text3:'链游戏 NFT 公开发售。',
 		text4:"连锁游戏正式上线。",
 	},{
-		title:'2022年第四季度',
+		title:'第四阶段',
 		text1:'开启流动性挖矿',
 		text2:'官网推出了IDO功能',
 		text3:'BDOGE社区DAPP内测。',
@@ -204,6 +204,12 @@ const locale = {
 	index_footer_text1:'我们的社区一天比一天强大。请关注我们的社交平台，获取最新、准确的SHIB信息。',
 	index_footer_text2:'通过下面的链接，你可以加入我们的各种团体，与100多万名什巴米族的其他成员一起。',
 	index_footer_link:'Click here to search for your preferred country!',
+
+	index_shibaswap_title:'BDOGESwap',
+	index_shibaswap_text:'当BDOGE用户达到一定的数量级，BDOGE会推出BDOGESwap，这是DEFI平台的下一个演变。BDOGESwap让用户通过先进和创新的奖励系统进行一系列的DEFI金融活动，从而获得收益!',
+
+	index_art_title:'BDOGE Art',
+	index_art_text:'BDOGE Art 虚拟世界中创建、探索和交易NFT。BDOGE会召集一群才华横溢的人，通过培养鼓励创造力和成长的环境从而创造非凡的东西，通过 BDOGE Art 的力量，我们帮助持有者找到他们需要的工具，将他们的灵感和独特的观点变为现实。',
 
 	// 选择语言
 	selectLang: "选择语言",

@@ -71,50 +71,50 @@ const locale = {
 	p_t_desc1_btn:'Available',
 
 	// 首页
-	index_text1:'Information fusion technology based on blockchain',
-	index_text1s:'Blockchain Encyclopedia for creating global users',
-	index_text2:"Supported by bdoge token",
+	index_text1:'A new MEME experimental token, earn your money by socializing',
+	index_text1s:'',
+	index_text2:"",
 	index_cta_btn0:'How to Buy',
 	
-	index_ecosystem_title:'About bdoge and ecosystem',
-	index_ecosystem_text1:'Bdoge provides users with a more perfect blockchain experience. Its goal is to establish a complete and accurate decentralized encyclopedia, help people around the world quickly enter the decentralized world, and present all-round comprehensive information channels including blockchain, digital currency, mainstream media and so on. Bdoge allows players to participate in projects more conveniently and quickly. Bdoge will become an important reference tool in a decentralized world! At the same time, bdoge token was born as the governance token of bdoge ecology',
-	index_ecosystem_text2:'Bdoge convenes all digital currency explorers to jointly create a decentralized ecosystem of bdoge, including a series of applications such as NFT game metauniverse bdogeswap. Look forward to it!',
+	index_ecosystem_title:'BDOGE and the ecosystem',
+	index_ecosystem_text1:'BDOGE is a dog that spreads beliefs. His intention is to spread the concept of decentralization to everyone, so the token model of BDOGE Token is designed based on this concept. If you hold a certain amount of BDOGE and share with your friends to buy BDOGE, the smart contract will be triggered and send reward tokens to your account, and holding BDOGE can also enjoy additional dividends.',
+	index_ecosystem_text2:"BDOGE has established a complete and accurate decentralized navigation application software to help people from all over the world quickly enter the decentralized world. In BDOGE's planning, this is only a small part, and the future belongs to the BDOGE ecosystem. There are a series of applications such as NFT game metaverse BDOGESwap, so please look forward to it!",
 
 
-	index_eco:['Pancakeswap deployment',"Strong application ecology",'Efficient Dao community'],
+	index_eco:['PancakeSwap Deployment',"Powerful application ecosystem",'Efficient DAO Community'],
 
 	index_coin:[{
 		title:'BDOGE Token',
 		label:'See Live Charts',
-		text:"Bdoge token is the only basic currency in the bdoge ecosystem. It will serve various applications in the bdoge ecosystem. With the continuous improvement of the ecosystem, the value of bdoge token will be infinitely magnified. Bdoge token will log in at Qian'an for the first time",
+		text:"BDOGE Token is a new type of MEME token designed by BDOGE based on social scenarios. If you are good at socializing and hold BDOGE, you can earn your income from it, and as the BDOGE community continues to grow and new applications are launched, the value of BDOGE It will rise to a thousand times or even ten thousand times, and BDOGE Token will be logged in pancaka!",
 	},{
 		title:'BDOGE',
 		label:'See Live Charts',
-		text:'The application currently developed by the team is bdoge, which provides users with a comprehensive CMC platform integrating digital currency website navigation, project promotion, contract detection and marketing services according to intelligent algorithms. Bdoge will create a simple and efficient digital experience for users, realize the high integration of decentralization and reality, and make the encrypted world simple and intuitive!',
+		text:'BDOGE Ecology has a comprehensive CMC platform that provides users with digital currency website navigation based on intelligent algorithms. This will make the crypto world simpler and more intuitive. BDOGE will continue to launch simple and efficient digital applications to achieve a high degree of integration between decentralization and reality.',
 	},{
 		title:'BDOGE DAO',
 		label:'See Live Charts',
-		text:'With the support of bdoge token, bdoge will establish a community driven Dao ecosystem. The main agenda of the community will be voted by all members. Community members have the right to vote on their own ideas and decide the development route of bdoge according to the number of votes!',
+		text:'Powered by BDOGE Token, BDOGE will build a community-driven DAO ecosystem. The main agenda of the community will be voted on by all members. Community members have the right to vote on their own ideas, and the development route of BDOGE will be decided according to the number of votes!',
 	}],
 
-	index_cta_title:'How to purchase bdoge',
-	index_cta_text:"Bdoge will log in to the decentralized exchange pancakeswap of Qian'an. You can use the blockchain browser to open the pancake exchange in your frequently used wallet for exchange. After the exchange is completed, you may need to add a contract address to display the balance. At this point, you will become an important member of the bdoge community and can participate in the dividends and services of bdoge ecology!",
+	index_cta_title:'HOW TO BUY BDOGE',
+	index_cta_text:"BDOGE will be listed on Binance's decentralized exchange PancakeSwap. You can use the blockchain browser to open the Pancake Exchange in your frequently used wallet to exchange. After the exchange is completed, you may need to add a contract address to display the balance. At this point, you will become an important member of the BDOGE community and can participate in the dividends and services of the BDOGE ecosystem!",
 	index_cta_btn1:'Buy BDOGE',
 	index_cta_btn2:'Buy LEASH',
 
 	index_qsg_title:'Quick Start Guide',
 	index_qsg:[{
-		title:'Create MetaMask wallet',
-		text:'Create a MetaMask Wallet using either a desktop computer or an iOS/Android mobile device. That will allow you to buy, sell, send, and receive SHIB or LEASH.',
+		title:'Create a MetaMask or TokenPocket wallet',
+		text:'Create a MetaMask or TokenPocket wallet using a desktop computer or an iOS/Android mobile device. This will allow you to buy, sell, send and receive BDOGE.',
 	},{
-		title:'Send ETH to your wallet',
-		text:'You can buy Ethereum (ETH) directly on MetaMask or transfer it to your MetaMask Wallet from exchanges like Coinbase, Binance, etc. Make sure to use the ERC-20 network when transfering ETH.',
+		title:'Send BNB or USDT to your wallet',
+		text:'You can buy BNB directly on MetaMask or TokenPocket, or transfer it to your MetaMask or TokenPocket wallet from exchanges like Coinbase, Binance, etc. Be sure to use the ERC-20 network when transferring BNB.',
 	},{
-		title:'Connect your wallet to ShibaSwap',
-		text:'Access your wallet to ShibaSwap by clicking ‘Connect to a wallet’ and selecting MetaMask.',
+		title:'Connect your wallet to PancakeSwap',
+		text:'Access your wallet to PancakeSwap by clicking "Connect to Wallet" and selecting MetaMask.',
 	},{
-		title:'Swap ETH for SHIB, LEASH or BONE',
-		text:'You can start swapping as soon as you have ETH available! Press ‘Select a token’ and enter the token address or search for it on the tokens list.',
+		title:'Convert BNB or USDT to BDOGE',
+		text:'Once you have BNB or USDT available, you can start exchanging! Press "Select Token" and enter the token address or search in the token list.',
 	}],
 
 	index_cta_btn3:'Use ShibaSwap',
@@ -122,89 +122,94 @@ const locale = {
 	index_certik_On:'On board',
 	index_cta_btn4:'Audit Report',
 
-	index_tokenomics_title:'TOKENOMICS',
-	index_tokenomics_text:'SKP infuses traditional venture capital with community spirit through open governance, support and inclusion backed by a pioneering financial mechanism. SKP ecosystem will implement the DAO structure over time to achieve decentralization.',
+	index_tokenomics_title:'Token Economics',
+	index_tokenomics_text:'BDOGE infuses traditional venture capital with a spirit of community through open governance, support and inclusion, backed by pioneering financial mechanisms. The BDOGE ecosystem will implement a DAO structure over time to achieve decentralization.',
 	index_tokenomics1:[{
 		title1:'1000',
 		title2:'trillion',
-		text:'Total supply',
+		text:'total supply',
 	},{
 		title1:'',
 		title2:'60%',
-		text:'Into DeadAddress',
+		text:'Enter DeadAddress',
 	},{
 		title1:'1',
 		title2:'billion',
-		text:'The deflation limit',
+		text:'deflationary limit',
 	},{
 		title1:'262',
 		title2:'trillion',
-		text:'Initail circulation',
+		text:'Initial circulation',
 	}],
 	index_tokenomics2:[{
 		title1:'',
 		title2:'',
-		text:'Mapping for the Shibking holders',
+		text:'Mapping of BDOGE holders',
 	},{
 		title1:'',
 		title2:'1%',
-		text:'Liquidity',
+		text:'destroy',
 	},
 	{
 		title1:'',
 		title2:'1%',
-		text:'Liquidity',
+		text:'fluidity',
 	},{
 		title1:'',
 		title2:'1%',
-		text:'Treasury',
+		text:'treasury',
 	},{
 		title1:'',
 		title2:'9%',
-		text:'Reward(Shib and USDT)',
+		text:'award(Shib and USDT)',
 	},{
 		title1:'',
 		title2:'12%',
-		text:'Slippage',
+		text:'slippage',
 	}],
 
 	index_roadmap_title:'ROADMAP',
 	index_roadmap:[{
-		title:'2022 Q1',
-		text0:'Update bdoge application (develop new official website theme and pre-sale function)',
+		title:'The first stage',
+		text0:'Update the BDOGE application (develop a new official website theme and pre-sale function)',
 		text1:'Official website online',
-		text2:'Open bdoge token pre-sale',
-		text3:'Online bdoge token',
-		text4:"The Ministry of Finance regularly repurchases the opening of bdoge function",
+		text2:'Open BDOGE Token pre-sale',
+		text3:'List BDOGE Token',
+		text4:"The Ministry of Finance's regular repurchase of BDOGE function is open",
 	},{
-		title:'2022 Q2',
-		text1:'Pledge pool opened on official website',
+		title:'second stage',
+		text1:'Official website opens pledge pool',
 		text2:'Community voting function completed',
-		text3:'The official website opens a fast channel for usdt to exchange bdoge token',
+		text3:'The official website opens a fast channel for USDT to BDOGE Token exchange',
 		text4:"",
 	},{
-		title:'2022 Q3',
-		text1:'Chain tour was officially approved.',
-		text2:'The chain game association was established.',
-		text3:'Chain game NFT is on sale.',
-		text4:"The chain game was officially launched.",
+		title:'The third phase',
+		text1:'Chain Tour officially established the project.',
+		text2:'The Chain Game Association was established.',
+		text3:'Chain game NFT public sale.',
+		text4:"The chain game is officially launched.",
 	},{
-		title:'2022 Q4',
-		text1:'Open mobile mining',
-		text2:'Ido function launched on the official website',
-		text3:'Bdoge community DAPP internal test.',
-		text4:"Bdoge community annual feedback program.",
+		title:'fourth stage',
+		text1:'Turn on liquidity mining',
+		text2:'The official website launched the IDO function',
+		text3:'BDOGE community DAPP internal test.',
+		text4:"BDOGE Community Anniversary Giveback Program.",
 	}],
 
 	index_com_title:'contact us',
 
 	index_adress:'0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375',
-	index_cta_btn5:'Copy to Clipboard',
+	index_cta_btn5:'copy to clipboard',
 
-	index_footer_text1:'Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate SHIB information.',
-	index_footer_text2:'Using the links below, you can join our various groups alongside the 1M+ other members of the ShibArmy.',
+	index_footer_text1:'Our community is getting stronger every day. Please follow our social platforms to get the latest and accurate SHIB information.',
+	index_footer_text2:'Through the links below you can join our various groups, along with more than 1 million other members of the Shibami.',
 	index_footer_link:'Click here to search for your preferred country!',
-		
+	
+	index_shibaswap_title:'BDOGESwap',
+	index_shibaswap_text:'When BDOGE users reach a certain order of magnitude, BDOGE will launch BDOGESwap, the next evolution of the DEFI platform. BDOGESwap allows users to earn money by engaging in a series of DEFI financial activities through an advanced and innovative reward system!',
+
+	index_art_title:'BDOGE Art',
+	index_art_text:' Create, explore and trade NFTs in the virtual world of BDOGE Art. BDOGE brings together a group of talented people to create extraordinary things by fostering an environment that encourages creativity and growth. Through the power of BDOGE Art, we help holders find the tools they need to turn their inspirations and unique perspectives into Reality.',
 	// 选择语言
 	selectLang: "Choose language",
 

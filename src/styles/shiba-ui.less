@@ -843,6 +843,43 @@ a {
     box-shadow: 0 0 200px 20px rgba(255, 230, 0, 0.1);
 }
 
+.eco-cta--ico-hover{
+    display: none;
+}
+
+@keyframes fade-in { 
+    0% {opacity: 1;}/*初始状态 透明度为0*/
+    40% {opacity: 1;}/*过渡状态 透明度为0*/
+    100% {opacity: 0;display: none;}/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in {/*针对webkit内核*/
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    100% {opacity: 0;display: none;}
+}
+
+@keyframes fade-in-h {
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+    40% {opacity: 0;}/*过渡状态 透明度为0*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in-h {/*针对webkit内核*/
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.eco-cta-holder:hover{
+    .eco-cta-ico-wrap{
+        .eco-cta--ico{
+            display: none;
+        }
+        .eco-cta--ico-hover{
+            display: block;
+        }
+    }
+}
+
 .eco-cta--bg {
     position: absolute;
     left: 0%;
@@ -866,7 +903,7 @@ a {
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-    opacity: 0;
+    /*opacity: 0;*/
     -o-object-fit: none;
     object-fit: none;
 }
@@ -1359,7 +1396,7 @@ a {
     display: flex;
     width: 100%;
     max-width: 877px;
-    padding-top: 23px;
+    /*padding-top: 23px;*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -2355,7 +2392,7 @@ a {
     align-items: center;
     border-radius: 100%;
     background-color: #2e2c39;
-    // background-image: url('../assets/slider-l-arr.svg');
+    background-image: url('../assets/slider-l-arr.svg');
     background-position: 50% 50%;
     background-size: 13px;
     background-repeat: no-repeat;
@@ -2410,7 +2447,7 @@ a {
     align-items: center;
     border-radius: 100%;
     background-color: #2e2c39;
-    // background-image: url('../assets/slider-r-arr.svg');
+    background-image: url('../assets/slider-r-arr.svg');
     background-position: 50% 50%;
     background-size: 13px;
     background-repeat: no-repeat;

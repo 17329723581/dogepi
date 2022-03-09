@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!--关于BDOGE和生态系统-->
     <div id="ecosystem" class="section__eco wf-section">
       <div class="container-1440">
         <div class="eco-wrap">
@@ -7,7 +8,8 @@
             <h2 class="h1">{{ this.$t("index_ecosystem_title") }}</h2>
             <p class="p">
               {{ this.$t("index_ecosystem_text1") }}
-            </p><br>
+            </p>
+            <br />
             <p class="p">
               {{ this.$t("index_ecosystem_text2") }}
             </p>
@@ -25,8 +27,9 @@
                     loading="lazy"
                     alt=""
                     class="eco-cta--ico"
-                  /><img
-                    src="images/ico-uni-col.svg"
+                  />
+                  <img
+                    src="@/assets/ico-uni-h.png"
                     loading="lazy"
                     alt=""
                     class="eco-cta--ico-hover"
@@ -47,12 +50,12 @@
                     src="@/assets/ico-icr.png"
                     loading="lazy"
                     alt=""
-                    class="eco-cta--ico wallet"
+                    class="eco-cta--ico"
                   /><img
-                    src="images/ico-icr-b.png"
+                    src="@/assets/ico-icr-h.png"
                     loading="lazy"
                     alt=""
-                    class="eco-cta--ico-hover wallet"
+                    class="eco-cta--ico-hover"
                   />
                 </div>
                 <div class="eco-cta--txt">{{ this.$t("index_eco")[1] }}</div>
@@ -72,7 +75,7 @@
                     alt=""
                     class="eco-cta--ico wallet"
                   /><img
-                    src="images/ico-vb-burn-f.svg"
+                    src="@/assets/ico-vb-burn-h.png"
                     loading="lazy"
                     alt=""
                     class="eco-cta--ico-hover wallet"
@@ -86,6 +89,7 @@
         </div>
       </div>
     </div>
+    <!---->
     <div class="section__coin wf-section">
       <div class="container-1440">
         <div data-w-id="ea099555-1b52-f816-b372-4f0de20bb312" class="coin-grid">
@@ -252,15 +256,13 @@
     <div id="how-to-buy" class="section__htb wf-section">
       <div class="container-1440">
         <div class="htb-wrap">
+          <!--如何购买BDOGE-->
           <div class="htb-hero">
             <div class="htb-left">
               <h2 class="h1">{{ this.$t("index_cta_title") }}</h2>
               <p class="p">{{ this.$t("index_cta_text") }}</p>
               <div class="htb-btn-wrap">
-                <a
-                  target="_blank"
-                  class="cta-btn r-pad buy w-inline-block"
-                >
+                <a target="_blank" class="cta-btn r-pad buy w-inline-block">
                   <div class="cta-btn__txt">
                     {{ this.$t("index_cta_btn1") }}
                   </div>
@@ -280,21 +282,62 @@
             </div>
             <div class="htb-right">
               <div class="base-circle-wrap">
-                <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1">
-                <img src="@/assets/c2.png" loading="lazy" alt="" class="htb-circle-dashes">
+                <img
+                  src="@/assets/c1.png"
+                  loading="lazy"
+                  alt=""
+                  class="htb-circle-1"
+                />
+                <img
+                  src="@/assets/c2.png"
+                  loading="lazy"
+                  alt=""
+                  class="htb-circle-dashes"
+                />
                 <div class="circle-glued-coins">
-                  <img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1">
-                  <img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2">
-                  <img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3">
+                  <img
+                    src="@/assets/gc1.png"
+                    loading="lazy"
+                    alt=""
+                    class="gc-1"
+                  />
+                  <img
+                    src="@/assets/gc2.png"
+                    loading="lazy"
+                    alt=""
+                    class="gc-2"
+                  />
+                  <img
+                    src="@/assets/gc4.png"
+                    loading="lazy"
+                    alt=""
+                    class="gc-3"
+                  />
                 </div>
                 <div class="front-coins-holder">
-                  <img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1">
-                  <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2">
-                  <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3">
+                  <img
+                    src="@/assets/bc1.png"
+                    loading="lazy"
+                    alt=""
+                    class="bc-1"
+                  />
+                  <img
+                    src="@/assets/bc2.png"
+                    loading="lazy"
+                    alt=""
+                    class="bc-2"
+                  />
+                  <img
+                    src="@/assets/bc4.png"
+                    loading="lazy"
+                    alt=""
+                    class="bc-3"
+                  />
                 </div>
               </div>
             </div>
           </div>
+          <!--快速入门指南-->
           <div class="htb-sg-wrap">
             <h2 class="h1">{{ this.$t("index_qsg_title") }}</h2>
             <div class="qsg-wrap">
@@ -356,71 +399,124 @@
         </div>
       </div>
     </div>
-    <div id="shibaswap" class="section__ss wf-section">
+    <!--代币经济学-->
+    <div class="section__ss wf-section">
       <div class="container-1440">
         <div class="ss-wrap">
           <div class="ss-left">
             <div class="box box4">
               <div class="l animate__animated animate__fadeInDown">
                 <div class="t1">{{ this.$t("index_tokenomics_title") }}</div>
-                <div class="t2">
+                <div class="t2" style="text-align: justify;line-height: 30px;">
                   {{ this.$t("index_tokenomics_text") }}
                 </div>
                 <div class="t3">
                   <div class="t3-l animate__animated animate__fadeInBottomLeft">
                     <div>
-                      <span class="pink">{{ this.$t("index_tokenomics1")[0]['title1'] }}</span>
-                      <span class="pink">{{ this.$t("index_tokenomics1")[0]['title2'] }}</span>
-                      <span class="pinks">&nbsp;{{ this.$t("index_tokenomics1")[0]['text'] }}</span>
+                      <span class="pink">{{
+                        this.$t("index_tokenomics1")[0]["title1"]
+                      }}</span>
+                      <span class="pink">{{
+                        this.$t("index_tokenomics1")[0]["title2"]
+                      }}</span>
+                      <span class="pinks"
+                        >&nbsp;{{
+                          this.$t("index_tokenomics1")[0]["text"]
+                        }}</span
+                      >
                     </div>
                     <div>
-                      <span class="pink">{{ this.$t("index_tokenomics1")[1]['title1'] }}</span>
-                      <span class="pink">{{ this.$t("index_tokenomics1")[1]['title2'] }}</span>
-                      <span class="pinks">&nbsp;{{ this.$t("index_tokenomics1")[1]['text'] }}</span>
+                      <span class="pink">{{
+                        this.$t("index_tokenomics1")[1]["title1"]
+                      }}</span>
+                      <span class="pink">{{
+                        this.$t("index_tokenomics1")[1]["title2"]
+                      }}</span>
+                      <span class="pinks"
+                        >&nbsp;{{
+                          this.$t("index_tokenomics1")[1]["text"]
+                        }}</span
+                      >
                     </div>
                     <div>
-                      <span class="pink">{{ this.$t("index_tokenomics1")[2]['title1'] }}</span>
-                      <span class="pink">{{ this.$t("index_tokenomics1")[2]['title2'] }}</span>
-                      <span class="pinks">&nbsp;{{ this.$t("index_tokenomics1")[2]['text'] }}</span>
+                      <span class="pink">{{
+                        this.$t("index_tokenomics1")[2]["title1"]
+                      }}</span>
+                      <span class="pink">{{
+                        this.$t("index_tokenomics1")[2]["title2"]
+                      }}</span>
+                      <span class="pinks"
+                        >&nbsp;{{
+                          this.$t("index_tokenomics1")[2]["text"]
+                        }}</span
+                      >
                     </div>
                     <div>
-                      <span class="pink">{{ this.$t("index_tokenomics1")[3]['title1'] }}</span>
-                      <span class="pink">{{ this.$t("index_tokenomics1")[3]['title2'] }}</span>
-                      <span class="pinks">&nbsp;{{ this.$t("index_tokenomics1")[3]['text'] }}</span>
+                      <span class="pink">{{
+                        this.$t("index_tokenomics1")[3]["title1"]
+                      }}</span>
+                      <span class="pink">{{
+                        this.$t("index_tokenomics1")[3]["title2"]
+                      }}</span>
+                      <span class="pinks"
+                        >&nbsp;{{
+                          this.$t("index_tokenomics1")[3]["text"]
+                        }}</span
+                      >
                     </div>
                   </div>
                   <div
                     class="t3-r animate__animated animate__fadeInBottomRight"
                   >
                     <div class="t3-r-1 pinks">
-                      {{ this.$t("index_tokenomics2")[0]['title1'] }}
-                      {{ this.$t("index_tokenomics2")[0]['title2'] }}
-                      {{ this.$t("index_tokenomics2")[0]['text'] }}
+                      {{ this.$t("index_tokenomics2")[0]["title1"] }}
+                      {{ this.$t("index_tokenomics2")[0]["title2"] }}
+                      {{ this.$t("index_tokenomics2")[0]["text"] }}
                     </div>
                     <div class="t3-r-2 pinks">
-                      <span>{{ this.$t("index_tokenomics2")[1]['title1'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[1]['title2'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[1]['text'] }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[1]["title1"]
+                      }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[1]["title2"]
+                      }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[1]["text"] }}</span>
                     </div>
                     <div class="t3-r-2 pinks">
-                      <span>{{ this.$t("index_tokenomics2")[2]['title1'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[2]['title2'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[2]['text'] }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[2]["title1"]
+                      }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[2]["title2"]
+                      }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[2]["text"] }}</span>
                     </div>
                     <div class="t3-r-3 pinks">
-                      <span>{{ this.$t("index_tokenomics2")[3]['title1'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[3]['title2'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[3]['text'] }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[3]["title1"]
+                      }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[3]["title2"]
+                      }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[3]["text"] }}</span>
                     </div>
                     <div class="t3-r-4 pinks">
-                      <span>{{ this.$t("index_tokenomics2")[4]['title1'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[4]['title2'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[4]['text'] }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[4]["title1"]
+                      }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[4]["title2"]
+                      }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[4]["text"] }}</span>
                     </div>
                     <div class="t3-r-5 pinks">
-                      <span>{{ this.$t("index_tokenomics2")[5]['title1'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[5]['title2'] }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[5]['text'] }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[5]["title1"]
+                      }}</span>
+                      <span>{{
+                        this.$t("index_tokenomics2")[5]["title2"]
+                      }}</span>
+                      <span>{{ this.$t("index_tokenomics2")[5]["text"] }}</span>
                     </div>
                   </div>
                 </div>
@@ -430,7 +526,7 @@
           <div class="ss-right">
             <div class="box box4">
               <div class="r animate__animated animate__fadeInRight">
-                <img class="box4-img" src="@/assets/TOKENOMICS.png">
+                <img class="box4-img" src="@/assets/TOKENOMICS.png" />
               </div>
             </div>
           </div>
@@ -438,28 +534,37 @@
       </div>
       <div id="particles-js3" class="particle-class"></div>
     </div>
-
+    <!--路线图-->
     <div id="roadmap" class="section__htb wf-section">
       <div class="container-1440">
         <div class="htb-wrap">
-    
           <div class="htb-sg-wrap">
-            <h2 class="h1">{{this.$t("index_roadmap_title")}}</h2>
+            <h2 class="h1">{{ this.$t("index_roadmap_title") }}</h2>
             <div class="qsg-wrap">
               <div class="qsg-line">
                 <div class="qsg-line-left">
                   <div class="harrypronumberwrap">
-                    <div>{{this.$t("index_roadmap")[0].title}}</div>
+                    <div>{{ this.$t("index_roadmap")[0].title }}</div>
                   </div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
-                      <li><p class="p">{{this.$t("index_roadmap")[0].text1}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[0].text0}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[0].text2}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[0].text3}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[0].text4}}</p></li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[0].text1 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[0].text0 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[0].text2 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[0].text3 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[0].text4 }}</p>
+                      </li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -469,15 +574,21 @@
               <div class="qsg-line">
                 <div class="qsg-line-left">
                   <div class="harrypronumberwrap">
-                    <div>{{this.$t("index_roadmap")[1].title}}</div>
+                    <div>{{ this.$t("index_roadmap")[1].title }}</div>
                   </div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
-                      <li><p class="p">{{this.$t("index_roadmap")[1].text1}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[1].text2}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[1].text3}}</p></li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[1].text1 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[1].text2 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[1].text3 }}</p>
+                      </li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -487,16 +598,24 @@
               <div class="qsg-line">
                 <div class="qsg-line-left">
                   <div class="harrypronumberwrap">
-                    <div>{{this.$t("index_roadmap")[2].title}}</div>
+                    <div>{{ this.$t("index_roadmap")[2].title }}</div>
                   </div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
-                      <li><p class="p">{{this.$t("index_roadmap")[2].text1}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[2].text2}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[2].text3}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[2].text4}}</p></li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[2].text1 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[2].text2 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[2].text3 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[2].text4 }}</p>
+                      </li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -506,16 +625,24 @@
               <div class="qsg-line">
                 <div class="qsg-line-left">
                   <div class="harrypronumberwrap">
-                    <div>{{this.$t("index_roadmap")[3].title}}</div>
+                    <div>{{ this.$t("index_roadmap")[3].title }}</div>
                   </div>
                 </div>
                 <div class="qsg-line-right">
                   <h3 class="h3 qsg harryh3pro">
                     <ul class="text-ul">
-                      <li><p class="p">{{this.$t("index_roadmap")[3].text1}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[3].text2}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[3].text3}}</p></li>
-                      <li><p class="p">{{this.$t("index_roadmap")[3].text4}}</p></li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[3].text1 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[3].text2 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[3].text3 }}</p>
+                      </li>
+                      <li>
+                        <p class="p">{{ this.$t("index_roadmap")[3].text4 }}</p>
+                      </li>
                     </ul>
                   </h3>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
@@ -526,54 +653,55 @@
         </div>
       </div>
     </div>
-
-    <!--<div id="community" class="section__com wf-section">
-      <div class="container-1440">
-        <div class="com-wrap">
-          <h2 class="h1">{{ this.$t("index_com_title") }}</h2>
-          <p class="art_p">
-            If you'd like to donate to the
-            <span class="p--white">Devs</span>
-            , send
-            <span class="p--orange">
-              ETH </span
-            >, <span class="p--orange">SHIB</span>,
-            <span class="p--orange">LEASH</span> or
-            <span class="p--orange">BONE</span>
-            here. Thank you for your support! WOOF!
-          </p>
-          <div class="adress-wrap">
-            <div class="adress-left">
-              <div id="link-to-copy" class="adress--txt">
-                {{ this.$t("index_adress") }}
-              </div>
-              <div class="adress-hider"></div>
-            </div>
-            <div class="adress-right">
-              <a
-                :data-clipboard-text="index_adress"
-                href="#"
-                class="cta-copy w-inline-block"
-              >
-                <img
-                  src="@/assets/ico-copy.svg"
-                  loading="eager"
-                  alt=""
-                  class="cta-btn--ico copy"
-                />
-                <div class="cta-btn__txt">{{ this.$t("index_cta_btn5") }}</div>
-                <div class="cta-btn-transparent__gradhide dark"></div>
-                <div class="cta-btn-transparent__gradhide-red"></div>
-                <div class="cta-btn-transparent__animbox"></div>
-                <div class="cta-copied-box">
-                  <div class="cta-copied-txt"><strong>Copied</strong></div>
+    <!--ShibaSwap-->
+    
+    <div id="shibaswap" class="section__ss wf-section">
+            <div class="container-1440">
+                <div class="ss-wrap">
+                    <div class="ss-left">
+                        <div class="ss-img-holder"><img src="@/assets/ss-img2x.png" loading="eager" alt="" class="ss--img"><img src="@/assets/ss-glow.svg" loading="eager" alt="" class="ss--img-glow"></div>
+                        <!--<a href="https://shibaswap.com/" target="_blank" class="cta-btn-transparent w-inline-block"><img src="@/assets/swap-ico.svg" loading="eager" alt="" class="cta-btn--ico">
+                            <div class="cta-btn__txt">Use ShibaSwap</div>
+                            <div class="cta-btn-transparent__gradhide"></div>
+                            <div class="cta-btn-transparent__gradhide-red"></div>
+                            <div class="cta-btn-transparent__animbox"></div>
+                        </a>-->
+                    </div>
+                    <div class="ss-right">
+                        <h2 class="h1">{{ this.$t("index_shibaswap_title")}}</h2>
+                        
+                        <p class="p">{{ this.$t("index_shibaswap_text")}}</p>
+                    </div>
                 </div>
-              </a>
             </div>
-          </div>
+            <div id="particles-js3" class="particle-class"></div>
+    </div>
+    <!--Art-->
+    <div id="art" class="section__art wf-section">
+            <div class="container-1440">
+                <div class="art-wrap">
+                    <h2 class="h1">{{ this.$t("index_art_title")}}</h2>
+                    <p class="art_p">{{ this.$t("index_shibaswap_text")}}</p>
+                </div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-container first-swiper">
+                    <div class="swiper-wrapper first-swiper-wrapper" :style="swiper">
+                        <div class="swiper-slide" v-for="(item, index) in airlist" :key="index">
+                            <div class="slide">
+                                <a href="#" class="slide-lightbox w-inline-block w-lightbox">
+                                    <img :src="item" loading="lazy" alt="" class="slider-lb--img">
+                                    <div class="slider-lb--bg"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="arrow-previous w-inline-block" @click="swiperClick(1)"></a>
+                    <a href="#" class="arrow-next w-inline-block" @click="swiperClick(2)"></a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>-->
+    </div>
   </div>
 </template>
 
@@ -581,35 +709,24 @@
 export default {
   data() {
     return {
-      airlist: [
-        {
-          img: "http://pcoindex.oss/images/art1.png",
+        swiper:{
+            "transition-duration": "0ms",
+            transform: "translate3d(0, 0px, 0px)"
         },
-        {
-          img: "http://pcoindex.oss/images/art2.png",
-        },
-        {
-          img: "http://pcoindex.oss/images/art3.jpg",
-        },
-        {
-          img: "http://pcoindex.oss/images/art4.png",
-        },
-        {
-          img: "http://pcoindex.oss/images/art5.jpg",
-        },
-        {
-          img: "http://pcoindex.oss/images/art6.png",
-        },
-        {
-          img: "http://pcoindex.oss/images/art7.png",
-        },
-        {
-          img: "http://pcoindex.oss/images/art8.png",
-        },
-        {
-          img: "http://pcoindex.oss/images/art9.png",
-        },
-      ],
+        swiper_index:0,
+        size:0,
+        airlist: [
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+            "https://shibatoken.com/images/art12-p-500.png",
+        ],
     };
   },
   props: {},
@@ -618,20 +735,69 @@ export default {
   components: {},
   created() {},
   mounted() {
-    inst("presale_canvas");
+    //inst("presale_canvas");
   },
-  methods: {},
+  methods: {
+    swiperClick(e){
+        /*if(this.airlist.length>this.size){
+            this.size = e==1?this.size-1:this.size+1;
+            console.log('size数据',this.size)
+        }else{
+            this.size = e==1?this.size-1:this.size+1;
+            console.log('size数据',this.size)
+        }*/
+        
+        /*this.swiper.transform = "translate3d(-"+this.size*190.3+"px, 0px, 0px)";*/
+        
+        /*判断是否数量小于当前数量*/
+        var count = this.airlist.length;
+        if(e==1)
+        {
+            if(this.swiper_index>0){
+                if(this.size!=0)
+                {
+                    this.size = this.size==1?1:this.size -1;
+                    let size = this.size;
+                    this.swiper_index = this.swiper_index-1;
+                    this.swiper.transform = "translate3d(-"+size*190.3+"px, 0px, 0px)";
+                    console.log('数据',size)
+                }else{
+                    this.swiper.transform = "";
+                }
+            }
+        }else{
+            if(count>this.swiper_index)
+            {
+                this.size = this.size +1;
+                let size = this.size;
+                this.swiper_index = this.swiper_index+1;
+                this.swiper.transform = "translate3d(-"+size*190.3+"px, 0px, 0px)";
+                console.log('数据',size)
+                /*console.log('数据',size)*/
+            }
+        }
+        
+
+    }
+  },
 };
 </script>
 
 <style scoped lang="less">
 @import "../../../styles/shiba-ui";
+.uin:hover{
+    display: none;
+}
+.swiper-slide{
+    width: 10vw;
+}
 p {
   max-width: 550px;
   font-family: Khula, sans-serif;
   color: #bbbbbe;
   font-size: 18px;
   line-height: 32px;
+  text-align: justify;
 }
 .art_p {
   max-width: 1440px;
@@ -640,37 +806,39 @@ p {
   font-size: 18px;
   line-height: 32px;
 }
- .harrypronumberwrap {
-        font-weight: bold;
-        font-size: 36px;
-        text-align: center;
-        color: #fff;
-    }
-  .harryh3pro{
-        margin-left: 1vw;
-        font-size: 20px;
-        text-align: center;
-        color: #bbbbbe;
-  }
+.harrypronumberwrap {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+.harryh3pro {
+  margin-left: 1vw;
+  font-size: 20px;
+  text-align: center;
+  color: #bbbbbe;
+}
 //TOKENOMICS
-.box4 .pink{
-    font-size:2vw;
+.box4 .pink {
+  font-size: 2vw;
 }
-.box4 .t3-r-1, .box4 .t3-r-2, .box4 .t3-r-3, .box4 .t3-r-4, .box4 .t3-r-5 {
-    font-size: 1vw;
+.box4 .t3-r-1,
+.box4 .t3-r-2,
+.box4 .t3-r-3,
+.box4 .t3-r-4,
+.box4 .t3-r-5 {
+  font-size: 1vw;
 }
-.pinks{
-    color: #ffffff;
-    white-space:nowrap;
-    font-size:1vw;
-
+.pinks {
+  color: #ffffff;
+  white-space: nowrap;
+  font-size: 1vw;
 }
-.htb-circle-1{
+.htb-circle-1 {
   position: absolute;
-  
 }
-.ss-right{
-  padding-top: 150px;
+.ss-right {
+  //padding-top: 150px;
 }
 @-webkit-keyframes rotation {
   from {
@@ -678,79 +846,92 @@ p {
   }
   to {
     -webkit-transform: rotate(360deg);
-   }
+  }
 }
-.htb-circle-dashes{
+.htb-circle-dashes {
   animation: rotation 60s linear infinite;
 }
-.circle-glued-coins{
+.circle-glued-coins {
   //-webkit-transform: rotate(900deg);
   animation: rotation 30s linear infinite;
   /*-moz-animation: rotation 60s linear infinite;
   -webkit-animation: rotation 60s linear infinite;
   -o-animation: rotation 60s linear infinite;*/
 }
-.front-coins-holder{
+.front-coins-holder {
   animation: rotation 60s linear infinite;
 }
-@media (max-width: 768px){
-    .ss-right{
-        width:100%
+#shibaswap .ss-left{
+  width: auto;
+}
+#shibaswap .ss-right{
+  width: auto;
+}
+@media (max-width: 768px) {
+    .swiper-slide{
+        width: 30vw;
     }
-    .ss-left{
-        width:100%
+  .ss-right {
+    width: 100%;
+  }
+  .ss-left {
+    width: 100%;
+  }
+  .box4 .l .t3 {
+    display: block;
+    flex-direction: row;
+    font-size: 18px;
+  }
+  .box4 .pink {
+    font-size: 7vw;
+  }
+  .box4 .t3-r-1,
+  .box4 .t3-r-2,
+  .box4 .t3-r-3,
+  .box4 .t3-r-4,
+  .box4 .t3-r-5 {
+    font-size: 4vw;
+  }
+  .pinks {
+    font-size: 3.5vw;
+  }
+  .box4 .t3-l {
+    margin-bottom: 10vw;
+  }
+  .qsg-line-right {
+    display: block;
+    margin-left: 0;
+  }
+  .circle-glued-coins {
+    .gc-1 {
+      width: 17vw;
     }
-    .box4 .l .t3 {
-        display: block;
-        flex-direction: row;
-        font-size: 18px;
+    .gc-2 {
+      width: 17vw;
+      bottom: -10vw;
+      left: 17vw;
     }
-    .box4 .pink{
-        font-size:7vw;
+    .gc-3 {
+      width: 17vw;
     }
-    .box4 .t3-r-1, .box4 .t3-r-2, .box4 .t3-r-3, .box4 .t3-r-4, .box4 .t3-r-5 {
-        font-size: 4vw;
+  }
+  .front-coins-holder {
+    .bc-1 {
+      width: 22vw;
     }
-    .pinks{
-        font-size:3.5vw;
+    .bc-2 {
+      width: 22vw;
     }
-    .box4 .t3-l{
-        margin-bottom:10vw
+    .bc-3 {
+      width: 22vw;
+      bottom: 20vw;
+      left: -5vw;
     }
-    .qsg-line-right{
-      margin-left: 0;
-    }
-    .circle-glued-coins{
-      .gc-1{
-        width: 17vw;
-      }
-      .gc-2{
-        width: 17vw;
-        bottom: -10vw;
-        left: 17vw;
-      }
-      .gc-3{
-        width: 17vw;
-      }
-    }
-    .front-coins-holder{
-      .bc-1{
-            width: 22vw;
-      }
-      .bc-2{
-            width: 22vw;
-      }
-      .bc-3{
-            width: 22vw;
-            bottom: 20vw;
-            left: -5vw;
-      }
-    }
-    .ss-right{
-      padding-top: 0px;
-      padding-bottom: 50px;
-    }
-
+  }
+  .ss-right {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
 }
 </style>
 <style>
@@ -871,6 +1052,4 @@ html {
 html.wf-loading * {
   opacity: 0;
 }
-
-
 </style>
