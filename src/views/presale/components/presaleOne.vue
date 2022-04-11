@@ -1,270 +1,158 @@
 <template>
-  <div class="warp">
-    <div class="pc">
-      <a-row type="flex" class="banner" justify="space-between">
-        <a-col :md="10" :xs="24" class="presale-left">
-          <div class="left_tit">{{ this.$t("p_o_title") }}</div>
-          <!--div class="left_tit">{{ this.$t("p_o_title") }}{{ address }}</div-->
-
-          <div class="left_des">{{ this.$t("p_o_des") }}</div>
-          <a-statistic-countdown
-            :value="deadline"
-            format="DD: HH: mm: ss"
-            @finish="finish()"
-          />
-          <div class="left_lu">
-            <div class="li">
-              <div>{{ this.$t("p_o_array")[0]["title"] }}</div>
-              <div class="num">{{ this.$t("p_o_array")[0]["num"] }}</div>
+  <div class="ba">
+    <div class="section__htb wf-section">
+      <div class="container-1440">
+        <div class="htb-wrap">
+          <div class="htb-hero">
+            <div class="htb-left">
+              <div class="base-circle-wrap">
+                <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"/>
+                <logo class="htb-circle-dashes"></logo>
+                <div class="circle-glued-coins">
+                  <img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1"/>
+                  <img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2"/>
+                  <img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3"/>
+                </div>
+                <div class="front-coins-holder">
+                  <img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1"/>
+                  <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2"/>
+                  <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3"/>
+                </div>
+              </div>
             </div>
-            <div class="li">
-              <div>{{ this.$t("p_o_array")[1]["title"] }}</div>
-              <div class="num">{{ this.$t("p_o_array")[1]["num"] }}</div>
-            </div>
-          </div>
-          <div class="line">
-            <div class="Progress" :style="'width:' + percentage + '%'"></div>
-          </div>
-          <div class="left_des">{{ this.$t("p_r_o_text") }}</div>
-        </a-col>
-      </a-row>
-      <a-row type="flex" justify="space-between">
-        <a-col :md="24" :xs="24" class="presale-left">
-          <div class="titcom">
-            <div class="tit">{{ this.$t("a_titcom_tit") }}</div>
-            <div class="li">
-              <span class="li-left">{{ a_titcom_li_left }}</span>
-              <span>{{ a_titcom_li_right }}</span>
-            </div>
-          </div>
-          <div class="totalcom">
-            <div class="left">
-              <div class="li">
-                <div class="tb">
-                  <div>{{ this.$t("p_r_o_totalarray")[0]["title"] }}</div>
-                  <div class="num">
-                    {{ this.$t("p_r_o_totalarray")[0]["num"] }}
+            <div class="htb-right">
+              <a-row type="flex" class="banner" justify="space-between">
+                <a-col :md="12" :xs="24" class="presale-left">
+                  <div class="left_lu">
+                  <div class="li">
+                    <div>{{ this.$t("p_o_array")[0]["title"] }}</div>
+                    <div class="num">{{ this.$t("p_o_array")[0]["num"] }}</div>
                   </div>
-                </div>
-              </div>
-              <div class="li">
-                <div class="tb">
-                  <div>{{ this.$t("p_r_o_totalarray")[1]["title"] }}</div>
-                  <div class="num">1 BNB= {{ storeSwapRatio }} SpacePi</div>
-                </div>
-              </div>
-              <div class="li">
-                <div class="tb">
-                  <div>{{ this.$t("p_r_o_totalarray")[2]["title"] }}</div>
-                  <div class="num">
-                    {{ this.$t("p_r_o_totalarray")[2]["num"] }}
+                  <div class="li">
+                    <div>{{ this.$t("p_o_array")[1]["title"] }}</div>
+                    <div class="num">{{ this.$t("p_o_array")[1]["num"] }}</div>
                   </div>
-                </div>
-                <div class="tb">
-                  <div>{{ this.$t("p_r_o_totalarray")[3]["title"] }}</div>
-                  <div class="num">
-                    {{ this.$t("p_r_o_totalarray")[3]["num"] }}
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="right">
-              <div class="tit">{{ this.$t("buy_l_title") }}</div>
-              <div class="input_com">
-                <!-- <input
-                  type="text"
-                  v-model="inputBuy"
-                  :min="1"
-                  :max="50"
-                  :precision="0"
-                /> -->
-                <input
-                  type="text"
-                  v-model="inputBuy"
-                  :placeholder="$t('y_input_text')"
-                  :min="0.1"
-                  :max="50"
-                  :precision="0"
-                />
-                <span @click="handleMax">{{ this.$t("p_r_o_max") }}</span>
-              </div>
-              <div class="tis">
-                {{ this.$t("p_r_o_balance") }} {{ balanceof }}
-                {{ this.$t("p_r_o_BNB") }}
-              </div>
-              <div class="btn" v-if="!address" @click="connect">
-                {{ this.$t("p_r_o_login_bnt") }}
-              </div>
-              <div class="btn" v-if="address" @click="buyNow()">
-                {{ this.$t("p_r_o_buy_bnt") }}
-              </div>
-              <div class="token" v-if="address">
-                <img src="@/assets/token.png" />
-                <p style="word-break: break-all;">{{ address }}</p>
-              </div>
-              <div class="sign_out" v-if="address" @click="logout">
-                <img src="@/assets/sign_out.png" />{{
-                  this.$t("p_r_o_out_bnt")
-                }}
-              </div>
+                  <div class="line">
+                    <div class="Progress" :style="'width:' + percentage + '%'"></div>
+                  </div>
+                  <div class="left_des des-s">{{ this.$t("p_o_des") }}</div>
+                  <a-statistic-countdown :value="deadline" format="DD: HH: mm: ss" @finish="finish()"/>
+                  <div class="left_des transparent">{{ this.$t("p_r_o_text") }}</div>
+                  <div class="left_tit">{{ this.$t("p_o_title") }}</div>
+                </a-col>
+              </a-row>
             </div>
           </div>
-          <div class="rules">
-            <div class="tit">{{ this.$t("p_r_o_rules_title") }}</div>
-            <div class="des">
-              {{ this.$t("p_r_o_rules_array")[0] }}
-            </div>
-            <div class="des">
-              {{ this.$t("p_r_o_rules_array")[1] }}
-            </div>
-            <div class="des">
-              {{ this.$t("p_r_o_rules_array")[2] }}
-            </div>
-          </div>
-          <div class="my_pre">
-            <div class="li">
-              <div>{{ this.$t("p_r_o_pre_array")[0]["title"] }}</div>
-              <div class="num">{{ userLock }}</div>
-            </div>
-            <div class="li">
-              <div>{{ this.$t("p_r_o_pre_array")[1]["title"] }}</div>
-              <div class="num">{{ getspacepi }}</div>
-            </div>
-          </div>
-          <div class="white_des">
-            {{ this.$t("p_r_o_des") }}
-          </div>
-          <!-- <div class="record">
-		      	{{ this.$t("p_r_o_record") }}
-          </div> -->
-        </a-col>
-      </a-row>
+        </div>
+      </div>
     </div>
-    <div class="mobile">
-      <div class="b_tit">{{ this.$t("p_o_title") }}</div>
-      <div class="b_air">{{ this.$t("p_o_des") }}</div>
-      <a-statistic-countdown
-        :value="deadline"
-        format="DD: HH: mm: ss"
-        @finish="finish()"
-      />
-      <div class="left_dhm">
-        <div>Days</div>
-        <div>Hours</div>
-        <div>Minutes</div>
-        <div>Seconds</div>
-      </div>
-      <div class="left_lu">
-        <div class="li">
-          <div>{{ this.$t("p_o_array")[0]["title"] }}</div>
-          <div class="num">{{ this.$t("p_o_array")[0]["num"] }}</div>
-        </div>
-        <div class="li">
-          <div>{{ this.$t("p_o_array")[1]["title"] }}</div>
-          <div class="num">{{ this.$t("p_o_array")[1]["num"] }}</div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="Progress" :style="'width:' + percentage + '%'"></div>
-      </div>
-      <div class="left_des">{{ this.$t("p_r_o_text") }}</div>
-      <div class="titcom">
-        <div class="tit">{{ this.$t("p_r_o_title_s") }}</div>
-        <div class="li">
-          <span class="li-left">{{ a_titcom_li_left }}</span
-          >{{ a_titcom_li_right }}
-        </div>
-      </div>
-
-      <div class="total_com">
-        <div class="li_tit">
-          <div class="tb">
-            <div>{{ this.$t("p_r_o_totalarray")[0]["title"] }}</div>
-            <div class="num">{{ this.$t("p_r_o_totalarray")[0]["num"] }}</div>
+    <div class="section section-t">
+      <div class="container-1440">
+        <div class="htb-wrap">
+          <div class="car1">
+            <div class="car1-a">{{ this.$t("p_titcom_tit") }}</div>
+            <div class="car-a-s">
+              <div class="car1-b">{{p_titcom_li_left}}</div>
+              <div class="car1-c">{{p_titcom_li_right}} {{this.$t('currency')}}</div>
+            </div>
+          </div>
+          <div class="car2">
+            <div class="car2-a">
+              <div class="car2-a-s">
+                <span class="title">{{this.$t("p_r_o_totalarray")[0].title}}</span>
+                <span class="text">{{this.$t("p_r_o_totalarray")[0].text}}</span>
+              </div>
+            </div>
+            <div class="car2-a">
+              <div class="car2-a-s">
+                <span class="title">{{this.$t("p_r_o_totalarray")[1].title}}</span>
+                <span class="text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio }} {{this.$t("currency_1")}}</span>
+              </div>
+            </div>
+            <div class="car2-a">
+              <div class="car2-a-s">
+                <span class="title">{{this.$t("p_r_o_totalarray")[2].title}}</span>
+                <span class="text">{{this.$t("p_r_o_totalarray")[2].text}}</span>
+              </div>
+            </div>
+            <div class="car2-a">
+              <div class="car2-a-s">
+                <span class="title">{{this.$t("p_r_o_totalarray")[3].title}}</span>
+                <span class="text">{{this.$t("p_r_o_totalarray")[3].text}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="car3">
+            <div class="car3-title">
+              {{ this.$t("p_buy_l_title") }}
+            </div>
+            <div class="car3-a">
+              <input class="car3-a-input" maxlength="12" type="text" v-model="inputBuy" :placeholder="$t('p_input_text')" :min="0.1" :max="10" :precision="0">
+              <span @click="handleMax" class="car3-a-button">{{ this.$t("p_r_o_max") }}</span>
+            </div>
+            <div class="car3-b">
+              {{ this.$t("p_r_o_balance") }} {{ balanceof }} {{this.$t('currency')}}
+            </div>
+            <div class="car3-c" v-if="!address">
+              <button type="button" class="car3-b-button" @click="connect">{{ this.$t("p_r_o_login_bnt") }}</button>
+            </div>
+            <div class="car3-c" v-if="address">
+              <button type="button" class="car3-b-button" @click="buyNow()">{{ this.$t("p_r_o_buy_bnt") }}</button>
+            </div>
+            <div class="car3-d" v-if="address" >
+              <span class="address p"><img src="@/assets/token.png"> {{address}}</span>
+              <span class="address m"><img src="@/assets/token.png"> {{address.substr(0,10)}}...{{address.substr(address.length-10,8)}}</span>
+              <button type="button" class="car3-d-button" @click="logout">{{ this.$t("p_r_o_out_bnt") }}</button>
+            </div>
+            <div class="car3-f">
+              <span class="title">
+                {{ this.$t("p_r_o_rules_title") }}
+              </span>
+              <div class="text">
+                <span>{{ this.$t("p_r_o_rules_array")[0] }}</span>
+              </div>
+              <div class="text">
+                <span>{{ this.$t("p_r_o_rules_array")[1] }}</span>
+              </div>
+              <div class="text">
+                <span>{{ this.$t("p_r_o_rules_array")[2] }}</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="li_ratio">
-          <div class="tb">
-            <div>{{ this.$t("p_r_o_totalarray")[1]["title"] }}</div>
-            <div class="num">1BNB={{ storeSwapRatio }}SpacePi</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container-1440">
+        <div class="htb-wrap">
+          <div class="car4">
+            <div class="car4-cg"></div>
+            <div class="car4-a">
+              <div class="car4-a-s">
+                <span class="title">{{ this.$t("p_r_o_pre_array")[0]["title"] }}</span>
+                <span class="text">{{ userLock }}</span>
+              </div>
+            </div>
+            <div class="car4-b">
+              <div class="car4-b-s">
+                <span class="title">{{ this.$t("p_r_o_pre_array")[1]["title"] }}</span>
+                <span class="text">{{ getspacepi }}</span>
+              </div>
+            </div>
+            <div class="car4-c">
+              {{this.$t("p_info") }}
+            </div>
           </div>
         </div>
-        <div class="li_line">
-          <div class="tb">
-            <div>{{ this.$t("p_r_o_totalarray")[2]["title"] }}</div>
-            <div class="num">{{ this.$t("p_r_o_totalarray")[2]["num"] }}</div>
-          </div>
-          <div class="tb_right">
-            <div>{{ this.$t("p_r_o_totalarray")[3]["title"] }}</div>
-            <div class="num">{{ this.$t("p_r_o_totalarray")[3]["num"] }}</div>
-          </div>
-        </div>
-        <div class="input_com">
-          <!-- <input
-            type="text"
-            v-model="inputBuy"
-            :min="1"
-            :max="50"
-            :precision="0"
-          /> -->
-          <input
-            type="text"
-            v-model="inputBuy"
-            :placeholder="$t('y_input_text')"
-            :min="0.1"
-            :max="50"
-            :precision="0"
-          />
-          <span @click="handleMax">{{ this.$t("p_r_o_max") }}</span>
-        </div>
-        <div class="tis">
-          {{ this.$t("p_r_o_balance") }}{{ balanceof }}
-          {{ this.$t("p_r_o_BNB") }}
-        </div>
-        <div class="btn" v-if="!address" @click="connect">
-          {{ this.$t("p_r_o_login_bnt") }}
-        </div>
-        <div class="btn" v-if="address" @click="buyNow()">
-          {{ this.$t("p_r_o_buy_bnt") }}
-        </div>
-        <div class="token" v-if="address">
-          <img
-            src="@/assets/token.png"
-            style="margin-top: 0.5rem;margin-right: 0.3125rem;"
-          />
-          <p
-            style="text-align: justify;text-justify: newspaper;word-break:break-all"
-          >
-            {{ address }}
-          </p>
-        </div>
-        <!-- <div class="sign_out">{{ this.$t("p_r_o_mailbox") }}</div> -->
-        <div class="sign_out" v-if="address" @click="logout()">
-          <img src="@/assets/sign_out.png" />{{ this.$t("p_r_o_out_bnt") }}
-        </div>
       </div>
-      <div class="rules">
-        <div class="tit">{{ this.$t("p_r_o_rules_title") }}</div>
-        <div class="des">
-          {{ this.$t("p_r_o_rules_array")[0] }}
+    </div>
+    <div class="container-1440" style="height: auto;">
+        <div class="hero-wrap">
+            <a href="#ecosystem" class="hero__scrollbtn w-inline-block">
+              <img src="@/assets/hero-scroll-shape.png" loading="eager" alt="" class="hero__scrollbtn--img"/>
+            </a>
         </div>
-        <div class="des">
-          {{ this.$t("p_r_o_rules_array")[1] }}
-        </div>
-        <div class="des">
-          {{ this.$t("p_r_o_rules_array")[2] }}
-        </div>
-      </div>
-      <div class="my_pre">
-        <div class="li">
-          <div>{{ this.$t("p_r_o_pre_array")[0]["title"] }}</div>
-          <div class="num">{{ userLock }}</div>
-        </div>
-        <div class="li">
-          <div>{{ this.$t("p_r_o_pre_array")[1]["title"] }}</div>
-          <div class="num">{{ getspacepi }}</div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -272,6 +160,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 </script>
 <script>
+import logo from "./logo.vue";
 import { mapState, mapActions, mapMutations } from "vuex";
 import axios from "axios";
 import {
@@ -307,8 +196,8 @@ export default {
       userLock: 0,
       getspacepi: 0,
       thousands: thousands,
-      a_titcom_li_left: this.$t("a_titcom_li_left"),
-      a_titcom_li_right: this.$t("a_titcom_li_right") + " 0.1 BNB",
+      p_titcom_li_left: this.$t("p_titcom_li_left"),
+      p_titcom_li_right: this.$t("p_titcom_li_right"),
       percentage:0,
     };
   },
@@ -331,11 +220,11 @@ export default {
           this.getInvited(newVal);
         }
 
-        // if (this.isInvited) {
-        // 	if (newVal !== "" && !this.isInvited[1]) {
-        // 		this.bondInvite();
-        // 	}
-        // }
+        if (this.isInvited) {
+          if (newVal !== "" && !this.isInvited[1]) {
+         	  this.bondInvite();
+         	}
+        }
         if (this.isInvited) {
           if (newVal !== "" && !this.isInvited[1]) {
             // this.logout();
@@ -361,7 +250,7 @@ export default {
         return e.$route.query.address;
       } else {
         // return this.initalAddress;
-        return '0x240c557Ec138416980722E41cCBB4E53D77Dee7C';
+        return '0x3A2d206A01DFE9f27D5CC915AbC8bA7504B1ec02';
       }
       /*const isInvited = sessionStorage.getItem("isRoueInvited");
 				//console.log('数据',isInvited)
@@ -381,6 +270,7 @@ export default {
   },
 
   components: {
+    logo
   },
   onLoad(e) {
     //console.log("数据", e);
@@ -420,7 +310,8 @@ export default {
           this.updateIsInvited(isInvited);
           sessionStorage.setItem("isInvited", JSON.stringify(isInvited));
 
-          this.$message.success(this.$t("connectSuccess"));
+          this.$message.success(this.$t("p_sendAdd"));
+          
           // if(!JSON.parse(this.isInvited)[1]){
           // //console.log('isInvited[1]',isInvited[1])
           //  //console.log('connect',isInvited[1])
@@ -513,11 +404,11 @@ export default {
       const balanceof = Number(this.balanceof);
 
       if (inputBuy < 0.1) {
-        this.$message.warning(this.$t("warningValue5"));
-      } else if (inputBuy > 50) {
-        this.$message.warning(this.$t("warningValue50"));
+        this.$message.warning(this.$t("p_warningValue5"));
+      } else if (inputBuy > 10) {
+        this.$message.warning(this.$t("p_warningValue10"));
       } else if (inputBuy > balanceof) {
-        this.$message.warning(this.$t("warningBalanceOf"));
+        this.$message.warning(this.$t("p_warningBalanceOf"));
       } else {
         await PerSaleObj.methods.buy().send(
           {
@@ -526,24 +417,24 @@ export default {
           },
           (err, address) => {
             if (!err) {
-              this.$message.success(this.$t("sendAdd"));
+              this.$message.success(this.$t("p_sendAdd"));
             } else {
               //console.log(err);
-              this.$message.error(this.$t("sendError"));
+              this.$message.error(this.$t("p_sendError"));
             }
           }
         );
 
         this.getBalance(this.address);
         this.getUserLock();
-        this.$message.success(this.$t("sendSuccess"));
+        this.$message.success(this.$t("p_sendSuccess"));
       }
     },
     // MAX function
     handleMax() {
       const balanceof = Number(this.balanceof);
       const userLockProp = Number(this.userLockProp);
-      const inputMax = new this.$BigNumber(50)
+      const inputMax = new this.$BigNumber(10)
         .minus(new this.$BigNumber(userLockProp))
         .toNumber();
       // //console.log(inputMax,'inputMax')
@@ -575,10 +466,10 @@ export default {
       var items = this.raisedList;
       var items = items[Math.floor(Math.random() * items.length)]
       const random = Math.random().toString(36).substr(2, 4);
-      this.a_titcom_li_left = items.address;
+      this.p_titcom_li_left = items.address;
       const random1 = Math.random() * 1.5;
-      this.a_titcom_li_right =
-      this.$t("a_titcom_li_right") + random1.toFixed(1) + "BNB";
+      this.p_titcom_li_right =
+      this.$t("p_titcom_li_right") + random1.toFixed(1);
       //console.log("数据");
     },
     progres(){
@@ -597,681 +488,24 @@ export default {
 </script>
 
 <style scoped lang="less">
-.ant-statistic {
-  text-align: center;
-}
-
-.mobile {
-  display: none;
-  font-family: DIN;
-
-  .b_tit {
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+@import "../../../styles/shiba-ui";
+@import "./presaleOne.less";
+@import "./presaleOneSlyte.less";
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
   }
-
-  .b_air {
-    text-align: center;
-    color: #bbbbbe;
-    font-weight: bold;
-    line-height: 36px;
-    font-size: 16px;
-  }
-
-  .left_dhm {
-    display: flex;
-
-    div {
-      width: 25%;
-      color: #fff;
-      text-align: center;
-    }
-  }
-
-  /deep/ .ant-statistic-content {
-    span {
-      text-align: center;
-      color: #fff;
-      font-size: 3.375rem;
-      font-weight: 700;
-      line-height: 62px;
-      font-family: DIN;
-    }
-  }
-
-  .left_time {
-    text-align: center;
-    color: #fff;
-    font-size: 62px;
-    font-weight: 700;
-    line-height: 62px;
-    font-family: DIN;
-  }
-
-  .left_lu {
-    margin-top: 20px;
-    margin-left: 20px;
-
-    .li {
-      width: 50%;
-      text-align: left;
-      color: #dd0000;
-      font-size: 16px;
-      line-height: 32px;
-      font-family: DIN;
-      margin-bottom: 10px;
-
-      .num {
-        line-height: 42px;
-        color: #fff;
-        font-size: 26px;
-        font-weight: 600;
-      }
-    }
-  }
-
-  .line {
-    margin: 20px 20px 0px 20px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-    overflow: hidden;
-
-    .Progress {
-      background-color: #dd0000;
-      height: 10px;
-      float: left;
-      border-radius: 5px;
-    }
-  }
-
-  .left_des {
-    padding: 20px;
-    color: #fff;
-    font-weight: Regular;
-  }
-
-  .titcom {
-    .tit {
-      width: 65%;
-      //height: 38px;
-      border-radius: 19px;
-      background-color: #dd0000;
-      color: #ffffff;
-      font-weight: bold;
-      line-height: 38px;
-      text-align: center;
-      margin: 16px auto;
-    }
-
-    .li {
-      display: inline;
-      line-height: 46px;
-      margin: 0 20px;
-      padding: 0 20px;
-      display: flex;
-      background-color: #18171f;
-      border-radius: 10px;
-      color: #ffffff;
-
-      .li-left {
-        width: 40%;
-        color: #ffffff;
-      }
-    }
-  }
-
-  .rules {
-    text-align: left;
-    margin: 20px;
-
-    .tit {
-      font-size: 26px;
-      color: #fff;
-      margin-bottom: 0px;
-      font-weight: bold;
-    }
-
-    .des {
-      font-size: 14px;
-      color: #bbbbbe;
-      line-height: 32px;
-    }
-  }
-
-  .total_com {
-    margin: 20px;
-    padding: 20px 0;
-    background-color: #18171f;
-    border-radius: 20px;
-
-    .li_tit {
-      margin-bottom: 10px;
-      text-align: left;
-      padding: 0 20px;
-
-      .tb {
-        color: #dd0000;
-        font-size: 16px;
-        display: inline-block;
-        font-weight: bold;
-
-        .num {
-          font-size: 18px;
-          font-weight: bold;
-          color: #ffffff;
-        }
-      }
-    }
-
-    .li_ratio {
-      margin-bottom: 10px;
-      text-align: left;
-      padding: 0 20px;
-
-      .tb {
-        color: #dd0000;
-        font-size: 16px;
-        display: inline-block;
-        font-weight: Regular;
-
-        .num {
-          font-size: 18px;
-          font-weight: bold;
-          color: #ffffff;
-        }
-      }
-    }
-
-    .li_line {
-      border-top: 1px solid #70707030;
-      padding: 10px 20px;
-      margin-bottom: 10px;
-      height: 60px;
-      display: flex;
-
-      .tb {
-        width: 50%;
-        color:  #dd0000;
-        font-size: 16px;
-        display: inline-block;
-        font-weight: Regular;
-        text-align: left;
-
-        .num {
-          font-size: 18px;
-          font-weight: bold;
-          color: #ffffff;
-        }
-      }
-
-      .tb_right {
-        width: 50%;
-        color:  #dd0000;
-        font-size: 16px;
-        display: inline-block;
-        font-weight: Regular;
-        text-align: right;
-
-        .num {
-          font-size: 18px;
-          font-weight: bold;
-          color: #ffffff;
-        }
-      }
-    }
-
-    .input_com {
-      margin: 20px 20px 0px 20px;
-      height: 42px;
-      //border: 1px solid #fdd333;
-      border-radius: 8px;
-      position: relative;
-      overflow: hidden;
-
-      input {
-        width: 100%;
-        line-height: 40px;
-        border: none;
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 0 10px;
-      }
-
-      span {
-        position: absolute;
-        right: 20px;
-        bottom: 0;
-        line-height: 42px;
-        color: #333333;
-        font-size: 10px;
-        cursor: pointer;
-      }
-    }
-
-    .tis {
-      line-height: 26px;
-      color: #ffffff;
-      text-align: right;
-      margin: 10px 20px;
-    }
-
-    .btn {
-      margin: 0 20px;
-      line-height: 40px;
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-      color: #ffffff;
-      background-color:  #dd0000;
-      border-radius: 8px;
-      margin-top: 20px;
-      cursor: pointer;
-    }
-
-    .token {
-      margin: 0 20px;
-      margin-top: 10px;
-      text-align: left;
-      display: flex;
-      color: #ffffff;
-      img {
-        display: inline;
-        width: 12px;
-        height: 12px;
-      }
-    }
-
-    .sign_out {
-      margin: 0 20px;
-      margin-top: 10px;
-      text-align: right;
-      cursor: pointer;
-      position: relative;
-      color: #ffffff;
-
-      img {
-        display: inline;
-        width: 16px;
-        height: 16px;
-        margin-right: 10px;
-      }
-    }
-  }
-
-  .my_pre {
-    margin: 20px;
-    padding: 20px;
-    background-color: #18171f;
-    border-radius: 20px;
-    display: flex;
-
-    .li {
-      width: 50%;
-      color: #ffffff;
-      font-size: 16px;
-      text-align: center;
-      line-height: 20px;
-      font-weight: 400;
-
-      .num {
-        font-size: 22px;
-        line-height: 32px;
-        font-weight: 700;
-      }
-    }
-  }
-
-  .white_des {
-    margin: 20px;
-    line-height: 26px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-  }
-
-  .record {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 20px;
-    line-height: 26px;
-    color: #333333;
-    font-weight: bold;
-    min-height: 200px;
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
-
-.pc {
-  display: block;
+.htb-circle-dashes {
+  animation: rotation 60s linear infinite;
 }
-
-.warp {
-  padding: 73px 0 30px;
-  margin-bottom: 70px;
-  margin: 0 auto;
-
-  .pc {
-    .banner {
-      position: relative;
-
-      .logo {
-        position: absolute;
-        top: 0;
-        right: 0px;
-        bottom: 0px;
-        width: 25vw;
-        height: 25vw;
-      }
-    }
-
-    .presale-left {
-      position: relative;
-
-      .left_tit {
-        color: #ffffff;
-        font-size: 52px;
-        font-weight: bold;
-        line-height: 80px;
-        font-family: DIN;
-      }
-
-      .left_des {
-        color: #bbbbbe;
-        line-height: 26px;
-        font-family: DIN;
-      }
-
-      /deep/ .ant-statistic-content {
-        span {
-          color: #ffffff;
-          font-size: 58px;
-          font-weight: 900;
-          line-height: 100px;
-          font-family: DIN;
-        }
-      }
-
-      .left_time {
-        color: #fdd333;
-        font-size: 62px;
-        font-weight: 900;
-        line-height: 100px;
-        font-family: DIN;
-      }
-
-      .left_lu {
-        display: flex;
-
-        .li {
-          width: 50%;
-          text-align: left;
-          color: #dd0000;
-          font-size: 16px;
-          line-height: 42px;
-          font-family: DIN;
-
-          .num {
-            color: #fff;
-            font-size: 26px;
-            font-weight: 600;
-          }
-        }
-      }
-
-      .line {
-        margin: 20px 0;
-        width: 400px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: #fff;
-        overflow: hidden;
-
-        .Progress {
-          background-color: #dd0000;
-          height: 10px;
-          float: left;
-          border-radius: 5px;
-        }
-      }
-
-      .titcom {
-        width: 360px;
-        height: 46px;
-        left: 50%;
-        margin-left: -180px;
-        background-color: #18171f;
-        position: absolute;
-        border-radius: 4px;
-        top: 80px;
-
-        .tit {
-          position: absolute;
-          width: 180px;
-          left: 50%;
-          margin-left: -90px;
-          top: -23px;
-          height: 38px;
-          border-radius: 19px;
-          background-color: #dd0000;
-          color: #ffffff;
-          font-weight: bold;
-          line-height: 38px;
-          text-align: center;
-        }
-
-        .li {
-          display: inline;
-          line-height: 46px;
-          padding: 0 20px;
-          display: flex;
-          text-align: center;
-
-          span {
-            color: #ffffff;
-            width: 50%;
-          }
-
-          .li-left {
-            width: 40%;
-            color: #ffffff;
-          }
-        }
-      }
-
-      .totalcom {
-        margin-top: 140px;
-        padding: 20px;
-        background-color: #18171f;
-        border-radius: 20px;
-        display: flex;
-
-        .left {
-          width: 50%;
-
-          .li {
-            margin-bottom: 10px;
-
-            .tb {
-              color: #dd0000;
-              font-size: 16px;
-              display: inline-block;
-              margin-left: 60px;
-              font-weight: Regular;
-
-              .num {
-                font-size: 18px;
-                font-weight: bold;
-                color: #ffffff;
-              }
-            }
-          }
-        }
-
-        .right {
-          width: 50%;
-
-          .tit {
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 18px;
-          }
-
-          .input_com {
-            margin-top: 20px;
-            width: 320px;
-            height: 42px;
-            border: 1px solid #707070;
-            border-radius: 8px;
-            position: relative;
-            overflow: hidden;
-
-            input {
-              width: 100%;
-              line-height: 40px;
-              border: none;
-              background-color: #fff;
-              border-radius: 8px;
-              padding: 0 10px;
-            }
-
-            span {
-              position: absolute;
-              right: 20px;
-              bottom: 0;
-              line-height: 42px;
-              color: #5a51a8;
-              font-size: 10px;
-              cursor: pointer;
-            }
-          }
-
-          .tis {
-            line-height: 26px;
-            color: #ffffff;
-            text-align: right;
-            width: 320px;
-          }
-
-          .btn {
-            width: 320px;
-            line-height: 40px;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            color: #ffffff;
-            background-color: #dd0000;
-            border-radius: 8px;
-            margin-top: 20px;
-            cursor: pointer;
-          }
-
-          .token {
-            margin-top: 10px;
-            width: 320px;
-            text-align: left;
-            display: flex;
-            color: #ffffff;
-            img {
-              display: inline;
-              width: 12px;
-              height: 12px;
-              margin: 5px;
-            }
-          }
-
-          .sign_out {
-            width: 320px;
-            margin-top: 10px;
-            text-align: right;
-            cursor: pointer;
-            color: #ffffff;
-            img {
-              display: inline;
-              width: 16px;
-              height: 16px;
-              margin-right: 10px;
-            }
-          }
-        }
-      }
-
-      .rules {
-        text-align: left;
-        margin-top: 20px;
-        margin-bottom: 100px;
-
-        .tit {
-          font-size: 26px;
-          color: #fff;
-          margin-bottom: 20px;
-        }
-
-        .des {
-          color: #bbbbbe;
-        }
-      }
-
-      .my_pre {
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: #18171f;
-        border-radius: 20px;
-        display: flex;
-
-        .li {
-          width: 50%;
-          color: #ffffff;
-          font-size: 16px;
-          text-align: center;
-          line-height: 20px;
-          font-weight: 400;
-
-          .num {
-            font-size: 22px;
-            line-height: 32px;
-            font-weight: 700;
-          }
-        }
-      }
-
-      .white_des {
-        line-height: 26px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-      }
-
-      .record {
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 20px;
-        line-height: 26px;
-        color: #333333;
-        font-weight: bold;
-        min-height: 100px;
-      }
-    }
-  }
+.circle-glued-coins {
+  animation: rotation 30s linear infinite;
 }
-
-@media screen and (max-width: 768px) {
-  .warp {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  .pc {
-    display: none;
-  }
+.front-coins-holder {
+  animation: rotation 60s linear infinite;
 }
 </style>

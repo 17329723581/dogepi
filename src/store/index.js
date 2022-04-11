@@ -73,7 +73,8 @@ export default new Vuex.Store({
       state.storeMyTotalspacepi = value;
     },
     updateEndTimenew(state,value){
-      axios
+      state.deadline = value;
+      /*axios
       .get("https://admin.bdogecoins.com/api/progress")
       .then(function(response){
         state.deadline = response.data.deadline;
@@ -81,7 +82,7 @@ export default new Vuex.Store({
       })
       .catch(function(error) {
         //     // 请求失败处理
-      });
+      });*/
      },
     updateInviteList(state,value){
       state.storeInviteList = value;

@@ -1,0 +1,37 @@
+<template>
+    <div id="p-lottie"></div>
+</template>
+
+<script>
+import lottie from "lottie-web";
+  import animationData from '@/assets/logo.json';
+
+  export default {
+    name: 'logo',
+    components: {
+    },
+    data() {
+      return {
+        defaultOptions: { animationData: animationData },
+        animationSpeed: 1,
+        anim: {}
+      }
+    },
+   mounted(){
+        this.svgFun();
+    },
+    methods: {
+        svgFun(){
+            let params = {
+                container: document.getElementById("p-lottie"),
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                animationData: animationData
+            };
+            let anim;
+            anim = lottie.loadAnimation(params);
+        }
+    },
+  }
+</script>

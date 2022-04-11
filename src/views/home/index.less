@@ -1,31 +1,47 @@
-.home{
+.home {
     position: relative;
-    // background-image: url(../../assets/bg-oval-01.png);
     background-repeat: no-repeat;
-    // overflow-x: hidden;
-    // .bg-moon{
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 831px;
-    //     height: 800px;
-    //     background-image: url(../../assets/bg-moon.png);
-    //     background-repeat: no-repeat;
-    //     background-size: 100% 100%;
-    // }
-    @media screen and (max-width: 768px){
-        // .bg-moon{
-        //     display: none;
-        // }
+    .header-background {
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        background: rgba(44, 0, 88, 0.7);
+        height: 90px;
+        .section__hero {
+            .container-1440 {
+                header {
+                    height: 90px;
+                }
+            }
+        }
     }
-    .first-token{
-        // background: url("../../assets/bg-vsother.png");
-        // background-repeat: no-repeat;
-        // background-size: 100% 100%;
+}
+@media (max-width: 768px) {
+    .home {
+        position: relative;
+        background-repeat: no-repeat;
+        .header-background {
+            @media (max-width: 540px) {
+                height: 70px;
+            }
+            @media (min-width: 768px) {
+                height: 90px;
+            }
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            .section__hero {
+                .container-1440 {
+                    header {
+                        @media (max-width: 540px) {
+                            height: 70px;
+                        }
+                        @media (min-width: 768px) {
+                            height: 90px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-.header-background{
-    position: relative;
-    z-index: 9999999;
-}

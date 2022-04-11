@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto-Regular, Roboto, auto;
+    font-family: Lovely;
 }
 
 .start {
@@ -53,7 +53,6 @@ canvas {
 .section {
     position: relative;
     text-align: center;
-    color: #fff;
 }
 
 .skp {
@@ -125,14 +124,12 @@ canvas {
 
 #menu a {
     float: left;
-    color: #fff;
     text-decoration: none;
     cursor: pointer;
     font-size: 16px;
 }
 
 #menu .active a {
-    color: #6da3ff;
 }
 
 #menu .app {
@@ -228,8 +225,6 @@ canvas {
 .box1 .p1 {
     text-align: center;
     font-weight: bold;
-    font-family: Khula, sans-serif;
-    color: #bbbbbe;
     font-size:60px;
 }
 
@@ -274,7 +269,6 @@ canvas {
     font-size: 48px;
     font-family: Roboto-Bold, Roboto;
     font-weight: bold;
-    color: #ffffff;
     line-height: 57px;
 }
 
@@ -282,7 +276,6 @@ canvas {
     font-size: 18px;
     font-family: Roboto-Light, Roboto;
     font-weight: 300;
-    color: #ffffff;
     line-height: 28px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -369,7 +362,6 @@ canvas {
     top: 122px;
     font-size: 16px;
     font-weight: 400;
-    color: #ffffff;
     line-height: 19px;
     text-align: left;
 }
@@ -421,7 +413,6 @@ canvas {
 .box3 .r .t1 {
     font-size: 48px;
     font-weight: bold;
-    color: #ffffff;
     line-height: 57px;
     margin-top: 65px;
 }
@@ -429,7 +420,6 @@ canvas {
 .box3 .r .t2,
 .box3 .r .t3 {
     font-weight: bold;
-    color: #ffffff;
     line-height: 24px;
 }
 
@@ -474,14 +464,12 @@ canvas {
 .box4 .l .t1 {
     font-size: 48px;
     font-weight: bold;
-    color: #ffffff;
     line-height: 57px;
 }
 
 .box4 .l .t2 {
     font-size: 21px;
     font-weight: 300;
-    color: #ffffff;
     line-height: 24px;
     margin-top: 20px;
     margin-bottom: 65px;
@@ -528,7 +516,6 @@ canvas {
 }
 
 .box4 .pink {
-    color: #ffffff;
     font-size: 36px;
     font-weight: bold;
 }
@@ -563,7 +550,6 @@ canvas {
     width: 360px;
     font-size: 18px;
     font-weight: 400;
-    color: #ffffff;
     line-height: 21px;
     text-align: left;
 }
@@ -601,7 +587,6 @@ canvas {
 .box5 .origin span {
     font-size: 16px;
     font-weight: 400;
-    color: #ffffff;
     line-height: 18px;
     margin-top: 10px;
     text-align: left;
@@ -670,7 +655,6 @@ canvas {
     font-size: 48px;
     font-family: Roboto-Bold, Roboto;
     font-weight: bold;
-    color: #ffffff;
     line-height: 57px;
     margin-bottom: 20px;
 }
@@ -711,7 +695,6 @@ canvas {
     width: 180px;
     font-size: 24px;
     font-weight: 400;
-    color: #ffffff;
     line-height: 28px;
     text-align: left;
     margin-left: 28px;
@@ -727,14 +710,12 @@ canvas {
 .box7 .title {
     font-size: 48px;
     font-weight: bold;
-    color: #ffffff;
     line-height: 57px;
 }
 
 .box7 .tip {
     font-size: 18px;
     font-weight: 400;
-    color: #ffffff;
     line-height: 21px;
     margin-top: 10px;
 }
@@ -800,9 +781,7 @@ canvas {
 } */
 .box7-item .item div {
     font-size: 18px;
-    font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
-    color: #ffffff;
     line-height: 25px;
 }
 
@@ -933,7 +912,6 @@ canvas {
     /* width: 400px; */
     /* height: 100px; */
     /* line-height:100px; */
-    /* color: #fff; */
     /* text-align: center; */
     text-transform: uppercase;
     /* border-radius: 50px; */

@@ -1,86 +1,58 @@
 <template>
-	<div>
-		<div class="warp" style="width: 100%;display: flex;padding-bottom: 6.25rem;">
-			<div class="pc centre" style="z-index:9">
-				<div class="width title">{{ this.$t("a_top_amount") }}</div>
-				<div class="width text">{{ airdropQuantityProp }}</div>
-				<div class="car">
-					<div class="car-c">
-						<div class="car-f">
-							<div>
-								<span class="cat-title">{{ this.$t("a_top_amount_array")[0]['title'] }}</span>
-							</div>
-							<div>
-								<span class="car-text">{{storeMyTotalspacepi}}</span>
-							</div>
-						</div>
-						<div class="car-f">
-							<div>
-								<span class="cat-title">{{ this.$t("a_top_amount_array")[1]['title'] }}</span>
-							</div>
-							<div>
-								<span class="car-text">{{ storeInviteList.length }}</span>
-							</div>
-						</div>
-						<div class="car-f">
-							<div>
-								<span class="cat-title">{{ this.$t("a_top_amount_array")[2]['title'] }}</span>
-							</div>
-							<div>
-								<span class="car-text">{{storeInviteRewards}}</span>
-							</div>
-						</div>
-					</div>
-					<div class="car-c" style="margin-top: 25px;">
-						<div
-							style="width: 81%;height: 44px;background: #fa0000;opacity: 1;border-radius: 8px;display: flex;align-items: center;text-align: center;justify-content:center;">
-							<img style="width: 1rem;height: 1rem;background-size: cover;object-fit: cover;"
-								src="@/assets/i.png" alt="" />&nbsp;&nbsp;<span
-								style="font-size: 1rem;font-family: DIN;font-weight: bold;color: #ffffff;">{{this.$t("a_top_amount_c")}}</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="m centre">
-				<div class="width title">{{ this.$t("a_top_amount") }}</div>
-				<div class="width text">{{ airdropQuantityProp }}</div>
-				<div class=""
-					style="width: 100%;border: 1px solid #707070;opacity: 0.2;float: left;margin-bottom: 0.625rem;">
-				</div>
-				<div class="car"
-					style="color: #FFFFFF;font-weight: 400;font-size: 16px;font-family: DIN;padding-top: 0.625rem;">
-					<div class="car-f" style="width: 100%;float: left;">
-						<div style="padding-top: 1rem;">
-							<span class="cat-title" style="float: left;">{{ this.$t("a_top_amount_array")[0]['title'] }}</span>
-							<span class="car-text" style="float: right;">{{storeMyTotalspacepi}}</span>
-						</div>
-					</div>
-					<div class="car-f" style="width: 100%;float: left;">
-						<div style="padding-top: 1rem;">
-							<span class="cat-title" style="float: left;">{{ this.$t("a_top_amount_array")[1]['title'] }}</span>
-							<span class="car-text" style="float: right;">{{ storeInviteList.length }}</span>
-						</div>
-					</div>
-					<div class="car-f" style="width: 100%;float: left;">
-						<div style="padding-top: 1rem;">
-							<span class="cat-title" style="float: left;">{{ this.$t("a_top_amount_array")[2]['title'] }}</span>
-							<span class="car-text" style="float: right;">{{storeInviteRewards}}</span>
-						</div>
-					</div>
-				</div>
-				<div style="width: 100%;padding-top: 15px;display: flex;">
-					<div
-						style="width: 100%;height: 40px;background:  #fa0000;opacity: 1;border-radius: 6px;display: flex;align-items: center;text-align: center;justify-content:center;">
-						<span
-							style="font-size:1rem;font-family: DIN;font-weight: bold;color: #ffffff;">
-							<img style="width: 0.9rem;height: 0.9rem;background-size: cover;object-fit: cover;" src="@/assets/i.png"
-							alt="" /> {{this.$t("a_top_amount_c")}}</span>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
+  <div>
+    <div class="section">
+      <div class="container">
+        <div class="container-1440">
+          <div class="htb-wrap">
+            <div class="car1">
+              <div class="car1-airdrop-a pc">
+                <img src="@/assets/airdrop-title.png">
+							  {{this.$t('a_quantity_title')}}
+              </div>
+              <div class="car1-airdrop-a mo">
+                <img src="@/assets/m-airdrop-title.png">
+              </div>
+              <div class="car1-airdrop-b">{{airdropQuantityProp}}</div>
+            </div>
+            <div class="car2">
+              <div class="car1-rules-a">{{this.$t('p_r_o_rules_title')}}</div>
+              <div class="car1-rules-b">
+                <div>{{this.$t('p_r_o_rules_array')[0]}}</div>
+                <div>{{this.$t('p_r_o_rules_array')[1]}}</div>
+                <div>{{this.$t('p_r_o_rules_array')[2]}} </div>
+              </div>
+            </div>
+            <div class="car3">
+              <div class="car3-a">
+                <div class="car3-a-s">
+                  <div class="title">{{this.$t('a_top_amount_array')[0].title}}</div>
+                  <div class="text">{{storeMyTotalspacepi}}</div>
+                </div>
+              </div>
+              <div class="car3-b">
+                <div class="car3-b-s">
+                  <div class="title">{{this.$t('a_top_amount_array')[1].title}}</div>
+                  <div class="text">{{storeInviteList.length}}</div>
+                </div>
+              </div>
+              <div class="car3-c">
+                <div class="car3-c-s">
+                  <div class="title">{{this.$t('a_top_amount_array')[2].title}}</div>
+                  <div class="text">{{storeInviteRewards}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="car4">
+              <div class="car4-a">
+                <img src="@/assets/i.png" class="pc"><img src="@/assets/m-i.png" class="mo">{{this.$t("a_top_amount_c")}}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -92,37 +64,61 @@ export default {
     return {
       // 默认地址
       initalAddress: "",
-	  airdropQuantityProp:0,
+	    airdropQuantityProp:0,
+      raisedList: [
+        { address: "0x3A2d...", num: "1" },
+        { address: "0x8a6F...", num: "2" },
+        { address: "0x385f...", num: "3" },
+        { address: "0x724e...", num: "4" },
+        { address: "0x1284...", num: "5" },
+        { address: "0x695a...", num: "6" },
+        { address: "0x352a...", num: "7" },
+        { address: "0x9e7f...", num: "8" },
+        { address: "0x4252...", num: "9" },
+        { address: "0x3746...", num: "10" },
+        { address: "0x774a...", num: "11" },
+        { address: "0xe226...", num: "12" },
+      ],
+      payCount: 0,
+      airdropStatus1: false,
+      totaltoken: 0,
+      rewardsCount: 0,
+      receive_status: false,
+      receive_title: this.$t("a_time_btn1"),
+      a_titcom_li_left: this.$t("a_titcom_li_left"),
+      a_titcom_li_right: this.$t("a_titcom_li_right") + " 0.1 BNB",
     };
   },
   props: {
-    isLogin: {
+     isLogin: {
       type: Boolean,
+    },
+    airdropQuantity: {
+      type: Number,
+    },
+    InviteList: {
+      type: Array,
+      default: () => {
+        return [];
+      },
     },
   },
   watch: {
 	
-    address: {
-      handler(newVal, oldVal) {
-        // //console.log(newVal,!JSON.parse(this.isInvited)[1])
-        if (newVal !== "") {
-          // handle invites function for store 
-          this.myInvites(newVal)
-          // create share URL
-          this.updateInvitationLink(newVal)
-          this.getInvited(newVal)
-        }
-        if (this.isInvited) {
-          if (newVal !== "" && !this.isInvited[1]) {
-            this.bondInvite();
-          }
-        }
-      },
-      immediate: true,
-    },
+    address: {},
   },
   computed: {
-    ...mapState(["deadline", "lang", "address", "isInvited","storeMyTotalspacepi","storeInviteRewards","storeInviteList","storeInviteLink"]),
+    ...mapState([
+      "address",
+      "isInvited",
+      "storeMyTotalspacepi",
+      "storeInviteList",
+      "deadline",
+      "storeSwapRatio",
+      "tokenDecimals",
+      "storeInviteLink",
+      "storeInviteRewards"
+    ]),
 
     invite() {
       const isInvited = sessionStorage.getItem("isRoueInvited");
@@ -139,7 +135,14 @@ export default {
   created() {
     this.getOwner();
     this.getRouteInvited();
-	this.getAirdropInfo();
+	  this.getAirdropInfo();
+
+    this.titcom();
+    this.invitePayCount();
+    this.invitePayCount();
+    this.updateInvitationLink(this.address);
+    this.getIsAirdrops();
+	  this.getairdropStatus();
   },
   mounted() {},
   methods: {
@@ -148,15 +151,106 @@ export default {
     finish() {
       alert(this.$t("over"));
     },
-	async getAirdropInfo() {
-		const totalAirdrop = await PerSaleObj.methods.totalAirdrop().call()
-		// this.airdropQuantity = Number(this.totalAirdrop / 10 ** this.tokenDecimals) - Number(this.airdropped / 10 ** this.tokenDecimals)
-		const tokenDecimals = await PerSaleObj.methods.decimals().call()
-		this.airdropQuantityProp = Number(totalAirdrop / 10 ** tokenDecimals)
+    async getairdropStatus() {
+      if (this.deadline <= new Date().getTime()) {
+        //如果结束时间小于现在
+        this.airdropStatus1 = true;
+        // this.airdropStatus1 = false ;
+      } else {
+        //如果结束时间大于于现在
+        this.airdropStatus1 = false;
+        // this.airdropStatus1 = true;
+      }
+    },
+    async invitePayCount() {
+      try {
+        let payCount = 0;
+        let totaltoken = new this.$BigNumber(0);
+        for (let i = 0; i < this.storeInviteList.length; i++) {
+          const userLockList = await PerSaleObj.methods
+            .getUserLock(this.storeInviteList[i])
+            .call();
+          // userLockList[0]>0?totaltoken+=Number(userLockList[0]): ''
+          // userLockList[0]>0?payCount+=1:''
+          if (Number(userLockList[0]) > 0) {
+            // const bgTotaltoken = Number(userLockList[0]);
+            totaltoken = totaltoken.plus(new this.$BigNumber(userLockList[0]));
+            payCount += 1;
+          }
+        }
+        const invitePercentage = await PerSaleObj.methods
+          .invitePercentage()
+          .call();
+        // //console.log(invitePercentage)
 
-		// this.myInvites(this.address)
-	},
-    // save route query address
+        this.payCount = payCount;
+
+        // const asd = new this.$BigNumber(123)/new this.$BigNumber(this.storeSwapRatio)
+        // //console.log(asd.toFixed(9))
+
+        const storeSwapRatio = new this.$BigNumber(this.storeSwapRatio);
+        const tokenDecimals = 10 ** this.tokenDecimals;
+        //console.log(tokenDecimals)
+        this.totaltoken = totaltoken
+          .dividedBy(storeSwapRatio)
+          .dividedBy(new this.$BigNumber(tokenDecimals))
+          .toFixed(4);
+
+        // this.rewardsCount = new this.$BigNumber(5000).multipliedBy(new this.$BigNumber(invitePercentage)).dividedBy(new this.$BigNumber(100))
+        // this.tokenDecimals
+
+        const rewardsCount = new this.$BigNumber(Number(this.totaltoken))
+          .multipliedBy(new this.$BigNumber(invitePercentage))
+          .dividedBy(new this.$BigNumber(100))
+          .toString();
+
+        // //console.log( web3.utils.fromWei(rewardsCount.toString()),'rewardsCount')
+        this.rewardsCount = rewardsCount;
+      } catch (error) {
+        //console.log(error);
+      }
+    },
+    async getIsAirdrops() {
+      const airdropStatus = await PerSaleObj.methods
+        .getIsAirdrop(this.address)
+        .call();
+      this.airdropStatus = airdropStatus;
+      console.log('airdropStatus',airdropStatus);
+    },
+    async getAirdrop() {
+      await PerSaleObj.methods.airdrop().send({
+        from: this.address,
+        value: web3.utils.toWei("0.0025"),
+      });
+      this.$notification.open({
+        message: "succeed",
+        description: this.$t("receiveAirdropSuccess"),
+      });
+    },
+    // 地址复制
+    onCopy(e) {
+      // alert(e.text);
+      this.$message.success(this.$t("copySuccess"));
+    },
+    titcom() {
+      var items = this.raisedList;
+      var items = items[Math.floor(Math.random() * items.length)]
+          const random = Math.random().toString(36).substr(2, 4);
+      this.a_titcom_li_left = items.address;
+      const random1 = Math.random() * 1.5;
+      this.a_titcom_li_right =
+      this.$t("a_titcom_li_right") + random1.toFixed(1) + "BNB";
+      ////console.log('数据',)
+    },
+    async getAirdropInfo() {
+      const totalAirdrop = await PerSaleObj.methods.totalAirdrop().call()
+      // this.airdropQuantity = Number(this.totalAirdrop / 10 ** this.tokenDecimals) - Number(this.airdropped / 10 ** this.tokenDecimals)
+      const tokenDecimals = await PerSaleObj.methods.decimals().call()
+      this.airdropQuantityProp = Number(totalAirdrop / 10 ** tokenDecimals)
+
+      // this.myInvites(this.address)
+    },
+      // save route query address
     getRouteInvited() {
 	
       const isRoueInvited = sessionStorage.getItem("isRoueInvited");
@@ -237,118 +331,9 @@ export default {
 
 
 <style scoped lang="less">
-	.centre {
-		width: 100%;
-		height: auto;
-		justify-content: center;
-	}
-
-	.pc {
-		.width {
-			display: flex;
-			justify-content: center;
-			width: 100%;
-			float: left;
-		}
-
-		.title {
-			font-size: 1.25rem;
-			font-family: DIN;
-			font-weight: 400;
-			color: #FFFFFF;
-
-		}
-
-		.text {
-			font-size: 5rem;
-			font-family: DIN;
-			font-weight: 400;
-			color: #FFFFFF;
-
-		}
-
-		.car {
-			width: 100%;
-			float: left;
-			height: 14.8125rem;
-			background: #18171f;
-			border: 1px solid #18171f;
-			opacity: 1;
-			border-radius: 20px;
-			padding-left: 50px;
-			padding-right: 50px;
-
-			.car-c {
-				width: 100%;
-				float: left;
-				display: flex;
-				justify-content: center;
-
-				.car-f {
-					margin-top: 35px;
-					margin-left: 50px;
-					margin-right: 50px;
-					width: 25%;
-					text-align: center;
-					line-height: 2.5rem
-				}
-
-				.cat-title {
-					font-size: 1.125rem;
-					font-family: DIN;
-					font-weight: 400;
-					color: #ffffff;
-				}
-
-				.car-text {
-					font-size: 2rem;
-					font-family: DIN;
-					font-weight: bold;
-					color: #ffffff;
-
-				}
-			}
-
-		}
-	}
-	.m{
-		display: none;
-	}
-	@media screen and (max-width: 768px) {
-		.m{
-			display: block;
-		}
-		.pc {
-			display: none;
-		}
-
-		.width {
-			display: flex;
-			justify-content: center;
-			width: 100%;
-			float: left;
-		}
-
-		.title {
-			font-size: 1.25rem;
-			font-family: DIN;
-			font-weight: 400;
-			color: #FFFFFF;
-
-
-		}
-
-		.text {
-			font-size: 1.75rem;
-			font-family: DIN;
-			font-weight: 400;
-			color: #FFFFFF;
-			padding-top: 0.625rem;
-			padding-bottom: 0.625rem;
-		}
-
-		.car {
-			width: 100%;
-		}
-	}
+  @import "../../../styles/shiba-ui";
+	@import "../../presale/components/presaleOne.less";
+	@import "../../presale/components/presaleOneSlyte.less";
+	@import "../../presale/components/presaleTwo.less";
+	@import "./amount.less";
 </style>

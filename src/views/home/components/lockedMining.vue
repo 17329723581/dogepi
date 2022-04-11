@@ -107,17 +107,13 @@
 			object-fit: cover;
 		}
 		.content {
-			color: @themeColor;
-
 			.content-left {
 				position: relative;
 				//   text-align: center;
 				padding-left: 5%;
-
 				h2 {
 					position: absolute;
 					font-weight: 700;
-					color: @themeColor;
 					font-size: 2.5rem;
 					top: 10px;
 					right: -300px;
@@ -161,8 +157,6 @@
 			padding: 50px 0;
 
 			.content {
-				color: @themeColor;
-
 				.content-left {
 					position: relative;
 					text-align: center;
@@ -172,7 +166,6 @@
 						// display: none;
 						position: inherit;
 						font-weight: 700;
-						color: @themeColor;
 						font-size: 2.5rem;
 						right: inherit;
 						margin-bottom: 1.5rem !important;
@@ -221,7 +214,6 @@
 			width: 30px;
 			height: 30px;
 			font-size: 30px;
-			color: #fff;
 			background-color: rgba(31, 45, 61, 0.11);
 			opacity: 0.5;
 		}
@@ -248,7 +240,6 @@
 			width: 30px;
 			height: 30px;
 			font-size: 30px;
-			color: #fff;
 			background-color: rgba(31, 45, 61, 0.11);
 			opacity: 0.5;
 			

@@ -7,7 +7,7 @@
 					<div class="width"
 						style="width: 75%;height: 60px;background: #2C1D51;border: 1px solid #FFFFFF;border-radius: 6px;display: flex;align-items: center;text-align: center;justify-content:center;">
 						<div
-							style="width: 90%;float: left;text-align: left;padding-left: 0.9375rem;font-size: 28px;color: #FFFFFF;">
+							style="width: 90%;float: left;text-align: left;padding-left: 0.9375rem;font-size: 28px;">
 							{{ storeInviteLink[1] }}
 						</div>
 						<div style="width: 5%;float: right;margin-top: 0.5rem;" v-clipboard:copy="storeInviteLink[0]" v-clipboard:success="onCopy">
@@ -30,7 +30,7 @@
 					<div
 						style="width: 100%;height: 40px;background: #ffffff;opacity: 1;border-radius: 6px;display: flex;align-items: center;text-align: center;justify-content:center;">
 						<span
-							style="font-size: 1rem;font-family: DIN;font-weight: bold;color: #333333;">{{ storeInviteLink[1] }}</span>
+							style="font-size: 1rem;font-family: DIN;font-weight: bold;">{{ storeInviteLink[1] }}</span>
 					</div>
 				</div>
 				<div style="width: 100%;padding-top: 50px;display: flex;justify-content: center;position: relative;" v-clipboard:copy="storeInviteLink[0]" v-clipboard:success="onCopy">
@@ -39,7 +39,7 @@
 							style="font-size: 1.5rem;font-family: DIN;font-weight: 400;color: #000000;float: right;float: left;" />&nbsp;Copy
 					</div>
 				</div>
-				<div style="width: 100%;padding-top: 50px;display: flex;justify-content: center;color: #FFFFFF;">
+				<div style="width: 100%;padding-top: 50px;display: flex;justify-content: center;">
 					<span style="font-size: 14px;font-family: DIN;">
 						{{ this.$t("a_top_amount_link_text") }}
 					</span>
@@ -93,17 +93,13 @@ export default {
 
 		.title {
 			font-size: 1.25rem;
-			font-family: DIN;
 			font-weight: 400;
-			color: #FFFFFF;
 
 		}
 
 		.text {
 			font-size: 5rem;
-			font-family: DIN;
 			font-weight: 400;
-			color: #FFFFFF;
 
 		}
 
@@ -135,14 +131,11 @@ export default {
 
 				.cat-title {
 					font-size: 1.125rem;
-					font-family: DIN;
 					font-weight: 400;
-					color: #333333;
 				}
 
 				.car-text {
 					font-size: 2rem;
-					font-family: DIN;
 					font-weight: bold;
 					color: #5A51A8;
 
@@ -174,18 +167,14 @@ export default {
 
 		.title {
 			font-size: 1.25rem;
-			font-family: DIN;
 			font-weight: 400;
-			color: #FFFFFF;
 
 
 		}
 
 		.text {
 			font-size: 1.75rem;
-			font-family: DIN;
 			font-weight: 400;
-			color: #FFFFFF;
 			padding-top: 0.625rem;
 			padding-bottom: 0.625rem;
 		}

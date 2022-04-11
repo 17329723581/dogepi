@@ -58,7 +58,6 @@
 						</div>
 						<div style="padding: 10px 60px;
 						border-radius: 10px;
-						color: #fff;
 						line-height: 26px;
 						font-weight: 600;
 						margin: 20px auto;
@@ -147,7 +146,6 @@
 				<div class="btn" v-if="airdropStatus1" @click="getAirdrop" >{{ this.$t("a_time_btn1") }}</div>
 				<div style="padding: 10px 60px;
 				border-radius: 10px;
-				color: #fff;
 				line-height: 26px;
 				font-weight: 600;
 				margin: 20px auto;
@@ -370,7 +368,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 <style scoped lang="less">
 	.mobile {
 		display: none;
-		font-family: DIN;
 
 		.rate_com {
 			font-size: 3.5rem;
@@ -380,7 +377,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 			position: relative;
 
 			.r {
-				color: #fff;
 				text-align: center;
 			}
 
@@ -391,7 +387,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 
 			.r_left {
 				font-size: 1.5rem;
-				color: #fff;
 				text-align: left;
 				width: 50%;
 			}
@@ -408,7 +403,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 			.r_msg {
 				font-size: 2.2rem;
 				position: absolute;
-				color: #fff;
 				display: inline-block;
 				bottom: 0rem;
 				right: 0px;
@@ -424,7 +418,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 				height: 38px;
 				border-radius: 19px;
 				background-color: #FDD333;
-				color: #333333;
 				font-weight: bold;
 				line-height: 38px;
 				text-align: center;
@@ -438,7 +431,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 				display: flex;
 				background-color: #fff;
 				border-radius: 10px;
-				color: #333333;
 
 				.li-left {
 					width: 40%;
@@ -470,15 +462,12 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 
 			.time {
 				font-weight: 900;
-				color: #000;
 				font-size: 36px;
 			}
 
 			.ul {
-				color: #333333;
 				padding: 0px 10px;
 				margin: 10px auto;
-				color: #333333;
 
 				.li {
 					font-size: 1rem;
@@ -497,7 +486,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 			.btn {
 				padding: 10px 60px;
 				border-radius: 10px;
-				color: #333333;
 				line-height: 26px;
 				font-weight: 600;
 				margin: 20px auto;
@@ -509,7 +497,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 			.btnno {
 				padding: 10px 60px;
 				border-radius: 10px;
-				color: #333333;
 				line-height: 26px;
 				font-weight: 600;
 				margin: 20px auto;
@@ -519,7 +506,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 			}
 
 			.des {
-				color: #333333;
 				padding: 0 20px;
 			}
 		}
@@ -531,7 +517,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 
 			.tit {
 				font-size: 26px;
-				color: #fff;
 				margin-bottom: 20px;
 				font-weight: bold;
 			}
@@ -549,7 +534,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 			border-radius: 20px;
 			padding: 20px;
 			position: relative;
-			color: #333333;
 			font-weight: bold;
 			min-height: 260px;
 
@@ -607,7 +591,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 				font-size: 3.5rem;
 				font-weight: 900;
 				line-height: 4.5rem;
-				color: @themeColor;
 				margin-bottom: 20px !important;
 
 				span {
@@ -619,7 +602,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 				font-size: 2rem;
 				font-weight: 900;
 				line-height: 60px;
-				color: @themeColor;
 				margin-bottom: 20px !important;
 			}
 
@@ -642,7 +624,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 					height: 38px;
 					border-radius: 19px;
 					background-color: #FDD333;
-					color: #333333;
 					font-weight: bold;
 					line-height: 38px;
 					text-align: center;
@@ -689,7 +670,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 				}
 
 				.ul {
-					color: #333333;
 					border-top: 1px solid #70707029;
 					border-bottom: 1px solid #70707029;
 					width: 80%;
@@ -713,7 +693,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 				.btn {
 					padding: 10px 60px;
 					border-radius: 10px;
-					color: #333333;
 					line-height: 26px;
 					margin: 20px auto;
 					background-color: #FDD333;
@@ -731,7 +710,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 
 				.tit {
 					font-size: 26px;
-					color: #fff;
 					margin-bottom: 20px;
 				}
 
@@ -745,7 +723,6 @@ word-break:break-all; ">{{ storeInviteLink[0] }}</div>
 				border-radius: 20px;
 				padding: 20px;
 				position: relative;
-				color: #333333;
 				font-weight: bold;
 				min-height: 260px;
 

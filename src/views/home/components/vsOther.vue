@@ -88,7 +88,6 @@ export default {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
-    color: @themeColor;
   }
   .table {
     padding: 60px 0;
@@ -99,12 +98,10 @@ export default {
     p {
       font-size: 1.2rem;
       padding: 10px;
-      color: @themeColor;
     }
     th {
       width: 25%;
       text-align: center;
-      border-bottom: 1px solid @borderColor-1;
       font-size: 1.2rem;
       &:first-child {
         vertical-align: bottom;
@@ -118,12 +115,10 @@ export default {
     td {
       width: 25%;
       padding: 10px 0;
-      color: @themeColor;
       font-weight: 700;
       text-align: right;
       font-size: 1rem;
       text-align: center;
-      border-bottom: 1px solid @borderColor-1;
       &:first-child {
         text-align: right;
       }
@@ -138,7 +133,6 @@ export default {
       text-align: center;
       font-size: 2.2rem;
       font-weight: 800;
-      color: @themeColor;
     }
     .table {
       padding: 30px 0;
@@ -149,12 +143,10 @@ export default {
       p {
         font-size: 1.2rem;
         padding: 5px 0;
-        color: @themeColor;
       }
       th {
         width: 25%;
         text-align: center;
-        border-bottom: 1px solid @borderColor-1;
         font-size: 1.2rem;
         &:first-child {
           vertical-align: bottom;
@@ -168,12 +160,10 @@ export default {
       td {
         width: 25%;
         padding: 13px 0;
-        color: @themeColor;
         font-weight: 700;
         text-align: right;
         font-size: 1rem;
         text-align: center;
-        border-bottom: 1px solid @borderColor-1;
         i {
           font-weight: 700;
           color: red;

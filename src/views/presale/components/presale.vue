@@ -86,11 +86,9 @@ export default {
     h1 {
       font-size: 3.5rem;
       font-weight: 900;
-      color: @themeColor;
     }
     p {
       font-weight: 700;
-      color: #fff;
     }
     .finish {
       padding-left: 20px;
@@ -98,13 +96,11 @@ export default {
         span {
           font-size: 4rem;
           font-weight: 800;
-          color: @bgColor;
         }
       }
       ul {
         display: flex;
         // justify-content:center;
-        color: @bgColor;
         margin-top: -10px;
         margin-bottom: 30px !important;
         li {
@@ -120,7 +116,6 @@ export default {
         width: 50%;
         p {
           font-weight: 800;
-          color: @themeColor;
           &:nth-child(1) {
             font-size: 1rem;
           }
@@ -206,13 +201,11 @@ export default {
         font-size: 3rem;
         font-weight: 900;
         margin: 15px 0 20px !important;
-        color: @themeColor;
       }
       p {
         font-weight: 700;
         text-align: center;
         margin-bottom: -12px !important;
-        color: #fff;
       }
       .finish {
         padding-left: 0px;
@@ -221,13 +214,11 @@ export default {
           span {
             font-size: 4rem;
             font-weight: 800;
-            color: @bgColor;
           }
         }
         ul {
           display: flex;
           justify-content: center;
-          color: @bgColor;
           margin-top: -10px;
           margin-bottom: 30px !important;
           li {
@@ -246,7 +237,6 @@ export default {
           p {
             font-weight: 800;
             text-align: left !important;
-            color: @themeColor;
             &:nth-child(1) {
               font-size: 1.3rem;
               margin-bottom: 0px !important;

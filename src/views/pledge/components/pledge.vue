@@ -522,7 +522,6 @@ export default {
       color: #333;
       button {
         background-color: #5a52a8;
-        color: #fff;
         border-radius: 10px;
         margin: 30px 0;
       }
@@ -575,7 +574,6 @@ export default {
       }
       button {
         padding: 10px 15px;
-        color: #fff;
         background-color: #5a52a8;
         border-radius: 10px;
       }
@@ -675,7 +673,6 @@ export default {
         color: #333;
         button {
           background-color: #5a52a8;
-          color: #fff;
           border-radius: 10px;
           margin: 30px 0;
         }
@@ -727,7 +724,6 @@ export default {
         }
         button {
           padding: 10px 15px;
-          color: #fff;
           background-color: #5a52a8;
           border-radius: 10px;
         }

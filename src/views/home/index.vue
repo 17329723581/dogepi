@@ -1,15 +1,18 @@
 <template>
   <div class="home">
-    <div class="bg-moon"></div>
-    <div class="header-background">
-      <!-- 导航 -->
-      <div class="section__hero section__hero-s wf-section">
-        <div class="container-1440">
-          <header-cmp></header-cmp>
+    <div class="po-s"></div>
+    <div class="apo">
+      <div class="bg-moon"></div>
+      <div class="header-background">
+        <!-- 导航 -->
+        <div class="section__hero section__hero-s wf-section">
+          <div class="container-1440">
+            <header-cmp></header-cmp>
+          </div>
         </div>
       </div>
+      <wrap></wrap>
     </div>
-    <wrap></wrap>
   </div>
 </template>
 
@@ -31,7 +34,7 @@ export default {
   },
   created() {},
   mounted() {
-    //init("home_canvas");
+    init();
   },
   methods: {},
 };
@@ -43,31 +46,39 @@ export default {
 .bg {
   position: relative;
 }
-#home_canvas {
-  position: fixed;
+#canvas {
+  position: absolute;
   widows: 100%;
   height: 100%;
   z-index: 0;
 }
-@media screen and (min-width: 768px) {
-  .header-background {
-    // background: rgba(33, 21, 59, 0.8);
-  }
 
-  .bg {
-    // background: url("../../assets/homebgimgpc.png") no-repeat no-repeat;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-size: 100%;
+@media (max-width: 768px) {
+  .home{
+    
+    .po-s{
+      @media (min-width: 360px) {
+        height: 220vw;//200vw
+      }
+      @media (min-width: 375px) {
+        height: 220vw;//200vw
+      }
+      @media (min-width: 768px) {
+        height: 220vw;//200vw
+      }
+      background: linear-gradient(180deg, #3a447f 0%, #773785 47%, #35457e 100%);
+      border-radius: 0px 0px 0px 0px;
+      opacity: 1;
+      position: relative;
+      z-index: 2;
+      display: flex;
+    }
+    .apo{
+      position: absolute;
+      width: 100%;
+      top: 0;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
-  .bg {
-    // background: url("../../assets/homebgimgm.png");
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-size: 100%;
-  }
-}
 </style>

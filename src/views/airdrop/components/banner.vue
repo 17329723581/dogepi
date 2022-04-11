@@ -1,647 +1,312 @@
 <template>
-	<div class="warp">
-		<div class="pc">
-			<a-row type="flex" class="banner" justify="space-between" style="margin-top: -10%;margin-bottom: -10%;">
-				<a-col :md="24" :xs="24" class="presale-left">
-					<div style="width: 100%;display: flex;justify-content: center;" @click="get_state">
-						<img v-if="lang == 'zh-CN'" style="width: 80%;height: 100%;background-size: cover;object-fit: cover;"
+	<div>
+		<div class="section">
+			<div class="container-1440">
+				<div class="htb-wrap">
+					<div class="banner">
+						<img v-if="lang == 'zh-CN'"
 							src="@/assets/banner2.png" alt="" />
-						<img v-else style="width: 80%;height: 100%;background-size: cover;object-fit: cover;"
+						<img v-else
 							src="@/assets/banner1.png" alt="" />
 					</div>
-					<!-- <img v-if="lang === 'zh-CN'" src="@/assets/banner.png" />
-					        <img v-else-if="lang === 'en-US'" src="@/assets/banner-en.png" /> -->
-				</a-col>
-			</a-row>
-		</div>
-		<div class="mobile">
-			<a-row type="flex" class="banner" justify="space-between">
-				<a-col :md="12" :xs="24" class="presale-left">
-					<div style="width: 100%;display: flex;justify-content: center;" @click="get_state">
-						<img v-if="lang == 'zh-CN'" style="width: 100%;height: 100%;background-size: cover;object-fit: cover;"
-							src="@/assets/banner2.png" alt="" />
-						<img v-else style="width: 100%;height: 100%;background-size: cover;object-fit: cover;"
-							src="@/assets/banner1.png" alt="" />
+				</div>
+			</div>
+			<div class="container">
+				<div class="container-1440">
+					<div class="htb-wrap">
+						<div class="car1">
+						<div class="car1-airdrop-a">
+							<img src="@/assets/airdrop-title.png">
+							{{this.$t('a_quantity_title')}}
+						</div>
+						<div class="car1-airdrop-b">{{airdropQuantityProp}}</div>
+						</div>
 					</div>
-				</a-col>
-			</a-row>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-	import {
-		mapState,
-		mapMutations,
-		mapActions
-	} from "vuex";
-	import {
-		abiObject,
-		getAbi
-	} from "utils/common";
-	const {
-		contractObject: PerSaleObj
-	} = getAbi(abiObject.PerSaleAbi);
-	export default {
-		data() {
-			return {
-				// 默认地址
-				initalAddress: "",
-			};
-		},
-		props: {
-			isLogin: {
-				type: Boolean,
-			},
-			airdropQuantity: {
-				type: Number,
-			},
-		},
-		watch: {
-			address: {},
-		},
-		computed: {
-			...mapState(["deadline", "lang", "address", "isInvited"]),
-			invite() {
-				const isInvited = sessionStorage.getItem("isRoueInvited");
+import { mapState, mapMutations, mapActions } from "vuex";
+import { abiObject, getAbi } from "utils/common";
+const { contractObject: PerSaleObj } = getAbi(abiObject.PerSaleAbi);
+export default {
+  data() {
+    return {
+      // 默认地址
+      initalAddress: "",
+	    airdropQuantityProp:0,
+      raisedList: [
+        { address: "0x3A2d...", num: "1" },
+        { address: "0x8a6F...", num: "2" },
+        { address: "0x385f...", num: "3" },
+        { address: "0x724e...", num: "4" },
+        { address: "0x1284...", num: "5" },
+        { address: "0x695a...", num: "6" },
+        { address: "0x352a...", num: "7" },
+        { address: "0x9e7f...", num: "8" },
+        { address: "0x4252...", num: "9" },
+        { address: "0x3746...", num: "10" },
+        { address: "0x774a...", num: "11" },
+        { address: "0xe226...", num: "12" },
+      ],
+      payCount: 0,
+      airdropStatus1: false,
+      totaltoken: 0,
+      rewardsCount: 0,
+      receive_status: false,
+      receive_title: this.$t("a_time_btn1"),
+      a_titcom_li_left: this.$t("a_titcom_li_left"),
+      a_titcom_li_right: this.$t("a_titcom_li_right") + " 0.1 BNB",
+    };
+  },
+  props: {
+     isLogin: {
+      type: Boolean,
+    },
+    airdropQuantity: {
+      type: Number,
+    },
+    InviteList: {
+      type: Array,
+      default: () => {
+        return [];
+      },
+    },
+  },
+  watch: {
+	
+    address: {},
+  },
+  computed: {
+    ...mapState([
+      "address",
+      "isInvited",
+      "storeMyTotalspacepi",
+      "storeInviteList",
+      "deadline",
+      "storeSwapRatio",
+      "tokenDecimals",
+      "storeInviteLink",
+      "storeInviteRewards",
+	  "lang"
+    ]),
 
-				if (isInvited !== "undefined") {
-					return isInvited;
-				} else {
-					return this.initalAddress;
-				}
-			},
-		},
+    invite() {
+      const isInvited = sessionStorage.getItem("isRoueInvited");
 
-		components: {
-		},
-		created() {
-			this.getOwner();
-			this.getRouteInvited();
-		},
-		mounted() {},
-		methods: {
-			...mapMutations(["editAddress", "updateIsInvited", "updateInvitationLink"]),
-			...mapActions(["getInvited", "myInvites"]),
-			get_state(){
-				this.$emit('get_state',0)
-			},
-			// save route query address
-			// 登录
-			// 登录
-			finish() {
-				alert(this.$t("over"));
-			},
-			getRouteInvited() {
-				const isRoueInvited = sessionStorage.getItem("isRoueInvited");
-				if (isRoueInvited === "undefined" || !isRoueInvited) {
-					sessionStorage.setItem("isRoueInvited", this.$route.query.address);
-				} else {
-					sessionStorage.getItem("isRoueInvited");
-				}
-			},
-			// 登录
-			connect() {
-				// this.login();
-				// eth_requestAccounts  链接钱包
-				ethereum
-					.request({ method: "eth_requestAccounts" })
-					.then(async (accounts) => {
-					// add address for store
-					this.editAddress( accounts[0])
-					// 获取邀请人
-					const isInvited = await PerSaleObj.methods.isInvited(accounts[0]).call()
-					// Action function
-					this.updateIsInvited(isInvited)
-					sessionStorage.setItem("isInvited",JSON.stringify(isInvited))
-					
-					this.$message.success(this.$t('connectSuccess'));
-					if(!JSON.parse(this.isInvited)[1]){
-						this.bondInvite()
-					}
-					// history.go(0);
-					})
-					.catch((err) => {
-					// errorHandler(err);
-					//console.log(err);
-					});
+      if (isInvited !== "undefined") {
+        return isInvited;
+      } else {
+        return this.initalAddress;
+      }
+    },
+  },
 
-				// Vue.prototype.LangReload()
-			},
+  components: {},
+  created() {
+    this.getOwner();
+    this.getRouteInvited();
+	  this.getAirdropInfo();
 
-			bondInvite() {
-				// //console.log(this.invite);
-				const nowTime = new Date().getTime();
+    this.titcom();
+    this.invitePayCount();
+    this.invitePayCount();
+    this.updateInvitationLink(this.address);
+    this.getIsAirdrops();
+	  this.getairdropStatus();
+  },
+  mounted() {},
+  methods: {
+    ...mapMutations(["editAddress","updateIsInvited","updateInvitationLink","updateMyspacepi", "updateInviteList"]),
+    ...mapActions(["getInvited","myInvites"]),
+    finish() {
+      alert(this.$t("over"));
+    },
+    async getairdropStatus() {
+      if (this.deadline <= new Date().getTime()) {
+        //如果结束时间小于现在
+        this.airdropStatus1 = true;
+        // this.airdropStatus1 = false ;
+      } else {
+        //如果结束时间大于于现在
+        this.airdropStatus1 = false;
+        // this.airdropStatus1 = true;
+      }
+    },
+    async invitePayCount() {
+      try {
+        let payCount = 0;
+        let totaltoken = new this.$BigNumber(0);
+        for (let i = 0; i < this.storeInviteList.length; i++) {
+          const userLockList = await PerSaleObj.methods
+            .getUserLock(this.storeInviteList[i])
+            .call();
+          // userLockList[0]>0?totaltoken+=Number(userLockList[0]): ''
+          // userLockList[0]>0?payCount+=1:''
+          if (Number(userLockList[0]) > 0) {
+            // const bgTotaltoken = Number(userLockList[0]);
+            totaltoken = totaltoken.plus(new this.$BigNumber(userLockList[0]));
+            payCount += 1;
+          }
+        }
+        const invitePercentage = await PerSaleObj.methods
+          .invitePercentage()
+          .call();
+        // //console.log(invitePercentage)
 
-				if(nowTime>this.deadline){return}
-				const h = this.$createElement;
-				const invite = this.invite;
-				const that = this;
-				if (JSON.parse(this.isInvited)[1]) {
-				} else {
-					this.$info({
-					title: this.$t("comfirmInvite"),
-					content: h("div", {}, [h("p", `${this.$t("inviter")}：${invite}`)]),
-					async onOk(e) {
-						if (that.invite === that.address) {
-						that.$notification.open({
-							message: "warning",
-							description: this.$t("inviterNotSelf"),
-						});
-						return;
-						}
-						//console.log(that.invite, "invite");
-						await PerSaleObj.methods
-						.bondInvite(that.invite)
-						.send({ from: that.address });
-						that.getInvited(that.address);
-						// that.confirmLoading = true;
-					},
-					});
-				}
-			},
-			async getOwner() {
-				const initalAddress = await PerSaleObj.methods.owner().call();
-				// //console.log(initalAddress)
-				this.initalAddress = initalAddress;
-			},
-		},
-	};
+        this.payCount = payCount;
+
+        // const asd = new this.$BigNumber(123)/new this.$BigNumber(this.storeSwapRatio)
+        // //console.log(asd.toFixed(9))
+
+        const storeSwapRatio = new this.$BigNumber(this.storeSwapRatio);
+        const tokenDecimals = 10 ** this.tokenDecimals;
+        //console.log(tokenDecimals)
+        this.totaltoken = totaltoken
+          .dividedBy(storeSwapRatio)
+          .dividedBy(new this.$BigNumber(tokenDecimals))
+          .toFixed(4);
+
+        // this.rewardsCount = new this.$BigNumber(5000).multipliedBy(new this.$BigNumber(invitePercentage)).dividedBy(new this.$BigNumber(100))
+        // this.tokenDecimals
+
+        const rewardsCount = new this.$BigNumber(Number(this.totaltoken))
+          .multipliedBy(new this.$BigNumber(invitePercentage))
+          .dividedBy(new this.$BigNumber(100))
+          .toString();
+
+        // //console.log( web3.utils.fromWei(rewardsCount.toString()),'rewardsCount')
+        this.rewardsCount = rewardsCount;
+      } catch (error) {
+        //console.log(error);
+      }
+    },
+    async getIsAirdrops() {
+      const airdropStatus = await PerSaleObj.methods
+        .getIsAirdrop(this.address)
+        .call();
+      this.airdropStatus = airdropStatus;
+      console.log('airdropStatus',airdropStatus);
+    },
+    async getAirdrop() {
+      await PerSaleObj.methods.airdrop().send({
+        from: this.address,
+        value: web3.utils.toWei("0.0025"),
+      });
+      this.$notification.open({
+        message: "succeed",
+        description: this.$t("receiveAirdropSuccess"),
+      });
+    },
+    // 地址复制
+    onCopy(e) {
+      // alert(e.text);
+      this.$message.success(this.$t("copySuccess"));
+    },
+    titcom() {
+      var items = this.raisedList;
+      var items = items[Math.floor(Math.random() * items.length)]
+          const random = Math.random().toString(36).substr(2, 4);
+      this.a_titcom_li_left = items.address;
+      const random1 = Math.random() * 1.5;
+      this.a_titcom_li_right =
+      this.$t("a_titcom_li_right") + random1.toFixed(1) + "BNB";
+      ////console.log('数据',)
+    },
+    async getAirdropInfo() {
+      const totalAirdrop = await PerSaleObj.methods.totalAirdrop().call()
+      // this.airdropQuantity = Number(this.totalAirdrop / 10 ** this.tokenDecimals) - Number(this.airdropped / 10 ** this.tokenDecimals)
+      const tokenDecimals = await PerSaleObj.methods.decimals().call()
+      this.airdropQuantityProp = Number(totalAirdrop / 10 ** tokenDecimals)
+
+      // this.myInvites(this.address)
+    },
+      // save route query address
+    getRouteInvited() {
+	
+      const isRoueInvited = sessionStorage.getItem("isRoueInvited");
+      if (isRoueInvited === "undefined" || !isRoueInvited) {
+        sessionStorage.setItem("isRoueInvited", this.$route.query.address);
+      } else {
+        sessionStorage.getItem("isRoueInvited");
+      }
+    },
+    // 登录
+    connect() {
+      // this.login();
+      // eth_requestAccounts  链接钱包
+      ethereum
+        .request({ method: "eth_requestAccounts" })
+        .then(async (accounts) => {
+          // add address for store
+          this.editAddress( accounts[0])
+          // 获取邀请人
+          const isInvited = await PerSaleObj.methods.isInvited(accounts[0]).call()
+          // Action function
+          this.updateIsInvited(isInvited)
+          sessionStorage.setItem("isInvited",JSON.stringify(isInvited))
+          
+          this.$message.success(this.$t('connectSuccess'));
+          if(!JSON.parse(this.isInvited)[1]){
+            this.bondInvite()
+          }
+          // history.go(0);
+        })
+        .catch((err) => {
+          // errorHandler(err);
+          //console.log(err);
+        });
+
+      // Vue.prototype.LangReload()
+    },
+
+    bondInvite() {
+      // //console.log(this.invite);
+      const nowTime = new Date().getTime();
+
+      if(nowTime>this.deadline){return}
+      const h = this.$createElement;
+      const invite = this.invite;
+      const that = this;
+      if (JSON.parse(this.isInvited)[1]) {
+      } else {
+        this.$info({
+          title: this.$t("comfirmInvite"),
+          content: h("div", {}, [h("p", `${this.$t("inviter")}：${invite}`)]),
+          async onOk(e) {
+            if (that.invite === that.address) {
+              that.$notification.open({
+                message: "warning",
+                description: this.$t("inviterNotSelf"),
+              });
+              return;
+            }
+            //console.log(that.invite, "invite");
+            await PerSaleObj.methods
+              .bondInvite(that.invite)
+              .send({ from: that.address });
+            that.getInvited(that.address);
+            // that.confirmLoading = true;
+          },
+        });
+      }
+    },
+    async getOwner() {
+      const initalAddress = await PerSaleObj.methods.owner().call();
+      // //console.log(initalAddress)
+      this.initalAddress = initalAddress;
+    },
+  },
+};
 </script>
 
 <style scoped lang="less">
-	.mobile {
-		display: none;
-		font-family: DIN;
-
-		.rate_com {
-			font-size: 3.5rem;
-			font-weight: 900;
-			line-height: 60px;
-			text-transform: uppercase;
-			position: relative;
-
-			.r {
-				color: #fff;
-				text-align: center;
-			}
-
-			.r_r {
-				color: #FDD333;
-				text-align: center;
-			}
-
-			.r_left {
-				font-size: 2.2rem;
-				color: #fff;
-				text-align: left;
-			}
-
-			.r_num {
-				color: #FDD333;
-				font-size: 6rem;
-				position: absolute;
-				bottom: 60px;
-				right: 0px;
-			}
-
-			.r_msg {
-				font-size: 2.2rem;
-				position: absolute;
-				color: #fff;
-				display: inline-block;
-				bottom: 0px;
-				right: 0px;
-			}
-		}
-
-		.titcom {
-			width: 360px;
-
-			.tit {
-				width: 180px;
-				height: 38px;
-				border-radius: 19px;
-				background-color: #FDD333;
-				color: #333333;
-				font-weight: bold;
-				line-height: 38px;
-				text-align: center;
-				margin: 16px auto;
-			}
-
-			.li {
-				display: inline;
-				line-height: 46px;
-				padding: 0 20px;
-				display: flex;
-				background-color: #fff;
-				border-radius: 10px;
-				color: #333333;
-
-				.li-left {
-					width: 40%;
-					color: #5A51A8;
-				}
-			}
-		}
-
-		.timecom {
-			margin-top: 16px;
-			background-color: #fff;
-			border-radius: 20px;
-			padding: 20px 0;
-			text-align: center;
-
-			.tit {
-				line-height: 36rpx;
-				font-weight: bold;
-				color: #000;
-			}
-
-			.time {
-				font-weight: 900;
-				color: #000;
-				font-size: 36px;
-			}
-
-			.ul {
-				color: #333333;
-				padding: 0px 10px;
-				margin: 10px auto;
-				color: #333333;
-
-				.li {
-					font-size: 20px;
-					text-align: left;
-					position: relative;
-					line-height: 46px;
-					font-weight: 600;
-
-					span {
-						position: absolute;
-						right: 0px;
-					}
-				}
-			}
-
-			.btn {
-				padding: 10px 60px;
-				border-radius: 10px;
-				color: #333333;
-				line-height: 26px;
-				font-weight: 600;
-				margin: 20px auto;
-				background-color: #FDD333;
-				display: inline-block;
-				font-size: 14px;
-			}
-
-			.des {
-				color: #333333;
-				padding: 0 20px;
-			}
-		}
-
-		.rules {
-			text-align: left;
-			margin-top: 20px;
-			margin-bottom: 60px;
-
-			.tit {
-				font-size: 26px;
-				color: #fff;
-				margin-bottom: 20px;
-			}
-
-			.des {
-				font-size: 14px;
-				color: #FDD333;
-				line-height: 32px;
-			}
-		}
-
-		.invite {
-			background-color: #fff;
-			border-radius: 20px;
-			padding: 20px;
-			position: relative;
-			color: #333333;
-			font-weight: bold;
-			min-height: 260px;
-
-			.tit {
-				font-size: 24px;
-				line-height: 36px;
-			}
-
-			.li {
-				text-align: left;
-				line-height: 38px;
-				height: 38px;
-
-				.tb1 {
-					width: 36%;
-					display: block;
-					float: left;
-				}
-
-				.tb2 {
-					width: 64%;
-					text-align: right;
-					display: block;
-					overflow: hidden;
-				}
-			}
-		}
-	}
-
-	.pc {
-		display: block;
-
-		.finish {
-			padding-left: 0px;
-
-			/deep/ .ant-statistic-content {
-				span {
-					font-size: 6.125rem;
-					font-weight: 800;
-					color: @bgColor;
-				}
-			}
-
-			ul {
-				display: flex;
-				// justify-content:center;
-				color: #FDD333;
-				font-family: DIN;
-				margin-top: -10px;
-				font-size: 20px;
-				margin-bottom: 30px !important;
-
-				li {
-					padding: 0 5.15625rem 0 2.1875rem;
-				}
-			}
-		}
-	}
-
-	.warp {
-		width: 100%;
-		padding: 73px 0 30px;
-		margin-bottom: 70px;
-
-		.banner {
-			position: relative;
-
-			.logo {
-				position: absolute;
-				right: 0px;
-				bottom: 0px;
-				width: 400px;
-				height: 400px;
-			}
-		}
-
-		.presale-left {
-			position: relative;
-
-			h1 {
-				font-size: 3.5rem;
-				font-weight: 900;
-				line-height: 60px;
-				color: @themeColor;
-				margin-bottom: 20px !important;
-
-				span {
-					color: #FDD333;
-				}
-			}
-
-			h2 {
-				font-size: 2rem;
-				font-weight: 900;
-				line-height: 60px;
-				color: @themeColor;
-				margin-bottom: 20px !important;
-			}
-
-			.but {
-				width: 100%;
-				margin-top: 5.25rem;
-
-				.but-b {
-					border-radius: 0.5rem;
-					display: flex;
-					width: 3.4375rem;
-					height: 3.4375rem;
-					background: #FFFFFF;
-					float: left;
-					margin-right: 2.4375rem;
-					align-items: center;
-					text-align: center;
-					justify-content: center;
-
-					.but-img {
-						width: 40%;
-						height: 40%;
-						background-size: cover;
-						object-fit: cover;
-					}
-				}
-			}
-
-			.time-title-y {
-				font-size: 1.25rem;
-				font-family: DIN;
-				font-weight: 400;
-				color: #FDD333;
-			}
-
-
-
-			.titcom {
-				width: 360px;
-				height: 46px;
-				left: 50%;
-				margin-left: -180px;
-				background-color: #fff;
-				position: absolute;
-				border-radius: 4px;
-				top: 0px;
-
-				.tit {
-					position: absolute;
-					width: 180px;
-					left: 50%;
-					margin-left: -90px;
-					top: -23px;
-					height: 38px;
-					border-radius: 19px;
-					background-color: #FDD333;
-					color: #333333;
-					font-weight: bold;
-					line-height: 38px;
-					text-align: center;
-				}
-
-				.li {
-					display: inline;
-					line-height: 46px;
-					padding: 0 20px;
-					display: flex;
-
-					.li-left {
-						width: 40%;
-						color: #5A51A8;
-					}
-				}
-			}
-
-			.timecom {
-				margin-top: 60px;
-				background-color: #fff;
-				border-radius: 20px;
-				padding: 20px 0;
-				text-align: center;
-
-				.tit {
-					line-height: 36rpx;
-					font-weight: bold;
-					color: #000;
-				}
-
-				.time {
-					font-weight: 900;
-					color: #000;
-					font-size: 36px;
-				}
-
-				.ul {
-					color: #333333;
-					border-top: 1px solid #70707029;
-					border-bottom: 1px solid #70707029;
-					width: 80%;
-					margin: 10px auto;
-					display: flex;
-
-					.li {
-						font-size: 20px;
-						width: 25%;
-						padding: 10px 0;
-
-						span {
-							display: block;
-							font-size: 26px;
-							color: #5A51A8;
-							font-weight: bold;
-						}
-					}
-				}
-
-				.btn {
-					padding: 10px 60px;
-					border-radius: 10px;
-					color: #333333;
-					line-height: 26px;
-					margin: 20px auto;
-					background-color: #FDD333;
-					display: inline-block;
-					font-size: 14px;
-				}
-
-				.des {}
-			}
-
-			.rules {
-				text-align: left;
-				margin-top: 20px;
-				margin-bottom: 100px;
-
-				.tit {
-					font-size: 26px;
-					color: #fff;
-					margin-bottom: 20px;
-				}
-
-				.des {
-					color: #FDD333;
-				}
-			}
-
-			.invite {
-				background-color: #fff;
-				border-radius: 20px;
-				padding: 20px;
-				position: relative;
-				color: #333333;
-				font-weight: bold;
-				min-height: 260px;
-
-				.tit {
-					font-size: 24px;
-					line-height: 36px;
-				}
-
-				.li {
-					display: flex;
-					text-align: center;
-					width: 66%;
-					line-height: 32px;
-
-					.tb1 {
-						width: 36%;
-					}
-
-					.tb2 {
-						width: 64%;
-					}
-				}
-
-				.img {
-					position: absolute;
-					width: auto;
-					height: 200px;
-					right: 30px;
-					bottom: 30px;
-				}
-			}
-		}
-	}
-
-	@media screen and (max-width: 768px) {
-		.mobile {
-			display: block;
-
-			.finish {
-				/deep/ .ant-statistic-content {
-					span {
-						display: flex;
-						justify-content: center;
-						font-size: 3.25rem;
-						font-weight: 800;
-						color: @bgColor;
-					}
-				}
-
-				ul {
-					display: flex;
-					// justify-content:center;
-					color: #FDD333;
-					font-family: DIN;
-					margin-top: 5px;
-					font-size: 10px;
-					margin-bottom: 30px !important;
-
-					li {
-						padding: 0 4.5% 0 9.5%;
-					}
-				}
-			}
-		}
-
-		.pc {
-			display: none;
-		}
-	}
+	@import "../../../styles/shiba-ui";
+	@import "../../presale/components/presaleOne.less";
+	@import "../../presale/components/presaleOneSlyte.less";
+	@import "../../presale/components/presaleTwo.less";
+	@import "./banner.less";
 </style>

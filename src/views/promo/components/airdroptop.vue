@@ -4,7 +4,7 @@
 			<a-row type="flex" class="banner" justify="space-between">
 				<a-col :md="12" :xs="24" class="presale-left">
 					<h1>
-						<span style="font-family: Intro;">{{ this.$t("a_top_text1") }}</span> {{ this.$t("a_top_text2") }}
+						<span>{{ this.$t("a_top_text1") }}</span> {{ this.$t("a_top_text2") }}
 					</h1>
 					<div>
 						<p class="time-title-y">{{ this.$t("a_top_text3") }}</p>
@@ -29,7 +29,7 @@
 							<img class="but-img" src="@/assets/telegram-y.png" alt="" />
 						</div>
 						<div class="but-b"
-							style="width: 14.375rem;background: #FDD333;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
+							style="width: 14.375rem;background: #FDD333;font-weight: 800;font-size: 1rem;">
 							{{this.$t("a_top_but")}}
 						</div>
 					</div>
@@ -66,14 +66,11 @@
 						<img class="but-img" src="@/assets/telegram-y.png" alt="" />
 					</div>
 					<div class="but-b"
-						style="width: 14.375rem;background: #FDD333;font-family: PingFang SC;font-weight: 800;font-size: 1rem;">
+						style="width: 14.375rem;background: #FDD333;font-weight: 800;font-size: 1rem;">
 						{{this.$t("a_top_but")}}
 					</div>
 				</div>
 			</a-col>
-			</a-row>
-			
-
 		</div>
 	</div>
 </template>
@@ -141,7 +138,6 @@
 <style scoped lang="less">
 	.mobile {
 		display: none;
-		font-family: DIN;
 		.rate_com {
 			font-size: 3.5rem;
 			font-weight: 900;
@@ -150,7 +146,6 @@
 			position: relative;
 
 			.r {
-				color: #fff;
 				text-align: center;
 			}
 
@@ -161,7 +156,6 @@
 
 			.r_left {
 				font-size: 2.2rem;
-				color: #fff;
 				text-align: left;
 			}
 
@@ -176,7 +170,6 @@
 			.r_msg {
 				font-size: 2.2rem;
 				position: absolute;
-				color: #fff;
 				display: inline-block;
 				bottom: 0px;
 				right: 0px;
@@ -191,7 +184,6 @@
 				height: 38px;
 				border-radius: 19px;
 				background-color: #FDD333;
-				color: #333333;
 				font-weight: bold;
 				line-height: 38px;
 				text-align: center;
@@ -205,7 +197,6 @@
 				display: flex;
 				background-color: #fff;
 				border-radius: 10px;
-				color: #333333;
 
 				.li-left {
 					width: 40%;
@@ -234,10 +225,8 @@
 			}
 
 			.ul {
-				color: #333333;
 				padding: 0px 10px;
 				margin: 10px auto;
-				color: #333333;
 
 				.li {
 					font-size: 20px;
@@ -256,7 +245,6 @@
 			.btn {
 				padding: 10px 60px;
 				border-radius: 10px;
-				color: #333333;
 				line-height: 26px;
 				font-weight: 600;
 				margin: 20px auto;
@@ -266,7 +254,6 @@
 			}
 
 			.des {
-				color: #333333;
 				padding: 0 20px;
 			}
 		}
@@ -278,7 +265,6 @@
 
 			.tit {
 				font-size: 26px;
-				color: #fff;
 				margin-bottom: 20px;
 			}
 
@@ -294,7 +280,6 @@
 			border-radius: 20px;
 			padding: 20px;
 			position: relative;
-			color: #333333;
 			font-weight: bold;
 			min-height: 260px;
 
@@ -326,15 +311,12 @@
 
 	.pc {
 		display: block;
-		font-family: DIN;
 		.finish {
 			
 			/deep/ .ant-statistic-content {
 				span {
-					font-family: DIN;
 					font-size: 4.6vw;
 					font-weight: 800;
-					color: @bgColor;
 				}
 			}
 
@@ -342,7 +324,6 @@
 				display: flex;
 				// justify-content:center;
 				color: #FDD333;
-				font-family: DIN;
 				margin-top: -10px;
 				font-size: 20px;
 				margin-bottom: 30px !important;
@@ -382,7 +363,6 @@
 				font-size: 3.5rem;
 				font-weight: 900;
 				line-height: 60px;
-				color: @themeColor;
 				margin-bottom: 20px !important;
 
 				span {
@@ -394,7 +374,6 @@
 				font-size: 2rem;
 				font-weight: 900;
 				line-height: 60px;
-				color: @themeColor;
 				margin-bottom: 20px !important;
 			}
 
@@ -425,7 +404,6 @@
 
 			.time-title-y {
 				font-size: 1.25rem;
-				font-family: DIN;
 				font-weight: 400;
 				color: #FDD333;
 			}
@@ -451,7 +429,6 @@
 					height: 38px;
 					border-radius: 19px;
 					background-color: #FDD333;
-					color: #333333;
 					font-weight: bold;
 					line-height: 38px;
 					text-align: center;
@@ -480,17 +457,14 @@
 				.tit {
 					line-height: 36rpx;
 					font-weight: bold;
-					color: #000;
 				}
 
 				.time {
 					font-weight: 900;
-					color: #000;
 					font-size: 36px;
 				}
 
 				.ul {
-					color: #333333;
 					border-top: 1px solid #70707029;
 					border-bottom: 1px solid #70707029;
 					width: 80%;
@@ -514,7 +488,6 @@
 				.btn {
 					padding: 10px 60px;
 					border-radius: 10px;
-					color: #333333;
 					line-height: 26px;
 					margin: 20px auto;
 					background-color: #FDD333;
@@ -532,7 +505,6 @@
 
 				.tit {
 					font-size: 26px;
-					color: #fff;
 					margin-bottom: 20px;
 				}
 
@@ -546,7 +518,6 @@
 				border-radius: 20px;
 				padding: 20px;
 				position: relative;
-				color: #333333;
 				font-weight: bold;
 				min-height: 260px;
 
@@ -592,7 +563,6 @@
 						justify-content: center;
 						font-size: 3.25rem;
 						font-weight: 800;
-						color: @bgColor;
 					}
 				}
 
@@ -600,7 +570,6 @@
 					display: flex;
 					// justify-content:center;
 					color: #FDD333;
-					font-family: DIN;
 					margin-top: 5px;
 					font-size: 10px;
 					margin-bottom: 30px !important;

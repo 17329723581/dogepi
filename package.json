@@ -14,7 +14,6 @@
     "echarts": "^5.1.2",
     "express": "^4.17.2",
     "js-cookie": "^3.0.0",
-    "lottie-web": "^5.8.1",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-cli-plugin-style-resources-loader": "^0.1.5",

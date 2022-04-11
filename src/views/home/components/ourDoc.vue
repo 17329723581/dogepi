@@ -37,13 +37,11 @@ export default {
     text-align: center;
     font-size: 2.7rem;
     font-weight: 800;
-    color: @themeColor;
   }
   p {
     text-align: center;
     font-size: 0.9rem;
     font-weight: 800;
-    color: @themeColor;
   }
   .content {
     display: flex;
@@ -57,7 +55,6 @@ export default {
         display: block;
         padding-top: 10px;
         font-size: 1.2rem;
-        color: @themeColor !important;
       }
     }
   }
@@ -70,13 +67,11 @@ export default {
       text-align: center;
       font-size: 2.7rem;
       font-weight: 800;
-      color: @themeColor;
     }
     p {
       text-align: left;
       font-size: 1.2rem;
       font-weight: 800;
-      color: @themeColor;
     }
     .content {
       display: flex;
@@ -90,7 +85,6 @@ export default {
           display: block;
           padding-top: 10px;
           font-size: 1.2rem;
-          color: @themeColor !important;
         }
       }
     }

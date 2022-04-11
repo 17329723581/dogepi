@@ -3,14 +3,15 @@
     <div class="header-logo" id="top">
       <div class="header-logo-pc">
         <a href="">
-          <img src="@/assets/logo.png" alt="" style="width:100%;" />
+          <img src="@/assets/logo.png" class="img" />
+          <span>DogePi</span>
         </a>
       </div>
-      <div class="header-logo-m" v-if="">
+      <div class="header-logo-m" >
         <a href="">
-          <img src="@/assets/logo.png" alt="" style="width: 80%" />
+          <img src="@/assets/logo.png" class="img" />
+          <span>DogePi</span>
         </a>
-        
       </div>
     </div>
     <nav class="header-nav">
@@ -23,11 +24,9 @@
           <a href="javascript:;">{{ item.title }}</a>
         </li>
         <li class="lang">
-          <a-icon type="global" />
           <a-dropdown :trigger="['click']">
-            <a class="ant-dropdown-link" @click="(e) => e.preventDefault()">
+            <a class="ant-dropdown-link" style="color: #333333;" @click="(e) => e.preventDefault()">
               {{ langName }}
-              <a-icon type="caret-down" style="color: #5A51A8;" />
             </a>
             <a-menu slot="overlay" class="dow" @click="changeLang" style="z-index:99999">
               <a-menu-item v-for="item of langList" :key="item.key">
@@ -41,7 +40,7 @@
 
     <nav class="m-header-nav">
       <div class="m-header-dow">
-        <a-icon type="global" style="color: #fff" />
+        <a-icon type="global" />
         <a-dropdown :trigger="['click']">
           <a class="ant-dropdown-link" @click="(e) => e.preventDefault()">
             {{ langName }}
@@ -87,11 +86,6 @@ export default {
           title: this.$t("home"),
           name: "Home",
         },
-        // {
-        //   path: "/pledge",
-        //   title: this.$t("pledge"),
-        //   name: "Pledge",
-        // },
         {
           path: "/presale",
           title: this.$t("presale"),
@@ -184,15 +178,26 @@ header {
   justify-content: space-between;
 
   .header-logo {
-    z-index: 99;
-    .header-title{
-        padding-left: 10px;
-        color: #fff;
-        font-size: 24px;
-        font-weight: 800;
+    .header-logo-pc{
+      z-index: 99;
+      a{
+        display:flex;
+        align-items: center;
+        color:@fontColor;
+        span{
+          margin-left: 10px;
+          font-size: 30px;
+          font-weight: 800;
+        }
       }
+      .header-title{
+          padding-left: 10px;
+          font-size: 24px;
+          font-weight: 800;
+      }
+    }
     img {
-      width: 90%;
+      width: 60px;
     }
   }
   .header-logo-m {
@@ -213,7 +218,7 @@ header {
 
 /deep/ .ant-dropdown-menu-item {
   a {
-    color: #000 !important;
+    
   }
 }
 
@@ -223,19 +228,71 @@ header {
 
 ul {
   display: flex;
-
+  align-items: center;
   li {
     margin-right: 25px;
     font-size: 1.1rem;
 
     a {
-      color: #fff;
+      font-weight: 400;
+      color:@fontColor;
+    }
+  }
+  .lang{
+    padding: 5px 20px 5px 20px;
+    background: #F4A93E;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header {
+    height: 70px;
+    .header-logo {
+      .header-logo-pc{
+          z-index: 99;
+          a{
+            display:flex;
+            align-items: center;
+            span{
+              margin-left: 10px;
+              font-size: 25px;
+            }
+          }
+          .header-title{
+              padding-left: 10px;
+              font-size: 24px;
+          }
+      }
+    }
+    .header-logo-m {
+      display: none;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      margin-right: 25px;
       font-size: 1.1rem;
-      font-weight: 800;
+
+      a {
+        font-weight: 400;
+        color:@fontColor;
+      }
+    }
+    .lang{
+      padding: 2px 10px 2px 10px;
+      background: #F4A93E;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   header {
     // width: 100vw;
@@ -250,18 +307,41 @@ ul {
       z-index: 99;
       .header-title{
         padding-left: 10px;
-        color: #fff;
         font-size: 24px;
         font-weight: 800;
       }
       img {
-        width: 70%;
+        @media (max-width: 540px) {
+          width:10vw;
+        }
+        @media (min-width: 540px) {
+          width:8vw;
+        }
       }
     }
     .header-logo-pc {
       display: none;
     }
     .header-logo-m {
+      a{
+        display:flex;
+        align-items: center;
+        color: @fontColor;
+        span{
+          margin-left: 10px;
+          font-weight: bold;
+          @media (max-width: 540px) {
+            font-size: 20px;
+          }
+          @media (min-width: 280px) {
+            font-size: 16px;
+          }
+          @media (min-width: 768px) {
+            font-size: 30px;
+          }
+
+        }
+      }
       display: block;
     }
   }
@@ -272,10 +352,10 @@ ul {
 
   .m-header-nav {
     display: block;
-    width: 35%;
-
+    margin-right: 10px;
     .m-header-dow {
       float: left;
+      margin-right: 10px;
     }
 
     .show {
@@ -293,7 +373,6 @@ ul {
       // margin-left: 10px;
       float: right;
       z-index: 999;
-      color: #fff;
 
       i {
         font-size: 2rem;

@@ -40,7 +40,7 @@
           </ul>
         </a-col>
         <a-col :md="12" :xs="24" class="buy-right">
-          <h3>{{ this.$t("buy_l_title") }}</h3>
+          <div>{{ this.$t("buy_l_title") }}</div>
           <div class="inp">
             <input type="number"  v-model="inputBuy"/>
             <!-- <a-input-number  v-model="inputBuy" :min="1" :max="50" :precision="0" /> -->
@@ -343,7 +343,6 @@ export default {
     margin: 30px auto 40px;
     padding: 50px 30px 50px 60px;
     border-radius: 20px;
-    background-color: @fontColor-1;
     box-shadow: 0 2px 5px rgb(100, 100, 100);
     .buy-left {
       ul li {
@@ -375,7 +374,6 @@ export default {
       color: #000;
       width: 100%;
       position: relative;
-      border: 1px solid @borderColor-2;
       margin-top: 20px;
       padding: 10px 5px;
       border-radius: 10px;
@@ -411,10 +409,8 @@ export default {
     .buy-now {
       width: 100%;
       margin: 20px auto;
-      background-color: @borderColor-2;
       // text-align: center;
       padding: 13px 0;
-      color: @fontColor-1;
     }
     .login {
       width: 100%;
@@ -493,7 +489,6 @@ export default {
       margin: 30px auto 40px;
       padding: 20px 30px;
       border-radius: 20px;
-      background-color: @fontColor-1;
       box-shadow: 0 2px 5px rgb(100, 100, 100);
       .buy-left {
         ul li {
@@ -524,7 +519,6 @@ export default {
       .inp {
         width: 100%;
         position: relative;
-        border: 1px solid @borderColor-2;
         margin-top: 20px;
         padding: 10px 5px;
         border-radius: 10px;
@@ -553,10 +547,8 @@ export default {
       .buy-now {
         width: 100%;
         margin: 20px auto;
-        background-color: @borderColor-2;
         // text-align: center;
         padding: 13px 0;
-        color: @fontColor-1;
         font-size: 1.2rem;
         i {
           margin-right: 5px;

@@ -12,7 +12,7 @@
               <span style="float: left;" class="li-left">{{
                 a_titcom_li_left
               }}</span>
-              <span style="float: right;display: flex;right: 0;color: #ffffff;">{{
+              <span style="float: right;display: flex;right: 0;">{{
                 a_titcom_li_right
               }}</span>
             </div>
@@ -49,7 +49,6 @@
                   .split('=')[1] != '' && airdropStatus == true && isInvited[1] == true && airdropStatus1 == true"
 				  style="padding: 10px 60px;
 						border-radius: 10px;
-						color: #fff;
 						line-height: 26px;
 						font-weight: 600;
 						margin: 20px auto;
@@ -71,7 +70,6 @@
                   .split('=')[1] != '' && airdropStatus == false && isInvited[1] == false && airdropStatus1 == true" 
 				  style="padding: 10px 60px;
 						border-radius: 10px;
-						color: #fff;
 						line-height: 26px;
 						font-weight: 600;
 						margin: 20px auto;
@@ -178,7 +176,6 @@
                   .split('=')[1] != '' && airdropStatus == true && isInvited[1] == true && airdropStatus1 == true"
 				  style="padding: 10px 60px;
 						border-radius: 10px;
-						color: #fff;
 						line-height: 26px;
 						font-weight: 600;
 						margin: 20px auto;
@@ -200,7 +197,6 @@
                   .split('=')[1] != '' && airdropStatus == false && isInvited[1] == false && airdropStatus1 == true" 
 				  style="padding: 10px 60px;
 						border-radius: 10px;
-						color: #fff;
 						line-height: 26px;
 						font-weight: 600;
 						margin: 20px auto;
@@ -458,7 +454,6 @@ export default {
 <style scoped lang="less">
 .mobile {
   display: none;
-  font-family: DIN;
 
   .rate_com {
     font-size: 3.5rem;
@@ -468,7 +463,6 @@ export default {
     position: relative;
 
     .r {
-      color: #fff;
       text-align: center;
     }
 
@@ -479,7 +473,6 @@ export default {
 
     .r_left {
       font-size: 1.5rem;
-      color: #fff;
       text-align: left;
       width: 50%;
     }
@@ -495,7 +488,6 @@ export default {
     .r_msg {
       font-size: 2.2rem;
       position: absolute;
-      color: #fff;
       display: inline-block;
       bottom: 0rem;
       right: 0px;
@@ -511,7 +503,6 @@ export default {
       height: 38px;
       border-radius: 19px;
       background-color:#fa0000;
-      color: #ffffff;
       font-weight: bold;
       line-height: 38px;
       text-align: center;
@@ -525,11 +516,8 @@ export default {
       display: flex;
       background-color: #18171f;
       border-radius: 10px;
-      color: #ffffff;
-
       .li-left {
         width: 40%;
-        color: #ffffff;
       }
     }
   }
@@ -544,12 +532,10 @@ export default {
     .tit {
       line-height: 36rpx;
       font-weight: bold;
-      color: #ffffff;
     }
 
     /deep/ .ant-statistic-content {
       span {
-        color: #ffffff;
         font-size: 3.25rem;
         font-weight: bold;
       }
@@ -557,12 +543,10 @@ export default {
 
     .time {
       font-weight: 900;
-      color: #ffffff;
       font-size: 36px;
     }
 
     .ul {
-      color: #ffffff;
       padding: 0px 10px;
       margin: 10px auto;
 
@@ -583,7 +567,6 @@ export default {
     .btn {
       padding: 10px 60px;
       border-radius: 10px;
-      color: #ffffff;
       line-height: 26px;
       font-weight: 600;
       margin: 20px auto;
@@ -595,7 +578,6 @@ export default {
     .btnno {
       padding: 10px 60px;
       border-radius: 10px;
-      color: #333333;
       line-height: 26px;
       font-weight: 600;
       margin: 20px auto;
@@ -605,7 +587,6 @@ export default {
     }
 
     .des {
-      color: #ffffff;
       padding: 0 20px;
     }
   }
@@ -617,7 +598,6 @@ export default {
 
     .tit {
       font-size: 26px;
-      color: #fff;
       margin-bottom: 20px;
       font-weight: bold;
     }
@@ -625,7 +605,6 @@ export default {
     .des {
       font-size: 1rem;
       font-weight: bold;
-      color: #bbbbbe;
       line-height: 32px;
     }
   }
@@ -635,7 +614,6 @@ export default {
     border-radius: 20px;
     padding: 20px;
     position: relative;
-    color: #ffffff;
     font-weight: bold;
     min-height: 260px;
 
@@ -693,7 +671,6 @@ export default {
       font-size: 3.5rem;
       font-weight: 900;
       line-height: 4.5rem;
-      color: @themeColor;
       margin-bottom: 20px !important;
 
       span {
@@ -705,7 +682,6 @@ export default {
       font-size: 2rem;
       font-weight: 900;
       line-height: 60px;
-      color: @themeColor;
       margin-bottom: 20px !important;
     }
 
@@ -728,7 +704,6 @@ export default {
         height: 38px;
         border-radius: 19px;
         background-color: #fa0000;
-        color: #ffffff;
         font-weight: bold;
         line-height: 38px;
         text-align: center;
@@ -742,7 +717,6 @@ export default {
 
         .li-left {
           width: 40%;
-          color: #ffffff;
         }
       }
     }
@@ -757,12 +731,10 @@ export default {
       .tit {
         line-height: 36rpx;
         font-weight: bold;
-        color: #ffffff;
       }
 
       /deep/ .ant-statistic-content {
         span {
-          color: #ffffff;
           font-size: 36px;
           font-weight: 900;
         }
@@ -770,12 +742,10 @@ export default {
 
       .time {
         font-weight: 900;
-        color: #ffffff;
         font-size: 36px;
       }
 
       .ul {
-        color: #ffffff;
         border-top: 1px solid #70707029;
         border-bottom: 1px solid #70707029;
         width: 80%;
@@ -790,7 +760,6 @@ export default {
           span {
             display: block;
             font-size: 26px;
-            color: #ffffff;
             font-weight: bold;
           }
         }
@@ -799,7 +768,6 @@ export default {
       .btn {
         padding: 10px 60px;
         border-radius: 10px;
-        color: #ffffff;
         line-height: 26px;
         margin: 20px auto;
         background-color: #fa0000;
@@ -808,7 +776,6 @@ export default {
       }
 
       .des {
-        color:#ffffff;
       }
     }
 
@@ -819,12 +786,10 @@ export default {
 
       .tit {
         font-size: 26px;
-        color: #fff;
         margin-bottom: 20px;
       }
 
       .des {
-        color: #bbbbbe;
       }
     }
 
@@ -833,7 +798,6 @@ export default {
       border-radius: 20px;
       padding: 20px;
       position: relative;
-      color: #ffffff;
       font-weight: bold;
       min-height: 260px;
 

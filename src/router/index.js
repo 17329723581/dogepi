@@ -41,7 +41,7 @@ const routes = [
     path: "/pledge",
     name: "Pledge",
     component: pledge,
-  },
+  }
 ];
 
 const router = new VueRouter({

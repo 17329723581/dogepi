@@ -132,7 +132,6 @@ export default {
   //   }
   //   .box {
   //     display: flex;
-  //     color: #fff;
   //     //   align-items: center;
   //     justify-content: center;
   //     margin-bottom: 50px;
@@ -216,11 +215,9 @@ export default {
   padding-bottom: 60px;
   h2 {
     font-weight: 700;
-    color: @themeColor;
   }
   p {
     font-size: 0.9rem;
-    color: @themeColor;
   }
 }
 
@@ -231,11 +228,9 @@ export default {
     padding-bottom: 0px;
     h2 {
       font-weight: 700;
-      color: @themeColor;
     }
     p {
       font-size: 1.1rem;
-      color: @themeColor;
     }
   }
 }

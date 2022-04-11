@@ -40,21 +40,6 @@
 				</a-carousel>
 			</div>
 		</div>
-
-		<!-- PC端 -->
-		<!-- 移动端 -->
-		<!-- <a-row class="content">
-      <a-col :md="12" :xs="24" class="content-left">
-        <h2>{{this.$t('LM')}}</h2>
-        <img src="@/assets/mining.png" alt="" />
-      </a-col>
-      <a-col :md="12" :xs="24" class="content-right">
-        <div v-for="item in listP" :key="item.title">
-          <strong>{{ item.title }}</strong>
-          <p>{{ item.body }}</p>
-        </div>
-      </a-col>
-    </a-row> -->
 	</div>
 </template>
 
@@ -103,8 +88,6 @@
 		}
 
 		.content {
-			color: @themeColor;
-
 			.content-left {
 				position: relative;
 				//   text-align: center;
@@ -113,7 +96,6 @@
 				h2 {
 					position: absolute;
 					font-weight: 700;
-					color: @themeColor;
 					font-size: 2.5rem;
 					top: 10px;
 					right: -300px;
@@ -152,7 +134,6 @@
 			padding: 50px 0;
 
 			.content {
-				color: @themeColor;
 
 				.content-left {
 					position: relative;
@@ -163,7 +144,6 @@
 						// display: none;
 						position: inherit;
 						font-weight: 700;
-						color: @themeColor;
 						font-size: 2.5rem;
 						right: inherit;
 						margin-bottom: 1.5rem !important;
@@ -205,7 +185,6 @@
 			width: 30px;
 			height: 30px;
 			font-size: 30px;
-			color: #fff;
 			background-color: rgba(31, 45, 61, 0.11);
 			opacity: 0.5;
 		}
@@ -232,7 +211,6 @@
 			width: 30px;
 			height: 30px;
 			font-size: 30px;
-			color: #fff;
 			background-color: rgba(31, 45, 61, 0.11);
 			opacity: 0.5;
 

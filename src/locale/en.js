@@ -1,107 +1,41 @@
 const locale = {
 	// 导航栏
 	home: "Home",
-	presale: "Presale",
-	airdrop: "Airdrop",
-	promo:'Promote',
-
-	//presaleOne
-	p_o_title:'Presale',
-	p_o_des:'presale countdown',
-	p_o_array:[{
-		title:'Soft Top',
-		num:'200 BNB',
-	},{
-		title:'Hard Top',
-		num:'1000 BNB',
-	}],
-	p_r_o_text:'Bdoge will be the only one in the blockchain field that breaks technical barriers and integrates multiple cross-chain protocol tokens of integrated service provider types. The future belongs to all blockchain digital asset players. Let us work together to witness this great moment!',
-	p_r_o_title_s:'The latest',
-	p_r_o_totalarray:[{
-		title:'Type:',
-		num:'Public',
-	},{
-		title:'Exchange ratio',
-		num:'1 BNB= 500,000,000,000 Bdoge',
-	},{
-		title:'Min',
-		num:'0.1 BNB',
-	},{
-		title:'Max',
-		num:'10 BNB',
-	}],
-	p_r_o_max:'Max',
-	p_r_o_balance:'Balance:',
-	p_r_o_BNB:'BNB',
-	p_r_o_login_bnt:'Connect',
-	p_r_o_buy_bnt:'Exchange now',
-	sendAdd:"Trading",
-	sendSuccess:"Transaction complete",
-  	sendError:'Transaction failed',
-	p_r_o_mailbox:'bd@space-pi.com',
-	p_r_o_out_bnt:'Sign out',
-	p_r_o_rules_title:'Presale rules',
-	p_r_o_rules_array:[
-		"1. The presale Bdoge has a maximum purchase limit of 10 BNB per address, and the BNB after the presale will be added to the PancakeSwap liquidity pool.",
-		"2. After the presale is over, you can manually collect the presale Bdoge.",
-		"3. The presale Bdoge will be unlocked manually 48 hours after the launch of PancakeSwap."
-	],
-	p_r_o_pre_array:[{
-		title:'My presale',
-	},{
-		title:'Bdoge',
-	}],
-	p_r_o_des:'Bdoge will be distributed after the presale ends',
-	p_r_o_record:'My purchase history',
-
-	//presaleTwo
-	p_t_title:'Bdoge Presale',
-	p_t_booking_title:'Latest progress:',
-	p_t_orange:'Perfect end!',
-	p_t_des1:'Total presale quantity',
-	p_t_num:'20,000,000,000,000',
-	p_t_des2:"The presale has ended, you can now claim your Bdoge for the presale",
-	p_t_des3:"Current block height",
-	p_t_input:["100%",'Bdoge'],
-	p_t_btn:'Receive',
-	p_t_des4:'12,931,100 Block (About08-31,2021)',
-
-	p_t_desc1_S:'Total presale quantity:',
-	p_t_desc1_num:'20,000,000,000,000 Bdoge',
-	p_t_desc1_btn:'Available',
+	presale: "预售",
+	airdrop: "空投",
 
 	// 首页
-	index_text1:'A new MEME experimental token, earn your money by socializing',
-	index_text1s:'',
-	index_text2:"",
-	index_cta_btn0:'How to Buy',
-	
-	index_ecosystem_title:'BDOGE and the ecosystem',
-	index_ecosystem_text1:'BDOGE is a dog that spreads beliefs. His intention is to spread the concept of decentralization to everyone, so the token model of BDOGE Token is designed based on this concept. If you hold a certain amount of BDOGE and share with your friends to buy BDOGE, the smart contract will be triggered and send reward tokens to your account, and holding BDOGE can also enjoy additional dividends.',
-	index_ecosystem_text2:"BDOGE has established a complete and accurate decentralized navigation application software to help people from all over the world quickly enter the decentralized world. In BDOGE's planning, this is only a small part, and the future belongs to the BDOGE ecosystem. There are a series of applications such as NFT game metaverse BDOGESwap, so please look forward to it!",
+	index_text1:'Realize the dream of',
+	index_text1s:'love and peace!',
+	index_text2:"Implementation of Ecosystem Based on Web 3.0 Technology",
 
-
+	// BDOGE和生态系统
+	index_ecosystem_title:'Dogepi and Web 3.0',
+	index_ecosystem_text1:"Dogepi brings users a transparent and credible Internet economic model. The derived decentralized application or encryption game creates additional benefits to users through dogepi's blockchain technology of pass and data confirmation. Dogepi will eliminate the information barriers between traditional centralized organizations and users, and the benefits will no longer be obtained by the centralized organizers. Instead, the decentralized network managed by open protocols will flow power and funds to the edge. Decentralized settlement will return all benefits to community users in the form of dogepi. Dogepi creates a new world that truly enjoys rights and is worthy of fulfilling obligations. The Web3 world created by dogepi belongs to every user participating in the construction of dogepi!",
+	index_ecosystem_text2:"Dogepi will continue to develop a series of applications with interoperable back-end support for encryption, such as meta universe games, dogepiswap, dogepi wallet, dogepi NFT and so on. This is not just a simple derivative application. The digital content created by users is clearly owned and controlled by users. The value created by them is fairly distributed according to the contract. This is the beginning of opening Web3 internet life through dogepi.",
 	index_eco:['PancakeSwap Deployment',"Powerful application ecosystem",'Efficient DAO Community'],
-
+	index_friends:'Friends of DogePi',
 	index_coin:[{
-		title:'BDOGE Token',
+		title:'DogePi',
 		label:'See Live Charts',
-		text:"BDOGE Token is a new type of MEME token designed by BDOGE based on social scenarios. If you are good at socializing and hold BDOGE, you can earn your income from it, and as the BDOGE community continues to grow and new applications are launched, the value of BDOGE It will rise to a thousand times or even ten thousand times, and BDOGE Token will be logged in pancaka!",
+		text:"Dogepi is a decentralized project derived from the PI network ecology and combined with the mainstream meme culture. The development team and dogepi will participate in the next PI network hacker marathon, based on Web3 The ecology built by 0 will also enrich the ecology after the main network of PI network goes online. web3. 0 areas of influence will release huge wealth opportunities. These markets are developing at an extremely fast speed and constantly creating new wealth. Dogepi is ready to meet this new technological revolution. Therefore, dogepi will log in to the BSC smart chain for the first time and carry out ecological construction, which is the preparation for the main network of PI network before going online, and finally connect to the main network of PI network",
 	},{
-		title:'BDOGE',
+		title:'web 3.0',
 		label:'See Live Charts',
-		text:'BDOGE Ecology has a comprehensive CMC platform that provides users with digital currency website navigation based on intelligent algorithms. This will make the crypto world simpler and more intuitive. BDOGE will continue to launch simple and efficient digital applications to achieve a high degree of integration between decentralization and reality.',
+		text:"web3. 0 based on the development of blockchain technology, the digital content as an asset has changed in all aspects: the platform is no longer managed by a centralized company, it has become a distributed self-organization (DAO), and governance depends on community voting; Including the ownership and control of account, wallet, props and digital assets; The ubiquitous incentive system makes people's network behavior more economical and rational. In this era, the biggest feature of digital content is that digital content is created, owned, controlled and distributed by users.",
 	},{
-		title:'BDOGE DAO',
+		title:'DogePi DAO',
 		label:'See Live Charts',
-		text:'Powered by BDOGE Token, BDOGE will build a community-driven DAO ecosystem. The main agenda of the community will be voted on by all members. Community members have the right to vote on their own ideas, and the development route of BDOGE will be decided according to the number of votes!',
+		text:'With the support of dogepi, build a community driven Dao ecosystem through secure contract technology. The main agenda of the community will be voted by all members to decide the development route of dogepi! All benefits within the ecosystem will be allocated to participants by contract, and individuals can also realize economic value. Once the distributed autonomous organization is started, it can run orderly without human management behavior.',
 	}],
 
+	// 如何购买BDOGE
 	index_cta_title:'HOW TO BUY BDOGE',
 	index_cta_text:"BDOGE will be listed on Binance's decentralized exchange PancakeSwap. You can use the blockchain browser to open the Pancake Exchange in your frequently used wallet to exchange. After the exchange is completed, you may need to add a contract address to display the balance. At this point, you will become an important member of the BDOGE community and can participate in the dividends and services of the BDOGE ecosystem!",
 	index_cta_btn1:'Buy BDOGE',
 	index_cta_btn2:'Buy LEASH',
 
+	// 快速入门指南
 	index_qsg_title:'Quick Start Guide',
 	index_qsg:[{
 		title:'Create a MetaMask or TokenPocket wallet',
@@ -117,11 +51,7 @@ const locale = {
 		text:'Once you have BNB or USDT available, you can start exchanging! Press "Select Token" and enter the token address or search in the token list.',
 	}],
 
-	index_cta_btn3:'Use ShibaSwap',
-	index_certik_title:'ShibaSwap',
-	index_certik_On:'On board',
-	index_cta_btn4:'Audit Report',
-
+	// 代币经济学
 	index_tokenomics_title:'Token Economics',
 	index_tokenomics_text:'BDOGE infuses traditional venture capital with a spirit of community through open governance, support and inclusion, backed by pioneering financial mechanisms. The BDOGE ecosystem will implement a DAO structure over time to achieve decentralization.',
 	index_tokenomics1:[{
@@ -168,6 +98,7 @@ const locale = {
 		text:'slippage',
 	}],
 
+	// 路线图
 	index_roadmap_title:'ROADMAP',
 	index_roadmap:[{
 		title:'The first stage',
@@ -199,19 +130,16 @@ const locale = {
 	index_com_title:'contact us',
 
 	index_adress:'0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375',
-	index_cta_btn5:'copy to clipboard',
+	index_cta_btn5:'复制',
+	index_cta_m:'复制成功',
 
-	index_footer_text1:'Our community is getting stronger every day. Please follow our social platforms to get the latest and accurate SHIB information.',
-	index_footer_text2:'Through the links below you can join our various groups, along with more than 1 million other members of the Shibami.',
-	index_footer_link:'Click here to search for your preferred country!',
-	
-	index_shibaswap_title:'BDOGESwap',
-	index_shibaswap_text:'When BDOGE users reach a certain order of magnitude, BDOGE will launch BDOGESwap, the next evolution of the DEFI platform. BDOGESwap allows users to earn money by engaging in a series of DEFI financial activities through an advanced and innovative reward system!',
+	// BDOGESwap
+	index_shibaswap_title:'DogePiSwap',
+	index_shibaswap_text:'When bdoge users reach a certain order of magnitude, bdoge will launch bdogeswap, which is the next evolution of defi platform. Bdogeswap enables users to conduct a series of defi financial activities through advanced and innovative reward systems, so as to obtain benefits',
 
-	index_art_title:'BDOGE Art',
-	index_art_text:' Create, explore and trade NFTs in the virtual world of BDOGE Art. BDOGE brings together a group of talented people to create extraordinary things by fostering an environment that encourages creativity and growth. Through the power of BDOGE Art, we help holders find the tools they need to turn their inspirations and unique perspectives into Reality.',
-	// 选择语言
-	selectLang: "Choose language",
+	// BDOGE Art
+	index_art_title:'DogePi Art',
+	index_art_text:' Dogepi art creates, explores and trades NFT in the virtual world. Bdoge will bring together a group of talented people to create extraordinary things by cultivating an environment that encourages creativity and growth. Through the power of dogepi art, we help holders find the tools they need and turn their inspiration and unique views into reality.',
 
 	// 底部
 	footer1: "If you have any question, please contact us",
@@ -224,161 +152,116 @@ const locale = {
 	footer_medium_url:'https://t.me/BSC_BDOGE',
 	footer_copy_url:'https://t.me/BSC_BDOGE',
 
-	footer_link1:'Medium',
-	footer_link2:'Etherscan',
-	footer_link3:'CoinMarketCap',
-	footer_link4:'CoinGecko',
+	//预售页面 预售开始
+	p_o_array:[{
+		title:'软顶',
+		num:'200 BNB',
+	},{
+		title:'硬顶',
+		num:'2000 BNB',
+	}],
+	p_o_des:'预售倒计时',
+	p_r_o_text:'Bdoge will be the only one in the blockchain field that breaks technical barriers and integrates multiple cross-chain protocol tokens of integrated service provider types. The future belongs to all blockchain digital asset players. Let us work together to witness this great moment!',
+	p_o_title:'预售',
+	p_titcom_tit:'The latest',
+	p_titcom_li_left:'',
+	p_titcom_li_right:'Purchase ',
+	currency:'BNB',
+	currency_1:'SpacePi',
+	p_r_o_totalarray:[
+		{
+			title:'Type:',
+			text:'Public',
+		},
+		{
+			title:'Exchange ratio',
+			text:'1 BNB=',
+		},
+		{
+			title:'Min:',
+			text:'0.1 BNB',
+		},
+		{
+			title:'Max',
+			text:'10 BNB',
+		}
+	],
+	p_buy_l_title:'Your exchange amount',
+	p_input_text:"请输入币安数量",
+	p_warningValue5:'请输入币安数量最小为0.1BNB',
+	p_warningValue10:'请输入币安数量0.1BNB到10BNB',
+	p_warningBalanceOf:'余额不足',
+	p_sendAdd:'连接钱包成功',
+	p_sendError:'交易失败！',
+	p_sendSuccess:'',
+	p_r_o_max:'MAX',
+	p_r_o_balance:'Balance:',
+	p_r_o_login_bnt:'Connect',
+	p_r_o_buy_bnt:'兑换',
+	p_r_o_out_bnt:'断开连接',
+	p_r_o_rules_title:'Presale rules',
+	p_r_o_rules_array:[
+		'1. The presale Bdoge has a maximum purchase limit of 10 BNB per address, and the BNB after the presale will be added to the PancakeSwap liquidity pool.',
+		'2. After the presale is over, you can manually collect the presale Bdoge.',
+		'3. The presale Bdoge will be unlocked manually 48 hours after the launch of PancakeSwap.'
+	],
+	p_r_o_pre_array:[
+		{
+			title:'My presale',
+		},
+		{
+			title:'Bdoge',
+		}
+	],
+	p_info:'Bdoge will be distributed after the presale ends',
 
-	// 预售
-	presell: "Presaling",
-	PresaleIn: "Remaining presale time",
-	day: "Days",
-	h: "hours",
-	m: "Minutes",
-	s: "Seconds",
-	p_text1: "Soft Top",
-	p_text2: "200 BNB",
-	p_text3: "Hard Top",
-	p_text4: "1,000 BNB",
-	p_text5: "You can claim your Bdoge for the presale after the presale ends.",
+	//预售页面 预售结束
+	p_t_input:['100%','Bdoge'],
+	p_t_title:'Airdrop countdown:',
+	p_t_num:'133,000,014,433,311',
+	p_t_des3:'Current block height',
+	p_t_des2:'DogePi Presale erfect end!',
+	ye_get4:'待解锁',
+	ye_get5:'可领取',
+	ye_get6:'已领取',
+	ye_get8: "不可領取",
 
-	LatestRaised: "Latest participation",
-	LatestRaised1: "Purchase",
-	buy_l_t1: "Type",
-	buy_l_t2: "Public",
-	buy_l_t3: "Ratio",
-	buy_l_t4: "Min",
-	buy_l_t5: "Max",
-	buy_l_title: "Your exchange amount",
-
-	balance: "Balance",
-	balance1: "You will receive ",
-	login: "Connect",
-	buynow: "Exchange now",
-	logout: "Sign out",
-
-	// 预售结束
-	ye_text1: "Bdoge Presale",
-	ye_text2: "Finished perfectly",
-	ye_text3: "Total sold:",
-	ye_text4: "You can claim your Bdoge for the presale after the presale ends.",
-	ye_title: "Current block",
-
-	// 我的预售
-	mypresale_text1: "My presale",
-	mypresale_text2: "Bdoge",
-  	myrecord: "My record",
-
-	// 交互提示
-	connectSuccess: "Connection succeeded",
-	over: "Activity ends",
-	comfirmInvite: "Confirm invitation",
-	inviter: "Inviter",
-	inviterNotSelf: "The inviter cannot be yourself",
-	copySuccess: "Copy successfully",
-	warningValue0: "Value cannot be less than 0 or equal to 0",
-	warningValue5: "Value cannot be less than 0.1",
-	warningValue50: "Value cannot be greater than 10",
-	warningBalanceOf: "Insufficient balance",
-	estimate: "About",
-	inviteMembers: "Invite members",
-	inviteSerialNumber: "Serial number",
-	inviteAddress: "Address",
-	receiveHistory: "Withdrawal History",
-	receiveAirdropSuccess: "Get airdrop success",
-	auxiliary: "The",
-	tage: "stage",
-	getSuccess: "Extraction succeeded",
-	myRedeem: "可赎回数量",
-	pledge: '质押',
-
-
-	// 空投
-	a_titcom_tit:"The latest",
-	a_titcom_li_left:"0x1dec...",
-	a_titcom_li_right:"Purchase",
-
-	a_time_tit:"Presale:",
+	//空投页面
+	a_twitter_url:'https://twitter.com/SpacePi_Com',
+	a_telegram_url:'https://t.me/SpacePi_com',
+	a_top_time_title:'Airdrop countdown:',
+	a_top_time_text:"Bdoge is an open source blockchain project initiated by the core developers of the original Pi Network decentralized community. This is the world's first token that automatically farms, automatically adds liquidity pools, and automatically destroys. To motivate early community supporters, we have officially launched a new round of airdrops!",
+	a_top_des_text1:"DogePi Airdrop",
+	a_top_des_text2:"Don't miss Bdoge",
+	a_rules_two_tit:"Presale rules",
+	a_rules_two1:"1. The reward will end after the presale.",
+	a_rules_two2:"2. Your BNB balance will be automatically released to your wallet as your friends make successful purchases. Example: Alice invites Bob, Bob buys 5 BNB, Alice will receive 0.5 BNB",
+	a_rules_two3:"3. The minimum credit balance is 0.01 BNB.",
+	a_top_amount_array:[{
+		title:'Bdoge Airdrop',
+	},{
+		title:'My Invitation',
+	},{
+		title:'Invitation reward',
+	}],
+	a_top_amount_c:'Airdropped Bdoge will be collected manually after the event ends.',
+	a_time_tit:'Presale',
 	a_time_tb1:"Bdoge Airdrop",
 	a_time_tb2:"Presale friends number",
 	a_time_tb3:"Total Invitation amount (BNB)",
 	a_time_tb4:"Reward amount (BNB)",
-	a_time_btn1:"Receive the airdrop",
-	a_time_btn2:"Copy",
-	a_time_msg1:"Earn up to 10% commission every time a new friend joins the presale",
-	a_time_msg2:"You can share links to Twitter, Facebook and other communities.",
-
-	a_rules_one_tit:"Presale rules",
-	a_rules_one1:"1. The reward will end after the presale.",
-	a_rules_one2:"2. Your BNB balance will be automatically released to your wallet as your friends make successful purchases. Example: Alice invites Bob, Bob buys 5 BNB, Alice will receive 0.5 BNB",
-	a_rules_one3:"3. The minimum credit balance is 0.01 BNB.",
-	a_rules_one4:"",
-
-	a_invite_time:"Invite members",
+	a_time_btn1:"Rceive",
+	a_time_msg1:"Earn up to 10% commission every time a new friend joins the presale:",
+	a_time_btn2:'Copy',
+	a_time_msg2:'You can share links to Twitter, Facebook and other communities.',
+	a_m_invite_tit:'Invite members',
 	a_invite_tb1:"Serial number",
-	a_invite_tb2:"Address",
-
-	a_rules_two_tit:"Invitation Rules",
-	a_rules_two1:"1. The presale and airdrop invitations for this event can take effect at the same time",
-	a_rules_two2:"2. Invitation allows more people to participate in the construction of the Bdoge ecosystem, while expanding the marketing team",
-	a_rules_two3:"3. Each address can invite up to 99 users",
-
-
-	a_top_text1: "Bdoge Airdrop",
-	a_top_text1_m: "",
-	a_top_text2: "Don't miss Bdoge",
-	a_top_text2_m:"",
-	a_top_text3: "Airdrop countdown:",
-	a_top_text3_m: "Airdrop:",
-	a_top_text4: "Bdoge is an open source blockchain project initiated by the core developers of the original Pi Network decentralized community. This is the world's first token that automatically farms, automatically adds liquidity pools, and automatically destroys. To motivate early community supporters, we have officially launched a new round of airdrops!",
-	a_top_amount: "Airdrop quantity",
-	a_top_amount_text: "10,000,000,000,000",
-	a_top_but:"Connect",
-	a_top_but1:"Disconnect",
-	a_top_amount_array:[{
-		title:'Bdoge Airdrop',
-		text:'100,000,000'
-	},{
-		title:'My Invitation',
-		text:'0'
-	},{
-		title:'Invitation reward',
-		text:'0'
-	}],
-	a_top_amount_c:'Airdropped Bdoge will be collected manually after the event ends.',
-	a_top_amount_link_title:'Invitation link',
-	a_top_amount_link_url:'',
-	a_top_amount_link_text:"Invite a friend to get 100,000,000 Bdoge, and you can also share links on Twitter, Facebook and other communities. The airdropped Bdoge will be collected manually after the event ends.",
-
-
-	// 数据
-	myBdoge: "Bdoge Airdrop",
-	myinvite: "My invitation",
-	invite: "Invitation reward",
-	tip: "Airdropped Bdoge will be collected manually after the event ends.",
-
-
-	// 邀请连接
-	Invitation_link: "Invitation link",
-	copy: "Copy",
-	i_text1: "Invite a friend to get 100,000,000 Bdoge, and you can also share links on Twitter, Facebook and other communities. The airdropped Bdoge will be collected manually after the event ends.",
-	i_text2: "Bdoge",
-	// i_text3:"预售",
-
-
-	// 预售
-	y_input_text: "Please enter quantity",
-	y_rate: "80" ,//进度条
-	
-	ye_get1: "第一阶段",
-	ye_get2: "第二阶段",
-	ye_get3: "第三阶段",
-	ye_get4: "To be unlocked",
-	ye_get5: "Available",
-	ye_get6: "Received",
-	ye_get8: "Not Available",
-
-
+	a_invite_tb2:"address",
+	a_quantity_title:'Airdrop quantity',
+	a_rules_title:"Invitation Rules",
+	a_rules_text1:"1. The presale and airdrop invitations for this event can take effect at the same time",
+	a_rules_text2:"2. Invitation allows more people to participate in the construction of the Bdoge ecosystem, while expanding the marketing team",
+	a_rules_text3:"3. Each address can invite up to 99 users",
 };
 
 export default locale;

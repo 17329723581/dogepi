@@ -52,12 +52,10 @@ export default {
       display: block;
       width: 60px;
       height: 60px;
-      border: 1px solid @borderColor-2;
       border-radius: 10px;
       margin-bottom: 10px;
     }
     p{
-      color: @themeColor;
       font-size: 1rem;
       font-weight: 700;
     }

@@ -16,3 +16,9 @@
     font-weight: normal;  
     font-style: normal;  
 }
+@font-face {  
+    font-family: 'Lovely';
+    src: url('./Alibaba-PuHuiTi-Heavy.ttf');
+    font-weight: normal;  
+    font-style: normal;  
+}

@@ -36,7 +36,7 @@
 							style="width: 81%;height: 44px;background: #FDD333;opacity: 1;border-radius: 8px;display: flex;align-items: center;text-align: center;justify-content:center;">
 							<img style="width: 1rem;height: 1rem;background-size: cover;object-fit: cover;"
 								src="@/assets/i.png" alt="" />&nbsp;&nbsp;<span
-								style="font-size: 1rem;font-family: DIN;font-weight: bold;color: #333333;">{{this.$t("a_top_amount_c")}}</span>
+								style="font-size: 1rem;font-family: DIN;font-weight: bold;">{{this.$t("a_top_amount_c")}}</span>
 						</div>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 					style="width: 100%;border: 1px solid #707070;opacity: 0.2;float: left;margin-bottom: 0.625rem;">
 				</div>
 				<div class="car"
-					style="color: #FFFFFF;font-weight: 400;font-size: 16px;font-family: DIN;padding-top: 0.625rem;">
+					style="font-weight: 400;font-size: 16px;font-family: DIN;padding-top: 0.625rem;">
 					<div class="car-f" style="width: 100%;float: left;">
 						<div style="padding-top: 1rem;">
 							<span class="cat-title" style="float: left;">{{ this.$t("a_top_amount_array")[0]['title'] }}</span>
@@ -72,7 +72,7 @@
 					<div
 						style="width: 100%;height: 40px;background: #ffffff;opacity: 1;border-radius: 6px;display: flex;align-items: center;text-align: center;justify-content:center;">
 						<span
-							style="font-size:1rem;font-family: DIN;font-weight: bold;color: #333333;">
+							style="font-size:1rem;font-family: DIN;font-weight: bold;">
 							<img style="width: 0.9rem;height: 0.9rem;background-size: cover;object-fit: cover;" src="@/assets/i.png"
 							alt="" /> {{this.$t("a_top_amount_c")}}</span>
 					</div>
@@ -247,17 +247,13 @@ export default {
 
 		.title {
 			font-size: 1.25rem;
-			font-family: DIN;
 			font-weight: 400;
-			color: #FFFFFF;
 
 		}
 
 		.text {
 			font-size: 5rem;
-			font-family: DIN;
 			font-weight: 400;
-			color: #FFFFFF;
 
 		}
 
@@ -289,14 +285,11 @@ export default {
 
 				.cat-title {
 					font-size: 1.125rem;
-					font-family: DIN;
 					font-weight: 400;
-					color: #333333;
 				}
 
 				.car-text {
 					font-size: 2rem;
-					font-family: DIN;
 					font-weight: bold;
 					color: #5A51A8;
 
@@ -325,18 +318,14 @@ export default {
 
 		.title {
 			font-size: 1.25rem;
-			font-family: DIN;
 			font-weight: 400;
-			color: #FFFFFF;
 
 
 		}
 
 		.text {
 			font-size: 1.75rem;
-			font-family: DIN;
 			font-weight: 400;
-			color: #FFFFFF;
 			padding-top: 0.625rem;
 			padding-bottom: 0.625rem;
 		}

@@ -133,7 +133,6 @@ export default {
 .warp {
   padding: 80px 13%;
   .content {
-    color: @themeColor;
     .content-left {
       padding-left: 5%;
       img {
@@ -142,7 +141,6 @@ export default {
     }
     .content-right {
       h2 {
-        color: @themeColor;
         font-size: 2.3rem;
         font-weight: 900;
         text-align: center;
@@ -157,10 +155,8 @@ export default {
       width: 7px;
     }
     &::-webkit-scrollbar-track {
-      background-color: @borderColor-1;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: @themeColor;
     }
     div {
       display: flex;
@@ -173,7 +169,6 @@ export default {
         color: #d4d3e1;
       }
       ul {
-        color: @themeColor;
         strong {
           font-size: 1.5rem;
           font-weight: 700;
@@ -184,7 +179,6 @@ export default {
           line-height: 30px;
           font-weight: 700;
           i {
-            color: @fontColor-2;
           }
         }
       }
@@ -196,7 +190,6 @@ export default {
   .warp {
     padding: 50px 0 0;
     .content {
-      color: @themeColor;
       .content-left {
         padding-left: 5%;
         display:none;
@@ -206,7 +199,6 @@ export default {
       }
       .content-right {
         h2 {
-          color: @themeColor;
           font-size: 2.3rem;
           font-weight: 900;
           text-align: center;
@@ -230,7 +222,6 @@ export default {
           color: #d4d3e1;
         }
         ul {
-          color: @themeColor;
           strong {
             font-size: 2.2rem;
             font-weight: 700;
@@ -245,7 +236,6 @@ export default {
             margin-bottom: 5px;
             i {
               margin-right: 5px;
-              color: @fontColor-2;
             }
             p {
               word-break: break-all;

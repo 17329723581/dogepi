@@ -1,0 +1,534 @@
+.background{
+    background: linear-gradient(180deg, #2C0255 0%, #220045 100%);
+}
+.none-s{
+    display: block;
+    display: flex;
+
+}
+.none{
+    display: none;
+}
+.section{
+    padding-top: 3.2vw;
+    padding-bottom: 0;
+    background: #300060;
+    .container{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        .container-1440{
+            width: 100%;
+            max-width: 1536px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 48px;
+            padding-left: 48px;
+            .container-time{
+                width: 100%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 3.4vw;
+                .time-car{
+                    width: 36vw;
+                    height: 14.6vw;
+                    background: linear-gradient(83deg, #33467E 0%, #7E3687 100%);
+                    display: grid;
+                    border-radius: 0.4vw;
+                    .title{
+                        height: 3.9vw;
+                        border-radius: 0.4vw 0.4vw 0 0;
+                        display:flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.2vw;
+                        font-weight: bold;
+                        background: #FEA626;
+                        color:@blackFontColor;
+                    }
+                    .text{
+                        display:flex;
+                        justify-content: center;
+                        /deep/ .ant-statistic-content {
+                            color: @fontColor;
+                            span {
+                                font-size: 4vw;
+                                font-weight: bold;
+                                line-height: 0;
+                                font-family: Lovely;
+                            }
+                        }
+                    }
+                }
+            }
+            .container-random{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .m{
+                    display: none;
+                }
+                .random-car{
+                    width: 95%;
+                    display: flex;
+                    background: #2A0055;
+                    border-radius: 0.4vw;
+                    height: 4.3vw;
+                    justify-content: center;
+                    align-items: center;
+                    .random-car-a{
+                        width: 50%;
+                        font-size: 1.1vw;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .container-lq{
+                width: 100%;
+                margin-top:1.9vw;
+                margin-bottom: 3.4vw;
+                .lq-car{
+                    display: flex;
+                    .lq-car-a{
+                        width: 25%;
+                        height: 10.3vw;
+                        background: #2A0153;
+                        opacity: 1;
+                        border-radius: 0.4vw;
+                        display: grid;
+                        align-items: center;
+                    }
+                    .lq-car-b{
+                        width: 25%;
+                        height: 10.3vw;
+                        background: #2A0153;
+                        opacity: 1;
+                        border-radius: 0.4vw;
+                        margin-left: 1%;
+                        display: grid;
+                        align-items: center;
+                    }
+                    .lq-car-c{
+                        width: 25%;
+                        height: 10.3vw;
+                        background: #2A0153;
+                        opacity: 1;
+                        border-radius: 0.4vw;
+                        margin-left: 1%;
+                        margin-right: 1%;
+                        display: grid;
+                        align-items: center;
+                    }
+                    .lq-car-title{
+                        font-size: 1.1vw;
+                        font-weight: bold;
+                        line-height: inherit;
+                    }
+                    .lq-car-text{
+                        font-size: 1.9vw;
+                        font-weight: bold;
+                        line-height: inherit;
+                        margin-top: 1.1vw;
+                    }
+                }
+                .lq-ban{
+                    width: 100%;
+                    margin-top:3vw;
+                    button{
+                        width: 16.9vw;
+                        background: @buttonColor;
+                        opacity: 1;
+                        border-radius: @fillet;
+                        font-size: 1.2vw;
+                        font-weight: bold;
+                        border:0;
+                        margin-bottom: 0;
+                        color: @blackFontColor;
+                    }
+                }
+            }
+            .container-coye{
+                padding:0;
+                padding-top:4.7vw;
+                width: 100%;
+                text-align: center;
+                .coye-url{
+                    font-size: 1.4vw;
+                    font-weight: 400;
+                    line-height: inherit;
+                    display: flex;
+                    justify-content: center;
+                    span{
+                        width: 51.1vw;
+                    }
+                    
+                }
+                .coye-ban{
+                    width: 100%;
+                    button{
+                        margin-top:2vw;
+                        border: 0;
+                        font-size:1.1vw;
+                        border-radius:@fillet;
+                        color: @blackFontColor;
+                        font-weight: 400;
+                    }
+                }
+                .coye-text{
+                    margin-top:2.1vw;
+                    font-size: 1.1vw;
+                    font-weight: 400;
+                    opacity: 1;
+                }
+                .coye-rules{
+                    width: 100%;
+                    text-align: left;
+                    .rules-title{
+                        font-size: 1.5vw;
+                        font-weight: bold;
+                    }
+                    .rules-text{
+                        font-size: 0.9vw;
+                        font-weight: 400;
+                        line-height: 1.8vw;
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .container-invite{
+                padding-top:5.2vw;
+                width: 100%;
+                .invite-title{
+                    text-align: left;
+                    font-size: 1.1vw;
+                    font-weight: bold;
+                    line-height: invite;
+                }
+                .invite-table{
+                    margin-top:3.1vw;
+                    width: 100%;
+                    .invite-table-title{
+                        width: 100%;
+                        height: 4vw;
+                        background: #35016A;
+                        display:flex;
+                        border-radius: 0.4vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.1vw;
+                        font-weight: bold;
+                        line-height: 0px;
+                        div{
+                            width: 50%;
+                        }
+                    }
+                    .invite-table-text{
+                        width: 100%;
+                        height: 4vw;
+                        display: block;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.1vw;
+                        font-weight: bold;
+                        line-height: inherit;
+                        .invite-table-text-s{
+                            width: 50%;
+                        }
+                        .invite-table-s{
+                            width: 100%;
+                            height: 0;
+                            border: 0.1vw solid #35016A;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .invite-rules{
+                    margin-top: 7.6vw;
+                    text-align:left;
+                    .invite-rules-title{
+                        font-size: 1.1vw;
+                        font-weight: bold;
+                    }
+                    .invite-rules-text{
+                        margin-top:1vw;
+                        font-size: 0.9vw;
+                        opacity: 1;
+                        margin-bottom: 9.8vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .hero__scrollbtn{
+        display: none;
+    }
+    .background{
+        background:none;
+    }
+    .section{
+        background: #2C0058;
+        z-index: 1;
+        padding: 5vw;
+        .borx{
+            background: linear-gradient(180deg, #813587 0%, #30467D 100%);
+            border-radius: 20px;
+            padding: 5vw;
+            margin-top: 33px;
+        }
+        .container{
+            .container-1440{
+                padding:0;
+                .container-time{
+                    .time-car{
+                        width: 100%;
+                        height: 84px;
+                        background: #1F1246;
+                        box-shadow: inset 0px 5px 10px 1px rgba(0, 0, 0, 0.16);
+                        border-radius: 12px;
+                        .title{
+                            height: 22px;
+                            background: #FFC14A;
+                            border-radius: 12px 12px 2px 2px;
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+                        .text{
+                            align-items: center;
+                            /deep/ .ant-statistic-content {
+                                span {
+                                    font-size: 41px;
+                                    font-family: Lovely;
+                                    font-weight: bold;
+                                    line-height: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .container-random{
+                    margin-top:36px;
+                    display: block;
+                    .m{
+                        display: block;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+                    .random-car{
+                        height: 34px;
+                        border-radius: 8px;
+                        width: 100%;
+                        background: #21174D;
+                        .pc{
+                            display: none;
+                        }
+                        .random-car-a{
+                            font-size: 13px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .container-lq{
+                    margin-top: 30px;
+                    .lq-car{
+                        display: block;
+                        width: 100%;
+                        .lq-car-a{
+                            width: 100%;
+                            border-radius:8px;
+                            display: flex;
+                            background: linear-gradient(90deg, rgba(39, 27, 91, 0.95) 0%, rgba(46, 30, 97, 0.78) 54%, rgba(59, 35, 108, 0.85) 100%);
+                            height: 39px;
+                            div{
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                padding:2vw;
+                                .lq-car-title{
+                                    text-align: left;
+                                    width: 50%;
+                                    font-size: 2.8vw;
+                                    font-weight: bold;
+                                }
+                                .lq-car-text{
+                                    text-align: right;
+                                    width: 50%;
+                                    font-size: 2.8vw;
+                                    font-weight: bold;
+                                    display: block;
+                                }
+                            }
+                        }
+                        .lq-car-b{
+                            width: 100%;
+                            border-radius:8px;
+                            display: flex;
+                            margin-top: 12px;
+                            margin-left: 0;
+                            background: linear-gradient(90deg, rgba(39, 27, 91, 0.95) 0%, rgba(46, 30, 97, 0.78) 54%, rgba(59, 35, 108, 0.85) 100%);
+                            height: 39px;
+                            div{
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                padding:2vw;
+                                .lq-car-title{
+                                    text-align: left;
+                                    width: 50%;
+                                    font-size: 2.8vw;
+                                    font-weight: bold;
+                                }
+                                .lq-car-text{
+                                    text-align: right;
+                                    width: 50%;
+                                    font-size: 2.8vw;
+                                    font-weight: bold;
+                                    margin-top: 0;
+                                    display: block;
+                                }
+                            }
+                        }
+                        .lq-car-c{
+                            width: 100%;
+                            border-radius:8px;
+                            display: flex;
+                            margin-top: 12px;
+                            margin-left: 0;
+                            margin-bottom: 12px;
+                            background: linear-gradient(90deg, rgba(39, 27, 91, 0.95) 0%, rgba(46, 30, 97, 0.78) 54%, rgba(59, 35, 108, 0.85) 100%);
+                            height: 39px;
+                            div{
+                                width: 100%;
+                                display: inline-block;
+                                align-items: center;
+                                padding:2vw;
+                                .lq-car-title{
+                                    float: left;
+                                    text-align: left;
+                                    width: 50%;
+                                    font-size: 2.8vw;
+                                    font-weight: bold;
+                                    line-height: 4vw;
+                                }
+                                .lq-car-text{
+                                    float: right;
+                                    text-align: right;
+                                    width: 50%;
+                                    font-size: 2.8vw;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                    .lq-ban{
+                        width: 100%;
+                        margin-top:26px;
+                        button{
+                            width: 171px;
+                            font-size: 14px;
+                            border-radius: @fillet;
+                            height: 43px;
+                        }
+                    }
+                }
+                .container-coye{
+                    margin-top:48px;
+                    padding: 0;
+                    .coye-url{
+                        width: 100%;
+                        font-size: 14px;
+                        line-height: inherit;
+                        word-wrap:break-word;
+                        display: block;
+                    }
+                    .coye-ban{
+                        margin-top:20px;
+                        width: 100%;
+                        button{
+                            width: auto;
+                            border-radius:@fillet;
+                            font-size: 14px;
+                        }
+                    }
+                    .coye-text{
+                        margin-top: 20px;
+                        font-size: 14px;
+                        opacity: 1;
+                        line-height: 4.4vw;
+                    }
+                    .coye-rules{
+                        .rules-title{
+                            margin-top: 2vw;
+                            margin-bottom: 4vw;
+                            font-size: 3.6vw;
+                        }
+                        .rules-text{
+                            font-size: 2.8vw;
+                            line-height: 4.4vw;
+                            text-align: justify;
+                        }
+                    }
+                }
+                .container-invite{
+                    padding-top:29px;
+                    .invite-title{
+                        text-align: center;
+                        font-size: 4vw;
+                        font-weight: bold;
+                        line-height: 10vw;
+                    }
+                    .invite-table{
+                        .invite-table-title{
+                            font-size: 3.5vw;
+                            height: 46px;
+                            border-radius:8px;
+                            background: #1F1350;
+                        }
+                        .invite-table-text{
+                            height: 46px;
+                            display: block;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 3.2vw;
+                            font-weight: bold;
+                            line-height: 10.4vw;
+                            .invite-table-text-s{
+                                width: 50%;
+                            }
+                            .invite-table-s{
+                                width: 100%;
+                                height: 0;
+                                border: 0;
+                                opacity: 0.2;
+                                display:none;
+                            }
+                        }
+                    }
+                    .invite-rules{
+                        margin-top: 47px;
+                        .invite-rules-title{
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                        .invite-rules-text{
+                            margin-top: 18px;
+                            font-size:13px;
+                            font-weight: 400;
+                            opacity: 1;
+                            line-height: inherit;
+                            text-align: justify;
+                            div{
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

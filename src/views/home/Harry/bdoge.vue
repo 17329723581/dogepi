@@ -2,282 +2,224 @@
   <div>
     <!--关于BDOGE和生态系统-->
     <div id="ecosystem" class="section__eco wf-section">
-      <div class="container-1440">
-        <div class="eco-wrap">
-          <div class="eco-left">
-            <h2 class="h1">{{ this.$t("index_ecosystem_title") }}</h2>
-            <p class="p">
-              {{ this.$t("index_ecosystem_text1") }}
-            </p>
-            <br />
-            <p class="p">
-              {{ this.$t("index_ecosystem_text2") }}
-            </p>
-          </div>
-          <div class="eco-right">
-            <a
-              href="https://etherscan.io/tx/0xabc68f7d712a1552468331c6ec29f5c112bb500ed5ffa660fe2b5af378921e37"
-              target="_blank"
-              class="eco-cta w-inline-block"
-            >
-              <div class="eco-cta-holder uni">
-                <div class="eco-cta-ico-wrap">
-                  <img
-                    src="@/assets/ico-uni.png"
-                    loading="lazy"
-                    alt=""
-                    class="eco-cta--ico"
-                  />
-                  <img
-                    src="@/assets/ico-uni-h.png"
-                    loading="lazy"
-                    alt=""
-                    class="eco-cta--ico-hover"
-                  />
-                </div>
-                <div class="eco-cta--txt">{{ this.$t("index_eco")[0] }}</div>
+      <m-logo class="hero--art"></m-logo>
+      <div class="section__eco-c section__top">
+        <div class="container-1440">
+          <div class="eco-wrap">
+            <div class="eco-left">
+              <div class="h1">{{ this.$t("index_ecosystem_title") }}</div>
+              <p class="p">
+                {{ this.$t("index_ecosystem_text1") }}
+              </p>
+              <br />
+              <p class="p">
+                {{ this.$t("index_ecosystem_text2") }}
+              </p>
+              <img class="eco-right-img" src="@/assets/eco-car.png">
+            </div>
+            <div class="eco-right pc" style="margin-top: 2.3vw;">
+              <div class="eco-right-s eco-right-s-t">
+                <div class="img">
+                    <img src="@/assets/tuzi.svg" class="img-w">
+                    <img src="@/assets/tuyzi-cai.svg" class="img-y">
+                  </div>
+                  <span class="text">{{this.$t('index_eco')[0]}}</span>
               </div>
-              <div class="eco-cta--bg"></div>
-            </a>
-            <a
-              href="https://etherscan.io/tx/0xb65bcbb85c1633b0ab4e4886c3cd8eeaeb63edbb39cacdb9223fdcf4454fd2c7"
-              target="_blank"
-              class="eco-cta w-inline-block"
-            >
-              <div class="eco-cta-holder indi">
-                <div class="eco-cta-ico-wrap">
-                  <img
-                    src="@/assets/ico-icr.png"
-                    loading="lazy"
-                    alt=""
-                    class="eco-cta--ico"
-                  /><img
-                    src="@/assets/ico-icr-h.png"
-                    loading="lazy"
-                    alt=""
-                    class="eco-cta--ico-hover"
-                  />
-                </div>
-                <div class="eco-cta--txt">{{ this.$t("index_eco")[1] }}</div>
+              <div class="eco-right-s eco-right-s-c eco-right-s-t">
+                <div class="img">
+                    <img src="@/assets/gongyi.svg" class="img-w">
+                    <img src="@/assets/gongyi-cai.svg" class="img-y">
+                  </div>
+                  <span class="text">{{this.$t('index_eco')[1]}}</span>
               </div>
-              <div class="eco-cta--bg"></div>
-            </a>
-            <a
-              href="https://etherscan.io/tx/0x125714bb4db48757007fff2671b37637bbfd6d47b3a4757ebbd0c5222984f905"
-              target="_blank"
-              class="eco-cta w-inline-block"
-            >
-              <div class="eco-cta-holder burn">
-                <div class="eco-cta-ico-wrap">
-                  <img
-                    src="@/assets/ico-vb-burn.png"
-                    loading="lazy"
-                    alt=""
-                    class="eco-cta--ico wallet"
-                  /><img
-                    src="@/assets/ico-vb-burn-h.png"
-                    loading="lazy"
-                    alt=""
-                    class="eco-cta--ico-hover wallet"
-                  />
-                </div>
-                <div class="eco-cta--txt">{{ this.$t("index_eco")[2] }}</div>
+              <div class="eco-right-s eco-right-s-t">
+                <div class="img">
+                    <img src="@/assets/suoding.svg" class="img-w">
+                    <img src="@/assets/suoding-cai.svg" class="img-y">
+                  </div>
+                  <span class="text">{{this.$t('index_eco')[2]}}</span>
               </div>
-              <div class="eco-cta--bg"></div>
-            </a>
+              <img class="eco-right-img" src="@/assets/eco-car.png">
+            </div>
+            <div class="eco-right mo" style="margin-top: 2.3vw;">
+              <div class="eco-right-car-s">
+                <div class="img">
+                    <img src="@/assets/tuzi.png" class="img-w">
+                  </div>
+                  <span class="text">{{this.$t('index_eco')[0]}}</span>
+              </div>
+              <div class="eco-right-car-s">
+                <div class="img">
+                    <img src="@/assets/gongyi.png" class="img-w">
+                  </div>
+                  <span class="text">{{this.$t('index_eco')[1]}}</span>
+              </div>
+              <div class="eco-right-car-s">
+                <div class="img">
+                    <img src="@/assets/suoding.png" class="img-w">
+                  </div>
+                  <span class="text">{{this.$t('index_eco')[2]}}</span>
+              </div>
+              <img class="eco-right-img" src="@/assets/eco-car.png">
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!---->
-    <div class="section__coin wf-section">
-      <div class="container-1440">
-        <div data-w-id="ea099555-1b52-f816-b372-4f0de20bb312" class="coin-grid">
-          <div class="coin-box">
-            <div class="coin-box-top">
-              <div class="coin-img-wrap">
-                <img
-                  src="@/assets/gc1.png"
-                  loading="lazy"
-                  data-w-id="5f864c4a-d4ce-4416-9e35-17cec00f6e38"
-                  alt=""
-                  class="coin-box--coin"
-                /><!--<img
-                  src="@/assets/coin-shad-1.png"
-                  loading="lazy"
-                  data-w-id="ed2e5c3e-6418-f76d-e3e5-0b4ed0021441"
-                  alt=""
-                  class="coin1-shad"
-                />-->
-              </div>
-              <img
-                src="@/assets/coin-elip.png"
-                loading="lazy"
-                sizes="(max-width: 991px) 100vw, 1000px"
-                srcset="
-                  @/assets/coin-elip-p-500.png  500w,
-                  @/assets/coin-elip-p-800.png  800w,
-                  @/assets/coin-elip.png       1050w
-                "
-                alt=""
-                class="coin-box-elip-bg"
-              />
-            </div>
-            <div class="coin-box-content">
-              <div class="coin-box-title-wrap">
-                <h3 class="h3">{{ this.$t("index_coin")[0]["title"] }}</h3>
-                <!--<a
-                  href="https://www.dextools.io/app/uniswap/pair-explorer/0x811beed0119b4afce20d2583eb608c6f7af1954f"
-                  target="_blank"
-                  class="coin-box-graph w-inline-block"
-                  ><img
-                    src="@/assets/ico-graph-ora.svg"
+    <div id="ecosystem-map" class="section__eco">
+      <span class="map-title">
+        <span class="map-like"></span>
+        {{this.$t('index_friends')}}
+        <span class="map-like"></span>
+      </span>
+      <div class="map-text">
+        <a class="map-a">
+          <img src="@/assets/h/binance-wuse.png" class="w">
+          <img src="@/assets/h/binance-youse.png" class="y">
+        </a>
+        <a class="map-a">
+          <img src="@/assets/h/coingecko-wuse.png" class="w">
+          <img src="@/assets/h/coingecko-youse.png" class="y">
+        </a>
+        <a class="map-a">
+          <img src="@/assets/h/twitter-wuse.png" class="w">
+          <img src="@/assets/h/twitter-youse.png" class="y">
+        </a>
+        <a class="map-a">
+          <img src="@/assets/h/twitter-wuse.png" class="w">
+          <img src="@/assets/h/twitter-youse.png" class="y">
+        </a>
+        <a class="map-a">
+          <img src="@/assets/h/twitter-wuse.png" class="w">
+          <img src="@/assets/h/twitter-youse.png" class="y">
+        </a>
+        <a class="map-a">
+          <img src="@/assets/h/twitter-wuse.png" class="w">
+          <img src="@/assets/h/twitter-youse.png" class="y">
+        </a>
+        <a class="map-a">
+          <img src="@/assets/h/twitter-wuse.png" class="w">
+          <img src="@/assets/h/twitter-youse.png" class="y">
+        </a>
+        <a class="map-a">
+          <img src="@/assets/h/twitter-wuse.png" class="w">
+          <img src="@/assets/h/twitter-youse.png" class="y">
+        </a>
+        <a class="map-a">
+          <img src="@/assets/h/twitter-wuse.png" class="w">
+          <img src="@/assets/h/twitter-youse.png" class="y">
+        </a>
+      </div>
+    </div>
+    <div id="ecosystem-car" class="section__eco ">
+      <div class="section__eco-c">
+        <div class="container-1440">
+          <div class="coin-grid section__coin wf-section">
+            <div class="coin-box">
+              <div class="coin-box-top">
+                <div class="coin-img-wrap">
+                  <img
+                    src="@/assets/gc1.png"
                     loading="lazy"
+                    data-w-id="5f864c4a-d4ce-4416-9e35-17cec00f6e38"
                     alt=""
-                    class="coin-box-graph--ico"
+                    class="coin-box--coin"
                   />
-                  <div class="text-block">See Live Charts</div>
-                </a>-->
+                </div>
               </div>
-              <p class="p">{{ this.$t("index_coin")[0]["text"] }}</p>
-              <!--<a href="https://shibaswap.com/#/swap" target="_blank">
-                <div class="cta-btn__txt">Buy SHIB</div>
-              </a>-->
-            </div>
-          </div>
-          <div class="coin-box">
-            <div class="coin-box-top">
-              <div class="coin-img-wrap">
-                <img
-                  src="@/assets/gc2.png"
-                  loading="lazy"
-                  data-w-id="843ffd8a-d36c-f041-fb50-a761f94669bc"
-                  alt=""
-                  class="coin-box--coin"
-                /><!--<img
-                  src="@/assets/coin-shad-2.png"
-                  loading="lazy"
-                  data-w-id="843ffd8a-d36c-f041-fb50-a761f94669bd"
-                  alt=""
-                  class="coin1-shad _2"
-                />-->
+              <div class="coin-box-content">
+                <div class="coin-box-title-wrap">
+                  <div class="h3 c-y">
+                    <div class="fillet">
+                      <div class="fillet-r"></div>
+                    </div>
+                    {{ this.$t("index_coin")[0]["title"] }}
+                  </div>
+                </div>
+                <p class="p c-y">{{ this.$t("index_coin")[0]["text"] }}</p>
               </div>
-              <img
-                src="@/assets/coin-elip.png"
-                loading="lazy"
-                sizes="(max-width: 991px) 100vw, 1000px"
-                srcset="
-                  @/assets/coin-elip-p-500.png  500w,
-                  @/assets/coin-elip-p-800.png  800w,
-                  @/assets/coin-elip.png       1050w
-                "
-                alt=""
-                class="coin-box-elip-bg"
-              />
+              <div class="coin-box-like">
+                <span></span>
+              </div>
             </div>
-            <div class="coin-box-content">
-              <div class="coin-box-title-wrap">
-                <h3 class="h3">{{ this.$t("index_coin")[1]["title"] }}</h3>
-                <!--<a
-                  href="https://dex.guru/token/0x27c70cd1946795b66be9d954418546998b546634-eth"
-                  target="_blank"
-                  class="coin-box-graph w-inline-block"
-                  ><img
-                    src="@/assets/ico-graph-ora.svg"
+            <div class="coin-box">
+              <div class="coin-box-top">
+                <div class="coin-img-wrap">
+                  <img
+                    src="@/assets/gc2.png"
                     loading="lazy"
+                    data-w-id="843ffd8a-d36c-f041-fb50-a761f94669bc"
                     alt=""
-                    class="coin-box-graph--ico"
+                    class="coin-box--coin"
                   />
-                  <div class="text-block">See Live Charts</div>
-                </a>-->
+                </div>
               </div>
-              <p class="p">{{ this.$t("index_coin")[1]["text"] }}</p>
-              <!--<a href="https://shibaswap.com/#/swap" target="_blank">
-                <div class="cta-btn__txt">Buy LEASH</div>
-              </a>-->
-            </div>
-          </div>
-          <div class="coin-box">
-            <div class="coin-box-top">
-              <div class="coin-img-wrap">
-                <img
-                  src="@/assets/gc4.png"
-                  loading="lazy"
-                  data-w-id="92350250-cbd3-7ab4-8c35-1b31729fc829"
-                  alt=""
-                  class="coin-box--coin"
-                /><!--<img
-                  src="@/assets/coin-shad-2.png"
-                  loading="lazy"
-                  data-w-id="92350250-cbd3-7ab4-8c35-1b31729fc82a"
-                  alt=""
-                  class="coin1-shad _2"
-                />-->
+              <div class="coin-box-content">
+                <div class="coin-box-title-wrap">
+                  <div class="h3 c-y">
+                    <div class="fillet">
+                      <div class="fillet-r"></div>
+                    </div>
+                    {{ this.$t("index_coin")[1]["title"] }}
+                  </div>
+                </div>
+                <p class="p c-y">{{ this.$t("index_coin")[1]["text"] }}</p>
               </div>
-              <img
-                src="@/assets/coin-elip.png"
-                loading="lazy"
-                sizes="(max-width: 991px) 100vw, 1000px"
-                srcset="
-                  @/assets/coin-elip-p-500.png  500w,
-                  @/assets/coin-elip-p-800.png  800w,
-                  @/assets/coin-elip.png       1050w
-                "
-                alt=""
-                class="coin-box-elip-bg"
-              />
+              <div class="coin-box-like">
+                <span></span>
+              </div>
             </div>
-            <div class="coin-box-content">
-              <div class="coin-box-title-wrap">
-                <h3 class="h3">{{ this.$t("index_coin")[2]["title"] }}</h3>
-                <!--<a
-                  href="https://dex.guru/token/0x9813037ee2218799597d83d4a5b6f3b6778218d9-eth"
-                  target="_blank"
-                  class="coin-box-graph w-inline-block"
-                  ><img
-                    src="@/assets/ico-graph-ora.svg"
+            <div class="coin-box">
+              <div class="coin-box-top">
+                <div class="coin-img-wrap">
+                  <img
+                    src="@/assets/gc4.png"
                     loading="lazy"
+                    data-w-id="92350250-cbd3-7ab4-8c35-1b31729fc829"
                     alt=""
-                    class="coin-box-graph--ico"
+                    class="coin-box--coin"
                   />
-                  <div class="text-block">See Live Charts</div>
-                </a>-->
+                </div>
               </div>
-              <p class="p">{{ this.$t("index_coin")[2]["text"] }}</p>
-              <!--<a href="https://shibaswap.com/#/swap" target="_blank">
-                <div class="cta-btn__txt">Buy BONE</div>
-              </a>-->
+              <div class="coin-box-content">
+                <div class="coin-box-title-wrap">
+                  <div class="h3">
+                    <div class="fillet">
+                      <div class="fillet-r"></div>
+                    </div>
+                    {{ this.$t("index_coin")[2]["title"] }}
+                  </div>
+                </div>
+                <p class="p">{{ this.$t("index_coin")[2]["text"] }}</p>
+              </div>
+              <div class="coin-box-like">
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="particles-js2" class="particle-class"></div>
     </div>
-    <div id="how-to-buy" class="section__htb wf-section">
+    <!---->
+    <div id="how-to-buy" class="section__htb wf-section" v-if="this.$route.name == 'Home'">
       <div class="container-1440">
         <div class="htb-wrap">
           <!--如何购买BDOGE-->
           <div class="htb-hero">
             <div class="htb-left">
-              <h2 class="h1">{{ this.$t("index_cta_title") }}</h2>
+              <div class="h1">{{ this.$t("index_cta_title") }}</div>
               <p class="p">{{ this.$t("index_cta_text") }}</p>
               <div class="htb-btn-wrap">
-                <a target="_blank" class="cta-btn r-pad buy w-inline-block">
-                  <div class="cta-btn__txt">
-                    {{ this.$t("index_cta_btn1") }}
-                  </div>
-                  <div class="cta-btn__bg"></div>
-                </a>
-                <!--<a
-                  href="https://shibaswap.com/#/swap"
-                  target="_blank"
-                  class="cta-btn r-pad buy w-inline-block"
-                >
-                  <div class="cta-btn__txt">
-                    {{ this.$t("index_cta_btn2") }}
-                  </div>
-                  <div class="cta-btn__bg"></div>
-                </a>-->
+                <div class="cta-btn">
+                  <a target="_blank" class="r-pad buy w-inline-block">
+                    <div class="cta-btn__txt">
+                      {{ this.$t("index_cta_btn1") }}
+                    </div>
+                    <div class="cta-btn__bg"></div>
+                  </a>
+                </div>
+
               </div>
             </div>
             <div class="htb-right">
@@ -288,12 +230,8 @@
                   alt=""
                   class="htb-circle-1"
                 />
-                <img
-                  src="@/assets/c2.png"
-                  loading="lazy"
-                  alt=""
-                  class="htb-circle-dashes"
-                />
+                
+                <logo class="htb-circle-dashes"></logo>
                 <div class="circle-glued-coins">
                   <img
                     src="@/assets/gc1.png"
@@ -338,8 +276,8 @@
             </div>
           </div>
           <!--快速入门指南-->
-          <div class="htb-sg-wrap">
-            <h2 class="h1">{{ this.$t("index_qsg_title") }}</h2>
+          <div class="htb-sg-wrap" v-if="this.$route.name == 'Home'">
+            <div class="h1">{{ this.$t("index_qsg_title") }}</div>
             <div class="qsg-wrap">
               <div class="qsg-line">
                 <div class="qsg-line-left">
@@ -349,8 +287,16 @@
                   <div class="qsg-yellow-line"></div>
                 </div>
                 <div class="qsg-line-right">
-                  <h3 class="h3 qsg">{{ this.$t("index_qsg")[0]["title"] }}</h3>
-                  <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p>
+                <div class="f">
+                  
+                  <div class="h3 qsg">
+                    <div class="fillet">
+                      <div class="fillet-r"></div>
+                    </div>
+                    {{ this.$t("index_qsg")[0]["title"] }}
+                  </div>
+                </div>
+                <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p>
                 </div>
               </div>
               <div class="qsg--divider"></div>
@@ -362,8 +308,15 @@
                   <div class="qsg-yellow-line"></div>
                 </div>
                 <div class="qsg-line-right">
-                  <h3 class="h3 qsg">{{ this.$t("index_qsg")[1]["title"] }}</h3>
-                  <p class="p">{{ this.$t("index_qsg")[1]["text"] }}</p>
+                <div class="f">
+                  <div class="h3 qsg">
+                    <div class="fillet">
+                      <div class="fillet-r"></div>
+                    </div>
+                    {{ this.$t("index_qsg")[1]["title"] }}
+                  </div>
+                </div>
+                <p class="p">{{ this.$t("index_qsg")[1]["text"] }}</p>
                 </div>
               </div>
               <div class="qsg--divider"></div>
@@ -375,9 +328,14 @@
                   <div class="qsg-yellow-line"></div>
                 </div>
                 <div class="qsg-line-right">
-                  <h3 class="h3 qsg">
-                    <strong>{{ this.$t("index_qsg")[2]["title"] }}</strong>
-                  </h3>
+                  <div class="f">
+                    <div class="h3 qsg">
+                      <div class="fillet">
+                        <div class="fillet-r"></div>
+                      </div>
+                      {{ this.$t("index_qsg")[2]["title"] }}
+                    </div>
+                  </div>
                   <p class="p">{{ this.$t("index_qsg")[2]["text"] }}</p>
                 </div>
               </div>
@@ -390,7 +348,14 @@
                   <div class="qsg-yellow-line"></div>
                 </div>
                 <div class="qsg-line-right">
-                  <h3 class="h3 qsg">{{ this.$t("index_qsg")[3]["title"] }}</h3>
+                  <div class="f">
+                    <div class="h3 qsg">
+                      <div class="fillet">
+                        <div class="fillet-r"></div>
+                      </div>
+                      {{ this.$t("index_qsg")[3]["title"] }}
+                    </div>
+                  </div>
                   <p class="p">{{ this.$t("index_qsg")[3]["text"] }}</p>
                 </div>
               </div>
@@ -400,133 +365,139 @@
       </div>
     </div>
     <!--代币经济学-->
-    <div class="section__ss wf-section">
+    <div class="section__ss wf-section" >
       <div class="container-1440">
         <div class="ss-wrap">
-          <div class="ss-left">
-            <div class="box box4">
+          <div>
+            <div class="box box4" v-if="this.$route.name == 'Home'">
               <div class="l animate__animated animate__fadeInDown">
-                <div class="t1">{{ this.$t("index_tokenomics_title") }}</div>
-                <div class="t2" style="text-align: justify;line-height: 30px;">
-                  {{ this.$t("index_tokenomics_text") }}
+                <div class="t1">
+                 {{ this.$t("index_tokenomics_title") }}
+                  
                 </div>
-                <div class="t3">
-                  <div class="t3-l animate__animated animate__fadeInBottomLeft">
-                    <div>
-                      <span class="pink">{{
-                        this.$t("index_tokenomics1")[0]["title1"]
-                      }}</span>
-                      <span class="pink">{{
-                        this.$t("index_tokenomics1")[0]["title2"]
-                      }}</span>
-                      <span class="pinks"
-                        >&nbsp;{{
-                          this.$t("index_tokenomics1")[0]["text"]
-                        }}</span
-                      >
-                    </div>
-                    <div>
-                      <span class="pink">{{
-                        this.$t("index_tokenomics1")[1]["title1"]
-                      }}</span>
-                      <span class="pink">{{
-                        this.$t("index_tokenomics1")[1]["title2"]
-                      }}</span>
-                      <span class="pinks"
-                        >&nbsp;{{
-                          this.$t("index_tokenomics1")[1]["text"]
-                        }}</span
-                      >
-                    </div>
-                    <div>
-                      <span class="pink">{{
-                        this.$t("index_tokenomics1")[2]["title1"]
-                      }}</span>
-                      <span class="pink">{{
-                        this.$t("index_tokenomics1")[2]["title2"]
-                      }}</span>
-                      <span class="pinks"
-                        >&nbsp;{{
-                          this.$t("index_tokenomics1")[2]["text"]
-                        }}</span
-                      >
-                    </div>
-                    <div>
-                      <span class="pink">{{
-                        this.$t("index_tokenomics1")[3]["title1"]
-                      }}</span>
-                      <span class="pink">{{
-                        this.$t("index_tokenomics1")[3]["title2"]
-                      }}</span>
-                      <span class="pinks"
-                        >&nbsp;{{
-                          this.$t("index_tokenomics1")[3]["text"]
-                        }}</span
-                      >
-                    </div>
-                  </div>
-                  <div
-                    class="t3-r animate__animated animate__fadeInBottomRight"
-                  >
-                    <div class="t3-r-1 pinks">
-                      {{ this.$t("index_tokenomics2")[0]["title1"] }}
-                      {{ this.$t("index_tokenomics2")[0]["title2"] }}
-                      {{ this.$t("index_tokenomics2")[0]["text"] }}
-                    </div>
-                    <div class="t3-r-2 pinks">
-                      <span>{{
-                        this.$t("index_tokenomics2")[1]["title1"]
-                      }}</span>
-                      <span>{{
-                        this.$t("index_tokenomics2")[1]["title2"]
-                      }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[1]["text"] }}</span>
-                    </div>
-                    <div class="t3-r-2 pinks">
-                      <span>{{
-                        this.$t("index_tokenomics2")[2]["title1"]
-                      }}</span>
-                      <span>{{
-                        this.$t("index_tokenomics2")[2]["title2"]
-                      }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[2]["text"] }}</span>
-                    </div>
-                    <div class="t3-r-3 pinks">
-                      <span>{{
-                        this.$t("index_tokenomics2")[3]["title1"]
-                      }}</span>
-                      <span>{{
-                        this.$t("index_tokenomics2")[3]["title2"]
-                      }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[3]["text"] }}</span>
-                    </div>
-                    <div class="t3-r-4 pinks">
-                      <span>{{
-                        this.$t("index_tokenomics2")[4]["title1"]
-                      }}</span>
-                      <span>{{
-                        this.$t("index_tokenomics2")[4]["title2"]
-                      }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[4]["text"] }}</span>
-                    </div>
-                    <div class="t3-r-5 pinks">
-                      <span>{{
-                        this.$t("index_tokenomics2")[5]["title1"]
-                      }}</span>
-                      <span>{{
-                        this.$t("index_tokenomics2")[5]["title2"]
-                      }}</span>
-                      <span>{{ this.$t("index_tokenomics2")[5]["text"] }}</span>
-                    </div>
+                <div class="t2-s">
+                  <div class="t2" style="text-align: justify;">
+                    {{ this.$t("index_tokenomics_text") }}
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="ss-right">
-            <div class="box box4">
-              <div class="r animate__animated animate__fadeInRight">
-                <img class="box4-img" src="@/assets/TOKENOMICS.png" />
+                <div class="t3-s">
+
+                  <div class="t3">
+                    <div class="t3-l animate__animated animate__fadeInBottomLeft">
+                      <div>
+                        <span class="pink">{{
+                          this.$t("index_tokenomics1")[0]["title1"]
+                        }}{{
+                          this.$t("index_tokenomics1")[0]["title2"]
+                        }}</span>
+                        <span class="pinks"
+                          >&nbsp;{{
+                            this.$t("index_tokenomics1")[0]["text"]
+                          }}</span
+                        >
+                      </div>
+                      <div>
+                        <span class="pink">{{
+                          this.$t("index_tokenomics1")[1]["title1"]
+                        }}{{
+                          this.$t("index_tokenomics1")[1]["title2"]
+                        }}</span>
+                        <span class="pinks"
+                          >&nbsp;{{
+                            this.$t("index_tokenomics1")[1]["text"]
+                          }}</span
+                        >
+                      </div>
+                      <div>
+                        <span class="pink">{{
+                          this.$t("index_tokenomics1")[2]["title1"]
+                        }}{{
+                          this.$t("index_tokenomics1")[2]["title2"]
+                        }}</span>
+                        <span class="pinks"
+                          >&nbsp;{{
+                            this.$t("index_tokenomics1")[2]["text"]
+                          }}</span
+                        >
+                      </div>
+                      <div>
+                        <span class="pink">{{
+                          this.$t("index_tokenomics1")[3]["title1"]
+                        }}{{
+                          this.$t("index_tokenomics1")[3]["title2"]
+                        }}</span>
+                        <span class="pinks"
+                          >&nbsp;{{
+                            this.$t("index_tokenomics1")[3]["text"]
+                          }}</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="t3-r animate__animated animate__fadeInBottomRight"
+                    >
+                      <div class="t3-r-1 pinks">
+                        {{ this.$t("index_tokenomics2")[0]["title1"] }}
+                        {{ this.$t("index_tokenomics2")[0]["title2"] }}
+                        {{ this.$t("index_tokenomics2")[0]["text"] }}
+                      </div>
+                      <div class="t3-r-2 pinks">
+                        <span>{{
+                          this.$t("index_tokenomics2")[1]["title1"]
+                        }}</span>
+                        <span>{{
+                          this.$t("index_tokenomics2")[1]["title2"]
+                        }}</span>
+                        <span>{{ this.$t("index_tokenomics2")[1]["text"] }}</span>
+                      </div>
+                      <div class="t3-r-2 pinks">
+                        <span>{{
+                          this.$t("index_tokenomics2")[2]["title1"]
+                        }}</span>
+                        <span>{{
+                          this.$t("index_tokenomics2")[2]["title2"]
+                        }}</span>
+                        <span>{{ this.$t("index_tokenomics2")[2]["text"] }}</span>
+                      </div>
+                      <div class="t3-r-3 pinks">
+                        <span>{{
+                          this.$t("index_tokenomics2")[3]["title1"]
+                        }}</span>
+                        <span>{{
+                          this.$t("index_tokenomics2")[3]["title2"]
+                        }}</span>
+                        <span>{{ this.$t("index_tokenomics2")[3]["text"] }}</span>
+                      </div>
+                      <div class="t3-r-4 pinks">
+                        <span>{{
+                          this.$t("index_tokenomics2")[4]["title1"]
+                        }}</span>
+                        <span>{{
+                          this.$t("index_tokenomics2")[4]["title2"]
+                        }}</span>
+                        <span>{{ this.$t("index_tokenomics2")[4]["text"] }}</span>
+                      </div>
+                      <div class="t3-r-5 pinks">
+                        <span>{{
+                          this.$t("index_tokenomics2")[5]["title1"]
+                        }}</span>
+                        <span>{{
+                          this.$t("index_tokenomics2")[5]["title2"]
+                        }}</span>
+                        <span>{{ this.$t("index_tokenomics2")[5]["text"] }}</span>
+                      </div>
+                    </div>
+                    <div class="box box4 p">
+                      <div class="r animate__animated animate__fadeInRight">
+                        <img class="box4-img" src="@/assets/TOKENOMICS.png" />
+                      </div>
+                    </div>
+                    <div class="box4 m">
+                    <div class="r animate__animated animate__fadeInRight">
+                      <img class="box4-img" src="@/assets/TOKENOMICS-m.png" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -535,11 +506,16 @@
       <div id="particles-js3" class="particle-class"></div>
     </div>
     <!--路线图-->
-    <div id="roadmap" class="section__htb wf-section">
+    <div id="roadmap" class="section__htb wf-section" v-if="this.$route.name == 'Home'">
       <div class="container-1440">
         <div class="htb-wrap">
           <div class="htb-sg-wrap">
-            <h2 class="h1">{{ this.$t("index_roadmap_title") }}</h2>
+            <div class="h1">
+              {{ this.$t("index_roadmap_title") }}
+              <div class="h1-img mo">
+                <img src="../../../assets/roadmap.png">
+              </div>
+            </div>
             <div class="qsg-wrap">
               <div class="qsg-line">
                 <div class="qsg-line-left">
@@ -548,25 +524,25 @@
                   </div>
                 </div>
                 <div class="qsg-line-right">
-                  <h3 class="h3 qsg harryh3pro">
+                  <div class="h3 qsg harryh3pro">
                     <ul class="text-ul">
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[0].text1 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[0].text1 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[0].text0 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[0].text0 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[0].text2 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[0].text2 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[0].text3 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[0].text3 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[0].text4 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[0].text4 }}</span>
                       </li>
                     </ul>
-                  </h3>
+                  </div>
                   <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
                 </div>
               </div>
@@ -578,20 +554,19 @@
                   </div>
                 </div>
                 <div class="qsg-line-right">
-                  <h3 class="h3 qsg harryh3pro">
+                  <div class="h3 qsg harryh3pro">
                     <ul class="text-ul">
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[1].text1 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[1].text1 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[1].text2 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[1].text2 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[1].text3 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[1].text3 }}</span>
                       </li>
                     </ul>
-                  </h3>
-                  <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
+                  </div>
                 </div>
               </div>
               <div class="qsg--divider"></div>
@@ -602,23 +577,22 @@
                   </div>
                 </div>
                 <div class="qsg-line-right">
-                  <h3 class="h3 qsg harryh3pro">
+                  <div class="h3 qsg harryh3pro">
                     <ul class="text-ul">
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[2].text1 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[2].text1 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[2].text2 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[2].text2 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[2].text3 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[2].text3 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[2].text4 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[2].text4 }}</span>
                       </li>
                     </ul>
-                  </h3>
-                  <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
+                  </div>
                 </div>
               </div>
               <div class="qsg--divider"></div>
@@ -629,23 +603,22 @@
                   </div>
                 </div>
                 <div class="qsg-line-right">
-                  <h3 class="h3 qsg harryh3pro">
+                  <div class="h3 qsg harryh3pro">
                     <ul class="text-ul">
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[3].text1 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[3].text1 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[3].text2 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[3].text2 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[3].text3 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[3].text3 }}</span>
                       </li>
                       <li>
-                        <p class="p">{{ this.$t("index_roadmap")[3].text4 }}</p>
+                        <span class="p">{{ this.$t("index_roadmap")[3].text4 }}</span>
                       </li>
                     </ul>
-                  </h3>
-                  <!-- <p class="p">{{ this.$t("index_qsg")[0]["text"] }}</p> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -660,15 +633,9 @@
                 <div class="ss-wrap">
                     <div class="ss-left">
                         <div class="ss-img-holder"><img src="@/assets/ss-img2x.png" loading="eager" alt="" class="ss--img"><img src="@/assets/ss-glow.svg" loading="eager" alt="" class="ss--img-glow"></div>
-                        <!--<a href="https://shibaswap.com/" target="_blank" class="cta-btn-transparent w-inline-block"><img src="@/assets/swap-ico.svg" loading="eager" alt="" class="cta-btn--ico">
-                            <div class="cta-btn__txt">Use ShibaSwap</div>
-                            <div class="cta-btn-transparent__gradhide"></div>
-                            <div class="cta-btn-transparent__gradhide-red"></div>
-                            <div class="cta-btn-transparent__animbox"></div>
-                        </a>-->
                     </div>
                     <div class="ss-right">
-                        <h2 class="h1">{{ this.$t("index_shibaswap_title")}}</h2>
+                        <div class="h1">{{ this.$t("index_shibaswap_title")}}</div>
                         
                         <p class="p">{{ this.$t("index_shibaswap_text")}}</p>
                     </div>
@@ -680,7 +647,7 @@
     <div id="art" class="section__art wf-section">
             <div class="container-1440">
                 <div class="art-wrap">
-                    <h2 class="h1">{{ this.$t("index_art_title")}}</h2>
+                    <div class="h1">{{ this.$t("index_art_title")}}</div>
                     <p class="art_p">{{ this.$t("index_shibaswap_text")}}</p>
                 </div>
             </div>
@@ -702,10 +669,14 @@
             </div>
         </div>
     </div>
+    <footer-cmp></footer-cmp>
   </div>
 </template>
 
 <script>
+import logo from "./logo.vue";
+import mLogo from "./m-logo.vue";
+import footerCmp from "../footer/footerCmp.vue";
 export default {
   data() {
     return {
@@ -732,8 +703,14 @@ export default {
   props: {},
   computed: {},
   watch: {},
-  components: {},
-  created() {},
+  components: {
+    logo,
+    mLogo,
+    footerCmp
+  },
+  created() {
+    
+  },
   mounted() {
     //inst("presale_canvas");
   },
@@ -759,7 +736,7 @@ export default {
                     this.size = this.size==1?1:this.size -1;
                     let size = this.size;
                     this.swiper_index = this.swiper_index-1;
-                    this.swiper.transform = "translate3d(-"+size*190.3+"px, 0px, 0px)";
+                    this.swiper.transform = "translate3d(-"+size*10+"vw, 0px, 0px)";
                     console.log('数据',size)
                 }else{
                     this.swiper.transform = "";
@@ -771,7 +748,7 @@ export default {
                 this.size = this.size +1;
                 let size = this.size;
                 this.swiper_index = this.swiper_index+1;
-                this.swiper.transform = "translate3d(-"+size*190.3+"px, 0px, 0px)";
+                this.swiper.transform = "translate3d(-"+size*10+"vw, 0px, 0px)";
                 console.log('数据',size)
                 /*console.log('数据',size)*/
             }
@@ -785,6 +762,7 @@ export default {
 
 <style scoped lang="less">
 @import "../../../styles/shiba-ui";
+@import './bdoge.less';
 .uin:hover{
     display: none;
 }
@@ -793,16 +771,12 @@ export default {
 }
 p {
   max-width: 550px;
-  font-family: Khula, sans-serif;
-  color: #bbbbbe;
   font-size: 18px;
   line-height: 32px;
   text-align: justify;
 }
 .art_p {
   max-width: 1440px;
-  font-family: Khula, sans-serif;
-  color: #bbbbbe;
   font-size: 18px;
   line-height: 32px;
 }
@@ -810,13 +784,11 @@ p {
   font-weight: bold;
   font-size: 36px;
   text-align: center;
-  color: #fff;
 }
 .harryh3pro {
   margin-left: 1vw;
   font-size: 20px;
   text-align: center;
-  color: #bbbbbe;
 }
 //TOKENOMICS
 .box4 .pink {
@@ -830,7 +802,7 @@ p {
   font-size: 1vw;
 }
 .pinks {
-  color: #ffffff;
+  color: #FEA626;
   white-space: nowrap;
   font-size: 1vw;
 }
@@ -942,12 +914,10 @@ html {
 }
 
 ::-moz-selection {
-  color: #fff;
   background: #f06500;
 }
 
 ::selection {
-  color: #fff;
   background: #f06500;
 }
 

@@ -1,103 +1,143 @@
 <template>
-	<div class="warp">
-		<div class="pc">
-			<a-row type="flex" class="banner" justify="space-between">
-				<a-col :md="10" :xs="24" class="presale-left">
-					<div class="left_tit">{{ this.$t("p_t_title") }}</div>
-					<!-- <div class="left_tit">{{ this.$t("p_t_booking_title") }}</div> -->
-					<div class="left_tit_orange">{{ this.$t("p_t_orange") }}</div>
-					<div class="left_des">{{ this.$t("p_t_des1") }}</div>
-					<div class="left_num">{{ this.$t("p_t_num") }}</div>
-					<div class="line">
-						<div class="Progress" :style="'width:'+80+'%'"></div>
-					</div>
-					<div class="left_des">{{ this.$t("p_t_des2") }}</div>
-					<div class="current_des">{{ this.$t("p_t_des3") }} {{ thousands(currentBlock)}}</div>
-					<div class="left_input"><span>{{ this.$t("p_t_input")[0] }}</span>{{getspacepi}} {{ this.$t("p_t_input")[1] }}
-					</div>
-					<div class="left_btn" v-if="!isLogin" @click="connect()" style="background-color:rgb(229 0 1);margin-left:1rem;color: #ffff;">{{ this.$t("a_top_but") }}</div>
-					<!-- <div class="left_btn"  v-if="isLogin"  @click="$router.push('/airdrop')">{{ this.$t("p_t_btn") }}</div> -->
-					<div>
-						<div class="left_btn"  v-if="isLogin"  @click="receive_status==false?getStageToken():''" :style="receive_status==false? 'background-color: rgb(229 0 1);color: #ffff;':'background-color: #ccc;'">
-							{{ blockReceive(stages[0][1],stages[0][0]) }}
+	<div>
+		<div class="section__htb wf-section">
+			<div class="container-1440">
+				<div class="htb-wrap">
+				<div class="htb-hero">
+					<div class="htb-left">
+					<div class="base-circle-wrap">
+						<img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"/>
+						<logo class="htb-circle-dashes"></logo>
+						<div class="circle-glued-coins">
+						<img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1"/>
+						<img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2"/>
+						<img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3"/>
 						</div>
-					<div class="left_btn_out"  v-if="isLogin"  @click="logout()">{{ this.$t("a_top_but1") }}</div>
-					</div>
-					<!-- <div class="left_des1">{{ thousands(stages[0]) }}BK({{ $t("estimate") }},{{ getStageUnlockTime(stages[1]) }})</div> -->
-				</a-col>
-			</a-row>
-			<a-row type="flex" justify="space-between">
-				<a-col :md="24" :xs="24" class="presale-left">
-					<div class="rules" style="margin-top:80px;">
-						<div class="tit">{{ this.$t("p_r_o_rules_title") }}</div>
-						<div class="des">{{ this.$t("p_r_o_rules_array")[0] }}</div>
-						<div class="des">{{ this.$t("p_r_o_rules_array")[1] }}</div>
-						<div class="des">{{ this.$t("p_r_o_rules_array")[3] }}</div>
-					</div>
-					<div class="my_pre">
-						<div class="li">
-							<div>{{ this.$t("p_r_o_pre_array")[0]['title'] }}</div>
-							<div class="num">{{userLock}}</div>
-						</div>
-						<div class="li">
-							<div>{{ this.$t("p_r_o_pre_array")[1]['title'] }}</div>
-							<div class="num">{{getspacepi}}</div>
+						<div class="front-coins-holder">
+						<img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1"/>
+						<img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2"/>
+						<img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3"/>
 						</div>
 					</div>
-					<!-- <div class="white_des">{{ this.$t("p_r_o_des")}}</div>
-					<div class="record">
-						{{ this.$t("p_r_o_record")}}
-
-					</div> -->
-				</a-col>
-			</a-row>
+					</div>
+					<div class="htb-right">
+						<a-row type="flex" class="banner" justify="space-between">
+							<a-col :md="12" :xs="24" class="presale-left">
+								<div class="left_lu">
+									<div class="li">
+										<div class="connect"  v-if="!isLogin">
+											<button type="button" class="car3-b-button" @click="connect">{{ this.$t("p_r_o_login_bnt") }}</button>
+										</div>
+										<div class="connect" v-if="isLogin">
+											<button type="button" class="car3-b-button"  @click="logout">{{ this.$t("p_r_o_out_bnt") }}</button>
+										</div>
+										<div class="car-p-t">
+											<div class="cont">{{ this.$t("p_t_input")[0] }}</div>
+											<div class="cont">{{getspacepi}} {{ this.$t("p_t_input")[1] }}</div>
+										</div>
+									</div>
+								</div>
+								<div class="left_lu">
+									<div class="li">
+										<div class="connect">
+											<span class="car-p-title">{{ this.$t("a_top_time_title")}}</span>
+											<div class="car-p-height">{{ this.$t("p_t_num")}}</div>
+										</div>
+									</div>
+								</div>
+								<div class="left_lu">
+									<div class="li">
+										<div class="connect-line">
+											<div class="line">
+												<div class="Progress" :style="'width:'+80+'%'"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="left_lu">
+									<div class="li">
+										<div class="connect-text">
+											The presale has ended, you can now claim your Bdoge for the presale
+										</div>
+									</div>
+								</div>
+								<div class="left_lu">
+									<div class="li">
+										<div class="connect-block-height">
+											{{ this.$t("p_t_des3") }} {{ thousands(currentBlock)}}
+										</div>
+									</div>
+								</div>
+								<div class="left_lu">
+									<div class="li">
+										<div class="connect-des">
+											{{ this.$t("p_t_des2") }}
+										</div>
+									</div>
+								</div>
+								<div class="left_lu" v-if="isLogin">
+									<div class="li">
+										<div class="connect-lq">
+											<button type="button" :class="receive_status==false?'connect-lq-button button-yellow':'connect-lq-button button-grey'"  @click="receive_status==false?getStageToken():''">{{ blockReceive(stages[0][1],stages[0][0]) }}</button>
+										</div>
+									</div>
+								</div>
+							</a-col>
+						</a-row>
+					</div>
+				</div>
+				</div>
+			</div>
 		</div>
-		<div class="mobile">
-			<div class="left_com">
-				<div class="left_tit">{{ this.$t("p_t_title") }}</div>
-				<!-- <div class="left_tit">{{ this.$t("p_t_booking_title") }} </div> -->
-				<div class="left_tit_orange">{{ this.$t("p_t_orange") }}</div>
-				<div class="left_tit_orange_des">{{ this.$t("p_t_desc1_S") }}</div>
-				<div class="left_num">{{ this.$t("p_t_desc1_num") }}</div>
-				<div class="line">
-					<div class="Progress" :style="'width:'+80+'%'"></div>
+		<div class="section">
+			<div class="container-1440">
+				<div class="car3-f">
+					<span class="title">
+						{{ this.$t("p_r_o_rules_title") }}
+					</span>
+					<div class="text">
+						<span>{{ this.$t("p_r_o_rules_array")[0] }}</span>
+					</div>
+					<div class="text">
+						<span>{{ this.$t("p_r_o_rules_array")[1] }}</span>
+					</div>
+					<div class="text">
+						<span>{{ this.$t("p_r_o_rules_array")[2] }}</span>
+					</div>
 				</div>
-				<div class="left_des">{{ this.$t("p_t_des2") }}</div>
-				<div class="current_des">{{ this.$t("p_t_des3") }} {{ thousands(currentBlock)}}</div>
-				<div class="left_input"><span>{{ this.$t("p_t_input")[0] }}</span>{{getspacepi}} {{ this.$t("p_t_input")[1] }}
-				</div>
-				<div class="left_btn" v-if="!isLogin" @click="connect()" style="background-color:rgb(255 0 0);color: #ffff;">{{ this.$t("a_top_but") }}</div>
-				<!-- <div class="left_btn"  v-if="isLogin"  @click="$router.push('/airdrop')">{{ this.$t("p_t_btn") }}</div> -->
-				<div class="left_btn"  v-if="isLogin"  @click="receive_status==false?getStageToken():''" :style="receive_status==false? 'background-color: rgb(255 0 0);color: #ffff;':'background-color: #ccc;'">
-						{{ blockReceive(stages[0][1],stages[0][0]) }}
-				</div>
-				<div class="left_btn_out"  v-if="isLogin"  @click="logout()">{{ this.$t("a_top_but1") }}</div>
-				<!-- <div class="left_des1">{{ thousands(stages[0]) }}BK({{ $t("estimate") }},{{ getStageUnlockTime(stages[1]) }})</div> -->
-			</div>
-			<div class="rules">
-				<div class="tit">{{ this.$t("p_r_o_rules_title") }}</div>
-				<div class="des">{{ this.$t("p_r_o_rules_array")[0] }}</div>
-				<div class="des">{{ this.$t("p_r_o_rules_array")[1] }}</div>
-				<div class="des">{{ this.$t("p_r_o_rules_array")[3] }}</div>
-			</div>
-			<div class="my_pre">
-				<div class="li">
-					<div>{{ this.$t("p_r_o_pre_array")[0]['title'] }}</div>
-					<div class="num">{{userLock}}</div>
-				</div>
-				<div class="li">
-					<div>{{ this.$t("p_r_o_pre_array")[1]['title'] }}</div>
-					<div class="num">{{getspacepi}}</div>
+				<div class="htb-wrap">
+					<div class="car4">
+						<div class="car4-a">
+						<div class="car4-a-s">
+							<span class="title">{{ this.$t("p_r_o_pre_array")[0]["title"] }}</span>
+							<span class="text">{{ userLock }}</span>
+						</div>
+						</div>
+						<div class="car4-b">
+						<div class="car4-b-s">
+							<span class="title">{{ this.$t("p_r_o_pre_array")[1]["title"] }}</span>
+							<span class="text">{{ getspacepi }}</span>
+						</div>
+						</div>
+						<div class="car4-c">
+						{{this.$t("p_info") }}
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- <div class="record">
-				{{ this.$t("p_r_o_record")}}
-			</div> -->
+    	</div>
+		<div class="container-1440" style="height: auto;">
+			<div class="hero-wrap">
+				<a href="#ecosystem" class="hero__scrollbtn w-inline-block">
+					<img src="@/assets/hero-scroll-shape.png" loading="eager" alt="" class="hero__scrollbtn--img"/>
+				</a>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+	import logo from "./logo.vue";
 	import {abiObject,getAbi, web3,thousands} from "utils/common";
 	import { mapState, mapActions, mapMutations } from "vuex";
 	const {contractObject: PerSaleObj} = getAbi(abiObject.PerSaleAbi)
@@ -147,6 +187,7 @@
 			},
 		},
 		components: {
+			logo
 		},
 		created() {
 			this.getStage()
@@ -170,10 +211,14 @@
 				this.updateIsInvited(isInvited)
 				sessionStorage.setItem("isInvited",JSON.stringify(isInvited))
 				
-				this.$message.success(this.$t('connectSuccess'));
+				this.$message.success(this.$t('p_sendAdd'));
+				setTimeout(()=>{
+					window.location.reload();
+				},1500);
 				// if(!JSON.parse(this.isInvited)[1]){
 				// console.log('isInvited[1]',isInvited[1])
 				//  console.log('connect',isInvited[1])
+				
 				if(isInvited[1] == false){
 					console.log('未绑定邀请')
 					this.bondInvite(isInvited)
@@ -317,708 +362,25 @@
 </script>
 
 <style scoped lang="less">
-	.mobile {
-		display: none;
-		font-family: DIN;
-
-		.left_com {
-			margin: 20px;
-
-			.left_tit {
-				color: #fff;
-				font-size: 32px;
-				font-weight: bold;
-				line-height: 60px;
-				font-family: DIN;
-				text-transform: uppercase;
-				text-align: center;
-			}
-
-			.left_tit_orange {
-				color: #e50001;
-				font-size: 40px;
-				font-weight: bold;
-				line-height: 60px;
-				font-family: DIN;
-				text-transform: uppercase;
-				text-align: center;
-			}
-
-			.left_tit_orange_des {
-				color: #ffffff;
-				font-size: 20px;
-				font-weight: bold;
-				line-height: 50px;
-				font-family: DIN;
-				text-align: center;
-			}
-
-			.left_des {
-				color: #fff;
-			}
-
-			.left_num {
-				color: #fff;
-				font-size: 36px;
-				font-weight: bold;
-				line-height: 60px;
-				font-family: DIN;
-				overflow: hidden;
-			}
-
-			.current_des {
-				color:#e50001;
-				font-size: 20px;
-				font-weight: bold;
-				line-height: 80px;
-				font-family: DIN;
-			}
-
-			.left_input {
-				border: 1px solid #e50001;
-				border-radius: 8px;
-				padding: 10px 16px 10px 16px;
-				color: #fff;
-				text-align: right;
-				position: relative;
-				font-size: 20px;
-				font-weight: bold;
-				line-height: 32px;
-
-				span {
-					position: absolute;
-					left: 16px;
-					line-height: 32px;
-					color: #e50001;
-				}
-			}
-
-			.left_btn {
-				margin: 20px auto;
-				//background-color: #FDD333;
-				line-height: 36px;
-				font-size: 18px;
-				color: #241A41;
-				width: 200px;
-				text-align: center;
-				border-radius: 4px;
-				text-transform: uppercase;
-				font-weight: bold;
-				position: relative;
-			}
-
-			.left_btn_out{
-				margin: 20px auto;
-				background-color: #FDD333;
-				line-height: 36px;
-				font-size: 18px;
-				color: #241A41;
-				width: 200px;
-				text-align: center;
-				border-radius: 4px;
-				text-transform: uppercase;
-				font-weight: bold;
-				position: relative;
-			}
-			.left_des1 {
-				color: #fff;
-				font-size: 16px;
-				font-weight: bold;
-				text-align: center;
-			}
-
-			.line {
-				margin: 20px 0;
-				height: 10px;
-				border-radius: 5px;
-				background-color: #fff;
-				overflow: hidden;
-
-				.Progress {
-					background-color:#e50001;
-					height: 10px;
-					float: left;
-					border-radius: 5px;
-				}
-			}
-		}
-
-		.rules {
-			text-align: left;
-			margin: 20px;
-
-			.tit {
-				font-size: 26px;
-				color: #fff;
-				margin-bottom: 0px;
-				font-weight: bold;
-			}
-
-			.des {
-				font-size: 14px;
-				color: #bbbbbe;
-				line-height: 32px;
-			}
-		}
-
-		.total_com {
-			margin: 20px;
-			padding: 20px 0;
-			background-color: #fff;
-			border-radius: 20px;
-
-			.li_tit {
-				margin-bottom: 10px;
-				text-align: left;
-				padding: 0 20px;
-
-				.tb {
-					color: #333333;
-					font-size: 16px;
-					display: inline-block;
-					font-weight: bold;
-
-					.num {
-						font-size: 18px;
-						font-weight: bold;
-						color: #333333;
-					}
-				}
-			}
-
-			.li_ratio {
-				margin-bottom: 10px;
-				text-align: left;
-				padding: 0 20px;
-
-				.tb {
-					color: #5A51A8;
-					font-size: 16px;
-					display: inline-block;
-					font-weight: Regular;
-
-					.num {
-						font-size: 18px;
-						font-weight: bold;
-						color: #333333;
-					}
-				}
-			}
-
-			.li_line {
-				border-top: 1px solid #70707030;
-				padding: 10px 20px;
-				margin-bottom: 10px;
-				height: 60px;
-				display: flex;
-
-				.tb {
-					width: 50%;
-					color: #5A51A8;
-					font-size: 16px;
-					display: inline-block;
-					font-weight: Regular;
-					text-align: left;
-
-					.num {
-						font-size: 18px;
-						font-weight: bold;
-						color: #333333;
-					}
-				}
-
-				.tb_right {
-					width: 50%;
-					color: #5A51A8;
-					font-size: 16px;
-					display: inline-block;
-					font-weight: Regular;
-					text-align: right;
-
-					.num {
-						font-size: 18px;
-						font-weight: bold;
-						color: #333333;
-					}
-				}
-			}
-
-			.input_com {
-				margin: 20px 20px 0px 20px;
-				height: 42px;
-				border: 1px solid #FDD333;
-				border-radius: 8px;
-				position: relative;
-				overflow: hidden;
-
-				input {
-					width: 100%;
-					line-height: 40px;
-					border: none;
-					background-color: #fff;
-					border-radius: 8px;
-					padding: 0 10px;
-				}
-
-				span {
-					position: absolute;
-					right: 20px;
-					bottom: 0;
-					line-height: 42px;
-					color: #333333;
-					font-size: 10px;
-				}
-			}
-
-			.tis {
-				line-height: 26px;
-				color: #333333;
-				text-align: right;
-				margin: 10px 20px;
-			}
-
-			.btn {
-				margin: 0 20px;
-				line-height: 40px;
-				font-size: 18px;
-				font-weight: bold;
-				text-align: center;
-				color: #333333;
-				background-color: #FDD333;
-				border-radius: 8px;
-				margin-top: 20px;
-			}
-
-			.token {
-				margin: 0 20px;
-				margin-top: 10px;
-				text-align: left;
-				display: flex;
-				overflow: hidden;
-
-				img {
-					display: inline;
-					width: 12px;
-					height: 12px;
-				}
-			}
-
-			.sign_out {
-				margin: 0 20px;
-				margin-top: 10px;
-				text-align: right;
-				cursor: pointer;
-
-				img {
-					display: inline;
-					width: 16px;
-					height: 16px;
-					margin-right: 10px;
-				}
-			}
-		}
-
-		.my_pre {
-			margin: 20px;
-			padding: 20px;
-			background-color: #18171f;
-			border-radius: 20px;
-			display: flex;
-
-			.li {
-				width: 50%;
-				color: #ffffff;
-				font-size: 16px;
-				text-align: center;
-				line-height: 20px;
-				font-weight: 400;
-
-				.num {
-					font-size: 22px;
-					line-height: 32px;
-					font-weight: 700;
-				}
-			}
-		}
-
-		.white_des {
-			margin: 20px;
-			line-height: 26px;
-			font-weight: bold;
-			color: #fff;
-			text-align: center;
-		}
-
-		.record {
-			margin: 20px;
-			padding: 20px;
-			background-color: #fff;
-			border-radius: 20px;
-			line-height: 26px;
-			color: #333333;
-			font-weight: bold;
-			min-height: 200px;
-		}
+	@import "../../../styles/shiba-ui";
+	@import "./presaleOne.less";
+	@import "./presaleOneSlyte.less";
+	@import "./presaleTwo.less";
+	@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
 	}
-
-	.pc {
-		display: block;
+	to {
+		-webkit-transform: rotate(360deg);
 	}
-
-	.warp {
-		padding: 73px 0 30px;
-		margin-bottom: 70px;
-		margin: 0 auto;
-
-		.pc {
-			.banner {
-				position: relative;
-
-				.logo {
-					position: absolute;
-					top: 0;
-					right: 0px;
-					bottom: 0px;
-					width: 25vw;
-					height: 25vw;
-				}
-			}
-
-			.presale-left {
-				position: relative;
-
-				.left_tit {
-					color: #fff;
-					font-size: 52px;
-					font-weight: bold;
-					line-height: 80px;
-					font-family: DIN;
-				}
-
-				.left_tit_orange {
-					color: #e50001;
-					font-size: 52px;
-					font-weight: bold;
-					line-height: 80px;
-					font-family: DIN;
-				}
-
-				.left_des {
-					color: #fff;
-				}
-
-				.left_num {
-					color: #fff;
-					font-size: 52px;
-					font-weight: bold;
-					line-height: 80px;
-					font-family: DIN;
-				}
-
-				.current_des {
-					color: #e50001;
-					font-size: 24px;
-					font-weight: bold;
-					line-height: 80px;
-					font-family: DIN;
-				}
-
-				.left_input {
-					display: inline-block;
-					border: 1px solid #e50001;
-					border-radius: 8px;
-					padding: 10px 16px 10px 100px;
-					color: #fff;
-					text-align: right;
-					position: relative;
-					font-size: 20px;
-					font-weight: bold;
-					line-height: 32px;
-
-					span {
-						position: absolute;
-						left: 16px;
-						line-height: 32px;
-						color: #e50001;
-					}
-				}
-
-				.left_btn {
-					margin: 20px 0;
-					//background-color: #FDD333;
-					line-height: 2.5rem;
-					font-size: 16px;
-					color: #241A41;
-					width: 120px;
-					height: 2.5rem;
-					text-align: center;
-					border-radius: 4px;
-					display: inline-block; 
-				}
-				.left_btn_out{
-					margin: 20px 0;
-					background-color: rgb(229, 0, 1);
-					line-height: 2.5rem;
-					font-size: 16px;
-					color: rgb(255, 255, 255);
-					width: 120px;
-					height: 2.5rem;
-					text-align: center;
-					border-radius: 4px;
-					margin-left: 10px;
-					display: inline-block;
-				}
-				.left_des1 {
-					color: #fff;
-					font-size: 16px;
-					font-weight: bold;
-				}
-
-				.line {
-					margin: 20px 0;
-					width: 400px;
-					height: 10px;
-					border-radius: 5px;
-					background-color: #fff;
-					overflow: hidden;
-
-					.Progress {
-						background-color: #e50001;
-						height: 10px;
-						float: left;
-						border-radius: 5px;
-					}
-				}
-			}
-
-			.titcom {
-				width: 360px;
-				height: 46px;
-				left: 50%;
-				margin-left: -180px;
-				background-color: #fff;
-				position: absolute;
-				border-radius: 4px;
-				top: 80px;
-
-				.tit {
-					position: absolute;
-					width: 180px;
-					left: 50%;
-					margin-left: -90px;
-					top: -23px;
-					height: 38px;
-					border-radius: 19px;
-					background-color: #FDD333;
-					color: #333333;
-					font-weight: bold;
-					line-height: 38px;
-					text-align: center;
-				}
-
-				.li {
-					display: inline;
-					line-height: 46px;
-					padding: 0 20px;
-					display: flex;
-
-					.li-left {
-						width: 40%;
-						color: #5A51A8;
-					}
-				}
-			}
-
-			.totalcom {
-				margin-top: 140px;
-				padding: 20px;
-				background-color: #fff;
-				border-radius: 20px;
-				display: flex;
-
-				.left {
-					width: 50%;
-
-					.li {
-						margin-bottom: 10px;
-
-						.tb {
-							color: #5A51A8;
-							font-size: 16px;
-							display: inline-block;
-							margin-left: 60px;
-							font-weight: Regular;
-
-							.num {
-								font-size: 18px;
-								font-weight: bold;
-								color: #333333;
-							}
-						}
-					}
-				}
-
-				.right {
-					width: 50%;
-
-					.tit {
-						color: #333333;
-						font-weight: bold;
-						font-size: 18px;
-					}
-
-					.input_com {
-						margin-top: 20px;
-						width: 320px;
-						height: 42px;
-						border: 1px solid #707070;
-						border-radius: 8px;
-						position: relative;
-						overflow: hidden;
-
-						input {
-							width: 100%;
-							line-height: 40px;
-							border: none;
-							background-color: #fff;
-							border-radius: 8px;
-							padding: 0 10px;
-						}
-
-						span {
-							position: absolute;
-							right: 20px;
-							bottom: 0;
-							line-height: 42px;
-							color: #5A51A8;
-							font-size: 10px;
-						}
-					}
-
-					.tis {
-						line-height: 26px;
-						color: #333333;
-						text-align: right;
-						width: 320px;
-					}
-
-					.btn {
-						width: 320px;
-						line-height: 40px;
-						font-size: 18px;
-						font-weight: bold;
-						text-align: center;
-						color: #333333;
-						background-color: #FDD333;
-						border-radius: 8px;
-						margin-top: 20px;
-					}
-
-					.token {
-						margin-top: 10px;
-						width: 320px;
-						text-align: left;
-						display: flex;
-						overflow: hidden;
-
-						img {
-							display: inline;
-							width: 12px;
-							height: 12px;
-						}
-					}
-
-					.sign_out {
-						width: 320px;
-						margin-top: 10px;
-						text-align: right;
-						cursor: pointer;
-
-						img {
-							display: inline;
-							width: 16px;
-							height: 16px;
-							margin-right: 10px;
-						}
-					}
-				}
-			}
-
-			.rules {
-				text-align: left;
-				margin-top: 20px;
-				margin-bottom: 40px;
-
-				.tit {
-					font-size: 26px;
-					color: #fff;
-					margin-bottom: 20px;
-				}
-
-				.des {
-					color: #bbbbbe;
-					font-size: 1.25rem;
-				}
-			}
-
-			.my_pre {
-				margin-bottom: 20px;
-				padding: 20px;
-				background-color: #18171f;
-				border-radius: 20px;
-				display: flex;
-
-				.li {
-					width: 50%;
-					color: #ffffff;
-					font-size: 1.5rem;
-					text-align: center;
-					line-height: 3.25rem;
-					font-weight: 400;
-
-					.num {
-						font-size: 2rem;
-						line-height: 32px;
-						font-weight: 700;
-					}
-				}
-			}
-
-			.white_des {
-				line-height: 26px;
-				font-weight: bold;
-				color: #fff;
-				text-align: center;
-			}
-
-			.record {
-				margin-bottom: 20px;
-				padding: 20px;
-				background-color: #fff;
-				border-radius: 20px;
-				line-height: 26px;
-				color: #333333;
-				font-weight: bold;
-				min-height: 100px;
-			}
-
-		}
 	}
-
-	@media screen and (max-width: 768px) {
-		.warp {
-			width: 100%;
-			padding: 0;
-			margin: 0;
-		}
-
-		.mobile {
-			display: block;
-		}
-
-		.pc {
-			display: none;
-		}
-
+	.htb-circle-dashes {
+	animation: rotation 60s linear infinite;
+	}
+	.circle-glued-coins {
+	animation: rotation 30s linear infinite;
+	}
+	.front-coins-holder {
+	animation: rotation 60s linear infinite;
 	}
 </style>

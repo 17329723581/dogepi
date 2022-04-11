@@ -34,11 +34,9 @@ export default {
   padding-bottom: 60px;
   h2 {
     font-weight: 700;
-    color: @themeColor;
   }
   p {
     font-size: 0.9rem;
-    color: @themeColor;
   }
 }
 
@@ -49,11 +47,9 @@ export default {
     padding-bottom: 40px;
     h2 {
       font-weight: 700;
-      color: @themeColor;
     }
     p {
       font-size: 1rem;
-      color: @themeColor;
     }
   }
 }

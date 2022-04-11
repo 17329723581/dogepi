@@ -58,7 +58,6 @@ html {
 body {
     margin: 0;
     min-height: 100%;
-    background-color: #fff;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -378,7 +377,6 @@ label {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.428571429;
-    color: #333333;
     vertical-align: middle;
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -491,7 +489,6 @@ textarea.w-select {
 .w-file-upload-uploading,
 .w-file-upload-success {
     display: inline-block;
-    color: #333333;
 }
 
 .w-file-upload-error {
@@ -1166,7 +1163,7 @@ textarea.w-select {
 }
 
 .w-slider-nav-invert {
-    color: #fff;
+
 }
 
 .w-slider-nav-invert>div {
@@ -1189,7 +1186,7 @@ textarea.w-select {
 }
 
 .w-slider-dot.w-active {
-    background-color: #fff;
+
 }
 
 .w-slider-dot:focus {
@@ -1388,13 +1385,11 @@ textarea.w-select {
     right: 0;
     bottom: 0;
     left: 0;
-    color: #fff;
     font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana, sans-serif;
     font-size: 17px;
     line-height: 1.2;
     font-weight: 300;
     text-align: center;
-    background: rgba(0, 0, 0, 0.9);
     z-index: 2000;
     outline: 0;
     /* 1 */
@@ -1493,7 +1488,6 @@ textarea.w-select {
     bottom: 0;
     left: 0;
     padding: .5em 1em;
-    background: rgba(0, 0, 0, 0.4);
     text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1647,7 +1641,6 @@ textarea.w-select {
     bottom: -4px;
     left: -4px;
     border: 3px solid transparent;
-    border-bottom-color: #fff;
     border-radius: 50%;
 }
 
@@ -1887,7 +1880,6 @@ textarea.w-select {
     position: relative;
     float: left;
     text-decoration: none;
-    color: #333333;
 }
 
 .w-nav-link {

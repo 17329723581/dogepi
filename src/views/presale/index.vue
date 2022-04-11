@@ -1,21 +1,25 @@
 <template>
   <div class="presale bg">
-    <!--<canvas id="presale_canvas"></canvas>-->
-    <div class="bg-moon"></div>
-    <div class="header-background">
-      <!-- 导航 -->
-      <div class="header container">
-        <headerCmp></headerCmp>
+    <div class="po-s"></div>
+    <div class="apo">
+      <!--<canvas id="presale_canvas"></canvas>-->
+      <div class="bg-moon"></div>
+      <div class="header-background">
+        <!-- 导航 -->
+        <div class="section__hero section__hero-s wf-section">
+          <div class="container-1440">
+            <header-cmp></header-cmp>
+          </div>
+        </div>
       </div>
+      <div class="header">
+        <!-- 如果未结束 -->
+        <presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>
+        <!-- 否则 -->
+        <presaleTwo v-if="time_end_state == 1"></presaleTwo>
+      </div>
+      <bdoge class="p-top"></bdoge>
     </div>
-    <div class="header container">
-      <!-- 如果未结束 -->
-      <presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>
-      <!-- 否则 -->
-      <presaleTwo v-if="time_end_state == 1"></presaleTwo>
-    </div>
-    <bdoge></bdoge>
-    <footer-cmp></footer-cmp>
   </div>
 </template>
 
@@ -92,6 +96,7 @@ export default {
 </script>
 
 <style scoped lang="less">
+@import "../../styles/shiba-ui";
 @import "./index";
 #presale_canvas {
   position: fixed;
@@ -99,36 +104,48 @@ export default {
   height: 100%;
   z-index: 0;
 }
-@media screen and (min-width: 768px) {
-  .header-background {
-    //background: rgba(33, 21, 59, 0.8);
-  }
+@media (max-width: 768px) {
+  .presale{
 
-  .bg {
-    background: url("../../assets/bgimg.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  .barnner {
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-}
+    .po-s {
+      @media (min-width: 280px) {
+        height: 900px;
+      }
+      @media (min-width: 360px) {
+        height: 980px;
+      }
+      @media (min-width: 375px) {
+        height: 1000px;
+      }
+      @media (min-width: 412px) {
+        height: 1050px;
+      }
+      @media (min-width: 414px) {
+        height: 1050px;
+      }
+      @media (min-width: 540px) {
+        height: 1300px;
+      }
+      @media (min-width: 768px) {
+        height: 1600px;
+      }
+      background: linear-gradient(180deg, #3a447f 0%, #773785 47%, #35457e 100%);
+      border-radius: 0px 0px 0px 0px;
+      opacity: 1;
+      position: relative;
+      z-index: 2;
+      display: flex;
+    }
+    .apo{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      //background: #2C0058;
 
-@media screen and (max-width: 768px) {
-  .bg {
-    background: url("../../assets/bgimg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .barnner {
-    margin-top: -10%;
-    margin-bottom: 0%;
+    }
+    .p-top{
+      margin-top:-150px;
+    }
   }
 }
 </style>

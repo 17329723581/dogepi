@@ -94,7 +94,6 @@
 <style scoped lang="less">
 	.mobile {
 		display: none;
-		font-family: DIN;
 
 		.rate_com {
 			font-size: 3.5rem;
@@ -104,7 +103,6 @@
 			position: relative;
 
 			.r {
-				color: #fff;
 				text-align: center;
 			}
 
@@ -115,7 +113,6 @@
 
 			.r_left {
 				font-size: 2.2rem;
-				color: #fff;
 				text-align: left;
 			}
 
@@ -130,7 +127,6 @@
 			.r_msg {
 				font-size: 2.2rem;
 				position: absolute;
-				color: #fff;
 				display: inline-block;
 				bottom: 0px;
 				right: 0px;
@@ -145,7 +141,6 @@
 				height: 38px;
 				border-radius: 19px;
 				background-color: #FDD333;
-				color: #333333;
 				font-weight: bold;
 				line-height: 38px;
 				text-align: center;
@@ -159,7 +154,6 @@
 				display: flex;
 				background-color: #fff;
 				border-radius: 10px;
-				color: #333333;
 
 				.li-left {
 					width: 40%;
@@ -188,10 +182,8 @@
 			}
 
 			.ul {
-				color: #333333;
 				padding: 0px 10px;
 				margin: 10px auto;
-				color: #333333;
 
 				.li {
 					font-size: 20px;
@@ -210,7 +202,6 @@
 			.btn {
 				padding: 10px 60px;
 				border-radius: 10px;
-				color: #333333;
 				line-height: 26px;
 				font-weight: 600;
 				margin: 20px auto;
@@ -220,7 +211,6 @@
 			}
 
 			.des {
-				color: #333333;
 				padding: 0 20px;
 			}
 		}
@@ -232,7 +222,6 @@
 
 			.tit {
 				font-size: 26px;
-				color: #fff;
 				margin-bottom: 20px;
 			}
 
@@ -248,7 +237,6 @@
 			border-radius: 20px;
 			padding: 20px;
 			position: relative;
-			color: #333333;
 			font-weight: bold;
 			min-height: 260px;
 
@@ -288,7 +276,6 @@
 				span {
 					font-size: 6.125rem;
 					font-weight: 800;
-					color: @bgColor;
 				}
 			}
 
@@ -296,7 +283,6 @@
 				display: flex;
 				// justify-content:center;
 				color: #FDD333;
-				font-family: DIN;
 				margin-top: -10px;
 				font-size: 20px;
 				margin-bottom: 30px !important;
@@ -332,7 +318,6 @@
 				font-size: 3.5rem;
 				font-weight: 900;
 				line-height: 60px;
-				color: @themeColor;
 				margin-bottom: 20px !important;
 
 				span {
@@ -344,7 +329,6 @@
 				font-size: 2rem;
 				font-weight: 900;
 				line-height: 60px;
-				color: @themeColor;
 				margin-bottom: 20px !important;
 			}
 
@@ -375,7 +359,6 @@
 
 			.time-title-y {
 				font-size: 1.25rem;
-				font-family: DIN;
 				font-weight: 400;
 				color: #FDD333;
 			}
@@ -401,7 +384,6 @@
 					height: 38px;
 					border-radius: 19px;
 					background-color: #FDD333;
-					color: #333333;
 					font-weight: bold;
 					line-height: 38px;
 					text-align: center;
@@ -440,7 +422,6 @@
 				}
 
 				.ul {
-					color: #333333;
 					border-top: 1px solid #70707029;
 					border-bottom: 1px solid #70707029;
 					width: 80%;
@@ -464,7 +445,6 @@
 				.btn {
 					padding: 10px 60px;
 					border-radius: 10px;
-					color: #333333;
 					line-height: 26px;
 					margin: 20px auto;
 					background-color: #FDD333;
@@ -482,7 +462,6 @@
 
 				.tit {
 					font-size: 26px;
-					color: #fff;
 					margin-bottom: 20px;
 				}
 
@@ -496,7 +475,6 @@
 				border-radius: 20px;
 				padding: 20px;
 				position: relative;
-				color: #333333;
 				font-weight: bold;
 				min-height: 260px;
 
@@ -542,7 +520,6 @@
 						justify-content: center;
 						font-size: 3.25rem;
 						font-weight: 800;
-						color: @bgColor;
 					}
 				}
 
@@ -550,7 +527,6 @@
 					display: flex;
 					// justify-content:center;
 					color: #FDD333;
-					font-family: DIN;
 					margin-top: 5px;
 					font-size: 10px;
 					margin-bottom: 30px !important;
