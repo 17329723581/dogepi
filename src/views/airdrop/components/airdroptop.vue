@@ -41,10 +41,10 @@
 										</div>
 										<div class="car-p-t mo">
 											<div class="cont" @click="Jump(url[0])">
-												<img src="@/assets/m-twitter-fill-y.png">
+												<img src="@/assets/twitter-fill-y.png">
 											</div>
-											<div class="cont" @click="Jump(url[1])">
-												<img src="@/assets/m-telegram-y.png">
+											<div class="cont" @click="Jump(url[1])" style="margin-left:5px;">
+												<img src="@/assets/telegram-y.png">
 											</div>
 										</div>
 									</div>

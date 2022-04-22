@@ -4,26 +4,54 @@
 			<div class="container-1440">
 				<div class="htb-wrap">
 					<div class="banner">
-						<img v-if="lang == 'zh-CN'"
-							src="@/assets/banner2.png" alt="" />
-						<img v-else
-							src="@/assets/banner1.png" alt="" />
+            <!-- 广告 -->
+						<div class="advertisement">
+                <!-- 父级元素 -->
+                <div class="parent">
+                    <!-- 子元素 -->
+                    <div class="son">
+                        <!-- 内容 -->
+                        <div class="content">
+                            <div class="title">
+                                <!-- 标题父级元素 -->
+                                <div class="title-parent">
+                                    <span class="b">
+                                      <div class="b-a">
+                                        {{this.$t('advertisement')}}
+                                      </div>
+                                    </span>
+                                    <span class="c">
+                                      <div class="c-a">
+                                        {{this.$t('advertisement1')}}
+                                      </div>
+                                    </span>
+                                </div>
+                                <!-- 标题子元素 -->
+                                <div class="title-son">
+                                    <div class="left">
+                                        <div class="circular-a"></div>
+                                        <div class="circular-b"></div>
+                                        <div class="circular-c"></div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="circular-a"></div>
+                                        <div class="circular-b"></div>
+                                        <div class="circular-c"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LOGO -->
+                            <div class="logo">
+                                <img src="@/assets/c1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 					</div>
 				</div>
 			</div>
-			<div class="container">
-				<div class="container-1440">
-					<div class="htb-wrap">
-						<div class="car1">
-						<div class="car1-airdrop-a">
-							<img src="@/assets/airdrop-title.png">
-							{{this.$t('a_quantity_title')}}
-						</div>
-						<div class="car1-airdrop-b">{{airdropQuantityProp}}</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 </template>

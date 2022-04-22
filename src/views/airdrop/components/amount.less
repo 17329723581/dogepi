@@ -177,52 +177,76 @@
             .background{
                 border: 1px solid rgba(112,112,112,0.4);
             }
-            background: linear-gradient(180deg, #813587 0%, #30467D 100%);
-            border-radius: 4vw;
+            background: rgba(255,255,255,0.16);
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+            backdrop-filter: blur(30px);
             .container-1440{
                 padding-top: 38px;
-                padding-bottom: 50px;
+                padding-bottom: 0;
                 .htb-wrap{
                     border: 0;
                     margin:0;
                     padding:0;
                     box-shadow: none;
+                    background:none;
                     .car1{
                         display: block;
                         margin: 0;
                         .car1-airdrop-a{
+                            width: 100%;
+                            display: flex;
                             justify-content: center;
-                            img{
-                                width:221px;
+                            .car1-title{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 221px;
+                                height: 43px;
+                                background: rgba(255,255,255,0.16);
+                                border-radius: 8px;
+                                font-size: 20px;
+                                color: #333333;
+                                img{
+                                    margin-right: 5px;
+                                    width:27px;
+                                }
                             }
+                            
                         }
                         .car1-airdrop-b{
                             margin-top: 20px;
-                            margin-bottom: 38px;
                             height: 50px;
                             font-size:28px;
                             font-weight: bold;
-                            background: linear-gradient(90deg, rgba(39, 27, 91, 0.95) 0%, rgba(46, 30, 97, 0.78) 54%, rgba(59, 35, 108, 0.85) 100%);
+                            background: rgba(48, 0, 96, 0.27);
                             border-radius: 8px ;
+                            box-shadow:none;
+                            font-size: 18px;
+                            color: #FFFFFF;
+                        }
+                        .car1-airdrop-c{
+                            font-size: 14px;
+                            color: #FFC14A;
+                            margin-bottom: 12px;
                         }
                     }
                     .car2{
-                        padding-top: 0;
+                        padding-top: 70px;
                         margin-top: 0;
                         .car1-rules-a{
                             font-size: 18px;
                             font-weight: bold;
-                            text-align: center;
+                            text-align: left;
                         }
                         .car1-rules-b{
-                            padding-top: 18px;
-                            font-size: 13px;
-                            opacity: 1;
+                            padding-top: 0;
+                            font-size: 14px;
                             line-height: inherit;
-                            text-align: justify;
+                            text-align: left;
                             margin-bottom: 51px;
                             div{
-                                margin-top:15px;
+                                margin-top:10px;
                             }
                         }
                     }
@@ -237,9 +261,10 @@
                                 padding: 2vw;
                                 width: 100%;
                                 height: 10vw;
-                                background: linear-gradient(90deg, rgba(39, 27, 91, 0.95) 0%, rgba(46, 30, 97, 0.78) 54%, rgba(59, 35, 108, 0.85) 100%);
+                                background: none;
                                 border-radius:8px;
                                 align-items: center;
+                                border: 1px solid #FFC14A;
                                 .title{
                                     text-align: left;
                                     width: 50%;
@@ -252,7 +277,15 @@
                                     margin-top: 0;
                                     font-size: 2.9vw;
                                     font-weight: bold;
+                                    color: #FFFFFF;
                                 }
+                            }
+                        }
+                        .yq{
+                            margin-bottom:10px;
+                            .car3-a-s{
+                                background:rgba(255, 255, 255, 0.16);
+                                border:0;
                             }
                         }
                         .car3-b{
@@ -265,7 +298,8 @@
                                 padding: 2vw;
                                 width: 100%;
                                 height: 10vw;
-                                background: linear-gradient(90deg, rgba(39, 27, 91, 0.95) 0%, rgba(46, 30, 97, 0.78) 54%, rgba(59, 35, 108, 0.85) 100%);
+                                background: none;
+                                border: 1px solid #FFC14A;
                                 border-radius:1.6vw;
                                 align-items: center;
                                 .title{
@@ -280,6 +314,7 @@
                                     margin-top: 0;
                                     font-size: 2.9vw;
                                     font-weight: bold;
+                                    color: #FFFFFF;
                                 }
                             }
                         }
@@ -293,7 +328,8 @@
                                 padding: 2vw;
                                 width: 100%;
                                 height: 10vw;
-                                background: linear-gradient(90deg, rgba(39, 27, 91, 0.95) 0%, rgba(46, 30, 97, 0.78) 54%, rgba(59, 35, 108, 0.85) 100%);
+                                background: none;
+                                border: 1px solid #FFC14A;
                                 border-radius:1.6vw;
                                 align-items: center;
                                 .title{
@@ -308,18 +344,19 @@
                                     margin-top: 0;
                                     font-size: 2.9vw;
                                     font-weight: bold;
+                                    color: #FFFFFF;
                                 }
                             }
                         }
                     }
                     .car4{
-                        padding-top: 27px;
-                        padding-bottom: 27px;
+                        padding-top: 0;
+                        padding-bottom:0;
                         .car4-a{
-                            padding: 2vw;
+                            padding: 10px;
                             height: 42px;
-                            background: rgba(41,24,86,0.8);
-                            border: 0.2vw solid #291856;
+                            background: rgba(41,24,86,0.14);
+                            border: 0;
                             border-radius: 8px;
                             font-weight: bold;
                             font-size: 9px;
@@ -327,14 +364,89 @@
                             justify-content:center;
                             align-items: center;
                             text-align: center;
+                            color: rgba(255, 193, 74, 0.8);
                             img{
                                 margin: 0;
-                                width:13px;
+                                width:12px;
                             }
                         }
                     }
                     .car5{
                         
+                    }
+                    .like-container{
+                        width: 100%;
+                        height: 36px;
+                        background: #3A0272;
+                        box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+                        border-radius: 100px 100px 100px 100px;
+                        opacity: 1;
+                        border: 1px solid #FEA626;
+                        display: flex;
+                        align-items: center;
+                        .like{
+                            position: relative;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            padding-left: 10%;
+                            .url{
+                                width: 50%;
+                                font-size: 1vw;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                color: rgba(255, 255, 255, 0.6);
+                                
+                            }
+                            
+                        }
+                        .button{
+                            position: absolute;
+                            right: 5px;
+                            button{
+                                width: 58px;
+                                height: 25px;
+                                background: #FEA626;
+                                box-shadow: 0px 6px 6px 1px rgba(0, 0, 0, 0.16);
+                                border-radius: 100px 100px 100px 100px;
+                                opacity: 1;
+                                filter: blur(undefinedpx);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border:0;
+                                color: #FFFFFF;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                    .explain{
+                        width: 100%;
+                        margin-top:10px;
+                        font-size: 14px;
+                        color:rgba(255, 193, 74, 0.6);
+                        display: flex;
+                        span{
+                            width: 294px;
+                        }
+                    }
+                    .receive-airdrop{
+                        display: flex;
+                        margin-top: 30px;
+                        justify-content: center;
+                        button{
+                            width: 171px;
+                            height: 43px;
+                            background: linear-gradient(180deg, #FFC14A 0%, #FF8000 100%);
+                            border-radius: 100px;
+                            border:0;
+                            font-size: 18px;
+                            color: #FFFFFF;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
                 }
             }

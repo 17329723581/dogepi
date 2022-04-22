@@ -5,24 +5,56 @@
         <div class="container-1440">
           <div class="htb-wrap">
             <div class="car1">
-              <div class="car1-airdrop-a pc">
-                <img src="@/assets/airdrop-title.png">
-							  {{this.$t('a_quantity_title')}}
-              </div>
               <div class="car1-airdrop-a mo">
-                <img src="@/assets/m-airdrop-title.png">
+                <div class="car1-title">
+                  <img src="@/assets/airdrop-title.png">
+							    {{this.$t('a_quantity_title')}}
+                </div>
               </div>
               <div class="car1-airdrop-b">{{airdropQuantityProp}}</div>
+              <div class="car1-airdrop-c">{{ this.$t("a_time_msg1") }}</div>
             </div>
-            <div class="car2">
-              <div class="car1-rules-a">{{this.$t('p_r_o_rules_title')}}</div>
-              <div class="car1-rules-b">
-                <div>{{this.$t('p_r_o_rules_array')[0]}}</div>
-                <div>{{this.$t('p_r_o_rules_array')[1]}}</div>
-                <div>{{this.$t('p_r_o_rules_array')[2]}} </div>
+            <!-- 链接和复制 -->
+            <div class="like-container">
+              <div class="like">
+                <span class="url">
+                  {{ storeInviteLink[0] }}
+                </span>
+                <div class="button">
+                  <button v-if="isInvited[1] == true"  v-clipboard:copy="storeInviteLink[0]" v-clipboard:success="onCopy">
+                    {{ this.$t("a_time_btn2") }}
+                  </button>
+                  <button v-if="isInvited ? isInvited[1] == false : true" style="background-color: rgb(128, 128, 128);">
+                    {{ this.$t("a_time_btn2") }}
+                  </button>
+                </div>
               </div>
             </div>
+            <!-- 说明 -->
+            <div class="explain">
+              <span>
+                {{ this.$t("a_time_msg2") }}
+              </span>
+            </div>
             <div class="car3">
+              <div class="car3-a yq">
+                <div class="car3-a-s">
+                  <div class="title">{{ this.$t("a_time_tb2") }}</div>
+                  <div class="text">{{ payCount }}</div>
+                </div>
+              </div>
+              <div class="car3-a yq">
+                <div class="car3-a-s">
+                  <div class="title">{{ this.$t("a_time_tb3") }}</div>
+                  <div class="text">{{ totaltoken }}</div>
+                </div>
+              </div>
+              <div class="car3-a yq">
+                <div class="car3-a-s">
+                  <div class="title">{{ this.$t("a_time_tb4") }}</div>
+                  <div class="text">{{ rewardsCount }}</div>
+                </div>
+              </div>
               <div class="car3-a">
                 <div class="car3-a-s">
                   <div class="title">{{this.$t('a_top_amount_array')[0].title}}</div>
@@ -42,9 +74,23 @@
                 </div>
               </div>
             </div>
+            <!-- 领取空投按钮 -->
+            <div class="receive-airdrop">
+              <button v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == true && isInvited[1] == true && airdropStatus1 == true" style="background:#808080">{{ this.$t("ye_get6") }}</button>
+              <button v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == false && isInvited[1] == true && airdropStatus1 == true" @click="getAirdrop">{{ this.$t("ye_get5") }}</button>
+              <button v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == false && isInvited[1] == false && airdropStatus1 == true" style="background:#808080"> {{this.$t("ye_get8")}}</button>
+            </div>
             <div class="car4">
               <div class="car4-a">
                 <img src="@/assets/i.png" class="pc"><img src="@/assets/m-i.png" class="mo">{{this.$t("a_top_amount_c")}}
+              </div>
+            </div>
+            <div class="car2">
+              <div class="car1-rules-a">{{this.$t('p_r_o_rules_title')}}</div>
+              <div class="car1-rules-b">
+                <div>{{this.$t('p_r_o_rules_array')[0]}}</div>
+                <div>{{this.$t('p_r_o_rules_array')[1]}}</div>
+                <div>{{this.$t('p_r_o_rules_array')[2]}} </div>
               </div>
             </div>
           </div>

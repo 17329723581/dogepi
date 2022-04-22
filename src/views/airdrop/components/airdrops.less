@@ -275,10 +275,11 @@
         z-index: 1;
         padding: 5vw;
         .borx{
-            background: linear-gradient(180deg, #813587 0%, #30467D 100%);
+            background: rgba(255, 255, 255, 0.16);
             border-radius: 20px;
             padding: 5vw;
             margin-top: 33px;
+            backdrop-filter: blur(30px);
         }
         .container{
             .container-1440{
@@ -487,9 +488,13 @@
                             font-size: 3.5vw;
                             height: 46px;
                             border-radius:8px;
-                            background: #1F1350;
+                            background: rgba(255, 255, 255, 0.16);
+                            backdrop-filter: blur(30px);
+                            color: #FFFFFF;
+
                         }
                         .invite-table-text{
+                            color: #FFFFFF;
                             height: 46px;
                             display: block;
                             justify-content: center;
@@ -502,10 +507,9 @@
                             }
                             .invite-table-s{
                                 width: 100%;
-                                height: 0;
-                                border: 0;
-                                opacity: 0.2;
-                                display:none;
+                                height: 0px;
+                                opacity: 0.3;
+                                border: 1px solid #35016A;
                             }
                         }
                     }

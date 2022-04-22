@@ -188,6 +188,7 @@ const locale = {
 	],
 	p_buy_l_title:'Your exchange amount',
 	p_input_text:"请输入币安数量",
+	p_amount:"Amount",
 	p_warningValue5:'请输入币安数量最小为0.1BNB',
 	p_warningValue10:'请输入币安数量0.1BNB到10BNB',
 	p_warningBalanceOf:'余额不足',
@@ -262,6 +263,13 @@ const locale = {
 	a_rules_text1:"1. The presale and airdrop invitations for this event can take effect at the same time",
 	a_rules_text2:"2. Invitation allows more people to participate in the construction of the Bdoge ecosystem, while expanding the marketing team",
 	a_rules_text3:"3. Each address can invite up to 99 users",
+	airdrop_instructions:'Airdropped Bdoge will be collected manually after the event ends.',
+	// 交互提示
+	connectSuccess: "connectSuccess",
+
+	//广告内容
+	advertisement:'10%BNB BONUS FOR INVITING FRIENG FRIENDS',
+	advertisement1:'IMMEDIATE/10%BONUS/NO EXTRA CHARGE',
 };
 
 export default locale;

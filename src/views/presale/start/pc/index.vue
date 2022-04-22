@@ -1,166 +1,167 @@
 <template>
-  <div class="ba">
-    <div class="section__htb wf-section">
-      <div class="container-1440">
-        <div class="htb-wrap">
-          <div class="htb-hero">
-            <div class="htb-left">
-              <div class="base-circle-wrap">
-                <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"/>
-                <logo class="htb-circle-dashes"></logo>
-                <div class="circle-glued-coins">
-                  <img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1"/>
-                  <img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2"/>
-                  <img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3"/>
+    <div class="start">
+        <div class="start-background-content">
+            <div class="start-content">
+                <div class="start-presale-content">
+                    <div class="start-presale-left">
+                        
+                    </div>
+                    <div class="start-presale-right">
+                        <div class="start-presale-right-content">
+                            <div class="start-presale-soft">
+                                <span class="start-presale-title">{{ this.$t("p_o_array")[0]["title"] }}</span>
+                                <span class="start-presale-text">{{ this.$t("p_o_array")[0]["num"] }}</span>
+                            </div>
+                            <div class="start-presale-hard">
+                                <span class="start-presale-title">{{ this.$t("p_o_array")[1]["title"] }}</span>
+                                <span class="start-presale-text">{{ this.$t("p_o_array")[1]["num"] }}</span>
+                            </div>
+                        </div>
+                        <div class="start-presale-percentage-content">
+                            <div class="start-presale-percentage">
+                                <div class="progress" :style="'width:' + percentage + '%'"></div>
+                            </div>
+                            <div class="start-presale-title">
+                                <span>
+                                    {{ this.$t("p_o_title") }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="start-presale-countdown-content">
+                            <div class="start-presale-countdown-title">
+                                <span>{{ this.$t("p_o_des") }}</span>
+                            </div>
+                            <div class="start-presale-countdown">
+                                <a-statistic-countdown :value="deadline" format="DD: HH: mm: ss" @finish="finish()"/>
+                            </div>
+                            <div class="start-presale-countdown-text">
+                                <span>{{ this.$t("p_r_o_text") }}</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="front-coins-holder">
-                  <img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1"/>
-                  <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2"/>
-                  <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3"/>
+                <div class="start-wallet-content">
+                    <div class="start-wallet-a">
+                        <div class="start-wallet-title-a-content">
+                            <div class="start-wallet-title-content">
+                                <a-row :gutter="16">
+                                    <a-col :span="8" class="start-wallet-a-title">{{ this.$t("p_r_o_pre_array")[0]["title"] }}</a-col>
+                                    <a-col :span="8" class="start-wallet-a-text">{{ userLock }}</a-col>
+                                    <a-col :span="8" class="start-wallet-a-currency">{{ this.$t('currency') }}</a-col>
+                                </a-row>
+                            </div>
+                        </div>
+                        <div class="start-wallet-title-b-content">
+                            <div class="start-wallet-b-col">
+                                <span class="start-wallet-b-title">{{this.$t("p_r_o_totalarray")[0].title}}</span>
+                                <span class="start-wallet-b-text">{{this.$t("p_r_o_totalarray")[0].text}}</span>
+                            </div>
+                            <div class="start-wallet-b-col">
+                                <span class="start-wallet-b-title">{{this.$t("p_r_o_totalarray")[1].title}}</span>
+                                    <span class="start-wallet-b-text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio }} {{this.$t("currency_1")}}</span>
+                            </div>
+                            <div class="start-wallet-b-col">
+                                <span class="start-wallet-b-title">{{this.$t("p_r_o_totalarray")[2].title}}</span>
+                                    <span class="start-wallet-b-text">{{this.$t("p_r_o_totalarray")[2].text}}</span>
+                            </div>
+                            <div class="start-wallet-b-col">
+                                <span class="start-wallet-b-title">{{this.$t("p_r_o_totalarray")[3].title}}</span>
+                                <span class="start-wallet-b-text">{{this.$t("p_r_o_totalarray")[3].text}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start-wallet-like" style=""></div>
+                    <div class="start-wallet-b">
+                        <div class="start-wallet-b-title">
+                            <span>{{ this.$t("p_buy_l_title") }}</span>
+                        </div>
+                        <div class="start-wallet-b-input">
+                            <div class="start-wallet-b-input-left">
+                                <span>
+                                    {{ this.$t("p_amount") }}
+                                </span>
+                            </div>
+                            <div class="start-wallet-b-input-content">
+                                <input  maxlength="12" type="text" v-model="inputBuy" :placeholder="$t('p_input_text')" :min="0.1" :max="10" :precision="0">
+                            </div>
+                            <div class="start-wallet-b-input-content">
+                                <span>
+                                    {{ this.$t("currency") }}
+                                </span>
+                            </div>
+                            <div class="start-wallet-b-button-content">
+                                <button @click="handleMax">{{ this.$t("p_r_o_max") }}</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start-wallet-c">
+                        <div class="start-wallet-c-content">
+                            <span>{{ this.$t("p_titcom_tit") }}</span>
+                            <span class="start-wallet-c-text">{{p_titcom_li_left}}</span>
+                            <span>{{p_titcom_li_right}} {{this.$t('currency')}}</span>
+                        </div>
+                    </div>
+                    <div class="start-wallet-d">
+                        <div class="start-wallet-balance">
+                            <span>
+                                {{ this.$t("p_r_o_balance") }} {{ balanceof }} {{this.$t('currency')}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="start-wallet-connect" v-if="!address">
+                        <button  type="button" class="start-wallet-connect-a" @click="connect">{{ this.$t("p_r_o_login_bnt") }}</button>
+                    </div>
+                    <div class="start-wallet-connect" v-if="address">
+                        <button type="button" class="start-wallet-connect-a" @click="buyNow()">{{ this.$t("p_r_o_buy_bnt") }}</button>
+                    </div>
+                    <div class="start-wallet-connect" v-if="address">
+                        <span class="address">
+                            <img src="@/assets/token.png">
+                            <span class="address-s">
+                                {{address}}
+                            </span>
+                        </span>
+                        <button type="button" class="start-wallet-connect-b" @click="logout">{{ this.$t("p_r_o_out_bnt") }}</button>
+                    </div>
                 </div>
-              </div>
+                <div class="start-wallet-connect-info">
+                    <span>
+                        {{this.$t("p_info") }}
+                    </span>
+                </div>
+                <div class="start-rules">
+                    <span class="title">
+                        {{ this.$t("p_r_o_rules_title") }}
+                    </span>
+                    <div class="text-s">
+                        <div class="text">
+                            <span>{{ this.$t("p_r_o_rules_array")[0] }}</span>
+                        </div>
+                        <div class="text">
+                            <span>{{ this.$t("p_r_o_rules_array")[1] }}</span>
+                        </div>
+                        <div class="text">
+                            <span>{{ this.$t("p_r_o_rules_array")[2] }}</span>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="htb-right">
-              <a-row type="flex" class="banner" justify="space-between">
-                <a-col :md="12" :xs="24" class="presale-left">
-                  <div class="left_lu">
-                  <div class="li">
-                    <div>{{ this.$t("p_o_array")[0]["title"] }}</div>
-                    <div class="num">{{ this.$t("p_o_array")[0]["num"] }}</div>
-                  </div>
-                  <div class="li">
-                    <div>{{ this.$t("p_o_array")[1]["title"] }}</div>
-                    <div class="num">{{ this.$t("p_o_array")[1]["num"] }}</div>
-                  </div>
-                  </div>
-                  <div class="line">
-                    <div class="Progress" :style="'width:' + percentage + '%'"></div>
-                  </div>
-                  <div class="left_des des-s">{{ this.$t("p_o_des") }}</div>
-                  <a-statistic-countdown :value="deadline" format="DD: HH: mm: ss" @finish="finish()"/>
-                  <div class="left_des transparent">{{ this.$t("p_r_o_text") }}</div>
-                  <div class="left_tit">{{ this.$t("p_o_title") }}</div>
-                </a-col>
-              </a-row>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="section section-t">
-      <div class="container-1440">
-        <div class="htb-wrap">
-          <div class="car1">
-            <div class="car1-a">{{ this.$t("p_titcom_tit") }}</div>
-            <div class="car-a-s">
-              <div class="car1-b">{{p_titcom_li_left}}</div>
-              <div class="car1-c">{{p_titcom_li_right}} {{this.$t('currency')}}</div>
-            </div>
-          </div>
-          <div class="car2">
-            <div class="car2-a">
-              <div class="car2-a-s">
-                <span class="title">{{this.$t("p_r_o_totalarray")[0].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[0].text}}</span>
-              </div>
-            </div>
-            <div class="car2-a">
-              <div class="car2-a-s">
-                <span class="title">{{this.$t("p_r_o_totalarray")[1].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio }} {{this.$t("currency_1")}}</span>
-              </div>
-            </div>
-            <div class="car2-a">
-              <div class="car2-a-s">
-                <span class="title">{{this.$t("p_r_o_totalarray")[2].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[2].text}}</span>
-              </div>
-            </div>
-            <div class="car2-a">
-              <div class="car2-a-s">
-                <span class="title">{{this.$t("p_r_o_totalarray")[3].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[3].text}}</span>
-              </div>
-            </div>
-          </div>
-          <div class="car3">
-            <div class="car3-title">
-              {{ this.$t("p_buy_l_title") }}
-            </div>
-            <div class="car3-a">
-              <input class="car3-a-input" maxlength="12" type="text" v-model="inputBuy" :placeholder="$t('p_input_text')" :min="0.1" :max="10" :precision="0">
-              <span @click="handleMax" class="car3-a-button">{{ this.$t("p_r_o_max") }}</span>
-            </div>
-            <div class="car3-b">
-              {{ this.$t("p_r_o_balance") }} {{ balanceof }} {{this.$t('currency')}}
-            </div>
-            <div class="car3-c" v-if="!address">
-              <button type="button" class="car3-b-button" @click="connect">{{ this.$t("p_r_o_login_bnt") }}</button>
-            </div>
-            <div class="car3-c" v-if="address">
-              <button type="button" class="car3-b-button" @click="buyNow()">{{ this.$t("p_r_o_buy_bnt") }}</button>
-            </div>
-            <div class="car3-d" v-if="address" >
-              <span class="address p"><img src="@/assets/token.png"> {{address}}</span>
-              <span class="address m"><img src="@/assets/token.png"> {{address.substr(0,10)}}...{{address.substr(address.length-10,8)}}</span>
-              <button type="button" class="car3-d-button" @click="logout">{{ this.$t("p_r_o_out_bnt") }}</button>
-            </div>
-            <div class="car3-f">
-              <span class="title">
-                {{ this.$t("p_r_o_rules_title") }}
-              </span>
-              <div class="text">
-                <span>{{ this.$t("p_r_o_rules_array")[0] }}</span>
-              </div>
-              <div class="text">
-                <span>{{ this.$t("p_r_o_rules_array")[1] }}</span>
-              </div>
-              <div class="text">
-                <span>{{ this.$t("p_r_o_rules_array")[2] }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container-1440">
-        <div class="htb-wrap">
-          <div class="car4">
-            <div class="car4-cg"></div>
-            <div class="car4-a">
-              <div class="car4-a-s">
-                <span class="title">{{ this.$t("p_r_o_pre_array")[0]["title"] }}</span>
-                <span class="text">{{ userLock }}</span>
-              </div>
-            </div>
-            <div class="car4-b">
-              <div class="car4-b-s">
-                <span class="title">{{ this.$t("p_r_o_pre_array")[1]["title"] }}</span>
-                <span class="text">{{ getspacepi }}</span>
-              </div>
-            </div>
-            <div class="car4-c">
-              {{this.$t("p_info") }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-1440" style="height: auto;">
+        <div class="container-1440" style="height: auto;">
         <div class="hero-wrap">
             <a href="#ecosystem" class="hero__scrollbtn w-inline-block">
-              <img src="@/assets/hero-scroll-shape.png" loading="eager" alt="" class="hero__scrollbtn--img"/>
+            <img src="@/assets/hero-scroll-shape.png" loading="eager" alt="" class="hero__scrollbtn--img"/>
             </a>
         </div>
     </div>
-  </div>
+    </div>
 </template>
 <script>
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 </script>
 <script>
-import logo from "./logo.vue";
+import logo from "@/views/presale/components/logo.vue";
 import { mapState, mapActions, mapMutations } from "vuex";
 import axios from "axios";
 import {
@@ -488,9 +489,11 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "../../../styles/shiba-ui";
-@import "./presaleOne.less";
-@import "./presaleOneSlyte.less";
+@import "../../../../styles/shiba-ui.less";
+//@import "./presaleOneSlyte.less";
+@import "../../components/presaleOne.less";
+@import "../../components/presaleOneSlyte.less";
+@import "../css/index.less";
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);

@@ -10,43 +10,28 @@
 			</div>
 		</div>
 		</div>
-		<!--<airdroptop></airdroptop>
+		<airdroptop></airdroptop>
 		<a>
 		<banner class="barnner"></banner>
 		</a>
 		<amount></amount>
-		<airdrops></airdrops>-->
-    <div class="pc">
-      <airdroppc></airdroppc>
-      <div class="container-1440" style="height: auto;">
-        <div class="hero-wrap">
-          <a href="#ecosystem" class="hero__scrollbtn w-inline-block">
-            <img src="@/assets/hero-scroll-shape.png" loading="eager" alt="" class="hero__scrollbtn--img"/>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="mobile">
-      <airdropMobile></airdropMobile>
-    </div>
+		<airdrops></airdrops>
+		<bdoge class="a-pot"></bdoge>
 	</div>
   </div>
 </template>
 
 <script>
 import { mapState, mapActions, mapMutations } from "vuex";
-import bdoge from "../home/Harry/bdoge.vue";
-import headerCmp from "../home/components/headerCmp.vue";
-import airdroptop from "./components/airdroptop.vue";
-import amount from "./components/amount.vue";
-import linkc from "./components/linkc.vue";
-import footerCmp from "../home/footer/footerCmp.vue";
-import banner from "./components/banner.vue";
-import airdrops from "./components/airdrops.vue";
+import bdoge from "@/views/home/Harry/bdoge.vue";
+import headerCmp from "@/views/home/components/headerCmp.vue";
+import airdroptop from "@/views/airdrop/components/airdroptop.vue";
+import amount from "@/views/airdrop/components/amount.vue";
+import linkc from "@/views/airdrop/components/linkc.vue";
+import footerCmp from "@/views/home/footer/footerCmp.vue";
+import banner from "@/views/airdrop/components/banner.vue";
+import airdrops from "@/views/airdrop/components/airdrops.vue";
 import { abiObject, getAbi, web3 } from "utils/common";
-
-import airdroppc from "@/views/airdrop/pc/index.vue";
-import airdropMobile from "@/views/airdrop/mobile/index.vue";
 const { contractObject: PerSaleObj } = getAbi(abiObject.PerSaleAbi);
 
 export default {
@@ -92,10 +77,6 @@ export default {
     footerCmp,
     airdrops,
     bdoge,
-
-
-    airdroppc,
-    airdropMobile
   },
   created() {},
   mounted() {
@@ -145,8 +126,8 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "../../styles/shiba-ui";
-@import "./index";
+@import "../../../styles/shiba-ui";
+
 .pc{
   display: block;
 }

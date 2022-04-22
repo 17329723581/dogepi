@@ -50,19 +50,13 @@
     <div class="section section-t">
       <div class="container-1440">
         <div class="htb-wrap">
-          <div class="car1">
-            <div class="car1-a">{{ this.$t("p_titcom_tit") }}</div>
-            <div class="car-a-s">
-              <div class="car1-b">{{p_titcom_li_left}}</div>
-              <div class="car1-c">{{p_titcom_li_right}} {{this.$t('currency')}}</div>
-            </div>
-          </div>
           <div class="car2">
             <div class="car2-a">
-              <div class="car2-a-s">
-                <span class="title">{{this.$t("p_r_o_totalarray")[0].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[0].text}}</span>
-              </div>
+                <div class="car2-a-ss">
+                    <span class="title">{{this.$t("p_r_o_totalarray")[0].title}}</span>
+                    <span class="text">{{this.$t("p_r_o_totalarray")[0].text}}</span>
+                </div>
+                
             </div>
             <div class="car2-a">
               <div class="car2-a-s">
@@ -70,40 +64,62 @@
                 <span class="text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio }} {{this.$t("currency_1")}}</span>
               </div>
             </div>
-            <div class="car2-a">
-              <div class="car2-a-s">
+            <div class="car2-d">
+              <div class="car2-d-a">
                 <span class="title">{{this.$t("p_r_o_totalarray")[2].title}}</span>
                 <span class="text">{{this.$t("p_r_o_totalarray")[2].text}}</span>
               </div>
-            </div>
-            <div class="car2-a">
-              <div class="car2-a-s">
+              <div class="car2-d-b">
                 <span class="title">{{this.$t("p_r_o_totalarray")[3].title}}</span>
                 <span class="text">{{this.$t("p_r_o_totalarray")[3].text}}</span>
               </div>
             </div>
           </div>
+          <div class="balance-c">
+            <div class="balance">
+                  <div class="car3">
+                    <div class="car3-title">
+                        {{ this.$t("p_buy_l_title") }}
+                    </div>
+                    <div class="car3-a">
+                        <input class="car3-a-input" maxlength="12" type="text" v-model="inputBuy" :placeholder="$t('p_input_text')" :min="0.1" :max="10" :precision="0">
+                        <span @click="handleMax" class="car3-a-button">{{ this.$t("p_r_o_max") }}</span>
+                    </div>
+                    <div class="car3-b">
+                        {{ this.$t("p_r_o_balance") }} {{ balanceof }} {{this.$t('currency')}}
+                    </div>
+                    <div class="car3-c" v-if="!address">
+                        <button type="button" class="car3-b-button" @click="connect">{{ this.$t("p_r_o_login_bnt") }}</button>
+                    </div>
+                    <div class="car3-c" v-if="address">
+                        <button type="button" class="car3-b-button" @click="buyNow()">{{ this.$t("p_r_o_buy_bnt") }}</button>
+                    </div>
+                    <div class="car3-d" v-if="address" >
+                        <span class="address"><img src="@/assets/token.png"> {{address.substr(0,10)}}...{{address.substr(address.length-10,8)}}</span>
+                        <button type="button" class="car3-d-button" @click="logout">{{ this.$t("p_r_o_out_bnt") }}</button>
+                    </div>
+                </div>
+            </div>
+            <div class="balance-my">
+                <div class="balance-my-c">
+                    
+                </div>
+                <div class="balance-my-content">
+                    <span class="title">{{ this.$t("p_r_o_pre_array")[0]["title"] }}</span>
+                    &nbsp;<span class="text">{{ userLock }}</span>
+                </div>
+            </div>
+            <div class="balance-my-info">
+                {{this.$t("p_info") }}
+            </div>
+          </div>
           <div class="car3">
-            <div class="car3-title">
-              {{ this.$t("p_buy_l_title") }}
-            </div>
-            <div class="car3-a">
-              <input class="car3-a-input" maxlength="12" type="text" v-model="inputBuy" :placeholder="$t('p_input_text')" :min="0.1" :max="10" :precision="0">
-              <span @click="handleMax" class="car3-a-button">{{ this.$t("p_r_o_max") }}</span>
-            </div>
-            <div class="car3-b">
-              {{ this.$t("p_r_o_balance") }} {{ balanceof }} {{this.$t('currency')}}
-            </div>
-            <div class="car3-c" v-if="!address">
-              <button type="button" class="car3-b-button" @click="connect">{{ this.$t("p_r_o_login_bnt") }}</button>
-            </div>
-            <div class="car3-c" v-if="address">
-              <button type="button" class="car3-b-button" @click="buyNow()">{{ this.$t("p_r_o_buy_bnt") }}</button>
-            </div>
-            <div class="car3-d" v-if="address" >
-              <span class="address p"><img src="@/assets/token.png"> {{address}}</span>
-              <span class="address m"><img src="@/assets/token.png"> {{address.substr(0,10)}}...{{address.substr(address.length-10,8)}}</span>
-              <button type="button" class="car3-d-button" @click="logout">{{ this.$t("p_r_o_out_bnt") }}</button>
+            <div class="car1">
+                <div class="car1-a">{{ this.$t("p_titcom_tit") }}</div>
+                <div class="car-a-s">
+                <div class="car1-b">{{p_titcom_li_left}}</div>
+                <div class="car1-c">{{p_titcom_li_right}} {{this.$t('currency')}}</div>
+                </div>
             </div>
             <div class="car3-f">
               <span class="title">
@@ -123,30 +139,6 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container-1440">
-        <div class="htb-wrap">
-          <div class="car4">
-            <div class="car4-cg"></div>
-            <div class="car4-a">
-              <div class="car4-a-s">
-                <span class="title">{{ this.$t("p_r_o_pre_array")[0]["title"] }}</span>
-                <span class="text">{{ userLock }}</span>
-              </div>
-            </div>
-            <div class="car4-b">
-              <div class="car4-b-s">
-                <span class="title">{{ this.$t("p_r_o_pre_array")[1]["title"] }}</span>
-                <span class="text">{{ getspacepi }}</span>
-              </div>
-            </div>
-            <div class="car4-c">
-              {{this.$t("p_info") }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container-1440" style="height: auto;">
         <div class="hero-wrap">
             <a href="#ecosystem" class="hero__scrollbtn w-inline-block">
@@ -160,7 +152,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 </script>
 <script>
-import logo from "./logo.vue";
+import logo from "@/views/presale/components/logo.vue";
 import { mapState, mapActions, mapMutations } from "vuex";
 import axios from "axios";
 import {
@@ -488,9 +480,11 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "../../../styles/shiba-ui";
-@import "./presaleOne.less";
-@import "./presaleOneSlyte.less";
+@import "../../../../styles/shiba-ui.less";
+@import "../../components/presaleOne.less";
+@import "../../components/presaleOneSlyte.less";
+@import "../css/mobile.less";
+
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);

@@ -1,0 +1,370 @@
+.start{
+    width: 100%;
+    display: flex;
+    background: linear-gradient(180deg, #2C0255 0%, #220045 100%);
+    justify-content: inherit;
+    font-family: Alibaba PuHuiTi-Regular, Alibaba PuHuiTi;
+    .start-background-content{
+        width: 100%;
+        background: linear-gradient(75deg, #7F3687 0%, #33467E 100%);
+        padding-bottom: 10vw;
+        .start-content{
+                width: 100%;
+                max-width: 1200px;
+                margin-right: auto;
+                margin-left: auto;
+                padding-right: 48px;
+                padding-left: 48px;
+                display: flex;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                @media (max-width: 1920px) {
+                    margin-top: 8vw;
+                }
+                @media (max-width: 1600px) {
+                    margin-top: 11vw;
+                }
+                @media (min-width: 1920px) {
+                    margin-top: 8vw;
+                }
+                .start-presale-content{
+                    width: 62.3vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .start-presale-left{
+                        width: 21.4vw;
+                        height: 21.4vw;
+                        background:#ffffff;
+                    }
+                    .start-presale-right{
+                        width: 36.4vw;
+                        float: right;
+                        margin-left: 2.4vw;
+                        .start-presale-right-content{
+                            width: 21.7vw;
+                            display: flex;
+                            .start-presale-soft{
+                                width: 50%;
+                                display: grid;
+                            }
+                            .start-presale-hard{
+                                width: 50%;
+                                display: grid;
+                            }
+                            .start-presale-title{
+                                font-size: 0.9vw;
+                            }
+                            .start-presale-text{
+                                font-size: 1.4vw;
+                                color: #FFFFFF;
+                                margin-top: 0.5vw;
+                            }
+                        }
+                        .start-presale-percentage-content{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            .start-presale-percentage{
+                                width: 21.7vw;
+                                height: 0.4vw;
+                                background: #FFFFFF;
+                                border-radius: 1vw;
+                                .progress{
+                                    background: #FEA427;
+                                    border-radius: 1vw;
+                                    height: 0.4vw;
+                                }
+                            }
+                            .start-presale-title{
+                                font-size: 1.5vw;
+                                font-weight: 800;
+                                margin-left: 3.1vw;
+                            }
+                        }
+                        .start-presale-countdown-content{
+                            width: 100%;
+                            margin-top: 0.5vw;
+                            .start-presale-countdown-title{
+                                font-size: 0.9vw;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                            }
+                            .start-presale-countdown{
+                                /deep/ .ant-statistic-content {
+                                    span {
+                                        font-size: 4.25vw;
+                                        font-weight: bold;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                            }
+                            .start-presale-countdown-text{
+                                width: 100%;
+                                font-size: 0.8vw;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+                .start-wallet-content{
+                    width: 100%;
+                    box-shadow: 0.2vw 0.4vw 0.4vw 0.1vw rgba(0, 0, 0, 0.16);
+                    border-radius:2.5vw;
+                    background: rgba(255,255,255,0.16);
+                    backdrop-filter: blur(2vw);
+                    margin-top: 2vw;
+                    display: grid;
+                    padding-top: 2vw;
+                    padding-bottom: 2vw;
+                    .start-wallet-a{
+                        width: 100%;
+                        padding-left:2vw;
+                        padding-right: 2vw;
+                        .start-wallet-title-a-content{
+                            float: left;
+                            border-radius: 1vw;
+                            width: 18vw;
+                            padding: 1vw;
+                            border: 0.1vw solid rgba(255, 193, 74, 0.28);
+                            display: flex;
+                            align-items: center;
+                            height: 3.5vw;
+                            .start-wallet-title-content{
+                                width: 100%;
+                                .ant-row{
+                                    display: flex;
+                                    align-items: center;
+                                    height: 1vw;
+                                }
+                                .start-wallet-a-title{
+                                    text-align: left;
+                                    font-size: 1vw;
+                                    color: #FEA626;
+                                    white-space: pre;
+                                }
+                                .start-wallet-a-text{
+                                    text-align: center;
+                                    font-size: 1vw;
+                                    color: #FFFFFF;
+                                }
+                                .start-wallet-a-currency{
+                                    text-align: right;
+                                    font-size: 1vw;
+                                }
+                            }
+                        }
+                        .start-wallet-title-b-content{
+                            float: right;
+                            padding: 1vw;
+                            display: flex;
+                            text-align: center;
+                            align-items: center;
+                            height: 3.5vw;
+                            .start-wallet-b-col{
+                                display: grid;
+                                padding-left: 2vw;
+                                .start-wallet-b-title{
+                                    font-size: 0.7vw;
+                                    color: #FEA626;
+                                }
+                                .start-wallet-b-text{
+                                    white-space:nowrap;
+                                    font-size: 1vw;
+                                    color: #FFFFFF;
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .start-wallet-like{
+                        width:100%;
+                        height: 0px;
+                        opacity: 0.15;
+                        border: 1px solid #3A0272;
+                        margin-top: 1vw;
+                    }
+                    .start-wallet-b{
+                        margin-top: 1vw;
+                        padding-left:2vw;
+                        padding-right: 2vw;
+                        .start-wallet-b-title{
+                            font-size: 2vw;
+                            text-shadow: 0px 0.2vw 0.3vw rgba(0, 0, 0, 0.16);
+                            color: #FEA626;
+                            span{
+                                margin-left: 1.5vw;
+                            }
+                        }
+                        .start-wallet-b-input{
+                            margin-top: 1vw;
+                            position: relative;
+                            display:flex;
+                            align-items: center;
+                            width: 100%;
+                            height: 4.5vw;
+                            background: #3A0272;
+                            box-shadow: 0px 0.2vw 0.3vw 0.1vw rgba(0, 0, 0, 0.16);
+                            border-radius: 5vw;
+                            opacity: 1;
+                            border: 1px solid #FEA626;
+                            text-align: center;
+                            .start-wallet-b-input-left{
+                                width: 25%;
+                                font-size: 0.8vw;
+                                color: #FFFFFF;
+                            }
+                            .start-wallet-b-input-content{
+                                width: 30%;
+                                font-size: 0.8vw;
+                                color: #FFFFFF;
+                                input{
+                                    width: 100%;
+                                    background: none;
+                                    border: none;
+                                    outline: none;
+                                    text-align: center;
+                                    font-size: 1.6vw;
+                                    font-weight: bold;
+                                }
+                            }
+                            .start-wallet-b-button-content{
+                                position: absolute;
+                                right: 1vw;
+                                button{
+                                    width: 4.5vw;
+                                    height: 2.5vw;
+                                    background: #FEA626;
+                                    box-shadow: 0px 6px 6px 1px rgba(0, 0, 0, 0.16);
+                                    border-radius: 5vw;
+                                    border: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 0.75vw;
+                                    color: #FFFFFF;
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+                    }
+                    .start-wallet-c{
+                        margin-top: 1vw;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding-left:2vw;
+                        padding-right: 2vw;
+                        .start-wallet-c-content{
+                            background:rgba(58, 2, 114, 0.31);
+                            padding-top:0.5vw;
+                            padding-bottom:0.5vw;
+                            padding-left:1vw;
+                            padding-right:1vw;
+                            border-radius:5vw;
+                            span{
+                                padding-left: 15px;
+                                padding-right: 15px;
+                                font-size: 1vw;
+                                color: rgba(0, 217, 29, 0.5);
+                            }
+                            .start-wallet-c-text{
+                                font-size: 0.8vw;
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                        }
+                    }
+                    .start-wallet-d{
+                        width: 100%;
+                        margin-top: 1vw;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 1vw;
+                        text-shadow: 0px 0.2vw 0.3vw rgba(0, 0, 0, 0.16);
+                        padding-left:2vw;
+                        padding-right: 2vw;
+                        .start-wallet-balance{
+                            color: #FFC14A;
+                        }
+                    }
+                    .start-wallet-connect{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 1vw;
+                        padding-left:2vw;
+                        padding-right: 2vw;
+                        .start-wallet-connect-a{
+                            width: 20vw;
+                            height: 4vw;
+                            padding: 1vw;
+                            background: linear-gradient(180deg, #FEA626 0%, #FE6126 100%);
+                            box-shadow: 0px 0.3vw 0.3vw 0.1vw rgba(0, 0, 0, 0.16);
+                            border-radius:5vw;
+                            border:0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1vw;
+                            font-weight: 400;
+                            color: #ffffff;
+                        }
+                        .start-wallet-connect-b{
+                            width: 10vw;
+                            height: 3vw;
+                            padding: 1vw;
+                            background: linear-gradient(180deg, #FEA626 0%, #FE6126 100%);
+                            box-shadow: 0px 0.3vw 0.3vw 0.1vw rgba(0, 0, 0, 0.16);
+                            border-radius:5vw;
+                            border:0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1vw;
+                            font-weight: 400;
+                            color: #ffffff;
+                        }
+                        .address{
+                            img{
+                                width: 20px;
+                            }
+                            .address-s{
+                                padding-left: 0.5vw;
+                                padding-right: 0.5vw;
+                            }
+                        }
+                    }
+                    
+                }
+                .start-wallet-connect-info{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2vw;
+                    font-size: 1vw;
+                    color: rgba(255, 255, 255, 0.6)
+                }
+                .start-rules{
+                    width: 100%;
+                    margin-top: 1vw;
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                    .title{
+                        color: #FEA626;
+                        font-size: 1vw;
+                    }
+                    .text-s{
+                        margin-top:1vw;
+                        .text{
+                            color: rgba(255, 255, 255, 0.6);
+                            font-size: 1vw;
+                        }
+                    }
+                }
+                
+            }
+    }
+
+}

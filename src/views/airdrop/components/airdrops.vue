@@ -1,100 +1,8 @@
 <template>
   <div>
     <div class="section">
-      <div class="container">
-        <div class="container-1440">
-          <div class="container-time">
-            <div class="time-car">
-              <div class="title">{{ this.$t("a_time_tit") }}</div>
-              <div class="text"><a-statistic-countdown :value="deadline" format="DD: HH: mm: ss" @finish="finish()" /></div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container borx">
-        <div class="container">
-          <div class="container-1440">
-            <div class="container-random">
-              <div class="random-car-a m">{{ this.$t("p_titcom_tit") }}</div>
-              <div class="random-car">
-                <div class="random-car-a pc">{{ this.$t("p_titcom_tit") }}</div>
-                <div class="random-car-a">{{p_titcom_li_left}}</div>
-                <div class="random-car-a">{{p_titcom_li_right}} {{this.$t('currency')}}</div>
-              </div>
-            </div>
-            <div class="container-lq">
-              <div class="lq-car">
-                <div class="lq-car-a">
-                  <div>
-                    <div class="lq-car-title">{{ this.$t("a_time_tb1") }}</div>
-                    <div class="lq-car-text">{{ storeMyTotalspacepi }}</div>
-                  </div>
-                </div>
-                <div class="lq-car-b">
-                  <div>
-                    <div class="lq-car-title">{{ this.$t("a_time_tb2") }}</div>
-                    <div class="lq-car-text">{{ payCount }}</div>
-                  </div>
-                </div>
-                <div class="lq-car-c">
-                  <div>
-                    <div class="lq-car-title">{{ this.$t("a_time_tb3") }}</div>
-                    <div class="lq-car-text">{{ totaltoken }}</div>
-                  </div>
-                </div>
-                <div class="lq-car-a">
-                  <div>
-                    <div class="lq-car-title">{{ this.$t("a_time_tb4") }}</div>
-                    <div class="lq-car-text">{{ rewardsCount }}</div>
-                  </div>
-                </div>
-              </div>
-              <!-- 已領取 -->
-              <div class="lq-ban" v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == true && isInvited[1] == true && airdropStatus1 == true">
-                <button style="background:#808080">{{ this.$t("ye_get6") }}</button>
-              </div>
-              <!-- 未領取 可領取 -->
-              <div class="lq-ban" v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == false && isInvited[1] == true && airdropStatus1 == true">
-                <button @click="getAirdrop">{{ this.$t("ye_get5") }}</button>
-              </div>
-              <!-- 不可領取 -->
-              <div class="lq-ban" v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == false && isInvited[1] == false && airdropStatus1 == true">
-                <button style="background:#808080"> {{this.$t("ye_get8")}}</button>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="container background">
-          <div class="container-1440">
-            <div class="container-coye">
-              <div class="coye-url">
-                <span>
-                  {{ this.$t("a_time_msg1") }} {{ storeInviteLink[0] }}
-                </span>
-              </div>
-              <div class="coye-ban" v-if="isInvited[1] == true">
-                <button style="background:linear-gradient(245deg, #F06B00 0%, #F28902 100%);" v-clipboard:copy="storeInviteLink[0]" v-clipboard:success="onCopy">
-                  {{ this.$t("a_time_btn2") }}
-                </button>
-              </div>
-              <div class="coye-ban" v-if="isInvited ? isInvited[1] == false : true">
-                <button  style="background-color: rgb(128, 128, 128);">
-                  {{ this.$t("a_time_btn2") }}
-                </button>
-              </div>
-              <div class="coye-text">
-                {{ this.$t("a_time_msg2") }}
-              </div>
-              <!--<div class="coye-rules">
-                <div class="rules-title">{{ this.$t("a_rules_two_tit") }}</div>
-                <div class="rules-text">
-                  <div>{{ this.$t("a_rules_two1") }}</div>
-                  <div>{{ this.$t("a_rules_two2") }}</div>
-                  <div>{{ this.$t("a_rules_two3") }}</div>
-                </div>
-              </div>-->
-            </div>
-          </div>
           <div class="container none-s">
             <div class="container-1440">
               <div class="container-invite">
@@ -174,7 +82,7 @@
         </div>
       </div>
       <div class="container-1440" style="height: auto;">
-			<div class="hero-wrap">
+			  <div class="hero-wrap">
           <a href="#ecosystem" class="hero__scrollbtn w-inline-block">
             <img src="@/assets/hero-scroll-shape.png" loading="eager" alt="" class="hero__scrollbtn--img"/>
           </a>

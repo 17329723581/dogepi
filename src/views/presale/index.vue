@@ -14,7 +14,13 @@
       </div>
       <div class="header">
         <!-- 如果未结束 -->
-        <presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>
+        <!--<presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>-->
+        <div class="pc">
+          <presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>
+        </div>
+        <div class="mobile">
+          <presaleOnem @on_state="get_state" v-if="time_end_state == 0"></presaleOnem>
+        </div>
         <!-- 否则 -->
         <presaleTwo v-if="time_end_state == 1"></presaleTwo>
       </div>
@@ -24,7 +30,8 @@
 </template>
 
 <script>
-import presaleOne from "@/views/presale/components/presaleOne.vue";
+import presaleOne from "@/views/presale/start/pc/index.vue";//PC端开始页面
+import presaleOnem from "@/views/presale/start/mobile/index.vue";//移动端开始页面
 import presaleTwo from "@/views/presale/components/presaleTwo.vue";
 import headerCmp from "../home/components/headerCmp.vue";
 import footerCmp from "../home/footer/footerCmp.vue";
@@ -58,6 +65,7 @@ export default {
     headerCmp,
     footerCmp,
     presaleOne,
+    presaleOnem,
     presaleTwo,
     bdoge,
   },
@@ -104,7 +112,19 @@ export default {
   height: 100%;
   z-index: 0;
 }
+.pc{
+  display: block;
+}
+.mobile{
+  display: none;
+}
 @media (max-width: 768px) {
+  .pc{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
   .presale{
 
     .po-s {
