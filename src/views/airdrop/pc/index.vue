@@ -4,7 +4,22 @@
             <!-- TOP -->
             <div class="airdrop-top">
                 <!-- LOGO动画 -->
-                <div class="airdrop-left"></div>
+                <div class="airdrop-left">
+                    <div class="base-circle-wrap">
+                        <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"/>
+                        <logo class="htb-circle-dashes"></logo>
+                        <div class="circle-glued-coins">
+                            <img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1"/>
+                            <img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2"/>
+                            <img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3"/>
+                        </div>
+                        <div class="front-coins-holder">
+                            <img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1"/>
+                            <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2"/>
+                            <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3"/>
+                        </div>
+                        </div>
+                </div>
                 <div class="airdrop-right">
                     <!-- 连接钱包功能 -->
                     <div class="connect">
@@ -271,6 +286,8 @@
 import { mapState, mapMutations,mapActions } from "vuex";
 import { abiObject, getAbi, web3 } from "utils/common";
 const { contractObject: PerSaleObj } = getAbi(abiObject.PerSaleAbi);
+
+import logo from "@/views/presale/components/logopc.vue";
 export default {
   data() {
     return {
@@ -377,6 +394,7 @@ export default {
   },
 
   components: {
+    logo
   },
   created() {
     this.titcom();
@@ -552,7 +570,6 @@ export default {
 
         // const asd = new this.$BigNumber(123)/new this.$BigNumber(this.storeSwapRatio)
         // //console.log(asd.toFixed(9))
-
         const storeSwapRatio = new this.$BigNumber(this.storeSwapRatio);
         const tokenDecimals = 10 ** this.tokenDecimals;
         //console.log(tokenDecimals)
@@ -560,6 +577,7 @@ export default {
           .dividedBy(storeSwapRatio)
           .dividedBy(new this.$BigNumber(tokenDecimals))
           .toFixed(4);
+          console.log("dogepi数据",this.totaltoken)
 
         // this.rewardsCount = new this.$BigNumber(5000).multipliedBy(new this.$BigNumber(invitePercentage)).dividedBy(new this.$BigNumber(100))
         // this.tokenDecimals
@@ -627,4 +645,21 @@ export default {
 </script>
 <style scoped lang="less">
     @import "./index.less";
+    @-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+    }
+    .htb-circle-dashes {
+    animation: rotation 60s linear infinite;
+    }
+    .circle-glued-coins {
+    animation: rotation 30s linear infinite;
+    }
+    .front-coins-holder {
+    animation: rotation 60s linear infinite;
+    }
 </style>

@@ -4,7 +4,20 @@
             <div class="start-content">
                 <div class="start-presale-content">
                     <div class="start-presale-left">
-                        
+                        <div class="base-circle-wrap">
+                          <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"/>
+                          <logo class="htb-circle-dashes"></logo>
+                          <div class="circle-glued-coins">
+                            <img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1"/>
+                            <img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2"/>
+                            <img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3"/>
+                          </div>
+                          <div class="front-coins-holder">
+                            <img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1"/>
+                            <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2"/>
+                            <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3"/>
+                          </div>
+                        </div>
                     </div>
                     <div class="start-presale-right">
                         <div class="start-presale-right-content">
@@ -46,7 +59,7 @@
                             <div class="start-wallet-title-content">
                                 <a-row :gutter="16">
                                     <a-col :span="8" class="start-wallet-a-title">{{ this.$t("p_r_o_pre_array")[0]["title"] }}</a-col>
-                                    <a-col :span="8" class="start-wallet-a-text">{{ userLock }}</a-col>
+                                    <a-col :span="8" class="start-wallet-a-text">{{ getnum(userLock,2)}}</a-col>
                                     <a-col :span="8" class="start-wallet-a-currency">{{ this.$t('currency') }}</a-col>
                                 </a-row>
                             </div>
@@ -161,7 +174,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 </script>
 <script>
-import logo from "@/views/presale/components/logo.vue";
+import logo from "@/views/presale/components/logopc.vue";
 import { mapState, mapActions, mapMutations } from "vuex";
 import axios from "axios";
 import {
@@ -293,6 +306,26 @@ export default {
       "updateInvitationLink",
     ]),
     ...mapActions(["login", "getInvited", "myInvites", "getBalance"]),
+    getnum(a,num)
+        {
+            var a_type = typeof(a);
+            if(a_type == "number"){
+                var aStr = a.toString();
+                var aArr = aStr.split('.');
+            }else if(a_type == "string"){
+                var aArr = a.split('.');
+            }
+            
+            if(aArr.length > 1) {
+                if(num == 0)
+                {
+                    a = aArr[0];
+                }else{
+                    a = aArr[0] + "." + aArr[1].substr(0, num);
+                }
+            }
+            return a
+        },
     // 登录
     connect() {
       // eth_requestAccounts  链接钱包

@@ -29,14 +29,82 @@
                     margin-top: 8vw;
                 }
                 .start-presale-content{
-                    width: 62.3vw;
+                    width: 100%;
                     display: flex;
+                    grid-template-columns: 1fr 1fr;
                     align-items: center;
                     justify-content: center;
+                    grid-gap: 1vw;
                     .start-presale-left{
-                        width: 21.4vw;
-                        height: 21.4vw;
-                        background:#ffffff;
+                        position: relative;
+                        display: flex;
+                        justify-items: center;
+                        align-items: center;
+                        flex: 0 0 auto;
+                        .base-circle-wrap {
+                            .htb-circle-1 {
+                                position: absolute;
+                                width: 10vw;
+                            }
+                            .htb-circle-dashes {
+                                width: 25vw;
+                            }
+                        }
+                        .circle-glued-coins {
+                            .gc-1 {
+                                position: absolute;
+                                left: 15vw;
+                                top: 3.2vw;
+                                right: auto;
+                                bottom: auto;
+                                width: 3.5vw;
+                            }
+                            .gc-2 {
+                                position: absolute;
+                                left: 15vw;
+                                top: 18vw;
+                                right: auto;
+                                bottom: auto;
+                                width: 3.5vw;
+                            }
+                            .gc-3 {
+                                position: absolute;
+                                left: auto;
+                                top: auto;
+                                right: 19vw;
+                                bottom: 10vw;
+                                width: 3.5vw;
+                            }
+                        }
+                        .front-coins-holder {
+                            .bc-1 {
+                                position: absolute;
+                                left: auto;
+                                top: auto;
+                                right: 2.5vw;
+                                bottom: 6.1vw;
+                                z-index: 2;
+                                width: 4.5vw;
+                            }
+                            .bc-2 {
+                                position: absolute;
+                                left: auto;
+                                top: auto;
+                                right: 10vw;
+                                bottom: 18vw;
+                                z-index: 2;
+                                width: 4.5vw;
+                            }
+                            .bc-3 {
+                                position: absolute;
+                                left: auto;
+                                top: auto;
+                                right: 18vw;
+                                bottom: 5vw;
+                                z-index: 2;
+                                width: 4.5vw;
+                            }
+                        }
                     }
                     .start-presale-right{
                         width: 36.4vw;
