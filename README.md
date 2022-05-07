@@ -1,5 +1,5 @@
-# Bdoge
-布道狗
+# BdogePi
+狗pi
 yarn install
 yarn serve
 yarn build
