@@ -4,13 +4,13 @@
       <div class="header-logo-pc">
         <a href="">
           <img src="@/assets/logo.png" class="img" />
-          <span>DogePi</span>
+          <span>DOGEPI</span>
         </a>
       </div>
       <div class="header-logo-m" >
         <a href="">
           <img src="@/assets/logo.png" class="img" />
-          <span>DogePi</span>
+          <span>DOGEPI</span>
         </a>
       </div>
     </div>
@@ -25,9 +25,12 @@
         </li>
         <li class="lang">
           <a-dropdown :trigger="['click']">
-            <a class="ant-dropdown-link" style="color: #333333;" @click="(e) => e.preventDefault()">
-              {{ langName }}
-            </a>
+            <template v-for="datat of langList" >
+              <a v-if="datat.key == lang" class="ant-dropdown-link" @click="(e) => e.preventDefault()">
+                {{datat.name}}
+              </a>
+            </template>
+            
             <a-menu slot="overlay" class="dow" @click="changeLang" style="z-index:99999">
               <a-menu-item v-for="item of langList" :key="item.key">
                 <a href="javascript:;">{{ item.name }}</a>
@@ -42,10 +45,13 @@
       <div class="m-header-dow">
         <a-icon type="global" />
         <a-dropdown :trigger="['click']">
-          <a class="ant-dropdown-link" @click="(e) => e.preventDefault()">
-            {{ langName }}
-            <a-icon type="caret-down" style="color: #5A51A8;" />
+         <template v-for="datat of langList" >
+          <a v-if="datat.key == lang" class="ant-dropdown-link" @click="(e) => e.preventDefault()">
+            {{datat.name}}
+            <a-icon type="caret-down" style="color: rgba(255, 193, 74, 1);" />
           </a>
+         </template>
+          
           <a-menu slot="overlay" class="dow" @click="changeLang">
             <a-menu-item v-for="item of langList" :key="item.key">
               <a href="javascript:;">{{ item.name }}</a>
@@ -131,9 +137,9 @@ export default {
   watch: {},
   components: {},
   created() {
-    this.langName = this.langList.filter((e) => {
-      return this.lang === e.key;
-    })[0].name;
+    // this.langName = this.langList.filter((e) => {
+    //   return this.lang === e.key;
+    // })[0].name;
   },
   mounted() {
     // 模拟外部点击  关闭移动端侧边导航
@@ -153,7 +159,7 @@ export default {
       // const lang = key === "en-US" ? "en-US" : "zh-CN";
 
       this.$i18n.locale = lang;
-      this.$cookie.set("lang", lang);
+      // this.$cookie.set("lang", lang);
       this.$store.commit("updateLang", lang);
       this.LangReload();
     },
@@ -186,8 +192,10 @@ header {
         color:@fontColor;
         span{
           margin-left: 10px;
-          font-size: 30px;
+          font-size: 33px;
           font-weight: 800;
+          font-family: Cabal-Bold, Cabal;
+          color: #FFFFFF;
         }
       }
       .header-title{
@@ -197,11 +205,18 @@ header {
       }
     }
     img {
-      width: 60px;
+      width: 50px;
     }
   }
   .header-logo-m {
     display: none;
+  }
+  .header-nav{
+    a{
+      font-family: Cabal-Regular, Cabal;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
   }
 }
 
@@ -218,7 +233,7 @@ header {
 
 /deep/ .ant-dropdown-menu-item {
   a {
-    
+    font-family: Cabal-Regular, Cabal;
   }
 }
 
@@ -230,23 +245,33 @@ ul {
   display: flex;
   align-items: center;
   li {
-    margin-right: 25px;
+    margin-right: 5vw;
+    gap: 5vw;
     font-size: 1.1rem;
 
     a {
       font-weight: 400;
       color:@fontColor;
+      font-family: Cabal-Regular, Cabal;
     }
   }
   .lang{
     padding: 5px 20px 5px 20px;
-    background: #F4A93E;
+
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid #FEA626;
+    a{
+      font-family: Cabal-Regular, Cabal;
+      font-weight: 400;
+      color: #FEA626;
+    }
   }
 }
+
 @media screen and (max-width: 1200px) {
   header {
     height: 70px;
@@ -285,12 +310,17 @@ ul {
     }
     .lang{
       padding: 2px 10px 2px 10px;
-      background: #F4A93E;
       border-radius: 8px;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+      border: 2px solid #FEA626;
+      a{
+        font-family: Cabal-Regular, Cabal;
+        font-weight: 400;
+        color: #FEA626;
+      }
+  }
   }
 }
 @media screen and (max-width: 768px) {
@@ -327,9 +357,12 @@ ul {
         display:flex;
         align-items: center;
         color: @fontColor;
+        
         span{
           margin-left: 10px;
           font-weight: bold;
+          font-family: Cabal-Bold, Cabal;
+          color: #FFFFFF;
           @media (max-width: 540px) {
             font-size: 20px;
           }
@@ -373,6 +406,7 @@ ul {
       // margin-left: 10px;
       float: right;
       z-index: 999;
+      
 
       i {
         font-size: 2rem;

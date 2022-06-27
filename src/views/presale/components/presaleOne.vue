@@ -336,7 +336,7 @@ export default {
       // //console.log(get_token)
       this.getspacepi = get_token;
       this.userLock = Number(get_token) / Number(this.storeSwapRatio);
-      //console.log(get_token, this.storeSwapRatio, userLock);
+
       this.$emit("handleUserLock", this.userLock);
     },
     async getOwner() {

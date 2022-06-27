@@ -5,7 +5,7 @@ import Cookie from 'js-cookie'
 Vue.use(Vue18n);
 
 const i18n = new Vue18n({
-    locale: Cookie.get('lang') || 'en-US',
+    locale: sessionStorage.getItem("lang") || 'en-US',
     messages: {
         'en-US': require('../locale/en').default,
         'zh-CN': require('../locale/zh').default,

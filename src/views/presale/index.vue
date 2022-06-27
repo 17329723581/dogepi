@@ -141,10 +141,10 @@ export default {
         height: 1050px;
       }
       @media (min-width: 414px) {
-        height: 1050px;
+        height: 1250px;
       }
       @media (min-width: 540px) {
-        height: 1300px;
+        height: 1600px;
       }
       @media (min-width: 768px) {
         height: 1600px;

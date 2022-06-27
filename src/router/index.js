@@ -5,6 +5,7 @@ import presale from "../views/presale/index.vue";
 import airdrop from "../views/airdrop/index.vue";
 import promo from "../views/promo/index.vue";
 import pledge from "../views/pledge/index.vue";
+import whiteBook from "../views/whiteBook/index.vue";
 
 
 
@@ -41,7 +42,12 @@ const routes = [
     path: "/pledge",
     name: "Pledge",
     component: pledge,
-  }
+  },
+  // {
+  //   path: "/whiteBook",
+  //   name: "whiteBook",
+  //   component: whiteBook,
+  // }
 ];
 
 const router = new VueRouter({

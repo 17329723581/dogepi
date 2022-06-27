@@ -14,20 +14,6 @@
             <p class="p hero">
               {{ this.$t("index_text2") }}
             </p>
-            <div class="coye">
-              <div class="coye-l p">
-                {{this.$t("index_adress")}}
-              </div>
-              <div class="coye-l m">
-                {{this.$t("index_adress").slice(0,6)}}......{{this.$t("index_adress").substring(this.$t("index_adress").length-11)}}
-                <div class="coye-r-btn" v-clipboard:copy="address" v-clipboard:success="onCopy">
-                  <img src="../../../assets/token.png">
-                </div>
-              </div>
-              <div class="coye-r cta-btn p" v-clipboard:copy="address" v-clipboard:success="onCopy">
-                {{this.$t("index_cta_btn5")}}
-              </div>
-            </div>
             <div class="container-button">
               <button class="cta-btn button-a" @click="jump('/presale')">
                 {{this.$t('presale')}}
@@ -35,6 +21,22 @@
               <button class="cta-btn button-b " @click="jump('/airdrop')">
                 {{this.$t('airdrop')}}
               </button>
+            </div>
+            <div class="coye">
+              <!-- 电脑端 -->
+              <div class="coye-l p">
+                {{this.$t("index_adress")}}
+              </div>
+              <div class="coye-r cta-btn p" v-clipboard:copy="address" v-clipboard:success="onCopy">
+                {{this.$t("index_cta_btn5")}}
+              </div>
+              <!-- 移动端 -->
+              <div class="coye-l m">
+                {{this.$t("index_adress").slice(0,6)}}......{{this.$t("index_adress").substring(this.$t("index_adress").length-11)}}
+                <div class="coye-r-btn" v-clipboard:copy="address" v-clipboard:success="onCopy">
+                  <img src="../../../assets/token.png">
+                </div>
+              </div>
             </div>
           </div>
         </div>

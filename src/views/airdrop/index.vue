@@ -17,14 +17,14 @@
 		<amount></amount>
 		<airdrops></airdrops>-->
     <div class="pc">
-      <airdroppc></airdroppc>
-      <div class="container-1440" style="height: auto;">
+      <airdroppc style=""></airdroppc>
+      <!-- <div class="container-1440" style="height: auto;">
         <div class="hero-wrap">
           <a href="#ecosystem" class="hero__scrollbtn w-inline-block">
             <img src="@/assets/hero-scroll-shape.png" loading="eager" alt="" class="hero__scrollbtn--img"/>
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="mobile">
       <airdropMobile></airdropMobile>

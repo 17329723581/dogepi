@@ -101,6 +101,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999999;
   i {
     font-size: 1.5rem;
   }
@@ -148,7 +149,7 @@ export default {
   top: 0;
   width: 0;
   height: 100%;
-  background: #fea626;
+  //background: #fea626;
   z-index: -2;
 }
 .cta-btn:hover {

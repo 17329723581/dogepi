@@ -141,7 +141,7 @@ export default {
     }
     .po-s {
       @media (max-width: 550px) {
-        height: 1300px;
+        height: 1500px;
       }
       @media (min-width: 540px) {
         height: 2000px;

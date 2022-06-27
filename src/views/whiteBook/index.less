@@ -1,0 +1,127 @@
+.whiteBook {
+  position: relative;
+  background-repeat: no-repeat;
+  .header-background {
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      background: rgba(44, 0, 88, 0.7);
+      height: 90px;
+      .section__hero {
+          .container-1440 {
+              header {
+                  height: 90px;
+              }
+          }
+      }
+  }
+}
+@media (max-width: 1200px) {
+  .presale {
+      .header-background {
+          height: 70px;
+          .section__hero {
+              .container-1440 {
+                  header {
+                      height: 70px;
+                  }
+              }
+          }
+      }
+  }
+}
+@media (max-width: 768px) {
+  .presale {
+      position: relative;
+      background-repeat: no-repeat;
+      .header-background {
+        width: 100%;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.1);
+      }
+  }
+}
+
+
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    background: #25004b;
+}
+// 白皮书区域
+.whiteBookArea{
+    width: 100%;
+    max-width: 1536px;
+    padding-right: 48px;
+    padding-left: 48px;
+    min-height: auto;
+    height: 100vh;
+    // 白皮书菜单选择
+    .whiteBookMenuChoose{
+        width: 260px;
+        height: 100vh;
+        background: rgba(90, 81, 168, 0.6);
+        transition: all 0.3s;
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+        border-right:0;
+        overflow:hidden;
+        overflow-y: auto;
+        color: #fff;
+        // 
+        .whiteBookMenuChoose-a{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            transition:0.2s;
+            padding: 15px;
+            cursor: pointer;
+            .title{
+                width: 100%;
+                display: flex;
+                justify-content:flex-start;
+            }
+            .icon{
+                display: flex;
+                justify-content:flex-end;
+            }
+        }
+        // 鼠标悬浮效果
+        .whiteBookMenuChoose-a:hover{
+            background: rgba(90, 81, 168, 0.6);
+            transition:0.2s;
+        }
+        .whiteBookMenuChoose-b{
+            background: #210042;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            cursor: pointer;
+            .whiteBookMenuChoose-h{
+                //background: rgba(90, 81, 168, 0.6);
+                padding: 10px;
+                border-radius:5px;
+            }
+
+        }
+    }
+}
+@media (max-width: 768px) {
+    // 白皮书区域
+    .whiteBookArea{
+        margin-top:90px;
+        // 白皮书菜单选择
+        .whiteBookMenuChoose{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            width: 200px;
+
+        }
+    }
+}

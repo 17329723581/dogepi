@@ -504,6 +504,16 @@
                             line-height: 10.4vw;
                             .invite-table-text-s{
                                 width: 50%;
+                                overflow:hidden;
+                                text-overflow:ellipsis;
+                                white-space:nowrap;
+                            }
+                            .invite-table-text-b{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                align-items: center;
+                                height: -webkit-fill-available;
+                                justify-items: center;
                             }
                             .invite-table-s{
                                 width: 100%;

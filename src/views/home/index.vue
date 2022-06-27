@@ -66,7 +66,7 @@ export default {
       @media (min-width: 768px) {
         height: 220vw;//200vw
       }
-      background: linear-gradient(180deg, #3a447f 0%, #773785 47%, #35457e 100%);
+      background: linear-gradient(180deg, #3a447f 0%, #773785 47%, #2c0058 100%);
       border-radius: 0px 0px 0px 0px;
       opacity: 1;
       position: relative;

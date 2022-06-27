@@ -18,7 +18,7 @@
                     <!--<div v-for="(item, index) of storeInviteList" :key="index">
                       {{ index + 1 > 9 ? index + 1 : "" + (index + 1) }}
                     </div>-->
-                    <div>
+                    <div class="invite-table-text-b">
                       <div class="invite-table-text-s">
                         {{ index + 1 > 9 ? index + 1 : "" + (index + 1) }}
                       </div>

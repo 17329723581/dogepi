@@ -1,17 +1,32 @@
 .section__footer{
     position: relative;
-    padding-top: 0;
-    background: #2C0058;
+    padding:5vw;
+    background: #130026;
     .container-1440{
         .footer-wrap{
             .h1{
-                font-size: 2.1vw;
+                font-size: 2.6vw;
                 font-weight: bold;
                 line-height: inherit;
+                font-family: Cabal-Bold, Cabal;
+                text-align: center;
+            }
+            .text{
+                margin-top:2.5vw;
+                font-size: 1vw;
+                font-family: Cabal-Regular, Cabal;
+                font-weight: 400;
+                color: #FFFFFF;
+                width: 56vw;
             }
             .footer-soc-wrap{
-                margin-top: 4.6vw;
-                margin-bottom: 7.9vw;
+                width: min-content;
+                display: flex;
+                grid-gap: 1vw;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                margin-top: 5vw;
+                margin-bottom: 5vw;
+                justify-items: center;
                 a{
                     font-size: 0.9vw;
                     margin-right: 3.1vw;
@@ -26,22 +41,41 @@
         }
     }
 }
+.footer{
+    background: #090013;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Cabal-Regular, Cabal;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 0.5vw;
+    padding: 2vw 32px;
+
+}
 @media (max-width: 768px) {
     .section__footer{
         display: flex;
         padding-top: 9.2vw;
-        background: #2C0058;
+        padding-bottom: 9.2vw;
         .container-1440{
             .footer-wrap{
                 .h1{
                     font-size: 24px;
                     font-weight: bold;
                     line-height: 0px;
-                    opacity: 1;
+                }
+                .text{
+                    margin-top:5vw;
+                    font-size: 16px;
+                    width: 100%;
                 }
                 .footer-soc-wrap{
-                    margin-top: 14.4vw;
-                    margin-bottom:9.4vw;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    margin-top: 5vw;
+                    margin-bottom:10vw;
                     .soc-link{
                         font-size:12px;
                         .soc-link--img{
@@ -52,5 +86,9 @@
                 }
             }
         }
+    }
+    .footer{
+        padding: 25px 16px;
+        font-size: 10px;
     }
 }

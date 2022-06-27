@@ -14,7 +14,7 @@ export default new Vuex.Store({
   plugins: [persistedState({ storage: window.sessionStorage })],
   state: {
     address: sessionStorage.getItem("accountAddress") || '',
-    lang: Cookies.get("lang") || "en-US",
+    lang: sessionStorage.getItem("lang") || "en-US",
     isLangAlive: true,
     isInvited: JSON.parse(sessionStorage.getItem("isInvited")) || '',
     isInvitedPledge: JSON.parse(sessionStorage.getItem("isInvitedPledge")) || '',
@@ -33,9 +33,10 @@ export default new Vuex.Store({
     // 邀请链接
     storeInviteLink: [],
     // 结束时间
-    deadline:1647230400000,//9999999999999
+    deadline:1654099200000,//9999999999999
     //百分比
     percentage:0,
+    decimal:""
 
   },
   mutations: {
@@ -46,6 +47,7 @@ export default new Vuex.Store({
     },
     updateLang(state,params){
       state.lang = params
+      sessionStorage.setItem("lang", params);
     },
     updateIsLangAlive(state, value) {
       state.isLangAlive = value;
@@ -107,8 +109,7 @@ export default new Vuex.Store({
     updateInitalAddress(state,params){
       // //console.log(updateInitalAddress,'updateInitalAddress')
       state.initalAddress = params
-    }
-    
+    },
   },
   actions: {
     async getInviteInfo({commit},params){
@@ -130,6 +131,7 @@ export default new Vuex.Store({
     // 获取代币小数位
     async getdecimal({commit,dispatch}){
       const tokenDecimals = await spacePiObj.methods.decimals().call();
+      console.log('tokenDecimals',11111)
       commit('updateDecimal', tokenDecimals)
       dispatch('getPerHTPrice', tokenDecimals)
       //结束时间

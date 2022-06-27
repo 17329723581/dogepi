@@ -16,9 +16,15 @@
     font-weight: normal;  
     font-style: normal;  
 }
-@font-face {  
-    font-family: 'Lovely';
-    src: url('./Alibaba-PuHuiTi-Heavy.ttf');
+@font-face {
+    font-family: 'Cabal-Bold';
+    src: url('./Cabal_Bold.ttf');
+    font-weight: normal;  
+    font-style: normal;  
+}
+@font-face {
+    font-family: 'Cabal';
+    src: url('./Cabal.ttf');
     font-weight: normal;  
     font-style: normal;  
 }

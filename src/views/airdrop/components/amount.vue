@@ -8,10 +8,10 @@
               <div class="car1-airdrop-a mo">
                 <div class="car1-title">
                   <img src="@/assets/airdrop-title.png">
-							    {{this.$t('a_quantity_title')}}
+                  {{ this.$t('a_quantity_title') }}
                 </div>
               </div>
-              <div class="car1-airdrop-b">{{airdropQuantityProp}}</div>
+              <div class="car1-airdrop-b">{{ airdropQuantityProp }}</div>
               <div class="car1-airdrop-c">{{ this.$t("a_time_msg1") }}</div>
             </div>
             <!-- 链接和复制 -->
@@ -21,7 +21,8 @@
                   {{ storeInviteLink[0] }}
                 </span>
                 <div class="button">
-                  <button v-if="isInvited[1] == true"  v-clipboard:copy="storeInviteLink[0]" v-clipboard:success="onCopy">
+                  <button v-if="isInvited[1] == true" v-clipboard:copy="storeInviteLink[0]"
+                    v-clipboard:success="onCopy">
                     {{ this.$t("a_time_btn2") }}
                   </button>
                   <button v-if="isInvited ? isInvited[1] == false : true" style="background-color: rgb(128, 128, 128);">
@@ -57,45 +58,52 @@
               </div>
               <div class="car3-a">
                 <div class="car3-a-s">
-                  <div class="title">{{this.$t('a_top_amount_array')[0].title}}</div>
-                  <div class="text">{{storeMyTotalspacepi}}</div>
+                  <div class="title">{{ this.$t('a_top_amount_array')[0].title }}</div>
+                  <div class="text">{{ storeMyTotalspacepi }}</div>
                 </div>
               </div>
               <div class="car3-b">
                 <div class="car3-b-s">
-                  <div class="title">{{this.$t('a_top_amount_array')[1].title}}</div>
-                  <div class="text">{{storeInviteList.length}}</div>
+                  <div class="title">{{ this.$t('a_top_amount_array')[1].title }}</div>
+                  <div class="text">{{ storeInviteList.length }}</div>
                 </div>
               </div>
               <div class="car3-c">
                 <div class="car3-c-s">
-                  <div class="title">{{this.$t('a_top_amount_array')[2].title}}</div>
-                  <div class="text">{{storeInviteRewards}}</div>
+                  <div class="title">{{ this.$t('a_top_amount_array')[2].title }}</div>
+                  <div class="text">{{ storeInviteRewards }}</div>
                 </div>
               </div>
             </div>
             <!-- 领取空投按钮 -->
             <div class="receive-airdrop">
-              <button v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == true && isInvited[1] == true && airdropStatus1 == true" style="background:#808080">{{ this.$t("ye_get6") }}</button>
-              <button v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == false && isInvited[1] == true && airdropStatus1 == true" @click="getAirdrop">{{ this.$t("ye_get5") }}</button>
-              <button v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == false && isInvited[1] == false && airdropStatus1 == true" style="background:#808080"> {{this.$t("ye_get8")}}</button>
+              <button
+                v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == true && isInvited[1] == true && airdropStatus1 == true"
+                style="background:#808080">{{ this.$t("ye_get6") }}</button>
+              <button
+                v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == false && isInvited[1] == true && airdropStatus1 == true"
+                @click="getAirdrop">{{ this.$t("ye_get5") }}</button>
+              <button
+                v-if="storeInviteLink[0].split('?')[1].split('&')[0].split('=')[1] != '' && airdropStatus == false && isInvited[1] == false && airdropStatus1 == true"
+                style="background:#808080"> {{ this.$t("ye_get8") }}</button>
             </div>
             <div class="car4">
               <div class="car4-a">
-                <img src="@/assets/i.png" class="pc"><img src="@/assets/m-i.png" class="mo">{{this.$t("a_top_amount_c")}}
+                <img src="@/assets/i.png" class="pc"><img src="@/assets/m-i.png" class="mo">{{ this.$t("a_top_amount_c")
+                }}
               </div>
             </div>
             <div class="car2">
-              <div class="car1-rules-a">{{this.$t('p_r_o_rules_title')}}</div>
+              <div class="car1-rules-a">{{ this.$t('p_r_o_rules_title') }}</div>
               <div class="car1-rules-b">
-                <div>{{this.$t('p_r_o_rules_array')[0]}}</div>
-                <div>{{this.$t('p_r_o_rules_array')[1]}}</div>
-                <div>{{this.$t('p_r_o_rules_array')[2]}} </div>
+                <div>{{ this.$t('p_r_o_rules_array')[0] }}</div>
+                <div>{{ this.$t('p_r_o_rules_array')[1] }}</div>
+                <div>{{ this.$t('p_r_o_rules_array')[2] }} </div>
               </div>
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -105,12 +113,13 @@
 import { mapState, mapMutations, mapActions } from "vuex";
 import { abiObject, getAbi } from "utils/common";
 const { contractObject: PerSaleObj } = getAbi(abiObject.PerSaleAbi);
+const { contractObject: spacePiObj } = getAbi(abiObject.spacePiAbi);
 export default {
   data() {
     return {
       // 默认地址
       initalAddress: "",
-	    airdropQuantityProp:0,
+      airdropQuantityProp: 0,
       raisedList: [
         { address: "0x3A2d...", num: "1" },
         { address: "0x8a6F...", num: "2" },
@@ -136,7 +145,7 @@ export default {
     };
   },
   props: {
-     isLogin: {
+    isLogin: {
       type: Boolean,
     },
     airdropQuantity: {
@@ -150,7 +159,7 @@ export default {
     },
   },
   watch: {
-	
+
     address: {},
   },
   computed: {
@@ -163,7 +172,9 @@ export default {
       "storeSwapRatio",
       "tokenDecimals",
       "storeInviteLink",
+      "lang",
       "storeInviteRewards"
+
     ]),
 
     invite() {
@@ -181,19 +192,18 @@ export default {
   created() {
     this.getOwner();
     this.getRouteInvited();
-	  this.getAirdropInfo();
+    this.getAirdropInfo();
 
     this.titcom();
     this.invitePayCount();
-    this.invitePayCount();
     this.updateInvitationLink(this.address);
     this.getIsAirdrops();
-	  this.getairdropStatus();
+    this.getairdropStatus();
   },
-  mounted() {},
+  mounted() { },
   methods: {
-    ...mapMutations(["editAddress","updateIsInvited","updateInvitationLink","updateMyspacepi", "updateInviteList"]),
-    ...mapActions(["getInvited","myInvites"]),
+    ...mapMutations(["editAddress", "updateIsInvited", "updateInvitationLink", "updateMyspacepi", "updateInviteList"]),
+    ...mapActions(["getInvited", "myInvites"]),
     finish() {
       alert(this.$t("over"));
     },
@@ -211,47 +221,33 @@ export default {
     async invitePayCount() {
       try {
         let payCount = 0;
-        let totaltoken = new this.$BigNumber(0);
-        for (let i = 0; i < this.storeInviteList.length; i++) {
-          const userLockList = await PerSaleObj.methods
-            .getUserLock(this.storeInviteList[i])
-            .call();
-          // userLockList[0]>0?totaltoken+=Number(userLockList[0]): ''
-          // userLockList[0]>0?payCount+=1:''
-          if (Number(userLockList[0]) > 0) {
-            // const bgTotaltoken = Number(userLockList[0]);
-            totaltoken = totaltoken.plus(new this.$BigNumber(userLockList[0]));
-            payCount += 1;
-          }
-        }
-        const invitePercentage = await PerSaleObj.methods
-          .invitePercentage()
-          .call();
-        // //console.log(invitePercentage)
+                let _that  = this ;
+                let totaltoken = new this.$BigNumber(0);
+                // const invitePercentage = await PerSaleObj.methods.invitePercentage().call();
+                const Price = await PerSaleObj.methods.perHTPrice().call();
+                const Pricenum = Number(Price).toFixed(0)/ 10 **  _that.tokenDecimals 
+                let buybnbnum  = 0 ;
+                for (let i = 0; i < this.storeInviteList.length; i++) {
+                    const userLockList = await PerSaleObj.methods.getUserLock(this.storeInviteList[i]).call();
+                    // userLockList[0]>0?totaltoken+=Number(userLockList[0]): ''
+                    // userLockList[0]>0?payCount+=1:''
+                    const userLockListnum =  Number(userLockList).toFixed(0);
+                    const buynum = userLockListnum / 10 **  _that.tokenDecimals;
+                    buybnbnum = buybnbnum + buynum /Pricenum;
+                    payCount += 1;
+                }
+                this.payCount = payCount;
 
-        this.payCount = payCount;
+                // const asd = new this.$BigNumber(123)/new this.$BigNumber(this.storeSwapRatio)
+                // //console.log(asd.toFixed(9))
+                // const storeSwapRatio = new this.$BigNumber(this.storeSwapRatio);
+                const tokenDecimals = buybnbnum;
+                this.totaltoken = tokenDecimals;
 
-        // const asd = new this.$BigNumber(123)/new this.$BigNumber(this.storeSwapRatio)
-        // //console.log(asd.toFixed(9))
 
-        const storeSwapRatio = new this.$BigNumber(this.storeSwapRatio);
-        const tokenDecimals = 10 ** this.tokenDecimals;
-        //console.log(tokenDecimals)
-        this.totaltoken = totaltoken
-          .dividedBy(storeSwapRatio)
-          .dividedBy(new this.$BigNumber(tokenDecimals))
-          .toFixed(4);
-
-        // this.rewardsCount = new this.$BigNumber(5000).multipliedBy(new this.$BigNumber(invitePercentage)).dividedBy(new this.$BigNumber(100))
-        // this.tokenDecimals
-
-        const rewardsCount = new this.$BigNumber(Number(this.totaltoken))
-          .multipliedBy(new this.$BigNumber(invitePercentage))
-          .dividedBy(new this.$BigNumber(100))
-          .toString();
-
-        // //console.log( web3.utils.fromWei(rewardsCount.toString()),'rewardsCount')
-        this.rewardsCount = rewardsCount;
+                const rewardsCount = buybnbnum * 0.1;
+                // //console.log( web3.utils.fromWei(rewardsCount.toString()),'rewardsCount')
+                this.rewardsCount = rewardsCount;
       } catch (error) {
         //console.log(error);
       }
@@ -261,17 +257,20 @@ export default {
         .getIsAirdrop(this.address)
         .call();
       this.airdropStatus = airdropStatus;
-      console.log('airdropStatus',airdropStatus);
+      console.log('airdropStatus', airdropStatus);
     },
     async getAirdrop() {
       await PerSaleObj.methods.airdrop().send({
-        from: this.address,
-        value: web3.utils.toWei("0.0025"),
-      });
-      this.$notification.open({
-        message: "succeed",
-        description: this.$t("receiveAirdropSuccess"),
-      });
+				from: this.address,
+				value: web3.utils.toWei("0.0025"),
+			}).then(() => {
+				this.$message.success(this.$t("receiveAirdropSuccess"));
+        setTimeout(() => {
+						window.location.reload();
+					}, 1500);
+			}).catch(() => {
+        this.$message.error(this.$t("receiveAirdropError"));
+			});
     },
     // 地址复制
     onCopy(e) {
@@ -281,24 +280,25 @@ export default {
     titcom() {
       var items = this.raisedList;
       var items = items[Math.floor(Math.random() * items.length)]
-          const random = Math.random().toString(36).substr(2, 4);
+      const random = Math.random().toString(36).substr(2, 4);
       this.a_titcom_li_left = items.address;
       const random1 = Math.random() * 1.5;
       this.a_titcom_li_right =
-      this.$t("a_titcom_li_right") + random1.toFixed(1) + "BNB";
+        this.$t("a_titcom_li_right") + random1.toFixed(1) + "BNB";
       ////console.log('数据',)
     },
     async getAirdropInfo() {
       const totalAirdrop = await PerSaleObj.methods.totalAirdrop().call()
-      // this.airdropQuantity = Number(this.totalAirdrop / 10 ** this.tokenDecimals) - Number(this.airdropped / 10 ** this.tokenDecimals)
-      const tokenDecimals = await PerSaleObj.methods.decimals().call()
-      this.airdropQuantityProp = Number(totalAirdrop / 10 ** tokenDecimals)
+      // const airdropped = await PerSaleObj.methods.airdropped().call()
+      const tokenDecimals = await spacePiObj.methods.decimals().call()
+      this.airdropQuantityProp = Number(totalAirdrop / 10 ** tokenDecimals).toFixed(0)
+      // this.myInvites(this.address)
 
       // this.myInvites(this.address)
     },
-      // save route query address
+    // save route query address
     getRouteInvited() {
-	
+
       const isRoueInvited = sessionStorage.getItem("isRoueInvited");
       if (isRoueInvited === "undefined" || !isRoueInvited) {
         sessionStorage.setItem("isRoueInvited", this.$route.query.address);
@@ -314,15 +314,15 @@ export default {
         .request({ method: "eth_requestAccounts" })
         .then(async (accounts) => {
           // add address for store
-          this.editAddress( accounts[0])
+          this.editAddress(accounts[0])
           // 获取邀请人
           const isInvited = await PerSaleObj.methods.isInvited(accounts[0]).call()
           // Action function
           this.updateIsInvited(isInvited)
-          sessionStorage.setItem("isInvited",JSON.stringify(isInvited))
-          
+          sessionStorage.setItem("isInvited", JSON.stringify(isInvited))
+
           this.$message.success(this.$t('connectSuccess'));
-          if(!JSON.parse(this.isInvited)[1]){
+          if (!JSON.parse(this.isInvited)[1]) {
             this.bondInvite()
           }
           // history.go(0);
@@ -339,7 +339,7 @@ export default {
       // //console.log(this.invite);
       const nowTime = new Date().getTime();
 
-      if(nowTime>this.deadline){return}
+      if (nowTime > this.deadline) { return }
       const h = this.$createElement;
       const invite = this.invite;
       const that = this;
@@ -377,9 +377,9 @@ export default {
 
 
 <style scoped lang="less">
-  @import "../../../styles/shiba-ui";
-	@import "../../presale/components/presaleOne.less";
-	@import "../../presale/components/presaleOneSlyte.less";
-	@import "../../presale/components/presaleTwo.less";
-	@import "./amount.less";
+@import "../../../styles/shiba-ui";
+@import "../../presale/components/presaleOne.less";
+@import "../../presale/components/presaleOneSlyte.less";
+@import "../../presale/components/presaleTwo.less";
+@import "./amount.less";
 </style>

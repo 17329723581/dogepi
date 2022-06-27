@@ -1,4 +1,3 @@
-
 .section__hero{
     height: 49vw;
     background: none;
@@ -17,20 +16,20 @@
                 width: 50vw;
                 padding-bottom: 0vw;
                 .h1{
-                    font-size: 2vw;
+                    font-size: 2.5vw;
                     line-height: inherit;
-                    font-weight: 800;
-                    text-shadow: 0px 0.3vw 1.6vw rgba(0, 0, 0, 0.32);
+                    font-weight: bold;
+                    font-family: Cabal-Bold, Cabal;
+
                 }
                 .font-s{
-                    font-size: 4vw;
+                    font-size: 2.5vw;
                 }
                 .p{
                     font-size: 1vw;
-                    font-family: Alibaba PuHuiTi;
+                    font-family: Cabal-Regular, Cabal;
                     font-weight: 400;
                     line-height:inherit;
-                    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
                     margin-top: 1vw;
                     width: 100%;
                     max-width: 100%;
@@ -40,64 +39,83 @@
                 display:none;
             }
             .coye{
-                margin-top: 2vw;
+                margin-top: 0.5vw;
                 width: 100%;
                 height: 4.2vw;
                 justify-content: space-between;
                 display: flex;
                 align-items: center;
+                position: relative;
                 .coye-l{
-                    width: 75%;
-                    //height: 3vw;
-                    padding: 0.5vw;
+                    font-family: Cabal-Regular, Cabal;
+                    width: 100%;
+                    height: 3.5vw;
+                    padding: 1.8vw 2vw;
                     border-radius: @fillet;
                     display:flex;
                     align-items: center;
-                    justify-content: center;
-                    font-size: 1vw;
+                    justify-content: flex-start;
+                    font-size: 0.8vw;
                     float: left;
-                    border:@borderColor;
+                    border: 2px solid #FFC14A;
+                    color: #FFC14A;
+                    background: linear-gradient(269deg, rgba(53, 1, 106, 0.5) 0%, rgba(95, 19, 127, 0.66) 100%);
                 }
                 .m{
                     display: none;
                 }
                 .coye-r{
                     width: 20%;
-                    height: 3vw;
-                    float: right;
+                    height: auto;
                     display:flex;
                     align-items: center;
                     justify-content: center;
                     border-radius: @fillet;
-                    font-size: 0.9vw;
+                    font-size: 0.7vw;
                     font-weight: bold;
-                    background:@buttonColor;
-                    color:@blackFontColor;
+                    background:#FFC14A;
                     white-space:nowrap;
+                    position: absolute;
+                    right: 0.4vw;
+                    font-family: Cabal-Regular, Cabal;
+                    font-weight: 400;
+                    color: rgba(255, 255, 255, 0.84);
+                    padding: 0.8vw 0.1vw;
                 }
             }
             .container-button{
                 width: 100%;
-                margin-top: 1vw;
+                margin-top: 2vw;
+                font-family: Cabal-Regular, Cabal;
                 .button-a{
                     width: 45%;
                     float: left;
                     border: 0;
                     font-size: 0.9vw;
-                    font-weight: bold;
-                    background:@buttonColor;
-                    color:@blackFontColor;
+                    font-weight: 400;
+                    background:rgba(255,255,255,0);
+                    color:#FFFFFF;
                     border-radius: @fillet;
+                    border: 2px solid #FFC14A;
+                    height: 3vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
                 .button-b{
                     width: 45%;
                     float: right;
                     border: 0;
                     font-size: 0.9vw;
-                    font-weight: bold;
-                    background:@buttonColor;
-                    color:@blackFontColor;
+                    font-weight: 400;
+                    background:rgba(255,255,255,0);
+                    color:#FFFFFF;
                     border-radius: @fillet;
+                    border: 2px solid #FFC14A;
+                    height: 3vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
             }
         }
@@ -111,7 +129,7 @@
         display: none;
     }
     .section__hero{
-        margin-top: 90px;
+        margin-top: 70px;
         margin-bottom: -150px;
         z-index: 7;
         height: auto;
@@ -130,7 +148,7 @@
                     padding-top: 4.8vw;
                     padding-bottom: 4.8vw;
                     .h1{
-                        line-height: inherit;
+                        line-height: normal;
                         margin-bottom: 4.8vw;
                         text-align:center;
                         width: 100%;
@@ -214,12 +232,12 @@
                 }
                 .coye{
                     display: contents;
-                    height: 43px;
+                    height: 50px;
                     .coye-l{
                         margin-top: 5.4vw;
                         width: 100%;
-                        height: 43px;
-                        border-radius: 20px;
+                        height: 50px;
+                        border-radius: 50px;
                         font-size: 4vw;
                         background: linear-gradient(269deg, rgba(53, 1, 106, 0.57) 0%, rgba(95, 19, 127, 0.66) 100%);
                         justify-content: left;
@@ -227,11 +245,11 @@
                         align-items: center;
                         .coye-r-btn{
                             position: absolute;
-                            width: 32px;
-                            height: 32px;
+                            width: 35px;
+                            height: 35px;
                             background: #FFC14A;
                             border-radius: @fillet;
-                            right: 5px;
+                            right: 10px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
@@ -259,15 +277,41 @@
                     padding-top:2.4vw;
                     .button-a{
                         width: 48%;
-                        height: 39px;
-                        font-size: 3.2vw;
+                        height: 50px;
+                        font-size:18px;
                         font-weight: normal;
                     }
                     .button-b{
                         width: 48%;
-                        height: 39px;
-                        font-size: 3.2vw;
+                        height: 50px;
+                        font-size: 18px;
                         font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// 小型号到中型号的平板
+@media screen and (min-width:960px) and (max-width:1264px) {}
+// 桌面端
+@media screen and (min-width:1264px) and (max-width:1904px) {}
+// 4K 和超宽屏幕
+@media screen and (min-width:1904px) {
+
+    .section__hero{
+        .container-1440{
+            .hero-wrap{
+                .coye{
+                    .coye-l{
+                        font-size: 22px;
                     }
                 }
             }

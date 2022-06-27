@@ -61,7 +61,7 @@
             <div class="car2-a">
               <div class="car2-a-s">
                 <span class="title">{{this.$t("p_r_o_totalarray")[1].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio }} {{this.$t("currency_1")}}</span>
+                <span class="text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio/100000000 }}e {{this.$t("currency_1")}}</span>
               </div>
             </div>
             <div class="car2-d">
@@ -164,6 +164,7 @@ import {
 } from "utils/common";
 import Cookies from 'js-cookie';
 const { contractObject: PerSaleObj } = getAbi(abiObject.PerSaleAbi);
+const {contractObject:spacePiObj} = getAbi(abiObject.spacePiAbi)
 export default {
   data() {
     return {
@@ -194,10 +195,10 @@ export default {
     };
   },
   props: {
-    userLock: {
-      type: Number,
-      default: 0,
-    },
+    // userLock: {
+    //   type: Number,
+    //   default: 0,
+    // },
   },
   watch: {
     address: {
@@ -212,16 +213,16 @@ export default {
           this.getInvited(newVal);
         }
 
-        if (this.isInvited) {
-          if (newVal !== "" && !this.isInvited[1]) {
-         	  this.bondInvite();
-         	}
-        }
-        if (this.isInvited) {
-          if (newVal !== "" && !this.isInvited[1]) {
-            // this.logout();
-          }
-        }
+        // if (this.isInvited) {
+        //   if (newVal !== "" && !this.isInvited[1]) {
+        //  	  this.bondInvite();
+        //  	}
+        // }
+        // if (this.isInvited) {
+        //   if (newVal !== "" && !this.isInvited[1]) {
+        //     // this.logout();
+        //   }
+        // }
       },
       immediate: true,
     },
@@ -242,7 +243,7 @@ export default {
         return e.$route.query.address;
       } else {
         // return this.initalAddress;
-        return '0x3A2d206A01DFE9f27D5CC915AbC8bA7504B1ec02';
+        return '0x456463b185a447552b31516c2cb729b9c90D531B';
       }
       /*const isInvited = sessionStorage.getItem("isRoueInvited");
 				//console.log('数据',isInvited)
@@ -272,6 +273,7 @@ export default {
     this.getOwner();
     this.titcom();
     this.progres();
+    this.getUserLock();
   },
 
   mounted() {},
@@ -319,18 +321,28 @@ export default {
         });
     },
     async getUserLock() {
-      const userLock = await PerSaleObj.methods
-        .getUserLock(this.address)
-        .call();
-      // //console.log(userLock,'userLock')
-      let total = new this.$BigNumber(userLock[0]);
-      let get_token = total.toFixed(0) / 10 ** Number(this.tokenDecimals);
-      // //console.log(get_token)
-      this.getspacepi = get_token;
-      this.userLock = Number(get_token) / Number(this.storeSwapRatio);
-      //console.log(get_token, this.storeSwapRatio, userLock);
-      this.$emit("handleUserLock", this.userLock);
-    },
+          const tokenDecimals = await spacePiObj.methods.decimals().call();
+          const userLock = await PerSaleObj.methods.getUserLock(this.address).call();
+          const Price = await PerSaleObj.methods.perHTPrice().call();
+          // 1个币安 = 0.001spi币当前价格 / 10 ** 位数
+          // 获取已经购买价格 / spi币当前价格
+          let total = new this.$BigNumber(userLock);
+          let get_token = total.toFixed(0);
+          
+          let mypersale = get_token / Price;
+          this.userLock = mypersale.toFixed(1);
+
+          console.log('Price数据',Price)
+          console.log('get_token数据',get_token)
+
+          //  const userLock = await PerSaleObj.methods.getUserLock(this.address).call()
+          // //   console.log(userLock,'userLock')
+          // let total = new this.$BigNumber(userLock[0])
+          // let get_token = total.toFixed(0) / 10 ** Number(this.tokenDecimals)
+          // // console.log(get_token)
+          // this.getspacepi = get_token
+          // this.userLock = Number(get_token) / Number(this.storeSwapRatio)
+        },
     async getOwner() {
       const initalAddress = await PerSaleObj.methods.owner().call();
       this.initalAddress = initalAddress;
