@@ -5,20 +5,13 @@
 				<div class="htb-wrap">
 					<div class="htb-hero">
 						<div class="htb-left">
-							<div class="base-circle-wrap">
-								<img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1" />
-								<logo class="htb-circle-dashes"></logo>
-								<div class="circle-glued-coins">
-									<img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1" />
-									<img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2" />
-									<img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3" />
-								</div>
-								<div class="front-coins-holder">
-									<img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1" />
-									<img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2" />
-									<img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3" />
-								</div>
+							<div class="pc">
+								<homeLogo class="base-circle-wrap"></homeLogo>
 							</div>
+							<div class="mobile">
+								<homeLogoMo class="base-circle-wrap" style="width: 50vw;"></homeLogoMo>
+							</div>
+							
 						</div>
 						<div class="htb-right">
 							<a-row type="flex" class="banner" justify="space-between">
@@ -43,23 +36,14 @@
 											</div>
 										</div>
 									</div>
-									<div class="left_lu">
+									<!-- <div class="left_lu">
 										<div class="li">
 											<div class="connect">
 												<span class="car-p-title">{{ this.$t("a_top_time_title") }}</span>
 												<div class="car-p-height">{{ this.$t("p_t_num") }}</div>
 											</div>
 										</div>
-									</div>
-									<div class="left_lu">
-										<div class="li">
-											<div class="connect-line">
-												<div class="line">
-													<div class="Progress" :style="'width:' + 80 + '%'"></div>
-												</div>
-											</div>
-										</div>
-									</div>
+									</div> -->
 									<div class="left_lu">
 										<div class="li">
 											<div class="connect-text">
@@ -69,18 +53,32 @@
 									</div>
 									<div class="left_lu">
 										<div class="li">
+											<div class="connect-Progress">
+												<div class="connect-line">
+													<div class="line">
+														<span class="Progress" :style="'width:' + 80 + '%'"></span>
+													</div>
+												</div>
+												<div>80%</div>
+											</div>
+											
+										</div>
+									</div>
+									
+									<!-- <div class="left_lu">
+										<div class="li">
 											<div class="connect-block-height">
 												{{ this.$t("p_t_des3") }} {{ thousands(currentBlock) }}
 											</div>
 										</div>
-									</div>
-									<div class="left_lu">
+									</div> -->
+									<!-- <div class="left_lu">
 										<div class="li">
 											<div class="connect-des">
 												{{ this.$t("p_t_des2") }}
 											</div>
 										</div>
-									</div>
+									</div> -->
 									<!-- 领取空投说明 -->
 									<!-- <div class="receiving-airdrop-instructions">
 									<img src="@/assets/i.png"> <span>{{ this.$t("airdrop_instructions") }}</span>
@@ -191,6 +189,8 @@
 </template>
 
 <script>
+import homeLogo from "@/views/home/Harry/homeLogo.vue"
+import homeLogoMo from "@/views/presale/start/mobile/homeLogoMo.vue"
 import logo from "./logo.vue";
 import { abiObject, getAbi, web3, thousands } from "utils/common";
 import { mapState, mapActions, mapMutations } from "vuex";
@@ -266,7 +266,9 @@ export default {
 		},
 	},
 	components: {
-		logo
+		logo,
+		homeLogo,
+		homeLogoMo
 	},
 	created() {
 		// this.getStage()
@@ -559,6 +561,7 @@ export default {
 		font-size: 1.2vw;
 		font-weight: bold;
 		color: #2E2E2E;
+		font-family: 'Cabal-Bold';
 
 	}
 }
@@ -584,9 +587,9 @@ export default {
 			height: 9.7vw;
 			background: rgba(255, 255, 255, 0.16);
 			box-shadow: 0px 0.2vw 0.3vw 0.1vw rgb(0 0 0 / 16%);
-			border-radius: 0.4vw;
+			border-radius: 1.4vw;
 			-webkit-backdrop-filter: blur(1.6vw);
-			backdrop-filter: blur(1.6vw);
+			backdrop-filter: blur(1.4vw);
 			display: grid;
 			justify-content: center;
 			align-items: center;
@@ -598,6 +601,7 @@ export default {
 				color: #FEA626;
 				pa-top: 44px;
 				padding-top: 1vw;
+				font-family: 'Cabal-Bold';
 			}
 
 			.text {
@@ -605,6 +609,7 @@ export default {
 				color: #FFFFFF;
 				font-weight: bold;
 				padding-bottom: 1vw;
+				font-family: 'Cabal-Bold';
 			}
 		}
 	}
@@ -626,12 +631,13 @@ export default {
 	margin-top: 2.8vw;
 	padding-left: 2vw;
 	padding-right: 2vw;
-
+	font-family: 'Cabal';
 	.title {
 		width: 100%;
 		font-size: 1vw;
 		font-weight: bold;
 		color: #FEA626;
+		font-family: 'Cabal-Bold';
 	}
 }
 
@@ -669,7 +675,9 @@ export default {
 
 		button {
 			width: 35vw;
-			height: 8vw;
+			height: 40px;
+			font-size: 16px;
+			font-family: 'Cabal-Bold';
 		}
 	}
 }

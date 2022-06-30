@@ -10,28 +10,31 @@ const locale = {
 	index_text2:"Implementation of Ecosystem Based on Web 3.0 Technology",
 
 	// BDOGE和生态系统
-	index_ecosystem_title:'The Web 3.0 Ecosystem Built by DogePi',
-	index_ecosystem_text1:"DogePi brings users a transparent and reliable Internet economic model. The derived decentralized applications or games can create additional benefits for users through DogePi's token and data-validated blockchain technology. DogePi will break the information barriers between traditional and users. The benefits will no longer be obtained by centralized organizers, but by the decentralized network managed to decentralize power and funds to the border. DogePi is open and interoperable at the bottom, without borders, without borders, without Attribute to any single entity and return all proceeds to community users through DogePi. The Web3 world created by DogePi belongs to every user who participates in the construction of DogePi!",
-	index_ecosystem_text2:"",
+	index_ecosystem_title:"DogePi's Web 3.0 Ecosystem",
+	index_ecosystem_text1:"DogePi brings users a transparent and reliable Web3 economic model. The derived decentralized applications or games can create additional benefits for users through DogePi's token and data-validated blockchain technology. DogePi will break the information barriers between traditional and users. The benefits will no longer be obtained by the centralized organizer, but by the decentralized network managed to decentralize the power and funds to the boundary, and return all the benefits to the community users through DogePi.",
+	index_ecosystem_text2:"The Web3 world created by DogePi belongs to every user who participates in the construction of DogePi!",
 	index_eco:['PancakeSwap Deployment',"Powerful application ecosystem",'Efficient DAO Community'],
 	index_friends:'Friends of DogePi',
 	index_coin:[{
 		title:'DogePi',
 		label:'See Live Charts',
-		text:"DogePi adopts the contract with the highest security mechanism for deployment, and immediately gives up all permissions and locks the position after the deployment is completed. DogePi will participate in the next edition of Pi",
+		text:"DogePi uses the contract code of the highest security mechanism, and waives all permissions and locks. DogePi will participate in the next Pi Network hackathon, and the ecosystem built on Web3.0 will also bring the Pi Network mainnet online. The fields affected by web3.0 will release huge wealth opportunities, and DogePi is ready to meet this new technological revolution.",
+		text1:"Therefore, DogePi will land on the BSC smart chain for the first time and carry out ecological construction. This is the preparation for the main network of PiNetwork, and finally it will be connected to the main network of DogePi Network.",
 	},{
 		title:'web 3.0',
 		label:'See Live Charts',
-		text:"web3.0 is based on the development of blockchain technology, and digital content as an asset has undergone a comprehensive transformation: DogePi is no longer managed by a centralized company, it has become a distributed self-organization (DAO), governance Relying on community voting; the ownership and control of accounts, wallets, props, and digital assets belong to the user; the ubiquitous incentive system makes people's online behavior more economically rational. In this era, the biggest feature of digital content is that digital content is created by users, owned by users, controlled by users, and distributed by agreement.",
+		text:"web3.0 is based on the development of blockchain technology, and digital content as an asset has undergone a comprehensive transformation: DogePi is no longer managed by a centralized company, it has become a distributed self-organization (DAO), governance Relying on community voting; ownership and control of accounts, wallets, props, and digital assets belong to users.",
+		text1:"The ubiquitous incentive system makes people's online behavior more economically rational. In this era, the biggest feature of digital content is that digital content is created by users, owned by users, controlled by users, and distributed by agreement.",
 	},{
 		title:'DogePi Charity Wallet',
 		label:'See Live Charts',
-		text:'In order to encourage more donors to participate in charitable activities conveniently and quickly, it is jointly established and supervised by members of the DogePi community, using the transparency and high efficiency provided by blockchain technology to redefine philanthropy. DogePi builds a new world of love and peace through web3 technology, and brings it to the world through the concept of philanthropy. Therefore, the DogePi Charity Wallet accepts invitations for assistance from all over the world, if your organization needs assistance, please check the contact details on this site.',
+		text:'In order to encourage more donors to participate in charitable activities conveniently and quickly, it is jointly established and supervised by members of the DogePi community, using the transparency and high efficiency provided by blockchain technology to redefine philanthropy.',
+		text1:'DogePi builds a new world of love and peace through web3 technology, and brings it to the world through the concept of philanthropy. Therefore, the DogePi Charity Wallet accepts invitations for assistance from all over the world, if your organization needs assistance, please check the contact details on this site.'
 	}],
 
 	// 如何购买BDOGE
 	index_cta_title:'Buy DogePi',
-	index_cta_text:"DogePi is a decentralized experiment where the community encourages users to use DEX for transactions. DogePi will be listed on PancakeSwap for the first time, so please make sure you have enough BNB to pay the gas fee before purchasing. DogePi and all cryptocurrencies have certain risks, which may lead to 100% total loss. Nothing on this website is investment advice. If you're ready, it's an exciting decentralization journey.",
+	index_cta_text:"DogePi is a decentralized experiment where the community encourages users to use DEX for transactions. DogePi will be listed on PancakeSwap for the first time, so please make sure you have enough BNB to pay the gas fee before buying. DogePi and all cryptocurrencies have certain risks, which may lead to 100% of the total loss. Nothing on this website is investment advice. If you're ready, it's an exhilarating decentralized experience.",
 	index_cta_btn1:'Buy DogePi',
 	index_cta_btn2:'Buy LEASH',
 
@@ -114,14 +117,14 @@ const locale = {
 		text2:'online coingecko',
 		text3:'Well-known third-party audit',
 		text4:"DogePi Charity Foundation established",
-		text5:"DogePi Foundation donates to spread awareness of peace and love",
+		text5:"Foundation donates to spread awareness of peace and love",
 	},{
 		title:'The third phase',
 		text1:'200k telegram group members',
 		text2:'1000k token holders',
 		text3:'Established DogePiDAO',
 		text4:"Launch of DogePi Art NFT platform",
-		text5:"Co-marketing with cryptocurrency service providers",
+		text5:"DogePi cooperates with cryptocurrency service providers",
 	},{
 		title:'fourth stage',
 		text1:'Launched DogePiSwap that supports "cross-chain aggregation transactions"',
@@ -129,7 +132,6 @@ const locale = {
 		text3:'Gain community ownership of the platform through governance',
 		text4:"User Submitted Proposals",
 		text5:"Listed on top exchanges",
-		text6:"......",
 	}],
 
 	index_com_title:'contact us',
@@ -223,7 +225,7 @@ const locale = {
 
 	//预售页面 预售结束
 	p_t_input:['100%','DogePi'],
-	p_t_title:'Airdrop countdown:',
+	p_t_title:'Airdrop countdown',
 	p_t_num:'133,000,014,433,311',
 	p_t_des3:'Current block height',
 	p_t_des2:'DogePi Presale erfect end!',

@@ -36,7 +36,10 @@ export default new Vuex.Store({
     deadline:1654099200000,//9999999999999
     //百分比
     percentage:0,
-    decimal:""
+    decimal:"",
+    // 后端api请求域名
+    urls:'https://admintest.dogepi.net/api/',
+
 
   },
   mutations: {
@@ -76,15 +79,6 @@ export default new Vuex.Store({
     },
     updateEndTimenew(state,value){
       state.deadline = value;
-      /*axios
-      .get("https://admin.bdogecoins.com/api/progress")
-      .then(function(response){
-        state.deadline = response.data.deadline;
-        state.percentage = response.data.number;
-      })
-      .catch(function(error) {
-        //     // 请求失败处理
-      });*/
      },
     updateInviteList(state,value){
       state.storeInviteList = value;

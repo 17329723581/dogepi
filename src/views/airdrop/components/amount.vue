@@ -7,7 +7,7 @@
             <div class="car1">
               <div class="car1-airdrop-a mo">
                 <div class="car1-title">
-                  <img src="@/assets/airdrop-title.png">
+                  <img src="@/assets/airdrop-m-title.png">
                   {{ this.$t('a_quantity_title') }}
                 </div>
               </div>

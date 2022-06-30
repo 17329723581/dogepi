@@ -10,28 +10,31 @@ const locale = {
 	index_text2:"基于Web 3.0技术的生态系统实现",
 
 	// BDOGE和生态系统
-	index_ecosystem_title:'DogePi建设的Web 3.0生态系统',
-	index_ecosystem_text1:'DogePi 给用户带来透明、可靠的互联网经济模型。衍生出的去中心应用或加游戏通过 DogePi 的通证、数据确证化的区块链技术给用户创造额外收益。DogePi 将打破传统与用户的信息壁垒，收益不再由中心化组织者获取，而是由管理的分散网络将权力和资金向边界去中心化，DogePi在底层开放互通，无边界、无国界，不归属任何单一主体,并通过DogePi将所有收益归还给社区用户。DogePi 所创造的Web3 世界是属于每一位参与DogePi 建设的用户！',
-	index_ecosystem_text2:'',
+	index_ecosystem_title:'DogePi的Web 3.0生态系统',
+	index_ecosystem_text1:'DogePi 给用户带来透明、可靠的Web3经济模型。衍生出的去中心应用或加游戏通过 DogePi 的通证、数据确证化的区块链技术给用户创造额外收益。DogePi 将打破传统与用户的信息壁垒，收益不再由中心化组织者获取，而是由管理的分散网络将权力和资金向边界去中心化,并通过DogePi将所有收益归还给社区用户。',
+	index_ecosystem_text2:'DogePi 所创造的Web3 世界是属于每一位参与DogePi 建设的用户！',
 	index_eco:['PancakeSwap部署',"强大的应用生态",'高效的DAO社区'],
 	index_friends:'Friends of DogePi',
 	index_coin:[{
 		title:'DogePi',
 		label:'See Live Charts',
-		text:'DogePi采取最高安全机制的合约进行部署，部署完成后立即放弃所有权限并进行锁仓。DogePi将参加下一届的Pi Network黑客马拉松，基于Web3.0构建的生态也将让Pi Network主网上线后生态更加丰富。web3.0影响的领域都会释放巨大的财富机会。这些市场正以极快的速度发展着，也不断地在创造新的财富，DogePi已经准备好迎接这场新的技术革命。因此，DogePi将首次登陆BSC智能链并进行生态建设，这是为PiNetwork主网上线前做出的准备，最终接入DogePi Network主网。',
+		text:'DogePi使用最高安全机制的合约代码，并且放弃所有权限与锁仓。DogePi将参加下一届的Pi Network黑客马拉松，基于Web3.0构建的生态也将让Pi Network主网上线。web3.0影响的领域都会释放巨大的财富机会，DogePi已经准备好迎接这场新的技术革命。',
+		text1:'因此，DogePi将首次登陆BSC智能链并进行生态建设，这是为PiNetwork主网上线前做出的准备，最终接入DogePi Network主网。',
 	},{
 		title:'web 3.0',
 		label:'See Live Charts',
-		text:'web3.0基于区块链技术的发展，作为资产的数字内容发生了全方面的转变：DogePi不再是由某个中心化的公司管理，它变成了分布式的自组织（DAO），治理依靠社区投票；包括账号、钱包、道具、数字资产的所有权、控制权是用户的；无处不在的激励系统，让人们的网络行为更具经济理性。这个时代，数字内容的最大特色是：数字内容由用户创造、用户所有、用户控制、协议分配。',
+		text:'web3.0基于区块链技术的发展，作为资产的数字内容发生了全方面的转变：DogePi不再是由某个中心化的公司管理，它变成了分布式的自组织（DAO），治理依靠社区投票；包括账号、钱包、道具、数字资产的所有权、控制权是用户的。',
+		text1:'无处不在的激励系统，让人们的网络行为更具经济理性。这个时代，数字内容的最大特点是：数字内容由用户创造、用户所有、用户控制、协议分配。',
 	},{
 		title:'DogePi 慈善钱包',
 		label:'See Live Charts',
-		text:'为了鼓励更多捐赠人方便快捷地参与公益慈善活动，由DogePi社区成员共同成立与监管，利用区块链技术提供的透明化、高效率来重新定义慈善公益事业。DogePi通过web3技术建立一个实现爱与和平的新世界，并且通过慈善事业这一理念带向全球。因此，DogePi慈善钱包接受全球各地的援助邀请，若你的组织需要帮助，请在此站点查阅联系方式。',
+		text:'为了鼓励更多捐赠人方便快捷地参与公益慈善活动，由DogePi社区成员共同成立与监管，利用区块链技术提供的透明化、高效率来重新定义慈善公益事业。',
+		text1:'DogePi通过web3技术建立一个实现爱与和平的新世界，并且通过慈善事业这一理念带向全球。因此，DogePi慈善钱包接受全球各地的援助邀请，若你的组织需要帮助，请在此站点查阅联系方式。',
 	}],
 
 	// 如何购买BDOGE
 	index_cta_title:'购买DogePi',
-	index_cta_text:'DogePi是一场去去中心化实验，社区鼓励用户使用DEX进行交易。DogePi将首次在PancakeSwap上市，因此在购买前请您确保有足够的BNB支付Gas费用，DogePi和所有加密货币都具有一定的的风险，可能导致 100% 的总损失。本网站上的任何内容都不是投资建议。如您已经准备好，这将是一场振奋人心的去中心化历程。',
+	index_cta_text:'DogePi是一场去去中心化实验，社区鼓励用户使用DEX进行交易。DogePi将首次在PancakeSwap上市，因此在购买前请您确保有足够的BNB支付Gas费用，DogePi和所有加密货币都具有一定的的风险，可能导致 100% 的总损失。本网站上的任何内容都不是投资建议。如您已经准备好，这将是一场振奋人心的去中心化体验。',
 	index_cta_btn1:'Buy Ddoge',
 	index_cta_btn2:'Buy LEASH',
 
@@ -114,14 +117,14 @@ const locale = {
 		text2:'上线coingecko',
 		text3:'知名第三方机构审计',
 		text4:"成立DogePi慈善基金会",
-		text5:"DogePi基金会捐款传播和平与爱的意识",
+		text5:"基金会捐款传播和平与爱的意识",
 	},{
 		title:'第三阶段',
 		text1:'200k电报组成员',
 		text2:'1000k通证持有人',
 		text3:'成立DogePiDAO',
 		text4:"推出DogePi Art NFT平台",
-		text5:"与加密货币服务商合作营销",
+		text5:"DogePi与加密货币服务商合作",
 	},{
 		title:'第四阶段',
 		text1:'推出支持“跨链聚合交易”的DogePiSwap',
@@ -129,7 +132,6 @@ const locale = {
 		text3:'通过治理获得平台的社区所有权',
 		text4:"用户提交的提案",
 		text5:"顶级交易所上市",
-		text6:"......",
 	}],
 
 	index_com_title:'联系我们',
@@ -223,7 +225,7 @@ const locale = {
 
 	//预售页面 预售结束
 	p_t_input:['100%','DogePi'],
-	p_t_title:'空投倒计时：',
+	p_t_title:'空投倒计时',
 	p_t_num:'133,000,014,433,311',
 	p_t_des3:'当前区块高度',
 	p_t_des2:'DogePi 预售完美结束！',

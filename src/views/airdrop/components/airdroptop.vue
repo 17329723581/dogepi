@@ -5,20 +5,7 @@
 				<div class="htb-wrap">
 				<div class="htb-hero">
 					<div class="htb-left">
-					<div class="base-circle-wrap">
-						<img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"/>
-						<logo class="htb-circle-dashes"></logo>
-						<div class="circle-glued-coins">
-						<img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1"/>
-						<img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2"/>
-						<img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3"/>
-						</div>
-						<div class="front-coins-holder">
-						<img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1"/>
-						<img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2"/>
-						<img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3"/>
-						</div>
-					</div>
+					<homeLogo class="base-circle-wrap" style="width: 50vw;"></homeLogo>
 					</div>
 					<div class="htb-right">
 						<a-row type="flex" class="banner" justify="space-between">
@@ -59,13 +46,13 @@
 										</div>
 									</div>
 								</div>
-								<div class="left_lu">
+								<!-- <div class="left_lu">
 									<div class="li">
 										<div class="connect-des">
 											{{this.$t('a_top_time_text')}}
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<div class="left_lu">
 									<div class="li">
 										<div class="connect-des-text">
@@ -85,6 +72,7 @@
 </template>
 
 <script>
+	import homeLogo from "../mobile/homeLogoMo.vue";
 	import logo from "../../presale/components/logo.vue";
 	import {
 		mapState,
@@ -155,7 +143,8 @@
 		},
 
 		components: {
-			logo
+			logo,
+			homeLogo
 		},
 		created() {
 			this.getOwner();

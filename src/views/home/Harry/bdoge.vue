@@ -115,6 +115,8 @@
                   </div>
                 </div>
                 <p class="p c-y">{{ this.$t("index_coin")[0]["text"] }}</p>
+                <br />
+                <p class="p c-y">{{ this.$t("index_coin")[0]["text1"] }}</p>
               </div>
               <div class="coin-box-like">
                 <span></span>
@@ -136,6 +138,8 @@
                   </div>
                 </div>
                 <p class="p c-y">{{ this.$t("index_coin")[1]["text"] }}</p>
+                <br />
+                <p class="p c-y">{{ this.$t("index_coin")[1]["text1"] }}</p>
               </div>
               <div class="coin-box-like">
                 <span></span>
@@ -157,6 +161,8 @@
                   </div>
                 </div>
                 <p class="p">{{ this.$t("index_coin")[2]["text"] }}</p>
+                <br />
+                <p class="p c-y">{{ this.$t("index_coin")[2]["text1"] }}</p>
               </div>
               <div class="coin-box-like">
                 <span></span>
@@ -457,7 +463,7 @@
                   {{ this.$t("index_roadmap_title") }}
                   <div class="h1-img mo">
                     <!-- <img src="../../../assets/roadmap.png"> -->
-                    <roadmapAnimation style="width: 150px;"></roadmapAnimation>
+                    <roadmapAnimation style="width: 30vw;"></roadmapAnimation>
                   </div>
                 </div>
                 <div class="qsg-wrap">
@@ -593,10 +599,6 @@
                           <li>
                             <span class="text-line"></span>
                             <span class="p">{{ this.$t("index_roadmap")[3].text5 }}</span>
-                          </li>
-                          <li>
-                            <span class="text-line"></span>
-                            <span class="p">{{ this.$t("index_roadmap")[3].text6 }}</span>
                           </li>
                         </ul>
                       </div>

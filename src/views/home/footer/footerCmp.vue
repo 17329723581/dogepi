@@ -21,6 +21,7 @@
 <script>
 	// axios
 	import axios from "axios";
+	import { mapState, mapActions, mapMutations } from "vuex";
 	export default {
 		data() {
 			return {
@@ -38,7 +39,9 @@
 			};
 		},
 		props: {},
-		computed: {},
+		computed: {
+			...mapState(['urls']),
+		},
 		watch: {},
 		components: {},
 		created() {
@@ -51,7 +54,7 @@
 			},
 			// 获取底部友情链接
 			getContactBottomPartners(){
-				axios.post('https://admintest.dogepi.net/api/getContactBottomPartners').then((e)=>{
+				axios.post(this.urls+'getContactBottomPartners').then((e)=>{
 					this.url = e.data.data;
 				})
 			}

@@ -4,7 +4,7 @@
             <div class="start-content">
                 <div class="start-presale-content">
                     <div class="start-presale-left">
-                        <div class="base-circle-wrap">
+                        <!-- <div class="base-circle-wrap">
                           <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"/>
                           <logo class="htb-circle-dashes"></logo>
                           <div class="circle-glued-coins">
@@ -17,7 +17,8 @@
                             <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2"/>
                             <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3"/>
                           </div>
-                        </div>
+                        </div> -->
+                        <homeLogo class="base-circle-wrap"></homeLogo>
                     </div>
                     <div class="start-presale-right">
                         <div class="start-presale-right-content">
@@ -34,11 +35,11 @@
                             <div class="start-presale-percentage">
                                 <div class="progress" :style="'width:' + percentage + '%'"></div>
                             </div>
-                            <div class="start-presale-title">
+                            <!-- <div class="start-presale-title">
                                 <span>
                                     {{ this.$t("p_o_title") }}
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="start-presale-countdown-content">
                             <div class="start-presale-countdown-title">
@@ -65,10 +66,10 @@
                             </div>
                         </div>
                         <div class="start-wallet-title-b-content">
-                            <div class="start-wallet-b-col">
+                            <!-- <div class="start-wallet-b-col">
                                 <span class="start-wallet-b-title">{{this.$t("p_r_o_totalarray")[0].title}}</span>
                                 <span class="start-wallet-b-text">{{this.$t("p_r_o_totalarray")[0].text}}</span>
-                            </div>
+                            </div> -->
                             <div class="start-wallet-b-col">
                                 <span class="start-wallet-b-title">{{this.$t("p_r_o_totalarray")[1].title}}</span>
                                     <span class="start-wallet-b-text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio/100000000 }}e {{this.$t("currency_1")}}</span>
@@ -174,6 +175,8 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 </script>
 <script>
+import homeLogo from "@/views/home/Harry/homeLogo.vue"
+
 import logo from "@/views/presale/components/logopc.vue";
 import { mapState, mapActions, mapMutations } from "vuex";
 import axios from "axios";
@@ -214,6 +217,7 @@ export default {
       p_titcom_li_left: this.$t("p_titcom_li_left"),
       p_titcom_li_right: this.$t("p_titcom_li_right"),
       percentage:0,
+      deadline:'0',
     };
   },
   props: {
@@ -257,7 +261,8 @@ export default {
       "balanceof",
       "storeSwapRatio",
       "deadline",
-      "percentage"
+      "percentage",
+      "urls"
     ]),
     // 邀请人
     invite(e) {
@@ -277,6 +282,7 @@ export default {
 				} else {
 					return this.initalAddress
 				}*/
+      
     },
     // 我的预售
     userLockProp() {
@@ -285,7 +291,8 @@ export default {
   },
 
   components: {
-    logo
+    logo,
+    homeLogo
   },
   onLoad(e) {
     //console.log("数据", e);
@@ -295,10 +302,16 @@ export default {
     this.getOwner();
     this.titcom();
     this.progres();
+    
   },
 
   mounted() {
-    
+    // let _this = this;
+    // axios
+    //   .get(this.urls + 'bdogepiPresaleEnd')
+    //   .then(function(response){
+    //     _this.deadline = response.data.data;
+    // })
   },
   methods: {
     ...mapMutations([

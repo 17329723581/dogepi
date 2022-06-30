@@ -140,15 +140,6 @@ export default {
       position: initial;
     }
     .po-s {
-      @media (max-width: 550px) {
-        height: 1500px;
-      }
-      @media (min-width: 540px) {
-        height: 2000px;
-      }
-      @media (min-width: 760px) {
-        height: 2000px;
-      }
       background: linear-gradient(180deg, #3a447f 0%, #773785 47%, #35457e 100%);
       border-radius: 0px 0px 0px 0px;
       opacity: 1;

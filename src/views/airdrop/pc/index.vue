@@ -5,7 +5,7 @@
             <div class="airdrop-top">
                 <!-- LOGO动画 -->
                 <div class="airdrop-left">
-                    <div class="base-circle-wrap">
+                    <!-- <div class="base-circle-wrap">
                         <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1" />
                         <logo class="htb-circle-dashes"></logo>
                         <div class="circle-glued-coins">
@@ -18,7 +18,8 @@
                             <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2" />
                             <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3" />
                         </div>
-                    </div>
+                    </div> -->
+                    <homeLogo class="base-circle-wrap"></homeLogo>
                 </div>
                 <div class="airdrop-right">
                     <!-- 连接钱包功能 -->
@@ -40,13 +41,13 @@
                         <a-statistic-countdown :value="deadline" format="DD: HH: mm: ss " @finish="finish()" />
                     </div>
                     <!-- 内容区域 -->
-                    <div class="content">
+                    <!-- <div class="content">
                         <span>
                             {{ this.$t('a_top_time_text') }}
                         </span>
-                    </div>
+                    </div> -->
                     <!-- 标题区域 -->
-                    <div class="title">
+                    <div class="title" style="    display: flex;gap:0.5vw;">
                         <span>
                             {{ this.$t('a_top_des_text1') }}
                         </span>
@@ -89,9 +90,9 @@
                                 </div>
                             </div>
                             <!-- LOGO -->
-                            <div class="logo">
+                            <!-- <div class="logo">
                                 <img src="@/assets/c1.png">
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -277,7 +278,7 @@
                 </div>
             </div>
             <!-- 邀请规则 -->
-            <div class="invite-rules">
+            <!-- <div class="invite-rules">
                 <span class="title">
                     {{ this.$t('a_rules_title') }}
                 </span>
@@ -286,7 +287,7 @@
                     <span>{{ this.$t('a_rules_text2') }}</span>
                     <span>{{ this.$t('a_rules_text3') }}</span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -297,6 +298,7 @@ const { contractObject: PerSaleObj } = getAbi(abiObject.PerSaleAbi);
 const {contractObject:spacePiObj} = getAbi(abiObject.spacePiAbi)
 
 import logo from "@/views/presale/components/logopc.vue";
+import homeLogo from "@/views/home/Harry/homeLogo.vue"
 export default {
     data() {
         return {
@@ -403,7 +405,8 @@ export default {
     },
 
     components: {
-        logo
+        logo,
+        homeLogo
     },
     created() {
         this.getAirdropInfo();

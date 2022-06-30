@@ -5,20 +5,7 @@
         <div class="htb-wrap">
           <div class="htb-hero">
             <div class="htb-left">
-              <div class="base-circle-wrap">
-                <img src="@/assets/c1.png" loading="lazy" alt="" class="htb-circle-1"/>
-                <logo class="htb-circle-dashes"></logo>
-                <div class="circle-glued-coins">
-                  <img src="@/assets/gc1.png" loading="lazy" alt="" class="gc-1"/>
-                  <img src="@/assets/gc2.png" loading="lazy" alt="" class="gc-2"/>
-                  <img src="@/assets/gc4.png" loading="lazy" alt="" class="gc-3"/>
-                </div>
-                <div class="front-coins-holder">
-                  <img src="@/assets/bc1.png" loading="lazy" alt="" class="bc-1"/>
-                  <img src="@/assets/bc2.png" loading="lazy" alt="" class="bc-2"/>
-                  <img src="@/assets/bc4.png" loading="lazy" alt="" class="bc-3"/>
-                </div>
-              </div>
+              <homeLogo class="base-circle-wrap" style="width: 50vw;"></homeLogo>
             </div>
             <div class="htb-right">
               <a-row type="flex" class="banner" justify="space-between">
@@ -39,7 +26,7 @@
                   <div class="left_des des-s">{{ this.$t("p_o_des") }}</div>
                   <a-statistic-countdown :value="deadline" format="DD: HH: mm: ss" @finish="finish()"/>
                   <div class="left_des transparent">{{ this.$t("p_r_o_text") }}</div>
-                  <div class="left_tit">{{ this.$t("p_o_title") }}</div>
+                  <!-- <div class="left_tit">{{ this.$t("p_o_title") }}</div> -->
                 </a-col>
               </a-row>
             </div>
@@ -50,31 +37,7 @@
     <div class="section section-t">
       <div class="container-1440">
         <div class="htb-wrap">
-          <div class="car2">
-            <div class="car2-a">
-                <div class="car2-a-ss">
-                    <span class="title">{{this.$t("p_r_o_totalarray")[0].title}}</span>
-                    <span class="text">{{this.$t("p_r_o_totalarray")[0].text}}</span>
-                </div>
-                
-            </div>
-            <div class="car2-a">
-              <div class="car2-a-s">
-                <span class="title">{{this.$t("p_r_o_totalarray")[1].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio/100000000 }}e {{this.$t("currency_1")}}</span>
-              </div>
-            </div>
-            <div class="car2-d">
-              <div class="car2-d-a">
-                <span class="title">{{this.$t("p_r_o_totalarray")[2].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[2].text}}</span>
-              </div>
-              <div class="car2-d-b">
-                <span class="title">{{this.$t("p_r_o_totalarray")[3].title}}</span>
-                <span class="text">{{this.$t("p_r_o_totalarray")[3].text}}</span>
-              </div>
-            </div>
-          </div>
+          
           <div class="balance-c">
             <div class="balance">
                   <div class="car3">
@@ -111,6 +74,31 @@
             </div>
             <div class="balance-my-info">
                 {{this.$t("p_info") }}
+            </div>
+          </div>
+          <div class="car2">
+            <!-- <div class="car2-a">
+                <div class="car2-a-ss">
+                    <span class="title">{{this.$t("p_r_o_totalarray")[0].title}}</span>
+                    <span class="text">{{this.$t("p_r_o_totalarray")[0].text}}</span>
+                </div>
+                
+            </div> -->
+            <div class="car2-a">
+              <div class="car2-a-s">
+                <span class="title">{{this.$t("p_r_o_totalarray")[1].title}}</span>
+                <span class="text">{{this.$t("p_r_o_totalarray")[1].text}} {{ storeSwapRatio/100000000 }}e {{this.$t("currency_1")}}</span>
+              </div>
+            </div>
+            <div class="car2-d">
+              <div class="car2-d-a">
+                <span class="title">{{this.$t("p_r_o_totalarray")[2].title}}</span>
+                <span class="text">{{this.$t("p_r_o_totalarray")[2].text}}</span>
+              </div>
+              <div class="car2-d-b">
+                <span class="title">{{this.$t("p_r_o_totalarray")[3].title}}</span>
+                <span class="text">{{this.$t("p_r_o_totalarray")[3].text}}</span>
+              </div>
             </div>
           </div>
           <div class="car3">
@@ -152,6 +140,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 </script>
 <script>
+import homeLogo from "./homeLogoMo.vue"
 import logo from "@/views/presale/components/logo.vue";
 import { mapState, mapActions, mapMutations } from "vuex";
 import axios from "axios";
@@ -263,7 +252,8 @@ export default {
   },
 
   components: {
-    logo
+    logo,
+    homeLogo
   },
   onLoad(e) {
     //console.log("数据", e);

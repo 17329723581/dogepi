@@ -1,6 +1,5 @@
 .airdrop{
     background: linear-gradient(90deg, #7F3687 0%, #33467E 100%);
-    font-family: Alibaba PuHuiTi-Regular, Alibaba PuHuiTi;
     display: flex;
     justify-content:center;
     padding-bottom: 100px;
@@ -30,82 +29,7 @@
                 align-items: center;
                 flex: 0 0 auto;
                 .base-circle-wrap {
-                    position: relative;
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                    .htb-circle-1 {
-                        position: absolute;
-                        width: 10vw;
-                    }
-                    .htb-circle-dashes {
-                        width: 25vw;
-                    }
-                }
-                .circle-glued-coins {
-                    position: absolute;
-                    left: 0%;
-                    top: 0%;
-                    right: 0%;
-                    bottom: 0%;
-                    .gc-1 {
-                        position: absolute;
-                        left: 15vw;
-                        top: 3.2vw;
-                        right: auto;
-                        bottom: auto;
-                        width: 3.5vw;
-                    }
-                    .gc-2 {
-                        position: absolute;
-                        left: 15vw;
-                        top: 18vw;
-                        right: auto;
-                        bottom: auto;
-                        width: 3.5vw;
-                    }
-                    .gc-3 {
-                        position: absolute;
-                        left: auto;
-                        top: auto;
-                        right: 19vw;
-                        bottom: 10vw;
-                        width: 3.5vw;
-                    }
-                }
-                .front-coins-holder {
-                    position: absolute;
-                    left: 0%;
-                    top: 0%;
-                    right: 0%;
-                    bottom: 0%;
-                    .bc-1 {
-                        position: absolute;
-                        left: auto;
-                        top: auto;
-                        right: 2.5vw;
-                        bottom: 6.1vw;
-                        z-index: 2;
-                        width: 4.5vw;
-                    }
-                    .bc-2 {
-                        position: absolute;
-                        left: auto;
-                        top: auto;
-                        right: 10vw;
-                        bottom: 18vw;
-                        z-index: 2;
-                        width: 4.5vw;
-                    }
-                    .bc-3 {
-                        position: absolute;
-                        left: auto;
-                        top: auto;
-                        right: 18vw;
-                        bottom: 5vw;
-                        z-index: 2;
-                        width: 4.5vw;
-                    }
+                    width: 22vw;
                 }
             }
             .airdrop-right{
@@ -127,36 +51,40 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        font-family: 'Cabal-Bold';
                     }
                     .cont{
                         width: 3vw;
                         height: 3vw;
-                        background: #47018E;
-                        border-radius: 0.5vw;
+                        background: rgba(255,255,255,0.16);
+                        backdrop-filter: blur(1.6vw);
+                        border-radius: 50vw;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         margin-left: 1vw;
                         img{
-                            width: 1.8vw;
+                            width: 1.25vw;
                         }
                     }
                 }
                 .countdown{
                     width: 100%;
-                    margin-top: 2vw;
+                    margin-top: 1vw;
                     display: grid;
                     .title{
                         font-size: 1vw;
                         font-weight: 400;
                         color: #FFFFFF;
+                        font-family: 'Cabal-Bold';
                     }
                     /deep/ .ant-statistic{
                         .ant-statistic-content{
                             .ant-statistic-content-value{
-                                font-size: 5.25vw;
+                                font-size:5vw;
                                 font-weight: bold;
                                 color: #FFFFFF;
+                                font-family: 'Cabal-Bold';
                             }
                         }
                     }
@@ -165,6 +93,7 @@
                     font-size: 1vw;
                     font-weight: 400;
                     color: #FFFFFF;
+                    font-family: 'Cabal';
                 }
                 .title{
                     display: grid;
@@ -173,6 +102,7 @@
                         font-size:2vw;
                         margin: 0;
                         font-weight: 800;
+                        font-family: 'Cabal-Bold';
                     }
                     .color{
                         color: #FFFFFF;
@@ -181,7 +111,7 @@
             }
         }
         .advertisement{
-            margin-top: 7vw;
+            margin-top: 3vw;
             width: 100%;
             display: flex;
             align-items: center;
@@ -209,6 +139,7 @@
                         .title{
                             display: grid;
                             font-size: 1vw;
+                            font-family: 'Cabal-Bold';
                             .title-parent{
                                 position: relative;
                                 .b{
@@ -326,6 +257,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Cabal-Bold';
                     img{
                         width: 2.4vw;
                         margin-right: 0.6vw;
@@ -337,10 +269,10 @@
                     }
                 }
                 .quantity{
+                    font-family: 'Cabal-Bold';
                     width: -webkit-fill-available;
                     font-size: 2.1vw;
                     color: #FFFFFF;
-                    
                 }
             }
             .airdrop-container{
@@ -365,6 +297,7 @@
                             font-size: 1.5vw;
                             color: #FFC14A;
                             font-weight: bold;
+                            font-family: 'Cabal-Bold';
                         }
                         /deep/ .ant-statistic-content {
                             color: @fontColor;
@@ -372,8 +305,8 @@
                                 font-size: 2.25vw;
                                 font-weight: bold;
                                 line-height: 0;
-                                font-family: Lovely;
                                 color: #FFFFFF;
+                                font-family: 'Cabal-Bold';
                             }
                         }
                     }
@@ -404,6 +337,7 @@
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 padding-left: 2vw;
+                                font-family: 'Cabal';
                             }
                             .button{
                                 width: 12.5vw;
@@ -424,6 +358,7 @@
                                     border:0;
                                     position: absolute;
                                     right: 0.5vw;
+                                    font-family: 'Cabal-Bold';
                                 }
                             }
                         }
@@ -434,12 +369,14 @@
                         margin-top: 0.9vw;
                         color: #FFFFFF;
                         width: 100%;
+                        font-family: 'Cabal';
                     }
                     .coey-text-b{
                         text-align: center;
                         font-size: 1vw;
                         margin-top: 0.9vw;
                         width: 100%;
+                        font-family: 'Cabal';
                     }
                 }
             }
@@ -450,6 +387,7 @@
                 background: rgba(48, 0, 96, 0.27);
                 border-radius: 0.4vw;
                 display: flex;
+                font-family: 'Cabal';
                 span{
                     width: 50%;
                     display: flex;
@@ -480,14 +418,15 @@
                             font-size: 1vw;
                             height: 1.5vw;
                             color: #FEA626;
-                            pa-top:44px;
                             padding-top:1vw;
+                            font-family: 'Cabal-Bold';
                         }
                         .text{
                             font-size: 1.9vw;
                             color: #FFFFFF;
                             font-weight: bold;
                             padding-bottom:1vw;
+                            font-family: 'Cabal-Bold';
                         }
                     }
                 }
@@ -497,6 +436,7 @@
                     height: 9vw;
                     border-radius: 0.4vw;
                     border: 1px solid #FFC14A;
+                    font-family: 'Cabal-Bold';
                     .airdrop-data-container{
                         display: grid;
                         justify-content: center;
@@ -525,9 +465,10 @@
                 display: flex;
                 justify-content: center;
                 button{
+                    font-family: 'Cabal-Bold';
                     border:0;
                     border-radius: 5vw;
-                    width: 16.9vw;
+                    width: auto;
                     height: 3.6vw;
                     background: linear-gradient(180deg, #FEA626 0%, #FE9926 100%);
                     box-shadow: 0px 0.2vw 0.3vw 0.1vw rgba(0, 0, 0, 0.16);
@@ -546,10 +487,11 @@
                 justify-content: center;
                 align-items: center;
                 img{
-                    width: 1.7vw;
+                    width: 1.5vw;
                     margin-right:1vw;
                 }
                 span{
+                    font-family: 'Cabal';
                     font-size:1.1vw;
                     color: #FFFFFF;
                     font-weight: 400;
@@ -562,6 +504,7 @@
             padding-left: 2vw;
             padding-right: 2vw;
             .title{
+                font-family: 'Cabal-Bold';
                 width: 100%;
                 font-size: 1vw;
                 font-weight: bold;
@@ -572,6 +515,7 @@
                 display: grid;
                 width: 100%;
                 span{
+                    font-family: 'Cabal';
                     font-size: 0.9vw;
                     font-weight: 400;
                     color: #FFFFFF;
@@ -586,6 +530,7 @@
                 font-size: 1.1vw;
                 font-weight: bold;
                 color: #FEA626;
+                font-family: 'Cabal-Bold';
             }
             .table{
                 margin-top: 1vw;
@@ -600,6 +545,7 @@
                 font-weight: bold;
                 font-size: 1.1vw;
                 color: #FFFFFF;
+                font-family: 'Cabal-Bold';
                 .table-title{
                     width: 100%;
                     display: flex;
@@ -618,6 +564,7 @@
                 justify-content: center;
                 align-items: center;
                 color: #FFFFFF;
+                font-family: 'Cabal-Bold';
                 .table-content{
                     width: 100%;
                     display: flex;
@@ -652,8 +599,10 @@
                 font-size: 1.1vw;
                 color: #FEA626;
                 font-weight: bold;
+                font-family: 'Cabal-Bold';
             }
             .text{
+                font-family: 'Cabal';
                 margin-top: 0.5vw;
                 display: grid;
                 width: 100%;

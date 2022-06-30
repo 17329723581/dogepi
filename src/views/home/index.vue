@@ -57,15 +57,7 @@ export default {
   .home{
     
     .po-s{
-      @media (min-width: 360px) {
-        height: 220vw;//200vw
-      }
-      @media (min-width: 375px) {
-        height: 220vw;//200vw
-      }
-      @media (min-width: 768px) {
-        height: 220vw;//200vw
-      }
+      height: 220vw;
       background: linear-gradient(180deg, #3a447f 0%, #773785 47%, #2c0058 100%);
       border-radius: 0px 0px 0px 0px;
       opacity: 1;

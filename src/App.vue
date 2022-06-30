@@ -64,12 +64,13 @@ export default {
     },
     // 锚点跳转
     toPage(id) {
-      console.log(id);
-      document.querySelector(`#${id}`).scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "start",
-      });
+      // console.log(id);
+      // document.querySelector(`#${id}`).scrollIntoView({
+      //   behavior: "smooth",
+      //   block: "center",
+      //   inline: "start",
+      // });
+      document.getElementById('app').scrollIntoView();
     },
   },
 };

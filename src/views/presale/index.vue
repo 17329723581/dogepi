@@ -16,13 +16,13 @@
         <!-- 如果未结束 -->
         <!--<presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>-->
         <div class="pc">
-          <presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>
+          <presaleOne @on_state="get_state" v-if="time_end_state == 1"></presaleOne>
         </div>
         <div class="mobile">
-          <presaleOnem @on_state="get_state" v-if="time_end_state == 0"></presaleOnem>
+          <presaleOnem @on_state="get_state" v-if="time_end_state == 1"></presaleOnem>
         </div>
         <!-- 否则 -->
-        <presaleTwo v-if="time_end_state == 1"></presaleTwo>
+        <presaleTwo v-if="time_end_state == 0"></presaleTwo>
       </div>
       <bdoge class="p-top"></bdoge>
     </div>
@@ -80,15 +80,15 @@ export default {
   },
 
   mounted() {
-    let _that = this;
-    init("presale_canvas");
-    const nowTime = new Date().getTime();
-    //console.log("deadline",this.deadline)
-    if (nowTime >= this.deadline) {
-      _that.time_end_state = 1;
-    } else {
-      _that.time_end_state = 0;
-    }
+    // let _that = this;
+    // // init("presale_canvas");
+    // const nowTime = new Date().getTime();
+    // //console.log("deadline",this.deadline)
+    // if (nowTime >= this.deadline) {
+    //   _that.time_end_state = 1;
+    // } else {
+    //   _that.time_end_state = 0;
+    // }
   },
   methods: {
     // 回调我的预售
@@ -149,7 +149,7 @@ export default {
       @media (min-width: 768px) {
         height: 1600px;
       }
-      background: linear-gradient(180deg, #3a447f 0%, #773785 47%, #35457e 100%);
+      background: linear-gradient(180deg, #3a447f 0%, #773785 47%, #2d0158 100%);
       border-radius: 0px 0px 0px 0px;
       opacity: 1;
       position: relative;
