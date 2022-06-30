@@ -16,13 +16,13 @@
         <!-- 如果未结束 -->
         <!--<presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>-->
         <div class="pc">
-          <presaleOne @on_state="get_state" v-if="time_end_state == 1"></presaleOne>
+          <presaleOne @on_state="get_state" v-if="time_end_state == 0"></presaleOne>
         </div>
         <div class="mobile">
-          <presaleOnem @on_state="get_state" v-if="time_end_state == 1"></presaleOnem>
+          <presaleOnem @on_state="get_state" v-if="time_end_state == 0"></presaleOnem>
         </div>
         <!-- 否则 -->
-        <presaleTwo v-if="time_end_state == 0"></presaleTwo>
+        <presaleTwo v-if="time_end_state == 1"></presaleTwo>
       </div>
       <bdoge class="p-top"></bdoge>
     </div>
